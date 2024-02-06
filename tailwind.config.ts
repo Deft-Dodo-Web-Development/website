@@ -56,6 +56,15 @@ const config = {
           DEFAULT: "hsl(var(--dark))",
           foreground: "hsl(var(--dark-foreground))",
         },
+        "white-8": {
+          DEFAULT: "hsla(var(--white-8))",
+        },
+        "white-16": {
+          DEFAULT: "hsla(var(--white-16))",
+        },
+        "white-56": {
+          DEFAULT: "hsla(var(--white-56))",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
