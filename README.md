@@ -11,7 +11,6 @@ This is a starter template for [Learn Next.js](https://nextjs.org/learn), a fram
 - [x] Prettier
 - [x] Husky
 - [x] Commitlint
-- [x] Cypress
 
 ## Getting Started
 
