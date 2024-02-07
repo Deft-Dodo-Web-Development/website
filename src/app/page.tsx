@@ -1,15 +1,21 @@
 import { Button } from "@/modules/common/components/button";
-import { MousePointerClick } from "lucide-react";
 
 export default function Home() {
   return (
     <div className="space-y-8 pt-5">
-      <section className="space-y-2">
+      <section className="space-y-3">
         <h2 className="text-3xl font-semibold">Buttons</h2>
-        <Button className="flex justify-center gap-2">
-          <MousePointerClick />
-          <span>Click me</span>
-        </Button>
+        <div className="flex gap-4">
+          <Button className="flex justify-center gap-2">
+            <span>default</span>
+          </Button>
+          <Button className="flex justify-center gap-2" variant="outline">
+            <span>outline</span>
+          </Button>
+          <Button icon="ArrowUpRight">
+            <span>Wih Icon</span>
+          </Button>
+        </div>
       </section>
       <section className="space-y-2">
         <h2 className="text-3xl font-semibold">Colors</h2>
