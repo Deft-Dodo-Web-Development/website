@@ -1,5 +1,6 @@
 import { Button } from "@/modules/common/components/button";
 import { Layout } from "@/modules/common/components/layout";
+import { Heading } from "@/modules/common/components/heading";
 
 export default function Home() {
   return (
@@ -95,6 +96,39 @@ export default function Home() {
             </p>
           </section>
         </Layout>
+      </section>
+      <section className="space-y-3">
+        <h2 className="text-3xl font-semibold">Buttons</h2>
+        <div className="gap-4 flex-wrap">
+          <Heading
+            subHeading="start"
+            variant="primary"
+            alignment="start"
+            textTrasform="uppercase"
+          >
+            heading
+          </Heading>
+          <Heading
+            subHeading="middle"
+            variant="secondary"
+            alignment="middle"
+            textTrasform="lowercase"
+            size="secondary"
+          >
+            <h3>heading h3</h3>
+          </Heading>
+          <Heading
+            subHeading="end"
+            variant="primary"
+            alignment="end"
+            textTrasform="capitalize"
+          >
+            heading
+          </Heading>
+          <Heading variant="secondary" alignment="middle" size="small">
+            Sub Heading
+          </Heading>
+        </div>
       </section>
     </div>
   );
