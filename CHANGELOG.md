@@ -1,5 +1,12 @@
 
 
+# [0.4.0](https://github.com/zitdevs/deft-dodo/compare/0.3.0...0.4.0) (2024-02-08)
+
+
+### Features
+
+* DDT-6  create Header ([#5](https://github.com/zitdevs/deft-dodo/issues/5)) ([94e8343](https://github.com/zitdevs/deft-dodo/commit/94e8343b0bcdb52d05c6fb7aac9c9705e8920c19))
+
 # [0.3.0](https://github.com/zitdevs/deft-dodo/compare/0.2.0...0.3.0) (2024-02-08)
 
 
