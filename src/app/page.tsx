@@ -1,8 +1,9 @@
 import { Button } from "@/modules/common/components/button";
+import { Layout } from "@/modules/common/components/layout";
 
 export default function Home() {
   return (
-    <div className="space-y-8 pt-5">
+    <div className="space-y-8 pt-5 pb-10">
       <section className="space-y-3">
         <h2 className="text-3xl font-semibold">Buttons</h2>
         <div className="flex gap-4">
@@ -63,6 +64,37 @@ export default function Home() {
           <p className="text-[16px] text-primary">Text</p>
           <p className="text-[16px] text-white-56">Muted</p>
         </div>
+      </section>
+      <section>
+        <h2 className="text-3xl font-semibold">Layout</h2>
+
+        <Layout className="mt-5">
+          <section>
+            <h3 className="text-2xl font-semibold mb-2">Start</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro,
+              voluptate? Atque iusto enim ipsum repellendus excepturi mollitia
+              cupiditate consectetur animi dolore! Ipsum aspernatur nihil
+              impedit deleniti ducimus maiores mollitia ullam! Fuga ad, minima
+              quod assumenda possimus earum nemo beatae! Ullam aspernatur sint
+              esse et culpa at blanditiis obcaecati in quae, ab quidem
+              laudantium, cupiditate possimus consequatur itaque exercitationem
+              sed odit? Quisquam qui in reprehenderit veniam non cupiditate
+              commodi porro tenetur sed exercitationem quidem quod pariatur
+              recusandae blanditiis veritatis nemo adipisci, illum, velit beatae
+              tempore saepe voluptate. Dolor ex laboriosam provident!
+            </p>
+          </section>
+          <section>
+            <h3 className="text-2xl font-semibold mb-2">End</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero
+              eius velit, expedita ab qui nam ullam aperiam sequi dolor quia
+              consectetur recusandae? Et delectus dolore, a nulla voluptas porro
+              enim!
+            </p>
+          </section>
+        </Layout>
       </section>
     </div>
   );
