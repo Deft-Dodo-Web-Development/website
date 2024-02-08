@@ -1,5 +1,12 @@
 
 
+# [0.3.0](https://github.com/zitdevs/deft-dodo/compare/0.2.0...0.3.0) (2024-02-08)
+
+
+### Features
+
+* DDT-3 create heading component ([#4](https://github.com/zitdevs/deft-dodo/issues/4)) ([aabbf80](https://github.com/zitdevs/deft-dodo/commit/aabbf808775a1b88598af5cd791118df5959d93e))
+
 # [0.2.0](https://github.com/zitdevs/deft-dodo/compare/0.1.0...0.2.0) (2024-02-08)
 
 
