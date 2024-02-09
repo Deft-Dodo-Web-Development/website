@@ -1,28 +1,23 @@
-import Link from "next/link";
-import { cn } from "@/lib/utils";
 import { HeaderNav } from "../components/header-nav";
 import { HeaderCTA } from "../components/header-cta";
 import { HeaderMobileMenu } from "../components/header-mobile";
 import { HeaderContainer } from "../components/header-container";
+import HeaderBranding from "../components/header-branding";
+import { Locale } from "@/i18n-config";
 
-const Header = () => {
+export type HeaderProps = {
+  lang: Locale;
+};
+
+const Header: React.FC<HeaderProps> = ({ lang }) => {
   return (
-    <HeaderContainer>
+    <HeaderContainer lang={lang}>
       <HeaderBranding />
       <HeaderDesktopContent />
       <HeaderMobileMenu />
     </HeaderContainer>
   );
 };
-
-const HeaderBranding: React.FC<{ className?: string }> = ({ className }) => (
-  <h1 className={cn("text-lg", className)}>
-    <Link href="/" className="space-x-1">
-      <span className="font-bold">DeftDodo</span>
-      <span className="font-thin">®</span>
-    </Link>
-  </h1>
-);
 
 const HeaderDesktopContent = () => (
   <>

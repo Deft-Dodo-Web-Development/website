@@ -21,7 +21,8 @@
     "paths": {
       "@/*": ["./src/*"],
       "@components/*": ["./src/modules/common/components/*"],
-      "@widgets/*": ["./src/modules/common/widgets/*"]
+      "@widgets/*": ["./src/modules/common/widgets/*"],
+      "@hooks/*": ["./src/modules/common/hooks/*"]
     },
     "types": ["node"]
   },
