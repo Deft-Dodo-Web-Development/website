@@ -1,5 +1,5 @@
 import { create } from "zustand";
-import type { Locale } from "@/i18n-config";
+import { i18n, type Locale } from "@/i18n-config";
 
 type AppDataState = {
   locale: Locale;
@@ -7,7 +7,7 @@ type AppDataState = {
 };
 
 const useStore = create<AppDataState>((set) => ({
-  locale: "en",
+  locale: i18n.defaultLocale,
   setLocale: (locale) => set({ locale }),
 }));
 
