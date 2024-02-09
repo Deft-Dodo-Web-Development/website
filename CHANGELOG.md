@@ -1,5 +1,12 @@
 
 
+# [0.6.0](https://github.com/zitdevs/deft-dodo/compare/0.5.0...0.6.0) (2024-02-09)
+
+
+### Features
+
+* DDT-7 Create Pages Base ([#7](https://github.com/zitdevs/deft-dodo/issues/7)) ([62c777c](https://github.com/zitdevs/deft-dodo/commit/62c777ce86042099d088947a12afb44f8ac738cc))
+
 # [0.5.0](https://github.com/zitdevs/deft-dodo/compare/0.4.0...0.5.0) (2024-02-09)
 
 
