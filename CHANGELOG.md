@@ -1,5 +1,12 @@
 
 
+# [0.7.0](https://github.com/zitdevs/deft-dodo/compare/0.6.0...0.7.0) (2024-02-09)
+
+
+### Features
+
+* add dialog component and hero carousel for the home page ([#8](https://github.com/zitdevs/deft-dodo/issues/8)) ([e44d9ea](https://github.com/zitdevs/deft-dodo/commit/e44d9eab9473883626e428e41af9a93733b31c00))
+
 # [0.6.0](https://github.com/zitdevs/deft-dodo/compare/0.5.0...0.6.0) (2024-02-09)
 
 
