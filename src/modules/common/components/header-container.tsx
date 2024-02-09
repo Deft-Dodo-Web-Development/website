@@ -1,13 +1,21 @@
 "use client";
 
+import { Locale } from "@/i18n-config";
 import { useState, useEffect } from "react";
+import useAppData from "@hooks/useAppData";
 
 export type HeaderContainerProps = {
   children?: React.ReactNode;
+  lang: Locale;
 };
 
-const HeaderContainer: React.FC<HeaderContainerProps> = ({ children }) => {
+const HeaderContainer: React.FC<HeaderContainerProps> = ({
+  children,
+  lang,
+}) => {
   const [isScrolled, setIsScrolled] = useState(false);
+
+  const setLang = useAppData((state) => state.setLocale);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -21,6 +29,8 @@ const HeaderContainer: React.FC<HeaderContainerProps> = ({ children }) => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  useEffect(() => setLang(lang), [lang, setLang]);
 
   return (
     <header

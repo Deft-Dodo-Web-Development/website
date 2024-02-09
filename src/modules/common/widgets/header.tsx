@@ -3,10 +3,15 @@ import { HeaderCTA } from "../components/header-cta";
 import { HeaderMobileMenu } from "../components/header-mobile";
 import { HeaderContainer } from "../components/header-container";
 import HeaderBranding from "../components/header-branding";
+import { Locale } from "@/i18n-config";
 
-const Header = () => {
+export type HeaderProps = {
+  lang: Locale;
+};
+
+const Header: React.FC<HeaderProps> = ({ lang }) => {
   return (
-    <HeaderContainer>
+    <HeaderContainer lang={lang}>
       <HeaderBranding />
       <HeaderDesktopContent />
       <HeaderMobileMenu />
