@@ -1,5 +1,12 @@
 
 
+# [0.5.0](https://github.com/zitdevs/deft-dodo/compare/0.4.0...0.5.0) (2024-02-09)
+
+
+### Features
+
+* DDT-9 Setup multi-language ([#6](https://github.com/zitdevs/deft-dodo/issues/6)) ([3270205](https://github.com/zitdevs/deft-dodo/commit/32702057cd34b19649b8acec12ca5b10776891cc))
+
 # [0.4.0](https://github.com/zitdevs/deft-dodo/compare/0.3.0...0.4.0) (2024-02-08)
 
 
