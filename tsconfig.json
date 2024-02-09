@@ -19,7 +19,9 @@
       }
     ],
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"],
+      "@components/*": ["./src/modules/common/components/*"],
+      "@widgets/*": ["./src/modules/common/widgets/*"]
     },
     "types": ["node"]
   },

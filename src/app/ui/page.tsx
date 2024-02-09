@@ -1,6 +1,6 @@
-import { Button } from "@/modules/common/components/button";
-import { Layout } from "@/modules/common/components/layout";
-import { Heading } from "@/modules/common/components/heading";
+import { Button } from "@components/button";
+import { Layout } from "@components/layout";
+import { Heading } from "@components/heading";
 
 export default function Home() {
   return (
