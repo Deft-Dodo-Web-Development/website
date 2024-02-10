@@ -4,6 +4,7 @@ import Services from "../components/services";
 import { Separator } from "@components/separator";
 import HeadingSection from "../components/heading";
 import Clients from "../components/clients";
+import AboutUs from "../components/about-us";
 
 const HomePage = () => {
   return (
@@ -13,6 +14,8 @@ const HomePage = () => {
       <HeroCarousel container />
       <Clients container className="mt-28" />
       <Separator className="my-28" />
+      <AboutUs container />
+      <Separator className="my-28" container />
       <Services container />
     </>
   );
