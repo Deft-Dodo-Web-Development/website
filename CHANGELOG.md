@@ -1,5 +1,12 @@
 
 
+# [0.11.0](https://github.com/zitdevs/deft-dodo/compare/0.10.0...0.11.0) (2024-02-10)
+
+
+### Features
+
+* **home:** Create clients section DT-12 ([#12](https://github.com/zitdevs/deft-dodo/issues/12)) ([dadbe16](https://github.com/zitdevs/deft-dodo/commit/dadbe161b5a46b05573f2658a9c850b8d2dfb664))
+
 # [0.10.0](https://github.com/zitdevs/deft-dodo/compare/0.9.0...0.10.0) (2024-02-10)
 
 
