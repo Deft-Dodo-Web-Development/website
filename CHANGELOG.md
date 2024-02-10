@@ -1,5 +1,12 @@
 
 
+# [0.12.0](https://github.com/zitdevs/deft-dodo/compare/0.11.0...0.12.0) (2024-02-10)
+
+
+### Features
+
+* **home:** DDT-13 Create About Us Section ([#13](https://github.com/zitdevs/deft-dodo/issues/13)) ([c9604e5](https://github.com/zitdevs/deft-dodo/commit/c9604e5b54b0ec2aafc6724f4dfe04ffc0de4db7))
+
 # [0.11.0](https://github.com/zitdevs/deft-dodo/compare/0.10.0...0.11.0) (2024-02-10)
 
 
