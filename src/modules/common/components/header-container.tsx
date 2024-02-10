@@ -19,7 +19,7 @@ const HeaderContainer: React.FC<HeaderContainerProps> = ({
 
   useEffect(() => {
     const handleScroll = () => {
-      const isScrolled = window.scrollY > 50;
+      const isScrolled = window.scrollY > 20;
       setIsScrolled(isScrolled);
     };
     handleScroll();
