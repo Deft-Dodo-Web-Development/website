@@ -23,19 +23,23 @@ const ClientsCarousel: React.FC<ClientsCarouselProps> = ({ images }) => {
           delay: 2500,
         }),
       ]}
+      opts={{
+        align: "center",
+        loop: true,
+      }}
     >
-      <CarouselContent className="justify-between -ml-1">
+      <CarouselContent className="-ml-36">
         {images.map((image, index) => (
           <CarouselItem
             key={index}
-            className="basis-1/2 md:basis-1/3 lg:basis-1/5 xl:basis-1/6 flex items-center justify-center"
+            className="sm:basis-1/2 md:basis-1/3 pl-36 xl:basis-1/5 flex items-center justify-center"
           >
             <Image
               src={image.src}
               width={image.width}
               height={image.height}
               alt={image.alt}
-              className="object-contain max-w-[215px] max-h-[48px]"
+              className="object-contain max-w-[215px] max-h-[48px] w-full"
             />
           </CarouselItem>
         ))}
