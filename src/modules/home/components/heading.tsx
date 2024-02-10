@@ -1,12 +1,19 @@
+import { cn } from "@/lib/utils";
 import { Heading } from "@/modules/common/components/heading";
 import { Layout } from "@/modules/common/components/layout";
 
 const classes =
   "lg:text-[68px] lg:leading-[68px] min-[1100px]:text-[72px] min-[1100px]:leading-[72px]  xl:text-[80px] xl:leading-[80px]";
 
-const HeadingSection = () => {
+export type HeadingSectionProps = {
+  container?: boolean;
+};
+
+const HeadingSection: React.FC<HeadingSectionProps> = ({ container }) => {
   return (
-    <Layout className="gap-2 lg:gap-5 items-end">
+    <Layout
+      className={cn("gap-2 lg:gap-5 items-end", container && "container")}
+    >
       <Heading
         variant="primary"
         subHeading="Crafting"

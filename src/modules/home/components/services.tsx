@@ -1,3 +1,4 @@
+import { cn } from "@/lib/utils";
 import { Badge } from "@/modules/common/components/badge";
 import { Heading } from "@/modules/common/components/heading";
 
@@ -10,19 +11,20 @@ const services = [
   "Store Redesign & Revamp",
 ];
 
-interface ServicesProps {
+export interface ServicesProps {
   className?: string;
   heading?: string;
   services?: string[];
+  container?: boolean;
 }
 
 const Services = (props: ServicesProps) => {
-  const { heading = "Services" } = props;
+  const { heading = "Services", container } = props;
 
   const Comp = heading ? "section" : "div";
 
   return (
-    <Comp>
+    <Comp className={cn(container && "container")}>
       <Heading
         variant="secondary"
         size="sm"

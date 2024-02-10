@@ -7,11 +7,11 @@ import HeadingSection from "../components/heading";
 const HomePage = () => {
   return (
     <>
-      <HeadingSection />
-      <Separator className="my-12" />
-      <HeroCarousel />
-      <Separator className="mb-2" />
-      <Services />
+      <HeadingSection container />
+      <Separator className="my-12" container />
+      <HeroCarousel container />
+      <Separator className="my-28" />
+      <Services container />
     </>
   );
 };
