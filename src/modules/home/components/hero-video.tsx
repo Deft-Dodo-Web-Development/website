@@ -1,31 +1,29 @@
 "use client";
 
 import Image from "next/image";
-import videoOverlay from "../assets/image.webp";
+import videoOverlay from "../assets/video-thubnail.webp";
 import { useState } from "react";
-import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogHeader,
-  DialogTitle,
-  DialogTrigger,
-} from "@components/dialog";
+import { Dialog, DialogContent } from "@components/dialog";
+import { Play } from "lucide-react";
 const HeroVideo = () => {
   const [playing, setPlaying] = useState(false);
 
   return (
     <>
-      <Image
-        src={videoOverlay}
-        alt="Hero Carousel"
-        width={1920}
-        height={1080}
-        priority
-        className="cursor-pointer w-full h-auto"
+      <div
+        className="cursor-pointer relative group"
         onClick={() => setPlaying(true)}
-      />
-
+      >
+        <Play className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 size-16 text-white-16 group-hover:text-white transition-all duration-300 ease-in-out group-hover:size-20 fill-white-16 group-hover:fill-white-56" />
+        <Image
+          src={videoOverlay}
+          alt="Hero Carousel"
+          width={1400}
+          height={650}
+          className="w-full h-auto"
+          priority
+        />
+      </div>
       {playing && (
         <Dialog open={playing} onOpenChange={setPlaying}>
           <DialogContent className="p-1 bg-primary w-[85vw] max-w-[1200px]">
