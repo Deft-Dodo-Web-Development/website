@@ -25,7 +25,7 @@ const Services = (props: ServicesProps) => {
     <Comp>
       <Heading
         variant="secondary"
-        size="small"
+        size="sm"
         alignment="middle"
         textTrasform="uppercase"
         className="mb-8"

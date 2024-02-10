@@ -126,7 +126,7 @@ export default function Home() {
           >
             heading
           </Heading>
-          <Heading variant="secondary" alignment="middle" size="small">
+          <Heading variant="secondary" alignment="middle" size="sm">
             Sub Heading
           </Heading>
         </div>

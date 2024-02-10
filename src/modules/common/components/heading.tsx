@@ -15,7 +15,9 @@ const headingVariants = cva(
         primary: "text-[80px] leading-[80px]",
         secondary: "text-[72px] leading-[72px]",
         subtitle: "text-[24px] leading-[24px]",
-        small: "text-[16px] leading-6 font-medium",
+        md: "text-[32px] leading-[32px]",
+        lg: "text-[48px] leading-[48px]",
+        sm: "text-[16px] leading-6 font-medium",
       },
       alignment: {
         start: "text-left",
@@ -58,40 +60,67 @@ const Heading = React.forwardRef<HTMLHeadingElement, HeadingProps>(
   ) => {
     const Comp = typeof children === "object" ? Slot : "h2";
 
-    return (
-      <div>
-        {subHeading && (
-          <span
-            className={cn(
-              headingVariants({
-                variant: variant === "primary" ? "secondary" : "primary",
-                size: "small",
-                alignment,
-                textTrasform,
-              }),
-              "block"
-            )}
-          >
-            {subHeading}
-          </span>
+    const subHeadingComp = (
+      <span
+        className={cn(
+          headingVariants({
+            variant: variant === "primary" ? "secondary" : "primary",
+            size: "sm",
+            alignment,
+            textTrasform,
+          }),
+          "block"
         )}
-        <Comp
-          className={cn(
-            headingVariants({
-              variant,
-              size,
-              className,
-              textTrasform,
-              alignment,
-            }),
-            className
-          )}
-          ref={ref}
-          {...props}
-        >
-          {children}
-        </Comp>
-      </div>
+      >
+        {subHeading}
+      </span>
+    );
+
+    const headingComp = (
+      <Comp
+        className={cn(
+          headingVariants({
+            variant,
+            size,
+            className,
+            textTrasform,
+            alignment,
+          }),
+          className
+        )}
+        ref={ref}
+        {...props}
+      >
+        {children}
+      </Comp>
+    );
+
+    if (subHeading) {
+      return (
+        <div>
+          {subHeadingComp}
+          {headingComp}
+        </div>
+      );
+    }
+
+    return (
+      <Comp
+        className={cn(
+          headingVariants({
+            variant,
+            size,
+            className,
+            textTrasform,
+            alignment,
+          }),
+          className
+        )}
+        ref={ref}
+        {...props}
+      >
+        {children}
+      </Comp>
     );
   }
 );
