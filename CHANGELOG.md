@@ -1,5 +1,12 @@
 
 
+# [0.9.0](https://github.com/zitdevs/deft-dodo/compare/0.8.0...0.9.0) (2024-02-10)
+
+
+### Features
+
+* **home:** DDT-11 create heading section ([#10](https://github.com/zitdevs/deft-dodo/issues/10)) ([2051e08](https://github.com/zitdevs/deft-dodo/commit/2051e089a60cf7b697e1de555ce51ec1d60c32d3))
+
 # [0.8.0](https://github.com/zitdevs/deft-dodo/compare/0.7.0...0.8.0) (2024-02-10)
 
 
