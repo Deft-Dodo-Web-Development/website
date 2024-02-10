@@ -24,7 +24,7 @@ const headingVariants = cva(
         middle: "text-center",
         end: "text-right",
       },
-      textTrasform: {
+      textTransform: {
         uppercase: "uppercase",
         lowercase: "lowercase",
         capitalize: "capitalize",
@@ -33,7 +33,7 @@ const headingVariants = cva(
     defaultVariants: {
       alignment: "start",
       variant: "primary",
-      textTrasform: "uppercase",
+      textTransform: "uppercase",
     },
   }
 );
@@ -51,7 +51,7 @@ const Heading = React.forwardRef<HTMLHeadingElement, HeadingProps>(
       variant,
       children,
       alignment,
-      textTrasform,
+      textTransform: textTrasform,
       size,
       subHeading,
       ...props
@@ -67,7 +67,7 @@ const Heading = React.forwardRef<HTMLHeadingElement, HeadingProps>(
             variant: variant === "primary" ? "secondary" : "primary",
             size: "sm",
             alignment,
-            textTrasform,
+            textTransform: textTrasform,
           }),
           "block"
         )}
@@ -83,7 +83,7 @@ const Heading = React.forwardRef<HTMLHeadingElement, HeadingProps>(
             variant,
             size,
             className,
-            textTrasform,
+            textTransform: textTrasform,
             alignment,
           }),
           className
@@ -111,7 +111,7 @@ const Heading = React.forwardRef<HTMLHeadingElement, HeadingProps>(
             variant,
             size,
             className,
-            textTrasform,
+            textTransform: textTrasform,
             alignment,
           }),
           className

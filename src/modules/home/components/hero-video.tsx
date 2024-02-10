@@ -20,7 +20,7 @@ const HeroVideo = () => {
           alt="Hero Carousel"
           width={1400}
           height={650}
-          className="w-full h-auto"
+          className="w-full h-auto rounded-xl"
           priority
         />
       </div>

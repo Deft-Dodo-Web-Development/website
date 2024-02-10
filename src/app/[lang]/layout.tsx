@@ -30,7 +30,7 @@ export default function RootLayout({ children, params: { lang } }: Props) {
     <html lang={lang}>
       <body className={`${inter.className} bg-dark text-white`}>
         <Header lang={lang} />
-        <main className="container mt-28">{children}</main>
+        <main className="mt-28">{children}</main>
       </body>
     </html>
   );
