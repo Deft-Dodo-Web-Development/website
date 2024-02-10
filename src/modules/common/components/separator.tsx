@@ -24,9 +24,10 @@ const Separator = React.forwardRef<
     ref
   ) => {
     const Container = container ? "div" : React.Fragment;
+    const containerProps = container ? { className: "container" } : {};
 
     return (
-      <Container className="container">
+      <Container {...containerProps}>
         <SeparatorPrimitive.Root
           ref={ref}
           decorative={decorative}
