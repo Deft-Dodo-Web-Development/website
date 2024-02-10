@@ -48,7 +48,9 @@ type ButtonProp =
 
 export type ButtonProps = WithLink &
   VariantProps<typeof buttonVariants> &
-  ButtonProp;
+  ButtonProp & {
+    disabled?: boolean;
+  };
 
 const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
   ({ className, variant, size, icon, children, ...props }, ref) => {
