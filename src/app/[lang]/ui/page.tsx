@@ -1,6 +1,7 @@
 import { Button } from "@components/button";
 import { Layout } from "@components/layout";
 import { Heading } from "@components/heading";
+import { Badge } from "@/modules/common/components/badge";
 
 export default function Home() {
   return (
@@ -128,6 +129,33 @@ export default function Home() {
           <Heading variant="secondary" alignment="middle" size="small">
             Sub Heading
           </Heading>
+        </div>
+      </section>
+      <section className="space-y-3">
+        <h2 className="text-3xl font-semibold">Badges</h2>
+        <div className="">
+          <ul className="flex flex-wrap gap-4 justify-center">
+            <li className="m-0">
+              <Badge variant="default" size="default">
+                default
+              </Badge>
+            </li>
+            <li className="m-0">
+              <Badge variant="secondary" size="lg">
+                secondary
+              </Badge>
+            </li>
+            <li className="m-0">
+              <Badge variant="destructive" size="sm">
+                destructive
+              </Badge>
+            </li>
+            <li className="m-0">
+              <Badge variant="outline" size="base">
+                outline
+              </Badge>
+            </li>
+          </ul>
         </div>
       </section>
     </div>
