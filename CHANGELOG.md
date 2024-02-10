@@ -1,5 +1,12 @@
 
 
+# [0.10.0](https://github.com/zitdevs/deft-dodo/compare/0.9.0...0.10.0) (2024-02-10)
+
+
+### Features
+
+* DDT-18 Add play icon to video banner ([#11](https://github.com/zitdevs/deft-dodo/issues/11)) ([efd9006](https://github.com/zitdevs/deft-dodo/commit/efd9006ec4ca52f057a79ac10e2a283779b85acd))
+
 # [0.9.0](https://github.com/zitdevs/deft-dodo/compare/0.8.0...0.9.0) (2024-02-10)
 
 
