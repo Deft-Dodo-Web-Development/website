@@ -1,5 +1,12 @@
 
 
+# [0.8.0](https://github.com/zitdevs/deft-dodo/compare/0.7.0...0.8.0) (2024-02-10)
+
+
+### Features
+
+* DDT-14 Create Services Section ([#9](https://github.com/zitdevs/deft-dodo/issues/9)) ([3ac4c3a](https://github.com/zitdevs/deft-dodo/commit/3ac4c3a15f97742cd6b27f15de9e12057ca114ab))
+
 # [0.7.0](https://github.com/zitdevs/deft-dodo/compare/0.6.0...0.7.0) (2024-02-09)
 
 
