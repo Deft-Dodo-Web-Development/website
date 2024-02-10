@@ -3,6 +3,7 @@ import HeroCarousel from "../components/hero-carousel";
 import Services from "../components/services";
 import { Separator } from "@components/separator";
 import HeadingSection from "../components/heading";
+import Clients from "../components/clients";
 
 const HomePage = () => {
   return (
@@ -10,6 +11,7 @@ const HomePage = () => {
       <HeadingSection container />
       <Separator className="my-12" container />
       <HeroCarousel container />
+      <Clients container className="mt-28" />
       <Separator className="my-28" />
       <Services container />
     </>
