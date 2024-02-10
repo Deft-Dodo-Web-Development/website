@@ -6,7 +6,7 @@ const classes =
 
 const HeadingSection = () => {
   return (
-    <Layout className="gap-2 lg:gap-5">
+    <Layout className="gap-2 lg:gap-5 items-end">
       <Heading
         variant="primary"
         subHeading="Crafting"
