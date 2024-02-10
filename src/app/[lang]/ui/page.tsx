@@ -105,7 +105,7 @@ export default function Home() {
             subHeading="start"
             variant="primary"
             alignment="start"
-            textTrasform="uppercase"
+            textTransform="uppercase"
           >
             heading
           </Heading>
@@ -113,7 +113,7 @@ export default function Home() {
             subHeading="middle"
             variant="secondary"
             alignment="middle"
-            textTrasform="lowercase"
+            textTransform="lowercase"
             size="secondary"
           >
             <h3>heading h3</h3>
@@ -122,7 +122,7 @@ export default function Home() {
             subHeading="end"
             variant="primary"
             alignment="end"
-            textTrasform="capitalize"
+            textTransform="capitalize"
           >
             heading
           </Heading>

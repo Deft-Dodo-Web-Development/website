@@ -49,13 +49,13 @@ const Clients: React.FC<ClientsProps> = ({
   ...props
 }) => {
   return (
-    <Container enabled={container}>
+    <Container enabled={container} asChild>
       <section className={cn("", className)} {...props}>
         <h2 className="text-[16px] text-center uppercase text-primary mb-8">
           Clients
         </h2>
+        <ClientsCarousel images={images} />
       </section>
-      <ClientsCarousel images={images} />
     </Container>
   );
 };

@@ -1,4 +1,4 @@
-import { cn } from "@/lib/utils";
+import { Container } from "@/modules/common/components/container";
 import { Heading } from "@/modules/common/components/heading";
 import { Layout } from "@/modules/common/components/layout";
 
@@ -11,29 +11,32 @@ export type HeadingSectionProps = {
 
 const HeadingSection: React.FC<HeadingSectionProps> = ({ container }) => {
   return (
-    <Layout
-      className={cn("gap-2 lg:gap-5 items-end", container && "container")}
-    >
-      <Heading
-        variant="primary"
-        subHeading="Crafting"
-        size="lg"
-        alignment="start"
-        textTrasform="uppercase"
-        className={classes}
-      >
-        <h1>Seamless</h1>
-      </Heading>
-      <Heading
-        variant="primary"
-        size="subtitle"
-        alignment="start"
-        textTrasform="uppercase"
-        className={`${classes} md:text-[48px] md:-leading[48px] lg:text-right`}
-      >
-        Shopping Experiences
-      </Heading>
-    </Layout>
+    <Container enabled={container} asChild>
+      <Layout className="gap-2 lg:gap-5 items-end" asChild>
+        <section>
+          {" "}
+          <Heading
+            variant="primary"
+            subHeading="Crafting"
+            size="lg"
+            alignment="start"
+            textTransform="uppercase"
+            className={classes}
+          >
+            <h2>Seamless</h2>
+          </Heading>
+          <Heading
+            variant="primary"
+            size="subtitle"
+            alignment="start"
+            textTransform="uppercase"
+            className={`${classes} md:text-[48px] md:-leading[48px] lg:text-right`}
+          >
+            <h3>Experiences</h3>
+          </Heading>
+        </section>
+      </Layout>
+    </Container>
   );
 };
 

@@ -1,6 +1,6 @@
 import { Layout } from "@components/layout";
 import HeroVideo from "./hero-video";
-import { cn } from "@/lib/utils";
+import { Container } from "@components/container";
 
 export type HeroCarouselProps = {
   container?: boolean;
@@ -8,7 +8,7 @@ export type HeroCarouselProps = {
 
 const HeroCarousel: React.FC<HeroCarouselProps> = ({ container }) => {
   return (
-    <div className={cn(container && "container")}>
+    <Container enabled={container}>
       <Layout className="text-white-56 sm:grid-cols-2 mb-8">
         <div className="w-full">
           <p>Elevate your e-commerce vision?</p>
@@ -18,7 +18,7 @@ const HeroCarousel: React.FC<HeroCarouselProps> = ({ container }) => {
         </div>
       </Layout>
       <HeroVideo />
-    </div>
+    </Container>
   );
 };
 
