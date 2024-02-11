@@ -1,6 +1,6 @@
 import { Container } from "@components/container";
 import { Layout } from "@components/layout";
-import AboutUsAnimated from "./about-us-animated";
+import AboutUsAnimated from "../components/about-us-animated";
 
 type AboutUsProps = {
   container?: boolean;

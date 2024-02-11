@@ -1,15 +1,15 @@
 import React from "react";
 import HeroCarousel from "../components/hero-carousel";
-import Services from "../components/services";
+import Services from "../widgets/services";
 import { Separator } from "@components/separator";
-import HeadingSection from "../components/heading";
-import Clients from "../components/clients";
-import AboutUs from "../components/about-us";
+import Heading from "../widgets/heading";
+import Clients from "../widgets/clients";
+import AboutUs from "../widgets/about-us";
 
 const HomePage = () => {
   return (
     <>
-      <HeadingSection container />
+      <Heading container />
       <Separator className="my-12" container />
       <HeroCarousel container />
       <Clients container className="mt-28" />

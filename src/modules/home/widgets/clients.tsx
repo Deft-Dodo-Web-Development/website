@@ -4,7 +4,7 @@ import { Container } from "@components/container";
 import client1 from "../assets/skyler-logo.webp";
 import client2 from "../assets/lucky-boy-logo.webp";
 import client3 from "../assets/powers-logo.webp";
-import ClientsCarousel, { Image } from "./clients-carousel";
+import ClientsCarousel, { Image } from "../components/clients-carousel";
 
 const images: Image[] = [
   {
