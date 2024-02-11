@@ -6,17 +6,23 @@ import {
   SheetTrigger,
 } from "@/modules/common/components/sheet";
 
-import { Menu, X } from "lucide-react";
-import { useState } from "react";
+import { Menu } from "lucide-react";
+import { useEffect, useState } from "react";
 import { HeaderCTA } from "./header-cta";
 import { HeaderNav } from "./header-nav";
+import { usePathname } from "next/navigation";
 
 const HeaderMobileMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
+
+  useEffect(() => {
+    setIsOpen(false);
+  }, [pathname]);
 
   return (
     <div className="md:hidden">
-      <Sheet onOpenChange={(open) => setIsOpen(open)}>
+      <Sheet onOpenChange={(open) => setIsOpen(open)} open={isOpen}>
         <SheetTrigger asChild>
           <button
             className="hover:scale-105"
