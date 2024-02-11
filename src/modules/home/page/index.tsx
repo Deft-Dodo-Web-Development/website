@@ -5,6 +5,7 @@ import { Separator } from "@components/separator";
 import Heading from "../widgets/heading";
 import Clients from "../widgets/clients";
 import AboutUs from "../widgets/about-us";
+import { Projects } from "../widgets/projects";
 
 const HomePage = () => {
   return (
@@ -15,7 +16,9 @@ const HomePage = () => {
       <Clients container className="mt-28" />
       <Separator className="my-28" />
       <AboutUs container />
-      <Separator className="my-28" container />
+      <Separator className="mt-28 mb-10" container />
+      <Projects container />
+      <Separator className="mt-28 mb-2" container />
       <Services container />
     </>
   );
