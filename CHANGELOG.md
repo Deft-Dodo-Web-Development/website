@@ -1,5 +1,12 @@
 
 
+# [0.15.0](https://github.com/zitdevs/deft-dodo/compare/0.14.0...0.15.0) (2024-02-11)
+
+
+### Features
+
+* DDT-21 Create Project Page ([#16](https://github.com/zitdevs/deft-dodo/issues/16)) ([1560e22](https://github.com/zitdevs/deft-dodo/commit/1560e22e438ecd636423bebf739371ba20074000))
+
 # [0.14.0](https://github.com/zitdevs/deft-dodo/compare/0.13.0...0.14.0) (2024-02-11)
 
 
