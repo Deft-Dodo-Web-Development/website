@@ -1,5 +1,12 @@
 
 
+# [0.13.0](https://github.com/zitdevs/deft-dodo/compare/0.12.0...0.13.0) (2024-02-11)
+
+
+### Features
+
+* DDT-19 Create Footer ([#14](https://github.com/zitdevs/deft-dodo/issues/14)) ([e49dfd2](https://github.com/zitdevs/deft-dodo/commit/e49dfd2275be49a16351d16ef9496f64002187d8))
+
 # [0.12.0](https://github.com/zitdevs/deft-dodo/compare/0.11.0...0.12.0) (2024-02-10)
 
 
