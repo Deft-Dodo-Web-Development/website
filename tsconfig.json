@@ -22,7 +22,8 @@
       "@/*": ["./src/*"],
       "@components/*": ["./src/modules/common/components/*"],
       "@widgets/*": ["./src/modules/common/widgets/*"],
-      "@hooks/*": ["./src/modules/common/hooks/*"]
+      "@hooks/*": ["./src/modules/common/hooks/*"],
+      "@assets/*": ["./src/modules/common/assets/*"]
     },
     "types": ["node"]
   },
