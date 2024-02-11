@@ -1,9 +1,9 @@
 import { Container } from "@components/container";
 
-import project1 from "../assets/project-1.webp";
-import project2 from "../assets/project-2.webp";
-import project3 from "../assets/project-3.webp";
-import project4 from "../assets/project-4.webp";
+import project1 from "@assets/project-1.webp";
+import project2 from "@assets/project-2.webp";
+import project3 from "@assets/project-3.webp";
+import project4 from "@assets/project-4.webp";
 import { ProjectScrollCarousel } from "../components/projects-carousel";
 
 export type ProjectsProps = {
