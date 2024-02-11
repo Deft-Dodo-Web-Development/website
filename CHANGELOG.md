@@ -1,5 +1,12 @@
 
 
+# [0.14.0](https://github.com/zitdevs/deft-dodo/compare/0.13.0...0.14.0) (2024-02-11)
+
+
+### Features
+
+* DDT-20 Create Project Section ([#15](https://github.com/zitdevs/deft-dodo/issues/15)) ([dc6bf47](https://github.com/zitdevs/deft-dodo/commit/dc6bf4799a0a7d4fe06958845f023e8637d2bf56))
+
 # [0.13.0](https://github.com/zitdevs/deft-dodo/compare/0.12.0...0.13.0) (2024-02-11)
 
 
