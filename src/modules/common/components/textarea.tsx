@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 import { Label } from "./label";
 
 const textareaVariants = cva(
-  "flex min-h-[80px] max-h-[50vh] w-full rounded-md border border-input px-3 py-2 text-sm disabled:cursor-not-allowed disabled:opacity-50",
+  "flex min-h-[80px] max-h-[30vh] w-full rounded-md border border-input px-1 py-2 text-sm disabled:cursor-not-allowed disabled:opacity-50",
   {
     variants: {
       variant: {
@@ -69,17 +69,17 @@ const TextAreaUnderline = forwardRef<HTMLTextAreaElement, TextareaProps>(
 
     return (
       <motion.div
-        className="relative pt-4 border-b-2 border-input"
+        className="relative pt-4 border-b border-input"
         animate={active ? "focused" : "unfocused"}
         initial="unfocused"
         variants={{
           focused: { borderBottomColor: "#eee" },
-          unfocused: { borderBottomColor: "#9c9c9c" },
+          unfocused: { borderBottomColor: "#4f4f4f" },
         }}
       >
         {label && (
           <motion.div
-            className="absolute left-0 transform -translate-y-2 pl-3 pb-2"
+            className="absolute left-0 transform -translate-y-2 pl-1 pb-2"
             animate={active ? "focused" : "unfocused"}
             initial="unfocused"
             variants={{

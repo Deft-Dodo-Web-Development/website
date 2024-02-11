@@ -11,7 +11,7 @@ import { Label } from "./label";
 import { motion } from "framer-motion";
 
 const inputVariants = cva(
-  "flex h-10 w-full px-3 py-2 text-sm file:border-0 file:bg-transparent file:text-sm file:font-medium disabled:cursor-not-allowed disabled:opacity-50",
+  "flex h-10 w-full px-1 py-2 text-sm file:border-0 file:bg-transparent file:text-sm file:font-medium disabled:cursor-not-allowed disabled:opacity-50",
   {
     variants: {
       variant: {
@@ -85,17 +85,17 @@ const InputUnderline = forwardRef<HTMLInputElement, InputProps>(
 
     return (
       <motion.div
-        className="relative pt-4 border-b-2 border-input"
+        className="relative pt-4 border-b border-input"
         animate={active ? "focused" : "unfocused"}
         initial="unfocused"
         variants={{
           focused: { borderBottomColor: "#eee" },
-          unfocused: { borderBottomColor: "#9c9c9c" },
+          unfocused: { borderBottomColor: "#4f4f4f" },
         }}
       >
         {label && (
           <motion.div
-            className="absolute bottom-0 left-0 transform -translate-y-2 pl-3 pb-2"
+            className="absolute bottom-0 left-0 transform -translate-y-2 pl-1 pb-2"
             animate={active ? "focused" : "unfocused"}
             initial="unfocused"
             variants={{
