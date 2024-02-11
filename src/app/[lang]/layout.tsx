@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "../globals.css";
-import Header from "@/modules/common/widgets/header";
+import Header from "@widgets/header";
 import { Locale, i18n } from "@/i18n-config";
 import { getDictionary } from "@/get-dictionary";
+import Footer from "@widgets/footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -31,6 +32,7 @@ export default function RootLayout({ children, params: { lang } }: Props) {
       <body className={`${inter.className} bg-dark text-white`}>
         <Header lang={lang} />
         <main className="mt-28">{children}</main>
+        <Footer />
       </body>
     </html>
   );
