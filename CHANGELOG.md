@@ -1,5 +1,12 @@
 
 
+# [0.16.0](https://github.com/zitdevs/deft-dodo/compare/0.15.0...0.16.0) (2024-02-11)
+
+
+### Features
+
+* **services:** DDT-22 Create Services Page ([#17](https://github.com/zitdevs/deft-dodo/issues/17)) ([e70cb46](https://github.com/zitdevs/deft-dodo/commit/e70cb46de3a601bb9d15a07603d24f7d02ca5bbc))
+
 # [0.15.0](https://github.com/zitdevs/deft-dodo/compare/0.14.0...0.15.0) (2024-02-11)
 
 
