@@ -13,6 +13,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
   title,
   description,
   icon,
+  slug,
 }) => {
   return (
     <section className="p-12 bg-white-8 rounded-lg space-y-8">
@@ -23,7 +24,12 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
         </h3>
         <p className="sm:min-h-44 md:min-h-48 xl:min-h-36">{description}</p>
       </div>
-      <Button icon="ArrowUpRight" variant="outline" className="text-sm">
+      <Button
+        icon="ArrowUpRight"
+        variant="outline"
+        className="text-sm"
+        href={`/services/${slug}`}
+      >
         Learn More
       </Button>
     </section>
