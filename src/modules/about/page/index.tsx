@@ -1,7 +1,16 @@
-import React from "react";
+import { Separator } from "@components/separator";
+import AboutUsHeading from "../widgets/heading";
+import Content from "../widgets/content";
 
 const AboutPage = () => {
-  return <div>AboutPage</div>;
+  return (
+    <>
+      <AboutUsHeading container />
+      <Separator className="mb-28 mt-14" container />
+      <Content container />
+      <Separator className="mt-28 mb-8" container />
+    </>
+  );
 };
 
 export default AboutPage;
