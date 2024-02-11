@@ -1,6 +1,8 @@
+"use client";
+
 import { Icon, IconName } from "@/modules/common/components/icon";
 import { Button } from "@components/button";
-import React from "react";
+import useAppData from "@hooks/useAppData";
 
 export type ServiceCardProps = {
   title: string;
@@ -15,6 +17,8 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
   icon,
   slug,
 }) => {
+  const { locale } = useAppData();
+
   return (
     <section className="p-12 bg-white-8 rounded-lg space-y-8">
       <Icon name={icon} className="size-16 text-primary" />
@@ -28,7 +32,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
         icon="ArrowUpRight"
         variant="outline"
         className="text-sm"
-        href={`/services/${slug}`}
+        href={`/${locale}/services/${slug}`}
       >
         Learn More
       </Button>
