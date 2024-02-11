@@ -23,7 +23,8 @@
       "@components/*": ["./src/modules/common/components/*"],
       "@widgets/*": ["./src/modules/common/widgets/*"],
       "@hooks/*": ["./src/modules/common/hooks/*"],
-      "@assets/*": ["./src/modules/common/assets/*"]
+      "@assets/*": ["./src/modules/common/assets/*"],
+      "@utilities/*": ["./src/modules/common/utilities/*"]
     },
     "types": ["node"]
   },
