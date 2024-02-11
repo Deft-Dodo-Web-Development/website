@@ -1,5 +1,12 @@
 
 
+# [0.17.0](https://github.com/zitdevs/deft-dodo/compare/0.16.0...0.17.0) (2024-02-11)
+
+
+### Features
+
+* DDT-23 Create About Us Page ([#18](https://github.com/zitdevs/deft-dodo/issues/18)) ([74c4b7f](https://github.com/zitdevs/deft-dodo/commit/74c4b7f633830d633e4b8a517585695ebe41ba15))
+
 # [0.16.0](https://github.com/zitdevs/deft-dodo/compare/0.15.0...0.16.0) (2024-02-11)
 
 
