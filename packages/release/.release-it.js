@@ -17,7 +17,7 @@ module.exports = {
         push: true,
         tagName: `${packageName}-v${version}`,
         commitsPath: '.',
-        commitMessage: `ci(${scope}): released version v${version} [no ci]`,
+        commitMessage: `chore(${scope}): release v${version}`,
         requireCommits: true,
         requireCommitsFail: false,
     },
