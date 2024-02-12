@@ -4,7 +4,7 @@
   "license": "MIT",
   "main": ".release-it.js",
   "scripts": {
-    "release": "release-it --ci"
+    "release": "release-it"
   },
   "devDependencies": {
     "@release-it/conventional-changelog": "8.0.1",
