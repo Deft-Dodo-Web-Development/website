@@ -1,5 +1,5 @@
 {
-  "name": "@ddt/config-release-it",
+  "name": "@deft-dodo/config-release-it",
   "version": "0.2.0",
   "license": "MIT",
   "main": ".release-it.js",

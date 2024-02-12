@@ -1,5 +1,5 @@
 {
-  "name": "www",
+  "name": "@deft-dodo/www",
   "version": "0.19.0",
   "private": true,
   "scripts": {
