@@ -52,6 +52,10 @@ const ClientsCarousel: React.FC<ClientsCarouselProps> = ({ images }) => {
                 height={image.height}
                 alt={image.alt}
                 className="object-contain max-w-[215px] max-h-[48px] w-full"
+                style={{
+                  width: "auto",
+                  height: "auto",
+                }}
               />
             </motion.div>
           </CarouselItem>

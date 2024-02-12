@@ -58,7 +58,7 @@ const ProjectScrollCarousel: React.FC<ProjectScrollCarouselProps> = ({
                   alt={card.title}
                   width={750}
                   height={440}
-                  className="rounded-xl"
+                  className="rounded-xl w-[750px] h-[440px]"
                 />
                 <div className="flex flex-col mt-6">
                   <h3 className="text-2xl">{card.title}</h3>
