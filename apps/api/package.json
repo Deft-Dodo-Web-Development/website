@@ -1,5 +1,5 @@
 {
-  "name": "api",
+  "name": "@deft-dodo/api",
   "private": true,
   "version": "0.1.0",
   "description": "A Strapi application",
@@ -7,11 +7,13 @@
     "dev": "strapi develop",
     "start": "strapi start",
     "build": "strapi build",
-    "strapi": "strapi"
+    "strapi": "strapi",
+    "release": "release-it"
   },
   "devDependencies": {
     "@strapi/typescript-utils": "^4.20.0",
-    "@types/node": "^20.11.17"
+    "@types/node": "^20.11.17",
+    "@deft-dodo/config-release-it": "workspace:*"
   },
   "dependencies": {
     "@strapi/plugin-cloud": "4.20.0",

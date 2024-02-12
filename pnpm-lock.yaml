@@ -67,8 +67,11 @@ importers:
         version: 5.3.4(react@18.2.0)
       styled-components:
         specifier: 5.3.3
-        version: 5.3.3(@babel/core@7.23.9)(react-dom@18.2.0)(react-is@16.13.1)(react@18.2.0)
+        version: 5.3.3(@babel/core@7.23.9)(react-dom@18.2.0)(react-is@18.2.0)(react@18.2.0)
     devDependencies:
+      '@deft-dodo/config-release-it':
+        specifier: workspace:*
+        version: link:../../packages/release
       '@strapi/typescript-utils':
         specifier: ^4.20.0
         version: 4.20.0
@@ -2905,7 +2908,7 @@ packages:
       slate-history: 0.93.0(slate@0.94.1)
       slate-react: 0.98.3(react-dom@18.2.0)(react@18.2.0)(slate@0.94.1)
       style-loader: 3.3.4(webpack@5.90.1)
-      styled-components: 5.3.3(@babel/core@7.23.9)(react-dom@18.2.0)(react-is@16.13.1)(react@18.2.0)
+      styled-components: 5.3.3(@babel/core@7.23.9)(react-dom@18.2.0)(react-is@18.2.0)(react@18.2.0)
       typescript: 5.2.2
       use-context-selector: 1.4.1(react-dom@18.2.0)(react@18.2.0)(scheduler@0.23.0)
       vite: 5.0.11(@types/node@20.11.17)
@@ -2991,7 +2994,7 @@ packages:
       react-intl: 6.4.1(react@18.2.0)(typescript@5.2.2)
       react-redux: 8.1.1(react-dom@18.2.0)(react@18.2.0)(redux@4.2.1)
       react-router-dom: 5.3.4(react@18.2.0)
-      styled-components: 5.3.3(@babel/core@7.23.9)(react-dom@18.2.0)(react-is@16.13.1)(react@18.2.0)
+      styled-components: 5.3.3(@babel/core@7.23.9)(react-dom@18.2.0)(react-is@18.2.0)(react@18.2.0)
       yup: 0.32.9
     transitivePeerDependencies:
       - '@babel/runtime'
@@ -3107,7 +3110,7 @@ packages:
       react-dom: 18.2.0(react@18.2.0)
       react-remove-scroll: 2.5.7(react@18.2.0)
       react-router-dom: 5.3.4(react@18.2.0)
-      styled-components: 5.3.3(@babel/core@7.23.9)(react-dom@18.2.0)(react-is@16.13.1)(react@18.2.0)
+      styled-components: 5.3.3(@babel/core@7.23.9)(react-dom@18.2.0)(react-is@18.2.0)(react@18.2.0)
     transitivePeerDependencies:
       - '@babel/runtime'
       - '@codemirror/autocomplete'
@@ -3148,7 +3151,7 @@ packages:
       react-dom: 18.2.0(react@18.2.0)
       react-remove-scroll: 2.5.7(react@18.2.0)
       react-router-dom: 5.3.4(react@18.2.0)
-      styled-components: 5.3.3(@babel/core@7.23.9)(react-dom@18.2.0)(react-is@16.13.1)(react@18.2.0)
+      styled-components: 5.3.3(@babel/core@7.23.9)(react-dom@18.2.0)(react-is@18.2.0)(react@18.2.0)
     transitivePeerDependencies:
       - '@babel/runtime'
       - '@codemirror/autocomplete'
@@ -3226,7 +3229,7 @@ packages:
       react-query: 3.39.3(react-dom@18.2.0)(react@18.2.0)
       react-router-dom: 5.3.4(react@18.2.0)
       react-select: 5.7.0(react-dom@18.2.0)(react@18.2.0)
-      styled-components: 5.3.3(@babel/core@7.23.9)(react-dom@18.2.0)(react-is@16.13.1)(react@18.2.0)
+      styled-components: 5.3.3(@babel/core@7.23.9)(react-dom@18.2.0)(react-is@18.2.0)(react@18.2.0)
     transitivePeerDependencies:
       - '@types/react'
       - debug
@@ -3260,7 +3263,7 @@ packages:
       react-query: 3.39.3(react-dom@18.2.0)(react@18.2.0)
       react-router-dom: 5.3.4(react@18.2.0)
       react-select: 5.7.0(react-dom@18.2.0)(react@18.2.0)
-      styled-components: 5.3.3(@babel/core@7.23.9)(react-dom@18.2.0)(react-is@16.13.1)(react@18.2.0)
+      styled-components: 5.3.3(@babel/core@7.23.9)(react-dom@18.2.0)(react-is@18.2.0)(react@18.2.0)
     transitivePeerDependencies:
       - '@types/react'
       - debug
@@ -3353,7 +3356,7 @@ packages:
       react-dom: 18.2.0(react@18.2.0)
       react-intl: 6.4.1(react@18.2.0)(typescript@5.2.2)
       react-router-dom: 5.3.4(react@18.2.0)
-      styled-components: 5.3.3(@babel/core@7.23.9)(react-dom@18.2.0)(react-is@16.13.1)(react@18.2.0)
+      styled-components: 5.3.3(@babel/core@7.23.9)(react-dom@18.2.0)(react-is@18.2.0)(react@18.2.0)
     transitivePeerDependencies:
       - '@babel/runtime'
       - '@codemirror/autocomplete'
@@ -3425,7 +3428,7 @@ packages:
       react-intl: 6.4.1(react@18.2.0)(typescript@5.2.2)
       react-redux: 8.1.1(react-dom@18.2.0)(react@18.2.0)(redux@4.2.1)
       react-router-dom: 5.3.4(react@18.2.0)
-      styled-components: 5.3.3(@babel/core@7.23.9)(react-dom@18.2.0)(react-is@16.13.1)(react@18.2.0)
+      styled-components: 5.3.3(@babel/core@7.23.9)(react-dom@18.2.0)(react-is@18.2.0)(react@18.2.0)
       yup: 0.32.9
     transitivePeerDependencies:
       - '@babel/runtime'
@@ -3469,7 +3472,7 @@ packages:
       react-intl: 6.4.1(react@18.2.0)(typescript@5.2.2)
       react-query: 3.39.3(react-dom@18.2.0)(react@18.2.0)
       react-router-dom: 5.3.4(react@18.2.0)
-      styled-components: 5.3.3(@babel/core@7.23.9)(react-dom@18.2.0)(react-is@16.13.1)(react@18.2.0)
+      styled-components: 5.3.3(@babel/core@7.23.9)(react-dom@18.2.0)(react-is@18.2.0)(react@18.2.0)
       yup: 0.32.9
     transitivePeerDependencies:
       - '@babel/runtime'
@@ -3516,7 +3519,7 @@ packages:
       react-query: 3.39.3(react-dom@18.2.0)(react@18.2.0)
       react-redux: 8.1.1(react-dom@18.2.0)(react@18.2.0)(redux@4.2.1)
       react-router-dom: 5.3.4(react@18.2.0)
-      styled-components: 5.3.3(@babel/core@7.23.9)(react-dom@18.2.0)(react-is@16.13.1)(react@18.2.0)
+      styled-components: 5.3.3(@babel/core@7.23.9)(react-dom@18.2.0)(react-is@18.2.0)(react@18.2.0)
       yup: 0.32.9
     transitivePeerDependencies:
       - '@babel/runtime'
@@ -3575,7 +3578,7 @@ packages:
       react-router-dom: 5.3.4(react@18.2.0)
       react-select: 5.7.0(react-dom@18.2.0)(react@18.2.0)
       sharp: 0.32.6
-      styled-components: 5.3.3(@babel/core@7.23.9)(react-dom@18.2.0)(react-is@16.13.1)(react@18.2.0)
+      styled-components: 5.3.3(@babel/core@7.23.9)(react-dom@18.2.0)(react-is@18.2.0)(react@18.2.0)
       yup: 0.32.9
     transitivePeerDependencies:
       - '@babel/runtime'
@@ -3630,7 +3633,7 @@ packages:
       react-query: 3.39.3(react-dom@18.2.0)(react@18.2.0)
       react-redux: 8.1.1(react-dom@18.2.0)(react@18.2.0)(redux@4.2.1)
       react-router-dom: 5.3.4(react@18.2.0)
-      styled-components: 5.3.3(@babel/core@7.23.9)(react-dom@18.2.0)(react-is@16.13.1)(react@18.2.0)
+      styled-components: 5.3.3(@babel/core@7.23.9)(react-dom@18.2.0)(react-is@18.2.0)(react@18.2.0)
       url-join: 4.0.1
       yup: 0.32.9
     transitivePeerDependencies:
@@ -5153,7 +5156,7 @@ packages:
       '@babel/plugin-syntax-jsx': 7.23.3(@babel/core@7.23.9)
       lodash: 4.17.21
       picomatch: 2.3.1
-      styled-components: 5.3.3(@babel/core@7.23.9)(react-dom@18.2.0)(react-is@16.13.1)(react@18.2.0)
+      styled-components: 5.3.3(@babel/core@7.23.9)(react-dom@18.2.0)(react-is@18.2.0)(react@18.2.0)
     transitivePeerDependencies:
       - '@babel/core'
     dev: false
@@ -13770,7 +13773,7 @@ packages:
     resolution: {integrity: sha512-Ca5ib8HrFn+f+0n4N4ScTIA9iTOQ7MaGS1ylHcoVqW9J7w2w8PzN6g9gKmTYgGEBH8e120+RCmhpje6jC5uGWA==}
     dev: false
 
-  /styled-components@5.3.3(@babel/core@7.23.9)(react-dom@18.2.0)(react-is@16.13.1)(react@18.2.0):
+  /styled-components@5.3.3(@babel/core@7.23.9)(react-dom@18.2.0)(react-is@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-++4iHwBM7ZN+x6DtPPWkCI4vdtwumQ+inA/DdAsqYd4SVgUKJie5vXyzotA00ttcFdQkCng7zc6grwlfIfw+lw==}
     engines: {node: '>=10'}
     peerDependencies:
@@ -13788,7 +13791,7 @@ packages:
       hoist-non-react-statics: 3.3.2
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
-      react-is: 16.13.1
+      react-is: 18.2.0
       shallowequal: 1.1.0
       supports-color: 5.5.0
     transitivePeerDependencies:
