@@ -1,5 +1,12 @@
 
 
+# [0.18.0](https://github.com/zitdevs/deft-dodo/compare/0.17.0...0.18.0) (2024-02-12)
+
+
+### Features
+
+* DDT-28 Create Contact Us Page ([#19](https://github.com/zitdevs/deft-dodo/issues/19)) ([92cbaa3](https://github.com/zitdevs/deft-dodo/commit/92cbaa373a5b472b8ddc3f751d3af5a7c0fca671))
+
 # [0.17.0](https://github.com/zitdevs/deft-dodo/compare/0.16.0...0.17.0) (2024-02-11)
 
 
