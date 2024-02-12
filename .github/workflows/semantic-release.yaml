@@ -21,7 +21,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: 'lts/*'
+          node-version: "lts/*"
       - uses: pnpm/action-setup@v2
         name: Install pnpm
         with:
@@ -47,6 +47,6 @@ jobs:
       - name: Release
         env:
           GITHUB_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
-          NODE_ENV: 'production'
-          HUSKY: '0'
-        run: pnpm release --ci
+          NODE_ENV: "production"
+          HUSKY: "0"
+        run: pnpm release -- --ci
