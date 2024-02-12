@@ -4,6 +4,7 @@ import { motion, useTransform, useScroll } from "framer-motion";
 import React, { useRef } from "react";
 import Image, { StaticImageData } from "next/image";
 import { Button } from "@/modules/common/components/button";
+import useAppData from "@/modules/common/hooks/useAppData";
 
 export type ProjectCard = {
   url: StaticImageData | string;
@@ -20,6 +21,7 @@ const ProjectScrollCarousel: React.FC<ProjectScrollCarouselProps> = ({
   cards,
 }) => {
   const targetRef = useRef<HTMLDivElement>(null);
+  const locale = useAppData((state) => state.locale);
   const { scrollYProgress } = useScroll({
     target: targetRef,
   });
@@ -56,7 +58,7 @@ const ProjectScrollCarousel: React.FC<ProjectScrollCarouselProps> = ({
                   alt={card.title}
                   width={750}
                   height={440}
-                  className="rounded-xl"
+                  className="rounded-xl w-[750px] h-[440px]"
                 />
                 <div className="flex flex-col mt-6">
                   <h3 className="text-2xl">{card.title}</h3>
@@ -71,9 +73,13 @@ const ProjectScrollCarousel: React.FC<ProjectScrollCarouselProps> = ({
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ delay: 1.5, ease: "backInOut" }}
+          transition={{ delay: 0.5, ease: "backInOut" }}
         >
-          <Button className="px-14 py-8" icon="ArrowUpRight">
+          <Button
+            className="px-14 py-8"
+            icon="ArrowUpRight"
+            href={`${locale}/work`}
+          >
             View All
           </Button>
         </motion.div>
