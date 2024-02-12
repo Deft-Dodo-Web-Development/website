@@ -12,7 +12,6 @@
     "release": "release-it"
   },
   "dependencies": {
-    "@repo/ui": "workspace:*",
     "@formatjs/intl-localematcher": "^0.5.4",
     "@hookform/resolvers": "^3.3.4",
     "@radix-ui/react-dialog": "^1.0.5",
