@@ -10,8 +10,8 @@
     "release": "turbo release --concurrency=1"
   },
   "devDependencies": {
-    "@repo/eslint-config": "workspace:*",
-    "@repo/typescript-config": "workspace:*",
+    "@deft-dodo/eslint-config": "workspace:*",
+    "@deft-dodo/typescript-config": "workspace:*",
     "prettier": "^3.2.5",
     "@commitlint/cli": "^18.6.0",
     "@commitlint/config-conventional": "^18.6.0",
