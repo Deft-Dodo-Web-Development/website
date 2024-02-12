@@ -1,5 +1,13 @@
 
 
+## 0.3.0 (2024-02-12)
+
+
+### Features
+
+* **config-release-it:** released version v0.2.0 [no ci] ([fabc610](https://github.com/zitdevs/deft-dodo/commit/fabc610934325773d913e860cdcd13c7d899e0bc))
+* DDT-29 Create Monorepo ([#20](https://github.com/zitdevs/deft-dodo/issues/20)) ([e0eeb98](https://github.com/zitdevs/deft-dodo/commit/e0eeb98c1d0ec6bd59a420f77e9a38b4638e05f5))
+
 ## 0.2.0 (2024-02-12)
 
 
