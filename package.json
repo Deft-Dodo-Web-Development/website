@@ -1,12 +1,13 @@
 {
-  "name": "ddt",
+  "name": "deft-dodo",
   "private": true,
   "scripts": {
     "build": "turbo build",
     "dev": "turbo dev",
     "lint": "turbo lint",
     "postinstall": "npx husky install",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "release": "turbo release && release-it"
   },
   "devDependencies": {
     "@repo/eslint-config": "workspace:*",
@@ -29,5 +30,6 @@
       "pre-commit": "npm run lint && npm run format:fix && git add -A .",
       "commit-msg": "npm run build"
     }
-  }
+  },
+  "version": "1.0.0"
 }
