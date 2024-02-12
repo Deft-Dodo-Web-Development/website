@@ -7,7 +7,7 @@
     "lint": "turbo lint",
     "postinstall": "npx husky install",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "release": "turbo release && release-it"
+    "release": "turbo release  --concurrency=1"
   },
   "devDependencies": {
     "@repo/eslint-config": "workspace:*",

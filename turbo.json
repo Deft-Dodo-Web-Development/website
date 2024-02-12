@@ -15,7 +15,7 @@
     },
     "release": {
       "dependsOn": ["^release"],
-      "outputs": [".next/**", "!.next/cache/**"]
+      "outputMode": "new-only"
     }
   }
 }
