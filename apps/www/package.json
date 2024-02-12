@@ -37,9 +37,9 @@
   },
   "devDependencies": {
     "@next/eslint-plugin-next": "^14.1.0",
-    "@repo/eslint-config": "workspace:*",
-    "@repo/typescript-config": "workspace:*",
-    "@ddt/config-release-it": "workspace:*",
+    "@deft-dodo/eslint-config": "workspace:*",
+    "@deft-dodo/typescript-config": "workspace:*",
+    "@deft-dodo/config-release-it": "workspace:*",
     "@release-it/conventional-changelog": "^8.0.1",
     "@release-it/bumper": "^6.0.1",
     "@types/eslint": "^8.56.2",
