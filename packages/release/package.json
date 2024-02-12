@@ -1,0 +1,13 @@
+{
+  "name": "@ddt/config-release-it",
+  "version": "0.1.0",
+  "license": "MIT",
+  "main": ".release-it.js",
+  "scripts": {
+    "release": "release-it"
+  },
+  "devDependencies": {
+    "@release-it/conventional-changelog": "8.0.1",
+    "release-it": "17.0.3"
+  }
+}

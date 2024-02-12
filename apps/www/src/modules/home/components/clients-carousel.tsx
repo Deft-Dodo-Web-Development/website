@@ -5,7 +5,7 @@ import Autoplay from "embla-carousel-autoplay";
 import Image, { StaticImageData } from "next/image";
 import { Carousel, CarouselContent, CarouselItem } from "@components/carousel";
 
-export type Image = {
+export type ImageType = {
   src: string | StaticImageData;
   width: number;
   height: number;
@@ -13,7 +13,7 @@ export type Image = {
 };
 
 export type ClientsCarouselProps = {
-  images: Image[];
+  images: ImageType[];
 };
 
 const ClientsCarousel: React.FC<ClientsCarouselProps> = ({ images }) => {

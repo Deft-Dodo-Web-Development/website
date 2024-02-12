@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { create } from "zustand";
 
 export type FooterVariants = "basic" | "complex" | "minimal";
