@@ -1,5 +1,7 @@
 
 
+## [0.3.1](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/config-release-it-v0.3.0...@deft-dodo/config-release-it-v0.3.1) (2024-02-12)
+
 ## 0.3.0 (2024-02-12)
 
 
