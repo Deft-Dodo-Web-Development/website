@@ -1,1 +1,1 @@
-module.exports = require('@ddt/config-release-it');
+module.exports = require('@deft-dodo/config-release-it');
