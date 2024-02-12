@@ -108,6 +108,9 @@ importers:
         specifier: ^4.5.0
         version: 4.5.0(@types/react@18.2.55)(react@18.2.0)
     devDependencies:
+      '@ddt/config-release-it':
+        specifier: workspace:*
+        version: link:../../packages/release
       '@next/eslint-plugin-next':
         specifier: ^14.1.0
         version: 14.1.0
@@ -189,6 +192,15 @@ importers:
       typescript:
         specifier: ^5.3.3
         version: 5.3.3
+
+  packages/release:
+    devDependencies:
+      '@release-it/conventional-changelog':
+        specifier: 8.0.1
+        version: 8.0.1(release-it@17.0.3)
+      release-it:
+        specifier: 17.0.3
+        version: 17.0.3(typescript@5.3.3)
 
   packages/typescript-config: {}
 
@@ -2279,11 +2291,6 @@ packages:
       restore-cursor: 4.0.0
     dev: true
 
-  /cli-spinners@2.9.0:
-    resolution: {integrity: sha512-4/aL9X3Wh0yiMQlE+eeRhWP6vclO3QRtw1JHKIT0FFUs5FjpFmESqtMvYZ0+lbzBw900b95mS0hohy+qn2VK/g==}
-    engines: {node: '>=6'}
-    dev: true
-
   /cli-spinners@2.9.2:
     resolution: {integrity: sha512-ywqV+5MmyL4E7ybXgKys4DugZbX0FC6LnwrhjuykIjnK9k8OQacQ7axGKnjDXWNhns0xot3bZI5h55H8yo9cJg==}
     engines: {node: '>=6'}
@@ -4078,7 +4085,7 @@ packages:
     dependencies:
       array-union: 2.1.0
       dir-glob: 3.0.1
-      fast-glob: 3.3.1
+      fast-glob: 3.3.2
       ignore: 5.3.0
       merge2: 1.4.1
       slash: 3.0.0
@@ -4089,7 +4096,7 @@ packages:
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
     dependencies:
       dir-glob: 3.0.1
-      fast-glob: 3.3.1
+      fast-glob: 3.3.2
       ignore: 5.3.0
       merge2: 1.4.1
       slash: 4.0.0
@@ -5481,7 +5488,7 @@ packages:
       bl: 4.1.0
       chalk: 4.1.2
       cli-cursor: 3.1.0
-      cli-spinners: 2.9.0
+      cli-spinners: 2.9.2
       is-interactive: 1.0.0
       is-unicode-supported: 0.1.0
       log-symbols: 4.1.0
