@@ -6,6 +6,7 @@ import Heading from "../widgets/heading";
 import Clients from "../widgets/clients";
 import AboutUs from "../widgets/about-us";
 import { Projects } from "../widgets/projects";
+import FooterSetup from "@/modules/common/utilities/footer-setup";
 
 const HomePage = () => {
   return (
@@ -20,6 +21,7 @@ const HomePage = () => {
       <Projects container />
       <Separator className="mt-28 mb-2" container />
       <Services container />
+      <FooterSetup variant="basic" />
     </>
   );
 };
