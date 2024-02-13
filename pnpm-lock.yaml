@@ -68,6 +68,9 @@ importers:
       react-router-dom:
         specifier: 5.3.4
         version: 5.3.4(react@18.2.0)
+      strapi-plugin-slugify:
+        specifier: ^2.3.8
+        version: 2.3.8(@babel/runtime@7.23.9)(@codemirror/autocomplete@6.12.0)(@codemirror/language@6.10.1)(@codemirror/lint@6.5.0)(@codemirror/search@6.5.6)(@codemirror/state@6.4.0)(@codemirror/theme-one-dark@6.1.2)(@codemirror/view@6.24.0)(@types/node@20.11.17)(better-sqlite3@8.6.0)(codemirror@6.0.1)(pg@8.11.3)(react-dom@18.2.0)(react-router-dom@5.3.4)(react@18.2.0)(redux@4.2.1)(scheduler@0.23.0)(styled-components@5.3.3)
       styled-components:
         specifier: 5.3.3
         version: 5.3.3(@babel/core@7.23.9)(react-dom@18.2.0)(react-is@18.2.0)(react@18.2.0)
@@ -2821,7 +2824,7 @@ packages:
       '@reduxjs/toolkit': 1.9.7(react-redux@8.1.1)(react@18.2.0)
       '@strapi/data-transfer': 4.20.0(@strapi/strapi@4.20.0)(better-sqlite3@8.6.0)(pg@8.11.3)
       '@strapi/design-system': 1.14.1(@babel/runtime@7.23.9)(@codemirror/autocomplete@6.12.0)(@codemirror/language@6.10.1)(@codemirror/lint@6.5.0)(@codemirror/search@6.5.6)(@codemirror/state@6.4.0)(@codemirror/theme-one-dark@6.1.2)(@codemirror/view@6.24.0)(@strapi/icons@1.14.1)(codemirror@5.65.16)(react-dom@18.2.0)(react-router-dom@5.3.4)(react@18.2.0)(styled-components@5.3.3)
-      '@strapi/helper-plugin': 4.20.0(@strapi/design-system@1.14.1)(@strapi/icons@1.14.1)(react-dom@18.2.0)(react-router-dom@5.3.4)(react@18.2.0)(styled-components@5.3.3)(typescript@5.2.2)
+      '@strapi/helper-plugin': 4.20.0(@strapi/design-system@1.14.1)(@strapi/icons@1.14.1)(debug@4.3.4)(react-dom@18.2.0)(react-router-dom@5.3.4)(react@18.2.0)(styled-components@5.3.3)(typescript@5.2.2)
       '@strapi/icons': 1.14.1(react-dom@18.2.0)(react@18.2.0)
       '@strapi/permissions': 4.20.0
       '@strapi/provider-audit-logs-local': 4.20.0
@@ -13684,6 +13687,68 @@ packages:
     dependencies:
       internal-slot: 1.0.7
     dev: true
+
+  /strapi-plugin-slugify@2.3.8(@babel/runtime@7.23.9)(@codemirror/autocomplete@6.12.0)(@codemirror/language@6.10.1)(@codemirror/lint@6.5.0)(@codemirror/search@6.5.6)(@codemirror/state@6.4.0)(@codemirror/theme-one-dark@6.1.2)(@codemirror/view@6.24.0)(@types/node@20.11.17)(better-sqlite3@8.6.0)(codemirror@6.0.1)(pg@8.11.3)(react-dom@18.2.0)(react-router-dom@5.3.4)(react@18.2.0)(redux@4.2.1)(scheduler@0.23.0)(styled-components@5.3.3):
+    resolution: {integrity: sha512-lbC04NaVgy18nY0l4KI4ld6h1L5bGAvEe0H3hOdFnaksKRRu+rwTaB58oQQBqZtWu4lZ2n2dtMQJB/mSmFd8KA==}
+    engines: {node: '>=18.0.0 <=20.x.x', npm: '>=6.0.0'}
+    dependencies:
+      '@sindresorhus/slugify': 1.1.0
+      '@strapi/strapi': 4.20.0(@babel/runtime@7.23.9)(@codemirror/autocomplete@6.12.0)(@codemirror/language@6.10.1)(@codemirror/lint@6.5.0)(@codemirror/search@6.5.6)(@codemirror/state@6.4.0)(@codemirror/theme-one-dark@6.1.2)(@codemirror/view@6.24.0)(@types/node@20.11.17)(better-sqlite3@8.6.0)(codemirror@6.0.1)(pg@8.11.3)(react-dom@18.2.0)(react-router-dom@5.3.4)(react@18.2.0)(redux@4.2.1)(scheduler@0.23.0)(styled-components@5.3.3)
+      '@strapi/utils': 4.20.0
+      lodash: 4.17.21
+      yup: 0.32.9
+    transitivePeerDependencies:
+      - '@babel/runtime'
+      - '@codemirror/autocomplete'
+      - '@codemirror/language'
+      - '@codemirror/lint'
+      - '@codemirror/search'
+      - '@codemirror/state'
+      - '@codemirror/theme-one-dark'
+      - '@codemirror/view'
+      - '@rspack/core'
+      - '@swc/core'
+      - '@swc/helpers'
+      - '@types/hoist-non-react-statics'
+      - '@types/node'
+      - '@types/react'
+      - '@types/react-dom'
+      - '@types/webpack'
+      - better-sqlite3
+      - bufferutil
+      - codemirror
+      - encoding
+      - less
+      - lightningcss
+      - mongoose
+      - mysql
+      - mysql2
+      - pg
+      - pg-native
+      - react
+      - react-dom
+      - react-native
+      - react-router-dom
+      - redis
+      - redux
+      - sass
+      - scheduler
+      - sequelize
+      - sockjs-client
+      - sqlite3
+      - styled-components
+      - stylus
+      - sugarss
+      - supports-color
+      - tedious
+      - terser
+      - type-fest
+      - uglify-js
+      - utf-8-validate
+      - webpack-cli
+      - webpack-dev-server
+      - webpack-plugin-serve
+    dev: false
 
   /stream-chain@2.2.5:
     resolution: {integrity: sha512-1TJmBx6aSWqZ4tx7aTpBDXK0/e2hhcNSTV8+CbFJtDjbb+I1mZ8lHit0Grw9GRT+6JbIrrDd8esncgBi8aBXGA==}
