@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_home_heading_carousels",
+  "info": {
+    "displayName": "Heading Carousel",
+    "icon": "briefcase",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "with_container": {
+      "type": "boolean",
+      "default": true
+    },
+    "first_text": {
+      "type": "text"
+    },
+    "second_text": {
+      "type": "text"
+    },
+    "video": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.video"
+    }
+  }
+}

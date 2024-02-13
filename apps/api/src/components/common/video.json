@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_common_videos",
+  "info": {
+    "displayName": "video",
+    "icon": "slideshow"
+  },
+  "options": {},
+  "attributes": {
+    "overlay": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "youtube_video_url": {
+      "type": "string"
+    }
+  }
+}
