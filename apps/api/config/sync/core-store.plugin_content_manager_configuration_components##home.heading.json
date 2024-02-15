@@ -1,0 +1,78 @@
+{
+  "key": "plugin_content_manager_configuration_components::home.heading",
+  "value": {
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "finish",
+      "defaultSortBy": "finish",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "start": {
+        "edit": {
+          "label": "start",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "start",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "finish": {
+        "edit": {
+          "label": "finish",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "finish",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "start",
+        "finish"
+      ],
+      "edit": [
+        [
+          {
+            "name": "start",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "finish",
+            "size": 6
+          }
+        ]
+      ]
+    },
+    "uid": "home.heading",
+    "isComponent": true
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}
