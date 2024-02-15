@@ -15,19 +15,20 @@
   },
   "devDependencies": {
     "@deft-dodo/config-release-it": "workspace:*",
-    "@strapi/typescript-utils": "^4.20.0",
+    "@strapi/typescript-utils": "^4.20.1",
     "@types/node": "^20.11.17"
   },
   "dependencies": {
-    "@strapi/plugin-cloud": "4.20.0",
-    "@strapi/plugin-i18n": "4.20.0",
-    "@strapi/plugin-users-permissions": "4.20.0",
-    "@strapi/strapi": "4.20.0",
+    "@strapi/plugin-cloud": "4.20.1",
+    "@strapi/plugin-i18n": "4.20.1",
+    "@strapi/plugin-users-permissions": "4.20.1",
+    "@strapi/strapi": "4.20.1",
     "better-sqlite3": "8.6.0",
     "pg": "^8.11.3",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-router-dom": "5.3.4",
+    "strapi-plugin-config-sync": "^1.2.3",
     "strapi-plugin-slugify": "^2.3.8",
     "styled-components": "5.3.3"
   },

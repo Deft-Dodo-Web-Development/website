@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_home_clients",
+  "info": {
+    "displayName": "Clients",
+    "icon": "user",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "list": {
+      "type": "component",
+      "repeatable": true,
+      "component": "common.clients"
+    },
+    "with_container": {
+      "type": "boolean"
+    }
+  }
+}

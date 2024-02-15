@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_home_services",
+  "info": {
+    "displayName": "Services",
+    "icon": "bulletList"
+  },
+  "options": {},
+  "attributes": {
+    "with_container": {
+      "type": "boolean",
+      "default": true
+    },
+    "title": {
+      "type": "string"
+    },
+    "services": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::service.service"
+    }
+  }
+}

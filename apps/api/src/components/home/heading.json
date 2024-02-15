@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_home_headings",
+  "info": {
+    "displayName": "Heading"
+  },
+  "options": {},
+  "attributes": {
+    "start": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.heading"
+    },
+    "finish": {
+      "type": "string"
+    }
+  }
+}

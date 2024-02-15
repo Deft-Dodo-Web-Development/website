@@ -1,24 +1,22 @@
 {
   "collectionName": "components_common_clients",
   "info": {
-    "displayName": "clients",
-    "icon": "user"
+    "displayName": "client",
+    "icon": "user",
+    "description": ""
   },
   "options": {},
   "attributes": {
-    "with_container": {
-      "type": "boolean",
-      "default": true
-    },
     "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "width": {
       "type": "decimal"
