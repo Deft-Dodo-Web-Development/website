@@ -4,6 +4,7 @@ import Link from "next/link";
 import { Button } from "../components/button";
 import useFooter from "../hooks/useFooter";
 import { Separator } from "../components/separator";
+import Experience from "../components/experience";
 
 const socials = [
   {
@@ -27,6 +28,7 @@ const Footer = () => {
   return (
     <>
       <Separator className="my-32" container />
+      <Experience />
       <BaseFooter />
     </>
   );
