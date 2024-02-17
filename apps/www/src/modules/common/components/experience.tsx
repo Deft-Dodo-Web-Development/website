@@ -5,7 +5,7 @@ import { Heading } from "@/modules/common/components/heading";
 import { motion } from "framer-motion";
 
 const classes =
-  "md:text-[48px] md:leading-[48px] lg:text-[72px] lg:leading-[72px] text-dark mb-8 uppercase";
+  "md:text-[48px] md:leading-[48px] lg:text-[72px] lg:leading-[72px] text-dark mb-8 uppercase text-balance";
 
 const variants = {
   offscreen: {
@@ -34,7 +34,6 @@ const Experience = () => {
         >
           <Heading
             variant="primary"
-            subHeading="Crafting"
             size="md"
             alignment="middle"
             textTransform="uppercase"
