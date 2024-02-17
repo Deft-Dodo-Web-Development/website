@@ -1,5 +1,12 @@
 
 
+## [0.23.0](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/www-v0.22.0...@deft-dodo/www-v0.23.0) (2024-02-17)
+
+
+### Features
+
+* **home:** DDT-16 Create Deft Dodo Banner ([02eadfb](https://github.com/zitdevs/deft-dodo/commit/02eadfb63fe4dccf8c44428213aabd75fb16c2eb))
+
 ## [0.22.0](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/www-v0.21.0...@deft-dodo/www-v0.22.0) (2024-02-16)
 
 
