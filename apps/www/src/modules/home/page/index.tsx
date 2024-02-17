@@ -8,6 +8,7 @@ import AboutUs from "../widgets/about-us";
 import { Projects } from "../widgets/projects";
 import BannerMarquee from "@/modules/common/components/banner-marquee";
 import Experience from "@/modules/common/components/experience";
+import FooterSetup from "@/modules/common/utilities/footer-setup";
 
 const HomePage = () => {
   return (
@@ -25,6 +26,7 @@ const HomePage = () => {
       <Separator className="mt-24 mb-36" container />
       <BannerMarquee />
       <Experience />
+      <FooterSetup variant="basic" />
     </>
   );
 };
