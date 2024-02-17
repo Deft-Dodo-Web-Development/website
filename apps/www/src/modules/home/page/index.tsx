@@ -6,6 +6,8 @@ import Heading from "../widgets/heading";
 import Clients from "../widgets/clients";
 import AboutUs from "../widgets/about-us";
 import { Projects } from "../widgets/projects";
+import BannerMarquee from "@/modules/common/components/banner-marquee";
+import Experience from "@/modules/common/components/experience";
 import FooterSetup from "@/modules/common/utilities/footer-setup";
 
 const HomePage = () => {
@@ -21,7 +23,10 @@ const HomePage = () => {
       <Projects container />
       <Separator className="mt-28 mb-2" container />
       <Services container />
-      <FooterSetup variant="complex" />
+      <Separator className="mt-24 mb-36" container />
+      <BannerMarquee />
+      <Experience />
+      <FooterSetup variant="basic" />
     </>
   );
 };
