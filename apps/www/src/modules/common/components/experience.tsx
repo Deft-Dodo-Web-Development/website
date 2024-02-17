@@ -20,7 +20,7 @@ const variants = {
 
 const Experience = () => {
   return (
-    <div className="bg-primary py-28 md:py-44 mt-20">
+    <div className="bg-primary py-28 md:py-44 mt-20 rounded-3xl">
       <section className="max-w-[1090px] container text-center mx-auto">
         <motion.div
           variants={variants}
