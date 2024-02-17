@@ -1,5 +1,7 @@
 
 
+## [0.2.1](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/api-v0.2.0...@deft-dodo/api-v0.2.1) (2024-02-17)
+
 ## 0.2.0 (2024-02-12)
 
 
