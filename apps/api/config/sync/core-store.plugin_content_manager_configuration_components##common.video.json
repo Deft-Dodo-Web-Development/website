@@ -1,0 +1,76 @@
+{
+  "key": "plugin_content_manager_configuration_components::common.video",
+  "value": {
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "youtube_video_url",
+      "defaultSortBy": "youtube_video_url",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "overlay": {
+        "edit": {
+          "label": "overlay",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "overlay",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "youtube_video_url": {
+        "edit": {
+          "label": "youtube_video_url",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "youtube_video_url",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "overlay",
+        "youtube_video_url"
+      ],
+      "edit": [
+        [
+          {
+            "name": "overlay",
+            "size": 6
+          },
+          {
+            "name": "youtube_video_url",
+            "size": 6
+          }
+        ]
+      ]
+    },
+    "uid": "common.video",
+    "isComponent": true
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

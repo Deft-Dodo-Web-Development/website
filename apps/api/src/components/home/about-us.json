@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_home_about_uses",
+  "info": {
+    "displayName": "About Us",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "with_container": {
+      "type": "boolean",
+      "default": true
+    },
+    "start_content": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.section-content-with-title"
+    },
+    "end_content": {
+      "type": "richtext"
+    }
+  }
+}

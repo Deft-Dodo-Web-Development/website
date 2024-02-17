@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_common_separators",
+  "info": {
+    "displayName": "Separator"
+  },
+  "options": {},
+  "attributes": {
+    "with_container": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

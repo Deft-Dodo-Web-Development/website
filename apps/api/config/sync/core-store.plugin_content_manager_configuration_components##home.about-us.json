@@ -1,0 +1,98 @@
+{
+  "key": "plugin_content_manager_configuration_components::home.about-us",
+  "value": {
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "id",
+      "defaultSortBy": "id",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "with_container": {
+        "edit": {
+          "label": "with_container",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "with_container",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "start_content": {
+        "edit": {
+          "label": "start_content",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "start_content",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "end_content": {
+        "edit": {
+          "label": "end_content",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "end_content",
+          "searchable": false,
+          "sortable": false
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "with_container",
+        "start_content"
+      ],
+      "edit": [
+        [
+          {
+            "name": "with_container",
+            "size": 4
+          }
+        ],
+        [
+          {
+            "name": "start_content",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "end_content",
+            "size": 12
+          }
+        ]
+      ]
+    },
+    "uid": "home.about-us",
+    "isComponent": true
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

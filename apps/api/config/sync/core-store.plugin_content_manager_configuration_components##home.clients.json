@@ -1,0 +1,78 @@
+{
+  "key": "plugin_content_manager_configuration_components::home.clients",
+  "value": {
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "id",
+      "defaultSortBy": "id",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "list": {
+        "edit": {
+          "label": "list",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "list",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "with_container": {
+        "edit": {
+          "label": "with_container",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "with_container",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "list",
+        "with_container"
+      ],
+      "edit": [
+        [
+          {
+            "name": "list",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "with_container",
+            "size": 4
+          }
+        ]
+      ]
+    },
+    "uid": "home.clients",
+    "isComponent": true
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_common_headings",
+  "info": {
+    "displayName": "Heading",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": false
+    },
+    "sub_title": {
+      "type": "string"
+    },
+    "with_container": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}
