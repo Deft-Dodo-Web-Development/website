@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_footer_infos",
+  "info": {
+    "displayName": "Info",
+    "icon": "arrowDown"
+  },
+  "options": {},
+  "attributes": {
+    "direction": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    }
+  }
+}

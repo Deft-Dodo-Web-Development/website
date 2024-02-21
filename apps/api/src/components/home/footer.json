@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_home_footers",
+  "info": {
+    "displayName": "footer"
+  },
+  "options": {},
+  "attributes": {
+    "deftdodo_banner": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_footer_copyrights",
+  "info": {
+    "displayName": "copyright",
+    "icon": "information"
+  },
+  "options": {},
+  "attributes": {
+    "privacy": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.link"
+    },
+    "back_to_top": {
+      "type": "boolean"
+    },
+    "copyright": {
+      "type": "text"
+    }
+  }
+}

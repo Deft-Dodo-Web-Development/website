@@ -33,6 +33,16 @@
         "home.heading",
         "home.services"
       ]
+    },
+    "Footer": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "home.footer"
     }
   }
 }
