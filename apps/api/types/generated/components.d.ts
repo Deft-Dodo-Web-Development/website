@@ -1,5 +1,22 @@
 import type { Schema, Attribute } from '@strapi/strapi';
 
+export interface CommonButton extends Schema.Component {
+  collectionName: 'components_common_buttons';
+  info: {
+    displayName: 'Button';
+    icon: 'cursor';
+    description: '';
+  };
+  attributes: {
+    text: Attribute.String & Attribute.Required;
+    url: Attribute.String & Attribute.Required;
+    variant: Attribute.Enumeration<
+      ['default', 'destructive', 'outline', 'ghost']
+    > &
+      Attribute.DefaultTo<'default'>;
+  };
+}
+
 export interface CommonClients extends Schema.Component {
   collectionName: 'components_common_clients';
   info: {
@@ -40,6 +57,19 @@ export interface CommonHeading extends Schema.Component {
   };
 }
 
+export interface CommonLink extends Schema.Component {
+  collectionName: 'components_common_links';
+  info: {
+    displayName: 'Link';
+    icon: 'attachment';
+    description: '';
+  };
+  attributes: {
+    text: Attribute.String & Attribute.Required;
+    url: Attribute.String & Attribute.Required;
+  };
+}
+
 export interface CommonSectionContentWithTitle extends Schema.Component {
   collectionName: 'components_common_section_content_with_title_s';
   info: {
@@ -74,6 +104,44 @@ export interface CommonVideo extends Schema.Component {
   };
 }
 
+export interface FooterCopyright extends Schema.Component {
+  collectionName: 'components_footer_copyrights';
+  info: {
+    displayName: 'copyright';
+    icon: 'information';
+  };
+  attributes: {
+    privacy: Attribute.Component<'common.link'>;
+    back_to_top: Attribute.Boolean;
+    copyright: Attribute.Text;
+  };
+}
+
+export interface FooterElevateSection extends Schema.Component {
+  collectionName: 'components_footer_elevate_sections';
+  info: {
+    displayName: 'elevate_section';
+  };
+  attributes: {
+    title: Attribute.String;
+    description: Attribute.RichText;
+    cta: Attribute.Component<'common.button'>;
+  };
+}
+
+export interface FooterInfo extends Schema.Component {
+  collectionName: 'components_footer_infos';
+  info: {
+    displayName: 'Info';
+    icon: 'arrowDown';
+  };
+  attributes: {
+    direction: Attribute.String;
+    phone: Attribute.String;
+    email: Attribute.Email;
+  };
+}
+
 export interface HomeAboutUs extends Schema.Component {
   collectionName: 'components_home_about_uses';
   info: {
@@ -97,6 +165,16 @@ export interface HomeClients extends Schema.Component {
   attributes: {
     list: Attribute.Component<'common.clients', true>;
     with_container: Attribute.Boolean;
+  };
+}
+
+export interface HomeFooter extends Schema.Component {
+  collectionName: 'components_home_footers';
+  info: {
+    displayName: 'footer';
+  };
+  attributes: {
+    deftdodo_banner: Attribute.Boolean & Attribute.DefaultTo<true>;
   };
 }
 
@@ -160,21 +238,41 @@ export interface HomeServices extends Schema.Component {
   };
 }
 
+export interface SharedHeader extends Schema.Component {
+  collectionName: 'components_shared_headers';
+  info: {
+    displayName: 'Header';
+    icon: 'layout';
+    description: '';
+  };
+  attributes: {
+    nav: Attribute.Component<'common.link', true>;
+    CTA: Attribute.Component<'common.button'>;
+  };
+}
+
 declare module '@strapi/types' {
   export module Shared {
     export interface Components {
+      'common.button': CommonButton;
       'common.clients': CommonClients;
       'common.heading-carousel': CommonHeadingCarousel;
       'common.heading': CommonHeading;
+      'common.link': CommonLink;
       'common.section-content-with-title': CommonSectionContentWithTitle;
       'common.separator': CommonSeparator;
       'common.video': CommonVideo;
+      'footer.copyright': FooterCopyright;
+      'footer.elevate-section': FooterElevateSection;
+      'footer.info': FooterInfo;
       'home.about-us': HomeAboutUs;
       'home.clients': HomeClients;
+      'home.footer': HomeFooter;
       'home.heading-carousel': HomeHeadingCarousel;
       'home.heading': HomeHeading;
       'home.projects': HomeProjects;
       'home.services': HomeServices;
+      'shared.header': SharedHeader;
     }
   }
 }

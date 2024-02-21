@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_shared_headers",
+  "info": {
+    "displayName": "Header",
+    "icon": "layout",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "nav": {
+      "type": "component",
+      "repeatable": true,
+      "component": "common.link"
+    },
+    "CTA": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.button"
+    }
+  }
+}

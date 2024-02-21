@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_footer_elevate_sections",
+  "info": {
+    "displayName": "elevate_section"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "cta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.button"
+    }
+  }
+}
