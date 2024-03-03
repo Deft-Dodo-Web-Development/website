@@ -2,19 +2,20 @@
   "collectionName": "components_common_videos",
   "info": {
     "displayName": "video",
-    "icon": "slideshow"
+    "icon": "slideshow",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "overlay": {
-      "allowedTypes": [
-        "images"
-      ],
       "type": "media",
       "multiple": false,
-      "required": true
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
     },
-    "youtube_video_url": {
+    "youtube_video_hash": {
       "type": "string"
     }
   }

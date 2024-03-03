@@ -97,10 +97,11 @@ export interface CommonVideo extends Schema.Component {
   info: {
     displayName: 'video';
     icon: 'slideshow';
+    description: '';
   };
   attributes: {
     overlay: Attribute.Media & Attribute.Required;
-    youtube_video_url: Attribute.String;
+    youtube_video_hash: Attribute.String;
   };
 }
 
@@ -197,10 +198,12 @@ export interface HomeHeading extends Schema.Component {
   collectionName: 'components_home_headings';
   info: {
     displayName: 'Heading';
+    description: '';
   };
   attributes: {
     start: Attribute.Component<'common.heading'>;
     finish: Attribute.String;
+    with_container: Attribute.Boolean;
   };
 }
 
