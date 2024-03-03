@@ -114,6 +114,9 @@ importers:
       clsx:
         specifier: ^2.1.0
         version: 2.1.0
+      dotenv:
+        specifier: ^16.4.5
+        version: 16.4.5
       embla-carousel-autoplay:
         specifier: 8.0.0-rc22
         version: 8.0.0-rc22(embla-carousel@8.0.0-rc22)
@@ -132,6 +135,9 @@ importers:
       next:
         specifier: 14.1.0
         version: 14.1.0(react-dom@18.2.0)(react@18.2.0)
+      qs:
+        specifier: ^6.11.2
+        version: 6.11.2
       react:
         specifier: ^18.2.0
         version: 18.2.0
@@ -184,6 +190,9 @@ importers:
       '@types/node':
         specifier: ^20.11.17
         version: 20.11.17
+      '@types/qs':
+        specifier: ^6.9.12
+        version: 6.9.12
       '@types/react':
         specifier: ^18.2.55
         version: 18.2.55
@@ -4196,6 +4205,10 @@ packages:
   /@types/prop-types@15.7.11:
     resolution: {integrity: sha512-ga8y9v9uyeiLdpKddhxYQkxNDrfvuPrlFb0N1qnZZByvcElJaXthF1UhvCh9TLWJBEHeNtdnbysW7Y6Uq8CVng==}
 
+  /@types/qs@6.9.12:
+    resolution: {integrity: sha512-bZcOkJ6uWrL0Qb2NAWKa7TBU+mJHPzhx9jjLL1KHF+XpzEcR7EXHvjbHlGtR/IsP1vyPrehuS6XqkmaePy//mg==}
+    dev: true
+
   /@types/react-dom@18.2.19:
     resolution: {integrity: sha512-aZvQL6uUbIJpjZk4U8JZGbau9KDeAwMfmhyWorxgBkqDIEf6ROjRozcmPIicqsUwPUjbkDfHKgGee1Lq65APcA==}
     dependencies:
@@ -6925,6 +6938,11 @@ packages:
     resolution: {integrity: sha512-7GO6HghkA5fYG9TYnNxi14/7K9f5occMlp3zXAuSxn7CKCxt9xbNWG7yF8hTCSUchlfWSe3uLmlPfigevRItzQ==}
     engines: {node: '>=12'}
     dev: true
+
+  /dotenv@16.4.5:
+    resolution: {integrity: sha512-ZmdL2rui+eB2YwhsWzjInR8LldtZHGDoQ1ugH85ppHKwpUHL7j7rN0Ti9NCnGiQbhaZ11FpR+7ao1dNsmduNUg==}
+    engines: {node: '>=12'}
+    dev: false
 
   /duplexer@0.1.2:
     resolution: {integrity: sha512-jtD6YG370ZCIi/9GTaJKQxWTZD045+4R4hTk/x1UyoqadyJ9x9CgSi1RlVDQF8U2sxLLSnFkCaMihqljHIWgMg==}

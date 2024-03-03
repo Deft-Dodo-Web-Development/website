@@ -9,13 +9,33 @@ import { Projects } from "../widgets/projects";
 import BannerMarquee from "@/modules/common/components/banner-marquee";
 import Experience from "@/modules/common/components/experience";
 import FooterSetup from "@/modules/common/utilities/footer-setup";
+import { getHomePageData } from "../actions/home-page";
 
-const HomePage = () => {
+const HomePage = async () => {
+  const data = await getHomePageData();
+  const pageContent = data.data.attributes.pageContent;
+
   return (
     <>
-      <Heading container />
-      <Separator className="my-12" container />
-      <HeroCarousel container />
+      {pageContent.map((content, index) => {
+        switch (content.__component) {
+          case "home.heading":
+            return (
+              <Heading
+                key={index}
+                {...content}
+                container={content.with_container}
+              />
+            );
+          case "common.separator":
+            return <Separator key={index} container={content.with_container} />;
+          case "home.heading-carousel":
+            return <HeroCarousel key={index} {...content} />;
+          default:
+            return null;
+        }
+      })}
+      {/* <Separator className="my-12" container /> */}
       <Clients container className="mt-28" />
       <Separator className="my-28" />
       <AboutUs container />
