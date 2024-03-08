@@ -1,5 +1,18 @@
 
 
+## [0.25.0](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/www-v0.24.0...@deft-dodo/www-v0.25.0) (2024-03-08)
+
+
+### Features
+
+* **www:** DDT-35 add featured service section ([6a9b2f8](https://github.com/zitdevs/deft-dodo/commit/6a9b2f8f0c3f7f731162554e683773a6c11c1cf5))
+* **www:** DDT-35 add service card primary variation ([e86332c](https://github.com/zitdevs/deft-dodo/commit/e86332cf0c35a131828aa1abd3965da0136155fe))
+
+
+### Bug Fixes
+
+* add enum to use as value reference ([eff211f](https://github.com/zitdevs/deft-dodo/commit/eff211f48a657eb3b6351cec4429ef87f0e3072d))
+
 ## [0.24.0](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/www-v0.23.0...@deft-dodo/www-v0.24.0) (2024-03-08)
 
 
