@@ -1,5 +1,6 @@
 import React from "react";
 import HeroCarousel from "../components/hero-carousel";
+import HeroSection from "../widgets/hero";
 import Services from "../widgets/services";
 import { Separator } from "@components/separator";
 import Heading from "../widgets/heading";
@@ -13,6 +14,14 @@ import FooterSetup from "@/modules/common/utilities/footer-setup";
 const HomePage = () => {
   return (
     <>
+      <HeroSection
+        container
+        headingBold="We are creative"
+        headingThin="Agency"
+        description="Deft Dodo is a design & develop agency of the future with 120+ successful projects in their portfolio."
+        cta="Book a demo"
+        href="/contact"
+      />
       <Heading container />
       <Separator className="my-12" container />
       <HeroCarousel container />
