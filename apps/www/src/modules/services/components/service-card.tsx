@@ -12,6 +12,8 @@ export type ServiceCardProps = {
   variant?: "default" | "primary";
 };
 
+type ButtonVariant = "default" | "outline";
+
 const ServiceCard: React.FC<ServiceCardProps> = ({
   title,
   description,
@@ -24,12 +26,12 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
     default: {
       background: "bg-white-8",
       text: "text-primary",
-      buttonVariant: "outline",
+      buttonVariant: "outline" as ButtonVariant,
     },
     primary: {
       background: "bg-primary",
       text: "text-white",
-      buttonVariant: "default",
+      buttonVariant: "default" as ButtonVariant,
     },
   }
 
