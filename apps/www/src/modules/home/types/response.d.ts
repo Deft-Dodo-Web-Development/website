@@ -19,4 +19,5 @@ type PageContent =
   | Components.Projects
   | Components.Services
   | Components.Separator
-  | Components.Clients;
+  | Components.Clients
+  | Components.Spacer;

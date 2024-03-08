@@ -3,7 +3,6 @@ import HeroCarousel from "../components/hero-carousel";
 import HeroSection from "../widgets/hero";
 import Services from "../widgets/services";
 import { Separator } from "@components/separator";
-import Heading from "../widgets/heading";
 import Clients from "../widgets/clients";
 import AboutUs from "../widgets/about-us";
 import { Projects } from "../widgets/projects";
@@ -21,13 +20,7 @@ const HomePage = async () => {
       {pageContent.map((content, index) => {
         switch (content.__component) {
           case "home.heading":
-            return (
-              <Heading
-                key={index}
-                {...content}
-                container={content.with_container}
-              />
-            );
+            return <HeroSection key={index} {...content} />;
           case "common.separator":
             return (
               <Separator
@@ -43,18 +36,19 @@ const HomePage = async () => {
             return <HeroCarousel key={index} {...content} />;
           case "home.clients":
             return <Clients key={index} {...content} />;
+          case "common.spacer":
+            return (
+              <div
+                style={{
+                  height: `${content.height}px`,
+                }}
+              />
+            );
           default:
             return null;
         }
       })}
-      <HeroSection
-        container
-        headingBold="We are creative"
-        headingThin="Agency"
-        description="Deft Dodo is a design & develop agency of the future with 120+ successful projects in their portfolio."
-        cta="Book a demo"
-        href="/contact"
-      />
+
       <AboutUs container />
       <Separator className="mt-28 mb-10" container />
       <Projects container />

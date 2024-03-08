@@ -74,4 +74,10 @@ export namespace Components {
     with_container: boolean;
     list: ClientList[];
   }
+
+  export interface Spacer {
+    id: number;
+    __component: "common.spacer";
+    height: number;
+  }
 }
