@@ -28,16 +28,24 @@ const HomePage = async () => {
               />
             );
           case "common.separator":
-            return <Separator key={index} container={content.with_container} />;
+            return (
+              <Separator
+                key={index}
+                container={content.with_container}
+                style={{
+                  marginBottom: `${content.margin_button}px`,
+                  marginTop: `${content.margin_top}px`,
+                }}
+              />
+            );
           case "home.heading-carousel":
             return <HeroCarousel key={index} {...content} />;
+          case "home.clients":
+            return <Clients key={index} {...content} />;
           default:
             return null;
         }
       })}
-      {/* <Separator className="my-12" container /> */}
-      <Clients container className="mt-28" />
-      <Separator className="my-28" />
       <AboutUs container />
       <Separator className="mt-28 mb-10" container />
       <Projects container />

@@ -26,6 +26,7 @@ export interface Media {
     caption?: string;
     width: number;
     height: number;
+    url: string;
     formats: {
       thumbnail: MediaSize;
       small: MediaSize;
@@ -37,4 +38,11 @@ export interface Media {
 
 export interface MediaResponse {
   data: Media;
+}
+
+export interface ClientList {
+  id: number;
+  width: number;
+  height: number;
+  image: MediaResponse;
 }

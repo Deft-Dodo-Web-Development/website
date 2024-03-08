@@ -1,6 +1,7 @@
 import {
   Projects as BaseProjects,
   Services as BaseServices,
+  ClientList,
   MediaResponse,
 } from "./common";
 
@@ -63,5 +64,14 @@ export namespace Components {
     id: number;
     __component: "common.separator";
     with_container: boolean;
+    margin_button: number;
+    margin_top: number;
+  }
+
+  export interface Clients {
+    id: number;
+    __component: "home.clients";
+    with_container: boolean;
+    list: ClientList[];
   }
 }
