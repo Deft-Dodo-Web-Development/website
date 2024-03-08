@@ -1,5 +1,12 @@
 
 
+## [0.24.0](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/www-v0.23.0...@deft-dodo/www-v0.24.0) (2024-03-08)
+
+
+### Features
+
+* DDT-34 add new hero section ([782d635](https://github.com/zitdevs/deft-dodo/commit/782d635720113d06bb0d35090dbb14012c91f31a))
+
 ## [0.23.0](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/www-v0.22.0...@deft-dodo/www-v0.23.0) (2024-02-17)
 
 
