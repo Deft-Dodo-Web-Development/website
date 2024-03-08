@@ -85,6 +85,9 @@ const config = {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },
+      backgroundImage: () => ({
+        "gradient-radial": "radial-gradient(circle, rgba(var(--primary-rgb), 0.4) 0%, hsl(var(--dark)) 50%, hsl(var(--dark)) 100%)",
+      }),
     },
   },
   plugins: [require("tailwindcss-animate")],
