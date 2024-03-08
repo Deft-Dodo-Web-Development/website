@@ -1,5 +1,6 @@
 import React from "react";
 import HeroCarousel from "../components/hero-carousel";
+import HeroSection from "../widgets/hero";
 import Services from "../widgets/services";
 import { Separator } from "@components/separator";
 import Heading from "../widgets/heading";
@@ -46,10 +47,26 @@ const HomePage = async () => {
             return null;
         }
       })}
+      <HeroSection
+        container
+        headingBold="We are creative"
+        headingThin="Agency"
+        description="Deft Dodo is a design & develop agency of the future with 120+ successful projects in their portfolio."
+        cta="Book a demo"
+        href="/contact"
+      />
       <AboutUs container />
       <Separator className="mt-28 mb-10" container />
       <Projects container />
       <Separator className="mt-28 mb-2" container />
+      {/* <FeaturedServices
+        container
+        heading="Know our services"
+        subHeading="Featured Services"
+        description="We offer a range of services to help you grow your business."
+        services={services}
+        viewAllLink="/services"
+      /> */}
       <Services container />
       <Separator className="mt-24 mb-36" container />
       <BannerMarquee />
