@@ -1,5 +1,6 @@
 "use client";
 
+import { Heading } from "@/modules/common/components/heading";
 import { motion } from "framer-motion";
 import { useMediaQuery } from "react-responsive";
 
@@ -37,12 +38,14 @@ const AboutUsAnimated = () => {
           ease: "easeOut",
         }}
       >
-        <h2 className="text-[16px] uppercase text-primary mb-3">About Us</h2>
-        <p className="text-lg text-white-56">
-          A dynamic and innovative Shopify developer agency dedicated to
-          reshaping the way brands engage, sell, and succeed in the digital
-          landscape.
-        </p>
+        <Heading
+          subHeading="About"
+          size="md"
+          variant="primary"
+          className="md:text-[48px] md:leading-[48px]"
+        >
+          Deft Dodo Agency
+        </Heading>
       </motion.section>
       <motion.div
         className="relative"
@@ -55,7 +58,14 @@ const AboutUsAnimated = () => {
           ease: "easeOut",
         }}
       >
-        <p className="text-xl md:text-2xl lg:text-3xl text-balance">
+        <p className="text-lg md:text-xl text-balance">
+          We craft immersive online shopping experiences that leave lasting
+          impressions. With a team of passionate developers, creative designers,
+          and strategic thinkers, we are committed to pushing the boundaries of
+          e-commerce excellence.
+        </p>
+        <br />
+        <p className="text-lg md:text-xl text-balance">
           We craft immersive online shopping experiences that leave lasting
           impressions. With a team of passionate developers, creative designers,
           and strategic thinkers, we are committed to pushing the boundaries of
