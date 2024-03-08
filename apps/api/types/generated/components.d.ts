@@ -86,9 +86,12 @@ export interface CommonSeparator extends Schema.Component {
   collectionName: 'components_common_separators';
   info: {
     displayName: 'Separator';
+    description: '';
   };
   attributes: {
     with_container: Attribute.Boolean & Attribute.DefaultTo<true>;
+    margin_button: Attribute.Float;
+    margin_top: Attribute.Float;
   };
 }
 
