@@ -95,6 +95,18 @@ export interface CommonSeparator extends Schema.Component {
   };
 }
 
+export interface CommonSpacer extends Schema.Component {
+  collectionName: 'components_common_spacers';
+  info: {
+    displayName: 'spacer';
+    icon: 'arrowDown';
+    description: '';
+  };
+  attributes: {
+    height: Attribute.Float;
+  };
+}
+
 export interface CommonVideo extends Schema.Component {
   collectionName: 'components_common_videos';
   info: {
@@ -204,9 +216,12 @@ export interface HomeHeading extends Schema.Component {
     description: '';
   };
   attributes: {
-    start: Attribute.Component<'common.heading'>;
-    finish: Attribute.String;
     with_container: Attribute.Boolean;
+    heading_bold: Attribute.String & Attribute.Required;
+    heading_thing: Attribute.String;
+    description: Attribute.Text;
+    cta: Attribute.String;
+    href: Attribute.String & Attribute.DefaultTo<'/'>;
   };
 }
 
@@ -267,6 +282,7 @@ declare module '@strapi/types' {
       'common.link': CommonLink;
       'common.section-content-with-title': CommonSectionContentWithTitle;
       'common.separator': CommonSeparator;
+      'common.spacer': CommonSpacer;
       'common.video': CommonVideo;
       'footer.copyright': FooterCopyright;
       'footer.elevate-section': FooterElevateSection;

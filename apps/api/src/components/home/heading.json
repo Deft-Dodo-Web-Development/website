@@ -6,16 +6,26 @@
   },
   "options": {},
   "attributes": {
-    "start": {
-      "type": "component",
-      "repeatable": false,
-      "component": "common.heading"
-    },
-    "finish": {
-      "type": "string"
-    },
     "with_container": {
       "type": "boolean"
+    },
+    "heading_bold": {
+      "type": "string",
+      "required": true
+    },
+    "heading_thing": {
+      "type": "string",
+      "required": false
+    },
+    "description": {
+      "type": "text"
+    },
+    "cta": {
+      "type": "string"
+    },
+    "href": {
+      "type": "string",
+      "default": "/"
     }
   }
 }

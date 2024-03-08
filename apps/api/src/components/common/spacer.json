@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_common_spacers",
+  "info": {
+    "displayName": "spacer",
+    "icon": "arrowDown",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "height": {
+      "type": "float"
+    }
+  }
+}

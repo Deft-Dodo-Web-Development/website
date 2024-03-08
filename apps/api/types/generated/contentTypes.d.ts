@@ -960,7 +960,8 @@ export interface ApiHomePageHomePage extends Schema.SingleType {
         'home.clients',
         'home.projects',
         'home.heading',
-        'home.services'
+        'home.services',
+        'common.spacer'
       ]
     > &
       Attribute.SetPluginOptions<{
