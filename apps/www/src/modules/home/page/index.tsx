@@ -13,6 +13,8 @@ import FooterSetup from "@/modules/common/utilities/footer-setup";
 import KeyFactsSection from "../widgets/key-facts";
 import FeaturedServices from "../widgets/featured-services";
 import { type ServiceCardProps } from "@/modules/services/components/service-card";
+import OurProcess from "../widgets/our-process";
+import { ProcessItem } from "../components/our-process-animated";
 
 // this is a reference array of featured services
 
@@ -45,6 +47,27 @@ const services: ServiceCardProps[] = [
     description:
       "Improving the speed, responsiveness, and overall efficiency of your Shopify e-commerce store. The goal of performance optimization is to create a seamless and enjoyable user experience.",
     slug: "performance-optimization",
+  },
+];
+
+const process: ProcessItem[] = [
+  {
+    number: "01",
+    title: "Research & Plan",
+    description:
+      "Design process is critical for gathering information, requirements, and other data you need in order to make informed decisions later.",
+  },
+  {
+    number: "02",
+    title: "Mock Up",
+    description:
+      "Creating a mock up is the step of the design process most people recognize — it’s the most visual part of the process In-depth sketching and brainstorming.",
+  },
+  {
+    number: "03",
+    title: "Build",
+    description:
+      "Implement the solution (often with the help of other professionals like programmers, printers, or manufacturers). Revise the solution as technical issues.",
   },
 ];
 
@@ -88,6 +111,17 @@ const HomePage = () => {
         services={services}
         viewAllLink="/services"
       />
+      <OurProcess
+        id={1}
+        __component="home.our-process"
+        with_container={true}
+        heading={{
+          id: 1,
+          title: "Our Process",
+        }}
+        items={process}
+      />
+
       <Services container />
       <Separator className="mt-24 mb-36" container />
       <BannerMarquee />
