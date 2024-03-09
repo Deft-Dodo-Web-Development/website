@@ -1,5 +1,12 @@
 
 
+## [0.35.0](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/www-v0.34.0...@deft-dodo/www-v0.35.0) (2024-03-09)
+
+
+### Features
+
+* **www:** DDT-46 integrate and display testimonials on home page ([db3f2ad](https://github.com/zitdevs/deft-dodo/commit/db3f2adefd8bae05590337dd45fdb0769b089e2d))
+
 ## [0.34.0](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/www-v0.33.3...@deft-dodo/www-v0.34.0) (2024-03-09)
 
 
