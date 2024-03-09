@@ -8,6 +8,6 @@
   },
   "devDependencies": {
     "@release-it/conventional-changelog": "8.0.1",
-    "release-it": "17.0.3"
+    "release-it": "17.1.1"
   }
 }
