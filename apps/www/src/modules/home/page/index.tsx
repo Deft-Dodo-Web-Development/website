@@ -39,7 +39,7 @@ const testimonials: TestimonialCardProps[] = [
 
 const HomePage = async () => {
   const response = await getHomePageData();
-  console.log({ response });
+
   if (!response || !response.data) {
     return null;
   }
