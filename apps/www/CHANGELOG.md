@@ -1,5 +1,12 @@
 
 
+## [0.31.0](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/www-v0.30.0...@deft-dodo/www-v0.31.0) (2024-03-09)
+
+
+### Features
+
+* DDT-41 modify experience banner ([9699c82](https://github.com/zitdevs/deft-dodo/commit/9699c8229dee339363296deda3425542c263cc23))
+
 ## [0.30.0](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/www-v0.29.0...@deft-dodo/www-v0.30.0) (2024-03-09)
 
 
