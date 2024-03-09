@@ -2,6 +2,7 @@ import { FeaturedItem, Step, StrapiResponse } from "./common.d";
 import {
   Projects as BaseProjects,
   Services as BaseServices,
+  Testimonials as BaseTestimonials,
   ClientList,
   MediaResponse,
   Heading as BaseHeading,
@@ -96,5 +97,13 @@ export namespace Components {
     title: string;
     with_container: boolean;
     steps: Step[];
+  }
+
+  export interface Testimonials {
+    id: number;
+    __component: "home.testimonials";
+    with_container: boolean;
+    title: string;
+    testimonials: StrapiResponse<BaseTestimonials[]>;
   }
 }

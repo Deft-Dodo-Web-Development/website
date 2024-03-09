@@ -24,6 +24,10 @@ export async function getHomePageData() {
       "pageContent.services.icon",
       "pageContent.featured",
       "pageContent.steps",
+      "pageContent.testimonials",
+      "pageContent.testimonials.identity",
+      "pageContent.testimonials.identity.picture",
+      "pageContent.testimonials.identity.company_logo",
     ],
   });
   const request = await fetch(

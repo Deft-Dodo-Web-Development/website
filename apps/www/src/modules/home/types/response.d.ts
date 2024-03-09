@@ -22,4 +22,5 @@ type PageContent =
   | Components.Clients
   | Components.Spacer
   | Components.KeyFacts
-  | Components.StepByStep;
+  | Components.StepByStep
+  | Components.Testimonials;

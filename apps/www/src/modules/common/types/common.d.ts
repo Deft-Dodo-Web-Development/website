@@ -44,6 +44,29 @@ export interface Icon {
   attributes: IconAttributes;
 }
 
+export interface Identity {
+  id: number;
+  name: string;
+  occupation: string;
+  company_logo: MediaResponse;
+  picture: MediaResponse;
+}
+
+export interface TestimonialAttributes {
+  title: string;
+  message: string;
+  createdAt: string;
+  updatedAt: string;
+  publishedAt: string;
+  locale: string;
+  identity: Identity;
+}
+
+export interface Testimonials {
+  id: number;
+  attributes: TestimonialAttributes;
+}
+
 interface MediaSize {
   name: string;
   hash: string;
