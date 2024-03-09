@@ -10,6 +10,7 @@ import { Projects } from "../widgets/projects";
 import BannerMarquee from "@/modules/common/components/banner-marquee";
 import Experience from "@/modules/common/components/experience";
 import FooterSetup from "@/modules/common/utilities/footer-setup";
+import KeyFactsSection from "../widgets/key-facts";
 import FeaturedServices from "../widgets/featured-services";
 import { type ServiceCardProps } from "@/modules/services/components/service-card";
 
@@ -44,7 +45,7 @@ const services: ServiceCardProps[] = [
     description:
       "Improving the speed, responsiveness, and overall efficiency of your Shopify e-commerce store. The goal of performance optimization is to create a seamless and enjoyable user experience.",
     slug: "performance-optimization",
-  }
+  },
 ];
 
 const HomePage = () => {
@@ -74,7 +75,9 @@ const HomePage = () => {
         }}
         content="Deft Dodo is a design & develop agency of the future with 120+ successful projects in their portfolio."
       />
-      <Separator className="mt-28 mb-10" container />
+      <Separator className="my-28" />
+      <KeyFactsSection container />
+      <Separator className="mt-28 mb-10" />
       <Projects container />
       <Separator className="mt-28 mb-2" container />
       <FeaturedServices
