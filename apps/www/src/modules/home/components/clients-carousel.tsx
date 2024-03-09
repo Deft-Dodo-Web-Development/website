@@ -18,7 +18,6 @@ export type ClientsCarouselProps = {
 };
 
 const ClientsCarousel: React.FC<ClientsCarouselProps> = ({ images }) => {
-  console.log("ClientsCarouselProps", images);
   return (
     <Carousel
       plugins={[
