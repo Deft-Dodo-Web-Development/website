@@ -36,7 +36,7 @@ const OurProcessAnimated = (props: OurProcessProps) => {
   };
 
   return (
-    <section className="mb-20">
+    <section className="my-20">
       <motion.div
         variants={variants}
         initial="hidden"
