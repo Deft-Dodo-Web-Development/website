@@ -19,23 +19,25 @@ const HeroVideo: React.FC<HeroVideoProps> = ({
   const [playing, setPlaying] = useState(false);
 
   if (!overlay) return null;
-  const imageSize = overlay?.data.attributes.formats.large;
+  const imageSize = overlay?.data?.attributes.formats.large;
   return (
     <>
-      <div
-        className="cursor-pointer relative group"
-        onClick={() => setPlaying(true)}
-      >
-        <Play className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 size-16 text-white-16 group-hover:text-white transition-all duration-300 ease-in-out group-hover:size-20 fill-white-16 group-hover:fill-white-56" />
-        <Image
-          src={`${AppConfig.strapi.url}${imageSize.url}`}
-          alt={overlay?.data.attributes.alternativeText || "Hero Carousel"}
-          width={imageSize.width}
-          height={imageSize.height}
-          className="w-full h-auto rounded-xl"
-          priority
-        />
-      </div>
+      {imageSize && (
+        <div
+          className="cursor-pointer relative group"
+          onClick={() => setPlaying(true)}
+        >
+          <Play className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 size-16 text-white-16 group-hover:text-white transition-all duration-300 ease-in-out group-hover:size-20 fill-white-16 group-hover:fill-white-56" />
+          <Image
+            src={`${AppConfig.strapi.url}${imageSize.url}`}
+            alt={overlay?.data.attributes.alternativeText || "Hero Carousel"}
+            width={imageSize.width}
+            height={imageSize.height}
+            className="w-full h-auto rounded-xl"
+            priority
+          />
+        </div>
+      )}
 
       {playing && (
         <Dialog open={playing} onOpenChange={setPlaying}>
