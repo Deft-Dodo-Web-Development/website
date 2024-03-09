@@ -2,15 +2,16 @@
   "collectionName": "components_common_section_content_with_title_s",
   "info": {
     "displayName": "Section Content (with title)",
-    "icon": "bold"
+    "icon": "bold",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "title": {
       "type": "string"
     },
-    "content": {
-      "type": "richtext"
+    "sub_title": {
+      "type": "string"
     }
   }
 }

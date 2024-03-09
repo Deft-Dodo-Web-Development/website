@@ -75,10 +75,11 @@ export interface CommonSectionContentWithTitle extends Schema.Component {
   info: {
     displayName: 'Section Content (with title)';
     icon: 'bold';
+    description: '';
   };
   attributes: {
     title: Attribute.String;
-    content: Attribute.RichText;
+    sub_title: Attribute.String;
   };
 }
 
@@ -166,8 +167,8 @@ export interface HomeAboutUs extends Schema.Component {
   };
   attributes: {
     with_container: Attribute.Boolean & Attribute.DefaultTo<true>;
-    start_content: Attribute.Component<'common.section-content-with-title'>;
-    end_content: Attribute.RichText;
+    heading: Attribute.Component<'common.section-content-with-title'>;
+    content: Attribute.RichText;
   };
 }
 
