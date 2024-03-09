@@ -3,13 +3,12 @@
 import { Components } from "@/modules/common/types/components";
 import { motion } from "framer-motion";
 import { useMediaQuery } from "react-responsive";
+import { Heading } from "@/modules/common/components/heading";
 
 export type AboutUsAnimatedProps = Components.AboutUs;
+const AboutUsAnimated = (props: AboutUsAnimatedProps) => {
+  const { heading, content } = props;
 
-const AboutUsAnimated: React.FC<AboutUsAnimatedProps> = ({
-  heading,
-  content,
-}) => {
   const isLarge = useMediaQuery({ minWidth: 1024 });
   const variants = {
     base: {
@@ -42,10 +41,14 @@ const AboutUsAnimated: React.FC<AboutUsAnimatedProps> = ({
           ease: "easeOut",
         }}
       >
-        <h2 className="text-[16px] uppercase text-primary mb-3">
+        <Heading
+          subHeading={heading.sub_title}
+          size="md"
+          variant="primary"
+          className="md:text-[48px] md:leading-[48px]"
+        >
           {heading.title}
-        </h2>
-        <p className="text-lg text-white-56">{heading.sub_title}</p>
+        </Heading>
       </motion.section>
       <motion.div
         className="relative"
@@ -58,9 +61,7 @@ const AboutUsAnimated: React.FC<AboutUsAnimatedProps> = ({
           ease: "easeOut",
         }}
       >
-        <p className="text-xl md:text-2xl lg:text-3xl text-balance">
-          {content}
-        </p>
+        <p className="text-lg md:text-xl text-balance">{content}</p>
       </motion.div>
     </>
   );

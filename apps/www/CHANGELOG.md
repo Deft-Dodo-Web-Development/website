@@ -1,5 +1,19 @@
 
 
+## [0.27.0](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/www-v0.26.0...@deft-dodo/www-v0.27.0) (2024-03-09)
+
+
+### Features
+
+* DDT-36 create key facts section  ([c97e781](https://github.com/zitdevs/deft-dodo/commit/c97e781f4f7b2c8903d0bedc9159bc0adc0a8905))
+
+## [0.26.0](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/www-v0.25.0...@deft-dodo/www-v0.26.0) (2024-03-09)
+
+
+### Features
+
+* DDT-36 modify about us section  ([569f4d4](https://github.com/zitdevs/deft-dodo/commit/569f4d4d50d6323e48b18fcc274259e0792c5803))
+
 ## [0.25.0](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/www-v0.24.0...@deft-dodo/www-v0.25.0) (2024-03-08)
 
 
