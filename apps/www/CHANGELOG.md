@@ -1,5 +1,12 @@
 
 
+## [0.32.0](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/www-v0.31.0...@deft-dodo/www-v0.32.0) (2024-03-09)
+
+
+### Features
+
+* **www:** DDT-42 integrate step by step component into home page ([d69066b](https://github.com/zitdevs/deft-dodo/commit/d69066b0a348696b560558df106a7c122d2a5a74))
+
 ## [0.31.0](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/www-v0.30.0...@deft-dodo/www-v0.31.0) (2024-03-09)
 
 
