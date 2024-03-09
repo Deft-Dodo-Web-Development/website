@@ -1,5 +1,12 @@
 
 
+## [0.34.0](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/www-v0.33.3...@deft-dodo/www-v0.34.0) (2024-03-09)
+
+
+### Features
+
+* **www:** DDT-43 Add team section /widget ([a046699](https://github.com/zitdevs/deft-dodo/commit/a046699cf54ce462b767d8657e1984480d0c85c1))
+
 ## [0.33.3](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/www-v0.33.2...@deft-dodo/www-v0.33.3) (2024-03-09)
 
 ## [0.33.2](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/www-v0.33.1...@deft-dodo/www-v0.33.2) (2024-03-09)

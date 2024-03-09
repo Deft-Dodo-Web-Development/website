@@ -1,5 +1,7 @@
 
 
+## [0.6.2](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/api-v0.6.1...@deft-dodo/api-v0.6.2) (2024-03-09)
+
 ## [0.6.1](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/api-v0.6.0...@deft-dodo/api-v0.6.1) (2024-03-09)
 
 ## [0.6.0](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/api-v0.5.0...@deft-dodo/api-v0.6.0) (2024-03-09)
