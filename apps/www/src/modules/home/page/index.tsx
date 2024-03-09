@@ -13,6 +13,8 @@ import FooterSetup from "@/modules/common/utilities/footer-setup";
 import KeyFactsSection from "../widgets/key-facts";
 import FeaturedServices from "../widgets/featured-services";
 import { type ServiceCardProps } from "@/modules/services/components/service-card";
+import Testimonials from "../widgets/testimonials";
+import { type TestimonialCardProps } from "../components/testimonial-card";
 
 // this is a reference array of featured services
 
@@ -46,6 +48,25 @@ const services: ServiceCardProps[] = [
       "Improving the speed, responsiveness, and overall efficiency of your Shopify e-commerce store. The goal of performance optimization is to create a seamless and enjoyable user experience.",
     slug: "performance-optimization",
   },
+];
+
+const testimonials: TestimonialCardProps[] = [
+  {
+    quote: "I am looking forward to working with the Boltzshift again.",
+    paragraph: "I create efficient, adaptable, and engaging websites. No predefined patterns. No sluggish, complex code. Webflow forms the foundation of my web development approach. I employ it to provide safe, top-notch bespoke websites.",
+    name: "Dora Dybala",
+    designation: "CEO & Founder of Company",
+    avatar: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6SGvshARHJ5GYSH_Kig8-cYNw5rO3nWn7mA&usqp=CAU",
+    companyImage: "https://placehold.co/140x32",
+  },
+  {
+    quote: "Anticipating the next chapter of collaboration with Boltzshift",
+    paragraph: "I create efficient, adaptable, and engaging websites. No predefined patterns. No sluggish, complex code. Webflow forms the foundation of my web development approach. I employ it to provide safe, top-notch bespoke websites.",
+    name: "Ryan Dyson",
+    designation: "CTO of Company",
+    avatar: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6SGvshARHJ5GYSH_Kig8-cYNw5rO3nWn7mA&usqp=CAU",
+    companyImage: "https://placehold.co/140x32",
+  }
 ];
 
 const HomePage = () => {
@@ -87,6 +108,11 @@ const HomePage = () => {
         description="We offer a range of services to help you grow your business."
         services={services}
         viewAllLink="/services"
+      />
+      <Testimonials
+        container
+        heading="Testimonials"
+        testimonials={testimonials}
       />
       <Services container />
       <Separator className="mt-24 mb-36" container />
