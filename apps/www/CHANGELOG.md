@@ -1,5 +1,7 @@
 
 
+## [0.33.3](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/www-v0.33.2...@deft-dodo/www-v0.33.3) (2024-03-09)
+
 ## [0.33.2](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/www-v0.33.1...@deft-dodo/www-v0.33.2) (2024-03-09)
 
 
