@@ -1,13 +1,20 @@
 {
   "collectionName": "components_common_separators",
   "info": {
-    "displayName": "Separator"
+    "displayName": "Separator",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "with_container": {
       "type": "boolean",
       "default": true
+    },
+    "margin_button": {
+      "type": "float"
+    },
+    "margin_top": {
+      "type": "float"
     }
   }
 }

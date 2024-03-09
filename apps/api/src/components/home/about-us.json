@@ -10,12 +10,12 @@
       "type": "boolean",
       "default": true
     },
-    "start_content": {
+    "heading": {
       "type": "component",
       "repeatable": false,
       "component": "common.section-content-with-title"
     },
-    "end_content": {
+    "content": {
       "type": "richtext"
     }
   }

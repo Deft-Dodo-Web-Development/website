@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_home_key_facts",
+  "info": {
+    "displayName": "key facts",
+    "icon": "bulletList",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "featured": {
+      "type": "component",
+      "repeatable": true,
+      "component": "common.featured-item"
+    },
+    "with_container": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    }
+  }
+}

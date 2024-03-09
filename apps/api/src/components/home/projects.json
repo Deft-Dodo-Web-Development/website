@@ -15,7 +15,7 @@
       "type": "boolean",
       "default": true
     },
-    "Title": {
+    "title": {
       "type": "string"
     }
   }

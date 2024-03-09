@@ -2,14 +2,15 @@
 
 import { motion } from "framer-motion";
 import Autoplay from "embla-carousel-autoplay";
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 import { Carousel, CarouselContent, CarouselItem } from "@components/carousel";
+import { AppConfig } from "@/config/app.config";
+import { MediaResponse } from "@/modules/common/types/common";
 
 export type ImageType = {
-  src: string | StaticImageData;
   width: number;
   height: number;
-  alt: string;
+  image: MediaResponse;
 };
 
 export type ClientsCarouselProps = {
@@ -30,7 +31,7 @@ const ClientsCarousel: React.FC<ClientsCarouselProps> = ({ images }) => {
       }}
     >
       <CarouselContent className="-ml-36">
-        {images.map((image, index) => (
+        {images.map((item, index) => (
           <CarouselItem
             key={index}
             className="sm:basis-1/2 md:basis-1/3 pl-36 xl:basis-1/5 flex items-center justify-center"
@@ -46,17 +47,21 @@ const ClientsCarousel: React.FC<ClientsCarouselProps> = ({ images }) => {
                 ease: "easeOut",
               }}
             >
-              <Image
-                src={image.src}
-                width={image.width}
-                height={image.height}
-                alt={image.alt}
-                className="object-contain max-w-[215px] max-h-[48px] w-full"
-                style={{
-                  width: "auto",
-                  height: "auto",
-                }}
-              />
+              {item.image.data && (
+                <Image
+                  src={`${AppConfig.strapi.url}${item.image.data.attributes.url}`}
+                  width={item.width}
+                  height={item.height}
+                  alt={
+                    item.image.data.attributes.alternativeText || "Client Logo"
+                  }
+                  className="object-contain max-w-[215px] max-h-[48px] w-full"
+                  style={{
+                    width: "auto",
+                    height: "auto",
+                  }}
+                />
+              )}
             </motion.div>
           </CarouselItem>
         ))}

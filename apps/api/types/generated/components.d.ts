@@ -31,6 +31,20 @@ export interface CommonClients extends Schema.Component {
   };
 }
 
+export interface CommonFeaturedItem extends Schema.Component {
+  collectionName: 'components_common_featured_items';
+  info: {
+    displayName: 'Featured Item';
+    icon: 'star';
+    description: '';
+  };
+  attributes: {
+    text: Attribute.String & Attribute.Required;
+    featured: Attribute.String;
+    muted: Attribute.String;
+  };
+}
+
 export interface CommonHeadingCarousel extends Schema.Component {
   collectionName: 'components_common_heading_carousels';
   info: {
@@ -75,10 +89,11 @@ export interface CommonSectionContentWithTitle extends Schema.Component {
   info: {
     displayName: 'Section Content (with title)';
     icon: 'bold';
+    description: '';
   };
   attributes: {
     title: Attribute.String;
-    content: Attribute.RichText;
+    sub_title: Attribute.String;
   };
 }
 
@@ -86,9 +101,24 @@ export interface CommonSeparator extends Schema.Component {
   collectionName: 'components_common_separators';
   info: {
     displayName: 'Separator';
+    description: '';
   };
   attributes: {
     with_container: Attribute.Boolean & Attribute.DefaultTo<true>;
+    margin_button: Attribute.Float;
+    margin_top: Attribute.Float;
+  };
+}
+
+export interface CommonSpacer extends Schema.Component {
+  collectionName: 'components_common_spacers';
+  info: {
+    displayName: 'spacer';
+    icon: 'arrowDown';
+    description: '';
+  };
+  attributes: {
+    height: Attribute.Float;
   };
 }
 
@@ -97,10 +127,11 @@ export interface CommonVideo extends Schema.Component {
   info: {
     displayName: 'video';
     icon: 'slideshow';
+    description: '';
   };
   attributes: {
     overlay: Attribute.Media & Attribute.Required;
-    youtube_video_url: Attribute.String;
+    youtube_video_hash: Attribute.String;
   };
 }
 
@@ -150,8 +181,8 @@ export interface HomeAboutUs extends Schema.Component {
   };
   attributes: {
     with_container: Attribute.Boolean & Attribute.DefaultTo<true>;
-    start_content: Attribute.Component<'common.section-content-with-title'>;
-    end_content: Attribute.RichText;
+    heading: Attribute.Component<'common.section-content-with-title'>;
+    content: Attribute.RichText;
   };
 }
 
@@ -197,10 +228,31 @@ export interface HomeHeading extends Schema.Component {
   collectionName: 'components_home_headings';
   info: {
     displayName: 'Heading';
+    description: '';
   };
   attributes: {
-    start: Attribute.Component<'common.heading'>;
-    finish: Attribute.String;
+    with_container: Attribute.Boolean;
+    heading_bold: Attribute.String & Attribute.Required;
+    heading_thing: Attribute.String;
+    description: Attribute.Text;
+    cta: Attribute.String;
+    href: Attribute.String & Attribute.DefaultTo<'/'>;
+  };
+}
+
+export interface HomeKeyFacts extends Schema.Component {
+  collectionName: 'components_home_key_facts';
+  info: {
+    displayName: 'key facts';
+    icon: 'bulletList';
+    description: '';
+  };
+  attributes: {
+    title: Attribute.String & Attribute.Required;
+    featured: Attribute.Component<'common.featured-item', true>;
+    with_container: Attribute.Boolean &
+      Attribute.Required &
+      Attribute.DefaultTo<true>;
   };
 }
 
@@ -217,7 +269,7 @@ export interface HomeProjects extends Schema.Component {
       'api::project.project'
     >;
     with_container: Attribute.Boolean & Attribute.DefaultTo<true>;
-    Title: Attribute.String;
+    title: Attribute.String;
   };
 }
 
@@ -226,15 +278,18 @@ export interface HomeServices extends Schema.Component {
   info: {
     displayName: 'Services';
     icon: 'bulletList';
+    description: '';
   };
   attributes: {
     with_container: Attribute.Boolean & Attribute.DefaultTo<true>;
-    title: Attribute.String;
     services: Attribute.Relation<
       'home.services',
       'oneToMany',
       'api::service.service'
     >;
+    heading: Attribute.Component<'common.section-content-with-title'>;
+    description: Attribute.Text;
+    cta_url: Attribute.String;
   };
 }
 
@@ -256,11 +311,13 @@ declare module '@strapi/types' {
     export interface Components {
       'common.button': CommonButton;
       'common.clients': CommonClients;
+      'common.featured-item': CommonFeaturedItem;
       'common.heading-carousel': CommonHeadingCarousel;
       'common.heading': CommonHeading;
       'common.link': CommonLink;
       'common.section-content-with-title': CommonSectionContentWithTitle;
       'common.separator': CommonSeparator;
+      'common.spacer': CommonSpacer;
       'common.video': CommonVideo;
       'footer.copyright': FooterCopyright;
       'footer.elevate-section': FooterElevateSection;
@@ -270,6 +327,7 @@ declare module '@strapi/types' {
       'home.footer': HomeFooter;
       'home.heading-carousel': HomeHeadingCarousel;
       'home.heading': HomeHeading;
+      'home.key-facts': HomeKeyFacts;
       'home.projects': HomeProjects;
       'home.services': HomeServices;
       'shared.header': SharedHeader;
