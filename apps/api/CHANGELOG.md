@@ -1,5 +1,12 @@
 
 
+## [0.5.0](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/api-v0.4.0...@deft-dodo/api-v0.5.0) (2024-03-09)
+
+
+### Features
+
+* **api:** update service content-type to use string for icon field ([d70d848](https://github.com/zitdevs/deft-dodo/commit/d70d848d545d0429a04240aba2243f4806187bb0))
+
 ## [0.4.0](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/api-v0.3.0...@deft-dodo/api-v0.4.0) (2024-03-09)
 
 
