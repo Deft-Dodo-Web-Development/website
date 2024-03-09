@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_common_featured_items",
+  "info": {
+    "displayName": "Featured Item",
+    "icon": "star",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string",
+      "required": true
+    },
+    "featured": {
+      "type": "string"
+    },
+    "muted": {
+      "type": "string"
+    }
+  }
+}

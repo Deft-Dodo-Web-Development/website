@@ -5,7 +5,6 @@ import { Button } from "../components/button";
 import useFooter from "../hooks/useFooter";
 import { Separator } from "../components/separator";
 import Experience from "../components/experience";
-import Clients from "@/modules/home/widgets/clients";
 
 const socials = [
   {
@@ -29,7 +28,6 @@ const Footer = () => {
   return (
     <>
       <Separator className="my-32" container />
-      <Clients container className="mt-28" />
       <Experience />
       <BaseFooter />
     </>

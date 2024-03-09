@@ -31,7 +31,9 @@
         "home.clients",
         "home.projects",
         "home.heading",
-        "home.services"
+        "home.services",
+        "common.spacer",
+        "home.key-facts"
       ]
     },
     "Footer": {

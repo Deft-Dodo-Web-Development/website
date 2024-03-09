@@ -1,26 +1,15 @@
 "use client";
 
-import { Heading } from "@/modules/common/components/heading";
+import { Components } from "@/modules/common/types/components";
 import { motion } from "framer-motion";
 import { useMediaQuery } from "react-responsive";
+import { Heading } from "@/modules/common/components/heading";
 
-export interface AboutUsProps {
-  id: number;
-  __component: "home.about-us";
-  with_container: boolean;
-  content: string;
-  heading: {
-    id: number;
-    title: string;
-    sub_title: string;
-  };
-}
-
-const AboutUsAnimated = (props: AboutUsProps) => {
+export type AboutUsAnimatedProps = Components.AboutUs;
+const AboutUsAnimated = (props: AboutUsAnimatedProps) => {
   const { heading, content } = props;
 
   const isLarge = useMediaQuery({ minWidth: 1024 });
-
   const variants = {
     base: {
       opacity: 1,
