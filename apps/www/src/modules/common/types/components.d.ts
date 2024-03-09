@@ -36,11 +36,11 @@ export namespace Components {
     id: number;
     __component: "home.about-us";
     with_container: boolean;
-    end_content: string;
-    start_content: {
+    content: string;
+    heading: {
       id: number;
       title: string;
-      content: string;
+      sub_title: string;
     };
   }
 

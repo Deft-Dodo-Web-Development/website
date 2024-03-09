@@ -1,16 +1,17 @@
 import { Container } from "@components/container";
 import { Layout } from "@components/layout";
-import AboutUsAnimated from "../components/about-us-animated";
+import AboutUsAnimated, {
+  AboutUsAnimatedProps,
+} from "../components/about-us-animated";
 
-type AboutUsProps = {
-  container?: boolean;
-} & React.HTMLAttributes<HTMLDivElement>;
+type AboutUsProps = AboutUsAnimatedProps;
 
-const AboutUs: React.FC<AboutUsProps> = ({ container }) => {
+const AboutUs: React.FC<AboutUsProps> = (props) => {
+  const { with_container: container } = props;
   return (
     <Container enabled={container}>
       <Layout>
-        <AboutUsAnimated />
+        <AboutUsAnimated {...props} />
       </Layout>
     </Container>
   );

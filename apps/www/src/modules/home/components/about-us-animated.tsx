@@ -1,11 +1,16 @@
 "use client";
 
+import { Components } from "@/modules/common/types/components";
 import { motion } from "framer-motion";
 import { useMediaQuery } from "react-responsive";
 
-const AboutUsAnimated = () => {
-  const isLarge = useMediaQuery({ minWidth: 1024 });
+export type AboutUsAnimatedProps = Components.AboutUs;
 
+const AboutUsAnimated: React.FC<AboutUsAnimatedProps> = ({
+  heading,
+  content,
+}) => {
+  const isLarge = useMediaQuery({ minWidth: 1024 });
   const variants = {
     base: {
       opacity: 1,
@@ -37,12 +42,10 @@ const AboutUsAnimated = () => {
           ease: "easeOut",
         }}
       >
-        <h2 className="text-[16px] uppercase text-primary mb-3">About Us</h2>
-        <p className="text-lg text-white-56">
-          A dynamic and innovative Shopify developer agency dedicated to
-          reshaping the way brands engage, sell, and succeed in the digital
-          landscape.
-        </p>
+        <h2 className="text-[16px] uppercase text-primary mb-3">
+          {heading.title}
+        </h2>
+        <p className="text-lg text-white-56">{heading.sub_title}</p>
       </motion.section>
       <motion.div
         className="relative"
@@ -56,10 +59,7 @@ const AboutUsAnimated = () => {
         }}
       >
         <p className="text-xl md:text-2xl lg:text-3xl text-balance">
-          We craft immersive online shopping experiences that leave lasting
-          impressions. With a team of passionate developers, creative designers,
-          and strategic thinkers, we are committed to pushing the boundaries of
-          e-commerce excellence.
+          {content}
         </p>
       </motion.div>
     </>
