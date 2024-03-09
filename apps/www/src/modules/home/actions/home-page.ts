@@ -23,6 +23,7 @@ export async function getHomePageData() {
       "pageContent.projects.image",
       "pageContent.services.icon",
       "pageContent.featured",
+      "pageContent.steps",
     ],
   });
   const request = await fetch(

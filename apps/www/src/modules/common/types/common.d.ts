@@ -99,3 +99,10 @@ export interface FeaturedItem {
   featured: string;
   muted: string;
 }
+
+export interface Step {
+  id: number;
+  number: number;
+  title: string;
+  description: string;
+}
