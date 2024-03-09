@@ -1,5 +1,12 @@
 
 
+## [0.30.0](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/www-v0.29.0...@deft-dodo/www-v0.30.0) (2024-03-09)
+
+
+### Features
+
+* **www:** integrate environment-specific Strapi URL in Next.js config ([0189696](https://github.com/zitdevs/deft-dodo/commit/018969641a7ee29592a5beaa7d4813927fc3c1fe))
+
 ## [0.29.0](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/www-v0.28.2...@deft-dodo/www-v0.29.0) (2024-03-09)
 
 
