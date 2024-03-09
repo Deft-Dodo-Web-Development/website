@@ -1,13 +1,13 @@
 {
-  "key": "plugin_content_manager_configuration_content_types::api::service.service",
+  "key": "plugin_content_manager_configuration_content_types::api::header.header",
   "value": {
     "settings": {
       "bulkable": true,
       "filterable": true,
       "searchable": true,
       "pageSize": 10,
-      "mainField": "title",
-      "defaultSortBy": "title",
+      "mainField": "id",
+      "defaultSortBy": "id",
       "defaultSortOrder": "ASC"
     },
     "metadatas": {
@@ -19,74 +19,18 @@
           "sortable": true
         }
       },
-      "title": {
+      "content": {
         "edit": {
-          "label": "title",
+          "label": "content",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "title",
-          "searchable": true,
-          "sortable": true
-        }
-      },
-      "description": {
-        "edit": {
-          "label": "description",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "description",
-          "searchable": true,
-          "sortable": true
-        }
-      },
-      "cta": {
-        "edit": {
-          "label": "cta",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "cta",
-          "searchable": true,
-          "sortable": true
-        }
-      },
-      "slug": {
-        "edit": {
-          "label": "slug",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "slug",
-          "searchable": true,
-          "sortable": true
-        }
-      },
-      "icon": {
-        "edit": {
-          "label": "icon",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "icon",
-          "searchable": true,
-          "sortable": true
+          "label": "content",
+          "searchable": false,
+          "sortable": false
         }
       },
       "createdAt": {
@@ -151,40 +95,20 @@
     "layouts": {
       "list": [
         "id",
-        "title",
+        "content",
         "createdAt",
         "updatedAt"
       ],
       "edit": [
         [
           {
-            "name": "title",
-            "size": 6
-          },
-          {
-            "name": "description",
-            "size": 6
-          }
-        ],
-        [
-          {
-            "name": "cta",
-            "size": 6
-          }
-        ],
-        [
-          {
-            "name": "slug",
-            "size": 6
-          },
-          {
-            "name": "icon",
-            "size": 6
+            "name": "content",
+            "size": 12
           }
         ]
       ]
     },
-    "uid": "api::service.service"
+    "uid": "api::header.header"
   },
   "type": "object",
   "environment": null,

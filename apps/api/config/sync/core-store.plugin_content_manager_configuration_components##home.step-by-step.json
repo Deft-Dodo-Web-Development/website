@@ -1,5 +1,5 @@
 {
-  "key": "plugin_content_manager_configuration_components::common.section-content-with-title",
+  "key": "plugin_content_manager_configuration_components::home.step-by-step",
   "value": {
     "settings": {
       "bulkable": true,
@@ -19,6 +19,20 @@
           "sortable": false
         }
       },
+      "with_container": {
+        "edit": {
+          "label": "with_container",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "with_container",
+          "searchable": true,
+          "sortable": true
+        }
+      },
       "title": {
         "edit": {
           "label": "title",
@@ -33,41 +47,48 @@
           "sortable": true
         }
       },
-      "sub_title": {
+      "steps": {
         "edit": {
-          "label": "sub_title",
+          "label": "steps",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "sub_title",
-          "searchable": true,
-          "sortable": true
+          "label": "steps",
+          "searchable": false,
+          "sortable": false
         }
       }
     },
     "layouts": {
       "list": [
         "id",
+        "with_container",
         "title",
-        "sub_title"
+        "steps"
       ],
       "edit": [
         [
           {
-            "name": "title",
-            "size": 6
+            "name": "with_container",
+            "size": 4
           },
           {
-            "name": "sub_title",
+            "name": "title",
             "size": 6
+          }
+        ],
+        [
+          {
+            "name": "steps",
+            "size": 12
           }
         ]
       ]
     },
-    "uid": "common.section-content-with-title",
+    "uid": "home.step-by-step",
     "isComponent": true
   },
   "type": "object",

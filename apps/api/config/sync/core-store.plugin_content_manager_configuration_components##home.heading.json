@@ -6,8 +6,8 @@
       "filterable": true,
       "searchable": true,
       "pageSize": 10,
-      "mainField": "finish",
-      "defaultSortBy": "finish",
+      "mainField": "heading_bold",
+      "defaultSortBy": "heading_bold",
       "defaultSortOrder": "ASC"
     },
     "metadatas": {
@@ -19,30 +19,86 @@
           "sortable": false
         }
       },
-      "start": {
+      "with_container": {
         "edit": {
-          "label": "start",
+          "label": "with_container",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "start",
-          "searchable": false,
-          "sortable": false
+          "label": "with_container",
+          "searchable": true,
+          "sortable": true
         }
       },
-      "finish": {
+      "heading_bold": {
         "edit": {
-          "label": "finish",
+          "label": "heading_bold",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "finish",
+          "label": "heading_bold",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "heading_thing": {
+        "edit": {
+          "label": "heading_thing",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "heading_thing",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "description": {
+        "edit": {
+          "label": "description",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "description",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "cta": {
+        "edit": {
+          "label": "cta",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "cta",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "href": {
+        "edit": {
+          "label": "href",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "href",
           "searchable": true,
           "sortable": true
         }
@@ -51,19 +107,38 @@
     "layouts": {
       "list": [
         "id",
-        "start",
-        "finish"
+        "with_container",
+        "heading_bold",
+        "heading_thing"
       ],
       "edit": [
         [
           {
-            "name": "start",
-            "size": 12
+            "name": "with_container",
+            "size": 4
+          },
+          {
+            "name": "heading_bold",
+            "size": 6
           }
         ],
         [
           {
-            "name": "finish",
+            "name": "heading_thing",
+            "size": 6
+          },
+          {
+            "name": "description",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "cta",
+            "size": 6
+          },
+          {
+            "name": "href",
             "size": 6
           }
         ]

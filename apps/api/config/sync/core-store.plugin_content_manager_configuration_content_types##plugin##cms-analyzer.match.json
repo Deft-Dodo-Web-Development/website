@@ -1,13 +1,13 @@
 {
-  "key": "plugin_content_manager_configuration_content_types::api::service.service",
+  "key": "plugin_content_manager_configuration_content_types::plugin::cms-analyzer.match",
   "value": {
     "settings": {
       "bulkable": true,
       "filterable": true,
       "searchable": true,
       "pageSize": 10,
-      "mainField": "title",
-      "defaultSortBy": "title",
+      "mainField": "apiName",
+      "defaultSortBy": "apiName",
       "defaultSortOrder": "ASC"
     },
     "metadatas": {
@@ -19,72 +19,100 @@
           "sortable": true
         }
       },
-      "title": {
+      "apiName": {
         "edit": {
-          "label": "title",
+          "label": "apiName",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "title",
+          "label": "apiName",
           "searchable": true,
           "sortable": true
         }
       },
-      "description": {
+      "fieldName": {
         "edit": {
-          "label": "description",
+          "label": "fieldName",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "description",
+          "label": "fieldName",
           "searchable": true,
           "sortable": true
         }
       },
-      "cta": {
+      "tagName": {
         "edit": {
-          "label": "cta",
+          "label": "tagName",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "cta",
+          "label": "tagName",
           "searchable": true,
           "sortable": true
         }
       },
-      "slug": {
+      "componentName": {
         "edit": {
-          "label": "slug",
+          "label": "componentName",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "slug",
+          "label": "componentName",
           "searchable": true,
           "sortable": true
         }
       },
-      "icon": {
+      "dynamicZoneName": {
         "edit": {
-          "label": "icon",
+          "label": "dynamicZoneName",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "icon",
+          "label": "dynamicZoneName",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "status": {
+        "edit": {
+          "label": "status",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "status",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "isMultipleDoc": {
+        "edit": {
+          "label": "isMultipleDoc",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "isMultipleDoc",
           "searchable": true,
           "sortable": true
         }
@@ -151,40 +179,50 @@
     "layouts": {
       "list": [
         "id",
-        "title",
-        "createdAt",
-        "updatedAt"
+        "apiName",
+        "fieldName",
+        "tagName"
       ],
       "edit": [
         [
           {
-            "name": "title",
+            "name": "apiName",
             "size": 6
           },
           {
-            "name": "description",
+            "name": "fieldName",
             "size": 6
           }
         ],
         [
           {
-            "name": "cta",
+            "name": "tagName",
+            "size": 6
+          },
+          {
+            "name": "componentName",
             "size": 6
           }
         ],
         [
           {
-            "name": "slug",
+            "name": "dynamicZoneName",
             "size": 6
           },
           {
-            "name": "icon",
+            "name": "status",
             "size": 6
+          }
+        ],
+        [
+          {
+            "name": "isMultipleDoc",
+            "size": 4
           }
         ]
       ]
     },
-    "uid": "api::service.service"
+    "uid": "plugin::cms-analyzer.match"
   },
   "type": "object",
   "environment": null,

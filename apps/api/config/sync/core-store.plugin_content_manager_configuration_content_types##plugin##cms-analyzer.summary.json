@@ -1,13 +1,13 @@
 {
-  "key": "plugin_content_manager_configuration_content_types::api::service.service",
+  "key": "plugin_content_manager_configuration_content_types::plugin::cms-analyzer.summary",
   "value": {
     "settings": {
       "bulkable": true,
       "filterable": true,
       "searchable": true,
       "pageSize": 10,
-      "mainField": "title",
-      "defaultSortBy": "title",
+      "mainField": "frontUrl",
+      "defaultSortBy": "frontUrl",
       "defaultSortOrder": "ASC"
     },
     "metadatas": {
@@ -19,72 +19,86 @@
           "sortable": true
         }
       },
-      "title": {
+      "frontUrl": {
         "edit": {
-          "label": "title",
+          "label": "frontUrl",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "title",
+          "label": "frontUrl",
           "searchable": true,
           "sortable": true
         }
       },
-      "description": {
+      "nbUrl": {
         "edit": {
-          "label": "description",
+          "label": "nbUrl",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "description",
+          "label": "nbUrl",
           "searchable": true,
           "sortable": true
         }
       },
-      "cta": {
+      "nbErrorLow": {
         "edit": {
-          "label": "cta",
+          "label": "nbErrorLow",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "cta",
+          "label": "nbErrorLow",
           "searchable": true,
           "sortable": true
         }
       },
-      "slug": {
+      "nbErrorHigh": {
         "edit": {
-          "label": "slug",
+          "label": "nbErrorHigh",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "slug",
+          "label": "nbErrorHigh",
           "searchable": true,
           "sortable": true
         }
       },
-      "icon": {
+      "user": {
         "edit": {
-          "label": "icon",
+          "label": "user",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "icon",
+          "label": "user",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "date": {
+        "edit": {
+          "label": "date",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "date",
           "searchable": true,
           "sortable": true
         }
@@ -151,40 +165,44 @@
     "layouts": {
       "list": [
         "id",
-        "title",
-        "createdAt",
-        "updatedAt"
+        "frontUrl",
+        "nbUrl",
+        "nbErrorLow"
       ],
       "edit": [
         [
           {
-            "name": "title",
+            "name": "frontUrl",
             "size": 6
           },
           {
-            "name": "description",
-            "size": 6
+            "name": "nbUrl",
+            "size": 4
           }
         ],
         [
           {
-            "name": "cta",
-            "size": 6
+            "name": "nbErrorLow",
+            "size": 4
+          },
+          {
+            "name": "nbErrorHigh",
+            "size": 4
           }
         ],
         [
           {
-            "name": "slug",
+            "name": "user",
             "size": 6
           },
           {
-            "name": "icon",
+            "name": "date",
             "size": 6
           }
         ]
       ]
     },
-    "uid": "api::service.service"
+    "uid": "plugin::cms-analyzer.summary"
   },
   "type": "object",
   "environment": null,

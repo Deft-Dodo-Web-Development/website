@@ -1,13 +1,13 @@
 {
-  "key": "plugin_content_manager_configuration_components::common.section-content-with-title",
+  "key": "plugin_content_manager_configuration_components::home.footer",
   "value": {
     "settings": {
       "bulkable": true,
       "filterable": true,
       "searchable": true,
       "pageSize": 10,
-      "mainField": "title",
-      "defaultSortBy": "title",
+      "mainField": "id",
+      "defaultSortBy": "id",
       "defaultSortOrder": "ASC"
     },
     "metadatas": {
@@ -19,30 +19,16 @@
           "sortable": false
         }
       },
-      "title": {
+      "deftdodo_banner": {
         "edit": {
-          "label": "title",
+          "label": "deftdodo_banner",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "title",
-          "searchable": true,
-          "sortable": true
-        }
-      },
-      "sub_title": {
-        "edit": {
-          "label": "sub_title",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "sub_title",
+          "label": "deftdodo_banner",
           "searchable": true,
           "sortable": true
         }
@@ -51,23 +37,18 @@
     "layouts": {
       "list": [
         "id",
-        "title",
-        "sub_title"
+        "deftdodo_banner"
       ],
       "edit": [
         [
           {
-            "name": "title",
-            "size": 6
-          },
-          {
-            "name": "sub_title",
-            "size": 6
+            "name": "deftdodo_banner",
+            "size": 4
           }
         ]
       ]
     },
-    "uid": "common.section-content-with-title",
+    "uid": "home.footer",
     "isComponent": true
   },
   "type": "object",

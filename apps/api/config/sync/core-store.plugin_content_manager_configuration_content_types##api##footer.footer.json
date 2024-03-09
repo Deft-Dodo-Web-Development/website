@@ -1,13 +1,13 @@
 {
-  "key": "plugin_content_manager_configuration_content_types::api::service.service",
+  "key": "plugin_content_manager_configuration_content_types::api::footer.footer",
   "value": {
     "settings": {
       "bulkable": true,
       "filterable": true,
       "searchable": true,
       "pageSize": 10,
-      "mainField": "title",
-      "defaultSortBy": "title",
+      "mainField": "id",
+      "defaultSortBy": "id",
       "defaultSortOrder": "ASC"
     },
     "metadatas": {
@@ -19,74 +19,60 @@
           "sortable": true
         }
       },
-      "title": {
+      "info": {
         "edit": {
-          "label": "title",
+          "label": "info",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "title",
-          "searchable": true,
-          "sortable": true
+          "label": "info",
+          "searchable": false,
+          "sortable": false
         }
       },
-      "description": {
+      "socials": {
         "edit": {
-          "label": "description",
+          "label": "socials",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "description",
-          "searchable": true,
-          "sortable": true
+          "label": "socials",
+          "searchable": false,
+          "sortable": false
         }
       },
-      "cta": {
+      "copyright": {
         "edit": {
-          "label": "cta",
+          "label": "copyright",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "cta",
-          "searchable": true,
-          "sortable": true
+          "label": "copyright",
+          "searchable": false,
+          "sortable": false
         }
       },
-      "slug": {
+      "Banner": {
         "edit": {
-          "label": "slug",
+          "label": "Banner",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "slug",
-          "searchable": true,
-          "sortable": true
-        }
-      },
-      "icon": {
-        "edit": {
-          "label": "icon",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "icon",
-          "searchable": true,
-          "sortable": true
+          "label": "Banner",
+          "searchable": false,
+          "sortable": false
         }
       },
       "createdAt": {
@@ -151,40 +137,38 @@
     "layouts": {
       "list": [
         "id",
-        "title",
-        "createdAt",
-        "updatedAt"
+        "info",
+        "socials",
+        "copyright"
       ],
       "edit": [
         [
           {
-            "name": "title",
-            "size": 6
-          },
-          {
-            "name": "description",
-            "size": 6
+            "name": "info",
+            "size": 12
           }
         ],
         [
           {
-            "name": "cta",
-            "size": 6
+            "name": "socials",
+            "size": 12
           }
         ],
         [
           {
-            "name": "slug",
-            "size": 6
-          },
+            "name": "copyright",
+            "size": 12
+          }
+        ],
+        [
           {
-            "name": "icon",
-            "size": 6
+            "name": "Banner",
+            "size": 12
           }
         ]
       ]
     },
-    "uid": "api::service.service"
+    "uid": "api::footer.footer"
   },
   "type": "object",
   "environment": null,
