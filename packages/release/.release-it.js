@@ -17,7 +17,7 @@ module.exports = {
         push: true,
         tagName: `${packageName}-v${version}`,
         commitsPath: '.',
-        commitMessage: `chore(${scope}): release v${version}`,
+        commitMessage: `chore(${scope}): release v${version} [skip ci]`,
         requireCommits: true,
         requireCommitsFail: false,
     },
@@ -29,5 +29,4 @@ module.exports = {
         release: true,
         releaseName: `${packageName}-v${version}`,
     },
-
 };

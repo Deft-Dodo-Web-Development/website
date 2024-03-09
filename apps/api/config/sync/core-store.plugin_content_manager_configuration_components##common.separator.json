@@ -32,17 +32,55 @@
           "searchable": true,
           "sortable": true
         }
+      },
+      "margin_button": {
+        "edit": {
+          "label": "margin_button",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "margin_button",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "margin_top": {
+        "edit": {
+          "label": "margin_top",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "margin_top",
+          "searchable": true,
+          "sortable": true
+        }
       }
     },
     "layouts": {
       "list": [
         "id",
-        "with_container"
+        "with_container",
+        "margin_button",
+        "margin_top"
       ],
       "edit": [
         [
           {
             "name": "with_container",
+            "size": 4
+          },
+          {
+            "name": "margin_button",
+            "size": 4
+          },
+          {
+            "name": "margin_top",
             "size": 4
           }
         ]

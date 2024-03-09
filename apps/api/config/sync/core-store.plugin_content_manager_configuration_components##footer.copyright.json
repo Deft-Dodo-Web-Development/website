@@ -1,13 +1,13 @@
 {
-  "key": "plugin_content_manager_configuration_components::common.section-content-with-title",
+  "key": "plugin_content_manager_configuration_components::footer.copyright",
   "value": {
     "settings": {
       "bulkable": true,
       "filterable": true,
       "searchable": true,
       "pageSize": 10,
-      "mainField": "title",
-      "defaultSortBy": "title",
+      "mainField": "id",
+      "defaultSortBy": "id",
       "defaultSortOrder": "ASC"
     },
     "metadatas": {
@@ -19,30 +19,44 @@
           "sortable": false
         }
       },
-      "title": {
+      "privacy": {
         "edit": {
-          "label": "title",
+          "label": "privacy",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "title",
+          "label": "privacy",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "back_to_top": {
+        "edit": {
+          "label": "back_to_top",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "back_to_top",
           "searchable": true,
           "sortable": true
         }
       },
-      "sub_title": {
+      "copyright": {
         "edit": {
-          "label": "sub_title",
+          "label": "copyright",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "sub_title",
+          "label": "copyright",
           "searchable": true,
           "sortable": true
         }
@@ -51,23 +65,30 @@
     "layouts": {
       "list": [
         "id",
-        "title",
-        "sub_title"
+        "privacy",
+        "back_to_top",
+        "copyright"
       ],
       "edit": [
         [
           {
-            "name": "title",
-            "size": 6
+            "name": "privacy",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "back_to_top",
+            "size": 4
           },
           {
-            "name": "sub_title",
+            "name": "copyright",
             "size": 6
           }
         ]
       ]
     },
-    "uid": "common.section-content-with-title",
+    "uid": "footer.copyright",
     "isComponent": true
   },
   "type": "object",

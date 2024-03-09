@@ -1,13 +1,13 @@
 {
-  "key": "plugin_content_manager_configuration_content_types::api::service.service",
+  "key": "plugin_content_manager_configuration_content_types::plugin::cms-analyzer.media",
   "value": {
     "settings": {
       "bulkable": true,
       "filterable": true,
       "searchable": true,
       "pageSize": 10,
-      "mainField": "title",
-      "defaultSortBy": "title",
+      "mainField": "frontUrl",
+      "defaultSortBy": "frontUrl",
       "defaultSortOrder": "ASC"
     },
     "metadatas": {
@@ -19,72 +19,100 @@
           "sortable": true
         }
       },
-      "title": {
+      "frontUrl": {
         "edit": {
-          "label": "title",
+          "label": "frontUrl",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "title",
+          "label": "frontUrl",
           "searchable": true,
           "sortable": true
         }
       },
-      "description": {
+      "mediaUrl": {
         "edit": {
-          "label": "description",
+          "label": "mediaUrl",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "description",
+          "label": "mediaUrl",
           "searchable": true,
           "sortable": true
         }
       },
-      "cta": {
+      "height": {
         "edit": {
-          "label": "cta",
+          "label": "height",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "cta",
+          "label": "height",
           "searchable": true,
           "sortable": true
         }
       },
-      "slug": {
+      "width": {
         "edit": {
-          "label": "slug",
+          "label": "width",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "slug",
+          "label": "width",
           "searchable": true,
           "sortable": true
         }
       },
-      "icon": {
+      "alt": {
         "edit": {
-          "label": "icon",
+          "label": "alt",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "icon",
+          "label": "alt",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "data": {
+        "edit": {
+          "label": "data",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "data",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "status": {
+        "edit": {
+          "label": "status",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "status",
           "searchable": true,
           "sortable": true
         }
@@ -151,40 +179,52 @@
     "layouts": {
       "list": [
         "id",
-        "title",
-        "createdAt",
-        "updatedAt"
+        "frontUrl",
+        "mediaUrl",
+        "height"
       ],
       "edit": [
         [
           {
-            "name": "title",
+            "name": "frontUrl",
             "size": 6
           },
           {
-            "name": "description",
+            "name": "mediaUrl",
             "size": 6
           }
         ],
         [
           {
-            "name": "cta",
+            "name": "height",
+            "size": 4
+          },
+          {
+            "name": "width",
+            "size": 4
+          }
+        ],
+        [
+          {
+            "name": "alt",
             "size": 6
           }
         ],
         [
           {
-            "name": "slug",
-            "size": 6
-          },
+            "name": "data",
+            "size": 12
+          }
+        ],
+        [
           {
-            "name": "icon",
+            "name": "status",
             "size": 6
           }
         ]
       ]
     },
-    "uid": "api::service.service"
+    "uid": "plugin::cms-analyzer.media"
   },
   "type": "object",
   "environment": null,

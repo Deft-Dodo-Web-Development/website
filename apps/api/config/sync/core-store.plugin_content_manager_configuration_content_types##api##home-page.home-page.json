@@ -33,6 +33,20 @@
           "sortable": false
         }
       },
+      "Footer": {
+        "edit": {
+          "label": "Footer",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "Footer",
+          "searchable": false,
+          "sortable": false
+        }
+      },
       "createdAt": {
         "edit": {
           "label": "createdAt",
@@ -103,6 +117,12 @@
         [
           {
             "name": "pageContent",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "Footer",
             "size": 12
           }
         ]

@@ -1,0 +1,16 @@
+name: deploy
+on:
+  release:
+    types: [published]
+jobs:
+  publish-api:
+    runs-on: ubuntu-latest
+    if: contains(github.event.release.tag_name, '@deft-dodo/api')
+    environment:
+      name: Production
+    steps:
+      - uses: actions/checkout@v2
+      - uses: bervProject/railway-deploy@main
+        with:
+          railway_token: ${{ secrets.RAILWAY_TOKEN }}
+          service: "deft-dodo"

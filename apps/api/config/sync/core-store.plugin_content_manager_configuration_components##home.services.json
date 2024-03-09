@@ -6,8 +6,8 @@
       "filterable": true,
       "searchable": true,
       "pageSize": 10,
-      "mainField": "title",
-      "defaultSortBy": "title",
+      "mainField": "cta_url",
+      "defaultSortBy": "cta_url",
       "defaultSortOrder": "ASC"
     },
     "metadatas": {
@@ -33,20 +33,6 @@
           "sortable": true
         }
       },
-      "title": {
-        "edit": {
-          "label": "title",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "title",
-          "searchable": true,
-          "sortable": true
-        }
-      },
       "services": {
         "edit": {
           "label": "services",
@@ -61,29 +47,81 @@
           "searchable": false,
           "sortable": false
         }
+      },
+      "heading": {
+        "edit": {
+          "label": "heading",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "heading",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "description": {
+        "edit": {
+          "label": "description",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "description",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "cta_url": {
+        "edit": {
+          "label": "cta_url",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "cta_url",
+          "searchable": true,
+          "sortable": true
+        }
       }
     },
     "layouts": {
       "list": [
         "id",
         "with_container",
-        "title",
-        "services"
+        "services",
+        "heading"
       ],
       "edit": [
+        [
+          {
+            "name": "heading",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "services",
+            "size": 6
+          },
+          {
+            "name": "description",
+            "size": 6
+          }
+        ],
         [
           {
             "name": "with_container",
             "size": 4
           },
           {
-            "name": "title",
-            "size": 6
-          }
-        ],
-        [
-          {
-            "name": "services",
+            "name": "cta_url",
             "size": 6
           }
         ]
