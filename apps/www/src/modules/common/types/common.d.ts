@@ -92,3 +92,10 @@ export interface Heading {
   title: string;
   sub_title: string;
 }
+
+export interface FeaturedItem {
+  id: number;
+  text: string;
+  featured: string;
+  muted: string;
+}

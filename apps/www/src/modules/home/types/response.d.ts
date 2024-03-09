@@ -20,4 +20,5 @@ type PageContent =
   | Components.Services
   | Components.Separator
   | Components.Clients
-  | Components.Spacer;
+  | Components.Spacer
+  | Components.KeyFacts;

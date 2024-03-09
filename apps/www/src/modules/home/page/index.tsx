@@ -31,6 +31,8 @@ const HomePage = async () => {
             return <Projects key={index} {...content} />;
           case "home.services":
             return <FeaturedServices key={index} {...content} />;
+          case "home.key-facts":
+            return <KeyFactsSection key={index} {...content} />;
           case "common.separator":
             return (
               <Separator
@@ -55,7 +57,6 @@ const HomePage = async () => {
         }
       })}
 
-      <KeyFactsSection container />
       <Separator className="mt-24 mb-36" container />
       <BannerMarquee />
       <Experience />

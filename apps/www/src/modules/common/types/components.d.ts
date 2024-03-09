@@ -1,4 +1,4 @@
-import { StrapiResponse } from "./common.d";
+import { FeaturedItem, StrapiResponse } from "./common.d";
 import {
   Projects as BaseProjects,
   Services as BaseServices,
@@ -80,5 +80,13 @@ export namespace Components {
     id: number;
     __component: "common.spacer";
     height: number;
+  }
+
+  export interface KeyFacts {
+    id: number;
+    __component: "home.key-facts";
+    title: string;
+    featured: FeaturedItem[];
+    with_container: boolean;
   }
 }
