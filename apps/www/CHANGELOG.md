@@ -1,5 +1,12 @@
 
 
+## [0.28.1](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/www-v0.28.0...@deft-dodo/www-v0.28.1) (2024-03-09)
+
+
+### Bug Fixes
+
+* **www:** check existence before accessing properties in clients-carousel and featured-services ([67f7570](https://github.com/zitdevs/deft-dodo/commit/67f75703521efa536b07779c88c015c0dd50e928))
+
 ## [0.28.0](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/www-v0.27.0...@deft-dodo/www-v0.28.0) (2024-03-09)
 
 
