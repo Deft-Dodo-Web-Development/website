@@ -44,7 +44,7 @@ const FeaturedServices: React.FC<FeaturedServicesProps> = ({
         {services && (
           <div
             className={
-              heading.sub_title
+              heading && heading.sub_title
                 ? "xl:mt-6 w-full md:col-span-1 xl:col-span-4"
                 : "w-full md:col-span-1 xl:col-span-4"
             }

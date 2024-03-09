@@ -47,19 +47,21 @@ const ClientsCarousel: React.FC<ClientsCarouselProps> = ({ images }) => {
                 ease: "easeOut",
               }}
             >
-              <Image
-                src={`${AppConfig.strapi.url}${item.image.data.attributes.url}`}
-                width={item.width}
-                height={item.height}
-                alt={
-                  item.image.data.attributes.alternativeText || "Client Logo"
-                }
-                className="object-contain max-w-[215px] max-h-[48px] w-full"
-                style={{
-                  width: "auto",
-                  height: "auto",
-                }}
-              />
+              {item.image.data && (
+                <Image
+                  src={`${AppConfig.strapi.url}${item.image.data.attributes.url}`}
+                  width={item.width}
+                  height={item.height}
+                  alt={
+                    item.image.data.attributes.alternativeText || "Client Logo"
+                  }
+                  className="object-contain max-w-[215px] max-h-[48px] w-full"
+                  style={{
+                    width: "auto",
+                    height: "auto",
+                  }}
+                />
+              )}
             </motion.div>
           </CarouselItem>
         ))}
