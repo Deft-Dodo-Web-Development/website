@@ -18,7 +18,31 @@ export interface Projects {
   attributes: ProjectsAttributes;
 }
 
-export interface Services {}
+export interface ServiceAttributes {
+  title: string;
+  description: string;
+  cta: string;
+  slug: string;
+  icon: StrapiResponse<Icon>;
+  createdAt: string;
+  updatedAt: string;
+}
+
+export interface Services {
+  id: number;
+  attributes: ServiceAttributes;
+}
+
+export interface IconAttributes {
+  name: string;
+  createdAt: string;
+  updatedAt: string;
+}
+
+export interface Icon {
+  id: number;
+  attributes: IconAttributes;
+}
 
 interface MediaSize {
   name: string;
@@ -61,4 +85,10 @@ export interface ClientList {
   width: number;
   height: number;
   image: MediaResponse;
+}
+
+export interface Heading {
+  id: number;
+  title: string;
+  sub_title: string;
 }

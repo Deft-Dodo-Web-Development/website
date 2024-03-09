@@ -1,7 +1,5 @@
-import React from "react";
 import HeroCarousel from "../components/hero-carousel";
 import HeroSection from "../widgets/hero";
-import Services from "../widgets/services";
 import { Separator } from "@components/separator";
 import Clients from "../widgets/clients";
 import AboutUs from "../widgets/about-us";
@@ -11,6 +9,7 @@ import Experience from "@/modules/common/components/experience";
 import FooterSetup from "@/modules/common/utilities/footer-setup";
 import { getHomePageData } from "../actions/home-page";
 import KeyFactsSection from "../widgets/key-facts";
+import FeaturedServices from "../widgets/featured-services";
 
 const HomePage = async () => {
   const data = await getHomePageData();
@@ -49,36 +48,16 @@ const HomePage = async () => {
             return <AboutUs key={index} {...content} />;
           case "home.projects":
             return <Projects key={index} {...content} />;
+          case "home.services":
+            return <FeaturedServices key={index} {...content} />;
           default:
             return null;
         }
       })}
 
-      {/* <AboutUs
-        id={1}
-        __component="home.about-us"
-        with_container={true}
-        heading={{
-          id: 1,
-          title: "About Us",
-          sub_title: "We are a creative agency",
-        }}
-        content="Deft Dodo is a design & develop agency of the future with 120+ successful projects in their portfolio."
-      /> */}
-      {/* <Separator className="my-28" /> */}
       <KeyFactsSection container />
-      <Separator className="mt-28 mb-10" />
-      {/* <Projects container /> */}
-      <Separator className="mt-28 mb-2" container />
-      {/*<FeaturedServices
-        container
-        heading="Know our services"
-        subHeading="Featured Services"
-        description="We offer a range of services to help you grow your business."
-        services={services}
-        viewAllLink="/services"
-      /> */}
-      <Services container />
+      {/* */}
+      {/* <Services container /> */}
       <Separator className="mt-24 mb-36" container />
       <BannerMarquee />
       <Experience />

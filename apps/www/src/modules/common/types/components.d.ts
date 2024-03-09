@@ -4,6 +4,7 @@ import {
   Services as BaseServices,
   ClientList,
   MediaResponse,
+  Heading as BaseHeading,
 } from "./common";
 
 export namespace Components {
@@ -38,11 +39,7 @@ export namespace Components {
     __component: "home.about-us";
     with_container: boolean;
     content: string;
-    heading: {
-      id: number;
-      title: string;
-      sub_title: string;
-    };
+    heading: BaseHeading;
   }
 
   export interface Projects {
@@ -58,7 +55,10 @@ export namespace Components {
     __component: "home.services";
     with_container: boolean;
     title: string;
-    services: BaseServices;
+    description: string;
+    cta_url: string;
+    services: StrapiResponse<BaseServices[]>;
+    heading: BaseHeading;
   }
 
   export interface Separator {
