@@ -53,10 +53,12 @@
       "unique": true
     },
     "icon": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::icon.icon",
-      "inversedBy": "services"
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "string"
     }
   }
 }

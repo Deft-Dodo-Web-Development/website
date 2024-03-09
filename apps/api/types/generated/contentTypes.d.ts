@@ -1192,32 +1192,6 @@ export interface ApiHomePageHomePage extends Schema.SingleType {
   };
 }
 
-export interface ApiIconIcon extends Schema.CollectionType {
-  collectionName: 'icons';
-  info: {
-    singularName: 'icon';
-    pluralName: 'icons';
-    displayName: 'Icon';
-  };
-  options: {
-    draftAndPublish: false;
-  };
-  attributes: {
-    name: Attribute.String & Attribute.Required & Attribute.Unique;
-    services: Attribute.Relation<
-      'api::icon.icon',
-      'oneToMany',
-      'api::service.service'
-    >;
-    createdAt: Attribute.DateTime;
-    updatedAt: Attribute.DateTime;
-    createdBy: Attribute.Relation<'api::icon.icon', 'oneToOne', 'admin::user'> &
-      Attribute.Private;
-    updatedBy: Attribute.Relation<'api::icon.icon', 'oneToOne', 'admin::user'> &
-      Attribute.Private;
-  };
-}
-
 export interface ApiProjectProject extends Schema.CollectionType {
   collectionName: 'projects';
   info: {
@@ -1322,11 +1296,12 @@ export interface ApiServiceService extends Schema.CollectionType {
           localized: true;
         };
       }>;
-    icon: Attribute.Relation<
-      'api::service.service',
-      'manyToOne',
-      'api::icon.icon'
-    >;
+    icon: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: false;
+        };
+      }>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1377,7 +1352,6 @@ declare module '@strapi/types' {
       'api::footer.footer': ApiFooterFooter;
       'api::header.header': ApiHeaderHeader;
       'api::home-page.home-page': ApiHomePageHomePage;
-      'api::icon.icon': ApiIconIcon;
       'api::project.project': ApiProjectProject;
       'api::service.service': ApiServiceService;
     }
