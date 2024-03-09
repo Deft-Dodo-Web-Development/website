@@ -1,6 +1,6 @@
 import { Container } from "@/modules/common/components/container";
 import { Layout } from "@/modules/common/components/layout";
-import KeyFacts from "../components/key-facts-animated";
+import KeyFactsAnimated from "../components/key-facts-animated";
 
 type KeyFactsProps = {
   container?: boolean;
@@ -10,7 +10,7 @@ const KeyFactsSection: React.FC<KeyFactsProps> = ({ container }) => {
   return (
     <Container enabled={container}>
       <Layout className="items-center">
-        <KeyFacts />
+        <KeyFactsAnimated />
       </Layout>
     </Container>
   );
