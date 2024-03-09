@@ -107,10 +107,9 @@ coverage
 
 .env
 license.txt
-exports
+!exports
 .strapi
 dist
 build
 .strapi-updater.json
-!export_20240220210336.tar.gz
 !export_*.tar.gz

@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_common_steps",
+  "info": {
+    "displayName": "step",
+    "icon": "dashboard",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "number": {
+      "type": "integer",
+      "required": true,
+      "unique": false,
+      "default": 1,
+      "min": 1
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

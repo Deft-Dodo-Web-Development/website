@@ -53,7 +53,7 @@ const KeyFactsAnimated: React.FC<KeyFactsProps> = ({ featured, title }) => {
       )}
       <div>
         <motion.ul
-          className="md:flex text-left flex-col items-start  md:flex-row md:justify-evenly relative gap-5 flex-wrap"
+          className="flex items-center text-left flex-col md:items-start md:flex-row md:justify-evenly relative gap-8 md:gap-5 flex-wrap"
           initial="hidden"
           whileInView="show"
           variants={variants}

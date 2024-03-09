@@ -1,5 +1,12 @@
 
 
+## [0.6.0](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/api-v0.5.0...@deft-dodo/api-v0.6.0) (2024-03-09)
+
+
+### Features
+
+* **api:** DDT-42 add step by step component to home page ([a17f2e9](https://github.com/zitdevs/deft-dodo/commit/a17f2e976db1afc1b60b739443b9c1b6aa2d6874))
+
 ## [0.5.0](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/api-v0.4.0...@deft-dodo/api-v0.5.0) (2024-03-09)
 
 

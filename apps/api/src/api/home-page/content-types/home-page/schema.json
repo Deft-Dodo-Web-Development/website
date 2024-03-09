@@ -33,7 +33,8 @@
         "home.heading",
         "home.services",
         "common.spacer",
-        "home.key-facts"
+        "home.key-facts",
+        "home.step-by-step"
       ]
     },
     "Footer": {

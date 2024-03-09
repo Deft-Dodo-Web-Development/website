@@ -13,28 +13,6 @@ import FeaturedServices from "../widgets/featured-services";
 import Testimonials from "../widgets/testimonials";
 import { type TestimonialCardProps } from "../components/testimonial-card";
 import OurProcess from "../widgets/our-process";
-import { ProcessItem } from "../components/our-process-animated";
-
-const process: ProcessItem[] = [
-  {
-    number: "01",
-    title: "Research & Plan",
-    description:
-      "Design process is critical for gathering information, requirements, and other data you need in order to make informed decisions later.",
-  },
-  {
-    number: "02",
-    title: "Mock Up",
-    description:
-      "Creating a mock up is the step of the design process most people recognize — it’s the most visual part of the process In-depth sketching and brainstorming.",
-  },
-  {
-    number: "03",
-    title: "Build",
-    description:
-      "Implement the solution (often with the help of other professionals like programmers, printers, or manufacturers). Revise the solution as technical issues.",
-  },
-];
 
 const testimonials: TestimonialCardProps[] = [
   {
@@ -56,8 +34,13 @@ const testimonials: TestimonialCardProps[] = [
 ];
 
 const HomePage = async () => {
-  const data = await getHomePageData();
-  const pageContent = data.data.attributes.pageContent;
+  const response = await getHomePageData();
+
+  if (!response || !response.data) {
+    return null;
+  }
+
+  const pageContent = response.data.attributes.pageContent;
 
   return (
     <>
@@ -77,6 +60,8 @@ const HomePage = async () => {
             return <FeaturedServices key={index} {...content} />;
           case "home.key-facts":
             return <KeyFactsSection key={index} {...content} />;
+          case "home.step-by-step":
+            return <OurProcess key={index} {...content} />;
           case "common.separator":
             return (
               <Separator
@@ -100,16 +85,6 @@ const HomePage = async () => {
             return null;
         }
       })}
-      <OurProcess
-        id={1}
-        __component="home.our-process"
-        with_container={true}
-        heading={{
-          id: 1,
-          title: "Our Process",
-        }}
-        items={process}
-      />
       <Separator className="my-28" />
       <Testimonials
         container
