@@ -1,5 +1,12 @@
 
 
+## [0.4.0](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/api-v0.3.0...@deft-dodo/api-v0.4.0) (2024-03-09)
+
+
+### Features
+
+* **api:** add new export file and update package dependencies ([342758b](https://github.com/zitdevs/deft-dodo/commit/342758bd0e169b287d471b6fe7e13d287463a2d6))
+
 ## [0.3.0](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/api-v0.2.2...@deft-dodo/api-v0.3.0) (2024-03-09)
 
 
