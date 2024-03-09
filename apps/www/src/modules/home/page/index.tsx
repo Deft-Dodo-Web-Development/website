@@ -13,8 +13,13 @@ import FeaturedServices from "../widgets/featured-services";
 import OurProcess from "../widgets/our-process";
 
 const HomePage = async () => {
-  const data = await getHomePageData();
-  const pageContent = data.data.attributes.pageContent;
+  const response = await getHomePageData();
+
+  if (!response || !response.data) {
+    return null;
+  }
+
+  const pageContent = response.data.attributes.pageContent;
 
   return (
     <>
