@@ -1154,7 +1154,9 @@ export interface ApiHomePageHomePage extends Schema.SingleType {
         'home.heading',
         'home.services',
         'common.spacer',
-        'home.key-facts'
+        'home.key-facts',
+        'home.step-by-step',
+        'home.testimonials'
       ]
     > &
       Attribute.SetPluginOptions<{
@@ -1326,6 +1328,67 @@ export interface ApiServiceService extends Schema.CollectionType {
   };
 }
 
+export interface ApiTestimonialTestimonial extends Schema.CollectionType {
+  collectionName: 'testimonials';
+  info: {
+    singularName: 'testimonial';
+    pluralName: 'testimonials';
+    displayName: 'Testimonial';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  pluginOptions: {
+    i18n: {
+      localized: true;
+    };
+  };
+  attributes: {
+    title: Attribute.String &
+      Attribute.Required &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    message: Attribute.Text &
+      Attribute.Required &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    identity: Attribute.Component<'common.testimonial-identity'> &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: false;
+        };
+      }>;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::testimonial.testimonial',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::testimonial.testimonial',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    localizations: Attribute.Relation<
+      'api::testimonial.testimonial',
+      'oneToMany',
+      'api::testimonial.testimonial'
+    >;
+    locale: Attribute.String;
+  };
+}
+
 declare module '@strapi/types' {
   export module Shared {
     export interface ContentTypes {
@@ -1354,6 +1417,7 @@ declare module '@strapi/types' {
       'api::home-page.home-page': ApiHomePageHomePage;
       'api::project.project': ApiProjectProject;
       'api::service.service': ApiServiceService;
+      'api::testimonial.testimonial': ApiTestimonialTestimonial;
     }
   }
 }
