@@ -46,14 +46,13 @@ const HomePage = async () => {
             );
           case "home.about-us":
             return <AboutUs key={index} {...content} />;
+          case "home.projects":
+            return <Projects key={index} {...content} />;
           default:
             return null;
         }
       })}
 
-      <Separator className="mt-28 mb-10" container />
-      <Projects container />
-      <Separator className="mt-28 mb-2" container />
       {/* <FeaturedServices
         container
         heading="Know our services"

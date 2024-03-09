@@ -1,3 +1,4 @@
+import { StrapiResponse } from "./common.d";
 import {
   Projects as BaseProjects,
   Services as BaseServices,
@@ -49,7 +50,7 @@ export namespace Components {
     __component: "home.projects";
     with_container: boolean;
     title: string;
-    projects: BaseProjects;
+    projects: StrapiResponse<BaseProjects[]>;
   }
 
   export interface Services {

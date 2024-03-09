@@ -20,6 +20,7 @@ export async function getHomePageData() {
       "pageContent.services",
       "pageContent.list.image",
       "pageContent.heading",
+      "pageContent.projects.image",
     ],
   });
   const request = await fetch(

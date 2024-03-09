@@ -2,22 +2,21 @@
 
 import { motion, useTransform, useScroll } from "framer-motion";
 import React, { useRef } from "react";
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 import { Button } from "@/modules/common/components/button";
 import useAppData from "@/modules/common/hooks/useAppData";
+import { Projects } from "@/modules/common/types/common";
+import { AppConfig } from "@/config/app.config";
 
-export type ProjectCard = {
-  url: StaticImageData | string;
-  title: string;
-  subtitle: string;
-  id: number;
-};
+export type ProjectCard = Projects;
 
 export type ProjectScrollCarouselProps = {
-  cards: ProjectCard[];
+  title?: string;
+  cards: Projects[];
 };
 
 const ProjectScrollCarousel: React.FC<ProjectScrollCarouselProps> = ({
+  title,
   cards,
 }) => {
   const targetRef = useRef<HTMLDivElement>(null);
@@ -31,17 +30,19 @@ const ProjectScrollCarousel: React.FC<ProjectScrollCarouselProps> = ({
   return (
     <section ref={targetRef} className="relative h-[300vh] container">
       <div className="sticky top-0 flex h-[95vh] items-start pt-28 overflow-hidden">
-        <div className="absolute top-24 left-0 right-0 mx-auto w-full flex justify-center">
-          <motion.h2
-            className="text-[16px] uppercase text-center text-primary mb-3"
-            initial={{ opacity: 0, y: -20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.5, ease: "backInOut" }}
-          >
-            Featured Works
-          </motion.h2>
-        </div>
+        {!!title && (
+          <div className="absolute top-24 left-0 right-0 mx-auto w-full flex justify-center">
+            <motion.h2
+              className="text-[16px] uppercase text-center text-primary mb-3"
+              initial={{ opacity: 0, y: -20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.5, ease: "backInOut" }}
+            >
+              {title}
+            </motion.h2>
+          </div>
+        )}
         <motion.div style={{ x }} className="flex gap-4 pt-10">
           {cards.map((card, i) => {
             return (
@@ -54,15 +55,24 @@ const ProjectScrollCarousel: React.FC<ProjectScrollCarouselProps> = ({
                 transition={{ ease: "backInOut", delay: i < 1 ? i * 1.2 : 0 }}
               >
                 <Image
-                  src={card.url}
-                  alt={card.title}
-                  width={750}
-                  height={440}
-                  className="rounded-xl"
+                  src={`${AppConfig.strapi.url}${card.attributes.image.data.attributes.formats.large.url}`}
+                  alt={
+                    card.attributes.image.data.attributes.alternativeText ||
+                    card.attributes.title
+                  }
+                  width={
+                    card.attributes.image.data.attributes.formats.large.width
+                  }
+                  height={
+                    card.attributes.image.data.attributes.formats.large.height
+                  }
+                  className="rounded-xl w-[750px] h-[440px] object-cover"
                 />
                 <div className="flex flex-col mt-6">
-                  <h3 className="text-2xl">{card.title}</h3>
-                  <p className="text-[16px] text-white-56">{card.subtitle}</p>
+                  <h3 className="text-2xl">{card.attributes.title}</h3>
+                  <p className="text-[16px] text-white-56">
+                    {card.attributes.summary}
+                  </p>
                 </div>
               </motion.div>
             );

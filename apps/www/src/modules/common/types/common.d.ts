@@ -3,7 +3,21 @@ export interface Footer {
   deftdodo_banner: boolean;
 }
 
-export interface Projects {}
+export interface ProjectsAttributes {
+  title: string;
+  summary: string;
+  createdAt: string;
+  updatedAt: string;
+  publishedAt: string;
+  locale: string;
+  image: MediaResponse;
+}
+
+export interface Projects {
+  id: number;
+  attributes: ProjectsAttributes;
+}
+
 export interface Services {}
 
 interface MediaSize {
@@ -36,8 +50,10 @@ export interface Media {
   };
 }
 
-export interface MediaResponse {
-  data: Media;
+export type MediaResponse = StrapiResponse<Media>;
+
+export interface StrapiResponse<TData> {
+  data: TData;
 }
 
 export interface ClientList {
