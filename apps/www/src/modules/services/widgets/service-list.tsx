@@ -13,16 +13,7 @@ const services: ServiceCardProps[] = [
       updatedAt: "2021-10-14T14:00:00.000Z",
       title: "Service 1",
       cta: "Learn More",
-      icon: {
-        data: {
-          id: 1,
-          attributes: {
-            name: "icon-name",
-            createdAt: "2021-10-14T14:00:00.000Z",
-            updatedAt: "2021-10-14T14:00:00.000Z",
-          },
-        },
-      },
+      icon: "theme",
       description: "Service 1 description",
       slug: "service-1",
     },

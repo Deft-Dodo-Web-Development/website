@@ -23,7 +23,7 @@ export interface ServiceAttributes {
   description: string;
   cta: string;
   slug: string;
-  icon: StrapiResponse<Icon>;
+  icon: string;
   createdAt: string;
   updatedAt: string;
 }
