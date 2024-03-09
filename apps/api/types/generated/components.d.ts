@@ -31,6 +31,20 @@ export interface CommonClients extends Schema.Component {
   };
 }
 
+export interface CommonFeaturedItem extends Schema.Component {
+  collectionName: 'components_common_featured_items';
+  info: {
+    displayName: 'Featured Item';
+    icon: 'star';
+    description: '';
+  };
+  attributes: {
+    text: Attribute.String & Attribute.Required;
+    featured: Attribute.String;
+    muted: Attribute.String;
+  };
+}
+
 export interface CommonHeadingCarousel extends Schema.Component {
   collectionName: 'components_common_heading_carousels';
   info: {
@@ -226,6 +240,22 @@ export interface HomeHeading extends Schema.Component {
   };
 }
 
+export interface HomeKeyFacts extends Schema.Component {
+  collectionName: 'components_home_key_facts';
+  info: {
+    displayName: 'key facts';
+    icon: 'bulletList';
+    description: '';
+  };
+  attributes: {
+    title: Attribute.String & Attribute.Required;
+    featured: Attribute.Component<'common.featured-item', true>;
+    with_container: Attribute.Boolean &
+      Attribute.Required &
+      Attribute.DefaultTo<true>;
+  };
+}
+
 export interface HomeProjects extends Schema.Component {
   collectionName: 'components_home_projects';
   info: {
@@ -281,6 +311,7 @@ declare module '@strapi/types' {
     export interface Components {
       'common.button': CommonButton;
       'common.clients': CommonClients;
+      'common.featured-item': CommonFeaturedItem;
       'common.heading-carousel': CommonHeadingCarousel;
       'common.heading': CommonHeading;
       'common.link': CommonLink;
@@ -296,6 +327,7 @@ declare module '@strapi/types' {
       'home.footer': HomeFooter;
       'home.heading-carousel': HomeHeadingCarousel;
       'home.heading': HomeHeading;
+      'home.key-facts': HomeKeyFacts;
       'home.projects': HomeProjects;
       'home.services': HomeServices;
       'shared.header': SharedHeader;

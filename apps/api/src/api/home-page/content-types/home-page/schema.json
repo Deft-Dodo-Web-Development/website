@@ -32,7 +32,8 @@
         "home.projects",
         "home.heading",
         "home.services",
-        "common.spacer"
+        "common.spacer",
+        "home.key-facts"
       ]
     },
     "Footer": {
