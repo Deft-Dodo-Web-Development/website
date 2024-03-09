@@ -239,7 +239,7 @@ export interface HomeProjects extends Schema.Component {
       'api::project.project'
     >;
     with_container: Attribute.Boolean & Attribute.DefaultTo<true>;
-    Title: Attribute.String;
+    title: Attribute.String;
   };
 }
 
