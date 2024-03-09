@@ -1,17 +1,31 @@
 {
   "collectionName": "components_home_headings",
   "info": {
-    "displayName": "Heading"
+    "displayName": "Heading",
+    "description": ""
   },
   "options": {},
   "attributes": {
-    "start": {
-      "type": "component",
-      "repeatable": false,
-      "component": "common.heading"
+    "with_container": {
+      "type": "boolean"
     },
-    "finish": {
+    "heading_bold": {
+      "type": "string",
+      "required": true
+    },
+    "heading_thing": {
+      "type": "string",
+      "required": false
+    },
+    "description": {
+      "type": "text"
+    },
+    "cta": {
       "type": "string"
+    },
+    "href": {
+      "type": "string",
+      "default": "/"
     }
   }
 }

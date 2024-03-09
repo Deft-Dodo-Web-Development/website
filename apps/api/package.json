@@ -1,7 +1,7 @@
 {
   "name": "@deft-dodo/api",
   "private": true,
-  "version": "0.2.2",
+  "version": "0.5.0",
   "description": "A Strapi application",
   "scripts": {
     "dev": "strapi develop",
@@ -19,6 +19,7 @@
     "@types/node": "^20.11.17"
   },
   "dependencies": {
+    "@exfabrica/strapi-plugin-awesome-seo": "1.0.0-beta.1.2",
     "@strapi/plugin-cloud": "4.20.1",
     "@strapi/plugin-i18n": "4.20.1",
     "@strapi/plugin-users-permissions": "4.20.1",
@@ -29,6 +30,7 @@
     "react-dom": "^18.0.0",
     "react-router-dom": "5.3.4",
     "strapi-plugin-config-sync": "^1.2.3",
+    "strapi-plugin-import-export-entries": "^1.23.1",
     "strapi-plugin-slugify": "^2.3.8",
     "styled-components": "5.3.3"
   },

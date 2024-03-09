@@ -1,5 +1,27 @@
 
 
+## [0.28.2](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/www-v0.28.1...@deft-dodo/www-v0.28.2) (2024-03-09)
+
+## [0.28.1](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/www-v0.28.0...@deft-dodo/www-v0.28.1) (2024-03-09)
+
+
+### Bug Fixes
+
+* **www:** check existence before accessing properties in clients-carousel and featured-services ([67f7570](https://github.com/zitdevs/deft-dodo/commit/67f75703521efa536b07779c88c015c0dd50e928))
+
+## [0.28.0](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/www-v0.27.0...@deft-dodo/www-v0.28.0) (2024-03-09)
+
+
+### Features
+
+* **www:** DDT-33 create api connection ([5fc3159](https://github.com/zitdevs/deft-dodo/commit/5fc3159c844460b85a4c55b0021cd4c02f81f24d))
+* **www:** DDT-33 update about-us component integration and data handling ([c058136](https://github.com/zitdevs/deft-dodo/commit/c0581365e50b86e884c541fc5a3ef8a952b101ac))
+* **www:** DDT-33 update HeroBanner props and integrate Spacer component ([876b90a](https://github.com/zitdevs/deft-dodo/commit/876b90a628d4585dcc922d19aec148153dfe1485))
+* **www:** DDT-33 update types and components for client listings ([4bdd40b](https://github.com/zitdevs/deft-dodo/commit/4bdd40b598543a0e42e101b9e88a358ba5590107))
+* **www:** integrate Key Facts component with data and animation ([4d891c5](https://github.com/zitdevs/deft-dodo/commit/4d891c554e22f6b624cf76b73fcb5a54bbcf354d))
+* **www:** integrate project data with carousel in home page ([d0ba33e](https://github.com/zitdevs/deft-dodo/commit/d0ba33e55a8486ad649afb5552e8537b22e9ecf8))
+* **www:** update types and components for services integration ([c6ce7e0](https://github.com/zitdevs/deft-dodo/commit/c6ce7e02e489b3c5a3656bd5a34add3e714168c2))
+
 ## [0.27.0](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/www-v0.26.0...@deft-dodo/www-v0.27.0) (2024-03-09)
 
 

@@ -7,33 +7,45 @@ const classes =
 
 export type HeadingSectionProps = {
   container?: boolean;
+  start?: {
+    title: string;
+    sub_title: string;
+  };
+  finish?: string;
 };
 
-const HeadingSection: React.FC<HeadingSectionProps> = ({ container }) => {
+const HeadingSection: React.FC<HeadingSectionProps> = ({
+  container,
+  start,
+  finish,
+}) => {
   return (
     <Container enabled={container} asChild>
       <Layout className="gap-2 lg:gap-5 items-end" asChild>
         <section>
-          {" "}
-          <Heading
-            variant="primary"
-            subHeading="Crafting"
-            size="lg"
-            alignment="start"
-            textTransform="uppercase"
-            className={classes}
-          >
-            <h2>Seamless</h2>
-          </Heading>
-          <Heading
-            variant="primary"
-            size="subtitle"
-            alignment="start"
-            textTransform="uppercase"
-            className={`${classes} md:text-[48px] md:-leading[48px] lg:text-right`}
-          >
-            <h3>Experiences</h3>
-          </Heading>
+          {!!start && (
+            <Heading
+              variant="primary"
+              subHeading={start.sub_title || ""}
+              size="lg"
+              alignment="start"
+              textTransform="uppercase"
+              className={classes}
+            >
+              {!!start.title && <h2>{start.title}</h2>}
+            </Heading>
+          )}
+          {!!finish && (
+            <Heading
+              variant="primary"
+              size="subtitle"
+              alignment="start"
+              textTransform="uppercase"
+              className={`${classes} md:text-[48px] md:-leading[48px] lg:text-right`}
+            >
+              <h3>{finish}</h3>
+            </Heading>
+          )}
         </section>
       </Layout>
     </Container>
