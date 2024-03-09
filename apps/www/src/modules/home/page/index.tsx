@@ -43,7 +43,7 @@ const testimonials: TestimonialCardProps[] = [
     name: "Dora Dybala",
     designation: "CEO & Founder of Company",
     avatar: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6SGvshARHJ5GYSH_Kig8-cYNw5rO3nWn7mA&usqp=CAU",
-    companyImage: "https://placehold.co/140x32",
+    companyImage: "https://placehold.co/140x32.png",
   },
   {
     quote: "Anticipating the next chapter of collaboration with Boltzshift",
@@ -51,7 +51,7 @@ const testimonials: TestimonialCardProps[] = [
     name: "Ryan Dyson",
     designation: "CTO of Company",
     avatar: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6SGvshARHJ5GYSH_Kig8-cYNw5rO3nWn7mA&usqp=CAU",
-    companyImage: "https://placehold.co/140x32",
+    companyImage: "https://placehold.co/140x32.png",
   }
 ];
 

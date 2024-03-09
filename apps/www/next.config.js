@@ -14,6 +14,11 @@ module.exports = {
         protocol: strapi.protocol.slice(0, -1),
         hostname: strapi.hostname,
         port: port,
-      }]
+      },
+      {
+        protocol: 'https',
+        hostname: 'placehold.co',
+      }
+    ]
   }
 };
