@@ -10,6 +10,7 @@ import { Projects } from "../widgets/projects";
 import BannerMarquee from "@/modules/common/components/banner-marquee";
 import Experience from "@/modules/common/components/experience";
 import FooterSetup from "@/modules/common/utilities/footer-setup";
+import KeyFactsSection from "../widgets/key-facts";
 
 const HomePage = () => {
   return (
@@ -28,7 +29,9 @@ const HomePage = () => {
       <Clients container className="mt-28" />
       <Separator className="my-28" />
       <AboutUs container />
-      <Separator className="mt-28 mb-10" container />
+      <Separator className="my-28" />
+      <KeyFactsSection container />
+      <Separator className="mt-28 mb-10" />
       <Projects container />
       <Separator className="mt-28 mb-2" container />
       <Services container />
