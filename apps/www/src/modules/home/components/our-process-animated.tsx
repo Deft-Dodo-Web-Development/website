@@ -2,6 +2,7 @@
 
 import { Heading } from "@/modules/common/components/heading";
 import { motion } from "framer-motion";
+import { Components } from "@/modules/common/types/components";
 
 export interface ProcessItem {
   number: string;
@@ -9,19 +10,10 @@ export interface ProcessItem {
   description: string;
 }
 
-export interface OurProcessProps {
-  id: number;
-  __component: "home.our-process";
-  with_container: boolean;
-  heading: {
-    id: number;
-    title: string;
-  };
-  items: ProcessItem[];
-}
+export type OurProcessProps = Components.StepByStep;
 
 const OurProcessAnimated = (props: OurProcessProps) => {
-  const { heading, items } = props;
+  const { steps, title } = props;
   const variants = {
     hidden: { opacity: 0, y: 40 },
     show: {
@@ -53,7 +45,7 @@ const OurProcessAnimated = (props: OurProcessProps) => {
           className="md:text-[48px] md:leading-[48px] mb-16"
           alignment="middle"
         >
-          {heading.title}
+          {title}
         </Heading>
       </motion.div>
       <motion.ul
@@ -63,14 +55,14 @@ const OurProcessAnimated = (props: OurProcessProps) => {
         variants={variants}
         viewport={{ once: true, margin: "0px" }}
       >
-        {items.map((item) => (
+        {steps.map((item) => (
           <motion.li
             className="bg-primary/5 p-8"
             variants={variants}
             key={item.number}
           >
             <span className="font-medium text-6xl leading-[60px] lg:text-[80px] lg:leading-[80px] block mb-5 text-primary">
-              {item.number}
+              {item.number < 10 ? `0${item.number}` : item.number}
             </span>
             <h3 className="font-semibold text-3xl leading-8 md:text-4xl md:leading-[40px] mb-5 text-white">
               {item.title}

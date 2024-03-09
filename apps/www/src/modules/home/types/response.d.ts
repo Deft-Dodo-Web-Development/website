@@ -21,4 +21,5 @@ type PageContent =
   | Components.Separator
   | Components.Clients
   | Components.Spacer
-  | Components.KeyFacts;
+  | Components.KeyFacts
+  | Components.StepByStep;

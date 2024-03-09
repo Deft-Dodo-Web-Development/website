@@ -1,4 +1,4 @@
-import { FeaturedItem, StrapiResponse } from "./common.d";
+import { FeaturedItem, Step, StrapiResponse } from "./common.d";
 import {
   Projects as BaseProjects,
   Services as BaseServices,
@@ -88,5 +88,13 @@ export namespace Components {
     title: string;
     featured: FeaturedItem[];
     with_container: boolean;
+  }
+
+  export interface StepByStep {
+    id: number;
+    __component: "home.step-by-step";
+    title: string;
+    with_container: boolean;
+    steps: Step[];
   }
 }
