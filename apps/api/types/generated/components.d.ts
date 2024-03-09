@@ -248,15 +248,18 @@ export interface HomeServices extends Schema.Component {
   info: {
     displayName: 'Services';
     icon: 'bulletList';
+    description: '';
   };
   attributes: {
     with_container: Attribute.Boolean & Attribute.DefaultTo<true>;
-    title: Attribute.String;
     services: Attribute.Relation<
       'home.services',
       'oneToMany',
       'api::service.service'
     >;
+    heading: Attribute.Component<'common.section-content-with-title'>;
+    description: Attribute.Text;
+    cta_url: Attribute.String;
   };
 }
 

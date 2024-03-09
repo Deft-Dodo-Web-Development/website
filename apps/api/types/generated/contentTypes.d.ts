@@ -624,6 +624,198 @@ export interface PluginSlugifySlug extends Schema.CollectionType {
   };
 }
 
+export interface PluginCmsAnalyzerAnalyse extends Schema.CollectionType {
+  collectionName: 'cms-analyser-results';
+  info: {
+    singularName: 'analyse';
+    pluralName: 'analyses';
+    collectionName: 'cms-analyser-results';
+    displayName: 'CmsAnalyzerResults';
+    description: 'Cms Analyzer results';
+  };
+  options: {
+    increments: true;
+    timestamps: true;
+    draftAndPublish: false;
+  };
+  pluginOptions: {
+    'content-manager': {
+      visible: false;
+    };
+    'content-type-builder': {
+      visible: false;
+    };
+  };
+  attributes: {
+    key: Attribute.String;
+    apiName: Attribute.String;
+    frontUrl: Attribute.String;
+    documentId: Attribute.Integer;
+    documentFields: Attribute.JSON;
+    seoAnalyse: Attribute.JSON;
+    tags: Attribute.JSON;
+    screenshot: Attribute.String;
+    depth: Attribute.Integer;
+    contentKind: Attribute.String;
+    locale: Attribute.String;
+    isChecked: Attribute.Boolean;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'plugin::cms-analyzer.analyse',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'plugin::cms-analyzer.analyse',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface PluginCmsAnalyzerMatch extends Schema.CollectionType {
+  collectionName: 'cms-analyser-matches';
+  info: {
+    singularName: 'match';
+    pluralName: 'matches';
+    collectionName: 'cms-analyser-matches';
+    displayName: 'CmsAnalyzerMatches';
+    description: 'Cms Analyzer matches';
+  };
+  options: {
+    increments: true;
+    timestamps: true;
+    draftAndPublish: false;
+  };
+  pluginOptions: {
+    'content-manager': {
+      visible: false;
+    };
+    'content-type-builder': {
+      visible: false;
+    };
+  };
+  attributes: {
+    apiName: Attribute.String;
+    fieldName: Attribute.String;
+    tagName: Attribute.String;
+    componentName: Attribute.String;
+    dynamicZoneName: Attribute.String;
+    status: Attribute.String;
+    isMultipleDoc: Attribute.Boolean;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'plugin::cms-analyzer.match',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'plugin::cms-analyzer.match',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface PluginCmsAnalyzerMedia extends Schema.CollectionType {
+  collectionName: 'cms-analyser-medias';
+  info: {
+    singularName: 'media';
+    pluralName: 'medias';
+    collectionName: 'cms-analyser-medias';
+    displayName: 'CmsAnalyzerMedias';
+    description: 'Cms Analyzer Medias';
+  };
+  options: {
+    increments: true;
+    timestamps: true;
+    draftAndPublish: false;
+  };
+  pluginOptions: {
+    'content-manager': {
+      visible: false;
+    };
+    'content-type-builder': {
+      visible: false;
+    };
+  };
+  attributes: {
+    frontUrl: Attribute.String;
+    mediaUrl: Attribute.String;
+    height: Attribute.Integer;
+    width: Attribute.Integer;
+    alt: Attribute.String;
+    data: Attribute.JSON;
+    status: Attribute.String;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'plugin::cms-analyzer.media',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'plugin::cms-analyzer.media',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface PluginCmsAnalyzerSummary extends Schema.CollectionType {
+  collectionName: 'cms-analyser-summaries';
+  info: {
+    singularName: 'summary';
+    pluralName: 'summaries';
+    collectionName: 'cms-analyser-summaries';
+    displayName: 'CmsAnalyzerSummaries';
+    description: 'Cms Analyzer Results summary';
+  };
+  options: {
+    increments: true;
+    timestamps: true;
+    draftAndPublish: false;
+  };
+  pluginOptions: {
+    'content-manager': {
+      visible: false;
+    };
+    'content-type-builder': {
+      visible: false;
+    };
+  };
+  attributes: {
+    frontUrl: Attribute.String;
+    nbUrl: Attribute.Integer;
+    nbErrorLow: Attribute.Integer;
+    nbErrorHigh: Attribute.Integer;
+    user: Attribute.String;
+    date: Attribute.DateTime;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'plugin::cms-analyzer.summary',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'plugin::cms-analyzer.summary',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 export interface PluginI18NLocale extends Schema.CollectionType {
   collectionName: 'i18n_locale';
   info: {
@@ -999,6 +1191,32 @@ export interface ApiHomePageHomePage extends Schema.SingleType {
   };
 }
 
+export interface ApiIconIcon extends Schema.CollectionType {
+  collectionName: 'icons';
+  info: {
+    singularName: 'icon';
+    pluralName: 'icons';
+    displayName: 'Icon';
+  };
+  options: {
+    draftAndPublish: false;
+  };
+  attributes: {
+    name: Attribute.String & Attribute.Required & Attribute.Unique;
+    services: Attribute.Relation<
+      'api::icon.icon',
+      'oneToMany',
+      'api::service.service'
+    >;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<'api::icon.icon', 'oneToOne', 'admin::user'> &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<'api::icon.icon', 'oneToOne', 'admin::user'> &
+      Attribute.Private;
+  };
+}
+
 export interface ApiProjectProject extends Schema.CollectionType {
   collectionName: 'projects';
   info: {
@@ -1064,6 +1282,7 @@ export interface ApiServiceService extends Schema.CollectionType {
     singularName: 'service';
     pluralName: 'services';
     displayName: 'Service';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -1081,6 +1300,32 @@ export interface ApiServiceService extends Schema.CollectionType {
           localized: true;
         };
       }>;
+    description: Attribute.Text &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    cta: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }> &
+      Attribute.DefaultTo<'Learn More'>;
+    slug: Attribute.String &
+      Attribute.Required &
+      Attribute.Unique &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    icon: Attribute.Relation<
+      'api::service.service',
+      'manyToOne',
+      'api::icon.icon'
+    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1120,6 +1365,10 @@ declare module '@strapi/types' {
       'plugin::content-releases.release': PluginContentReleasesRelease;
       'plugin::content-releases.release-action': PluginContentReleasesReleaseAction;
       'plugin::slugify.slug': PluginSlugifySlug;
+      'plugin::cms-analyzer.analyse': PluginCmsAnalyzerAnalyse;
+      'plugin::cms-analyzer.match': PluginCmsAnalyzerMatch;
+      'plugin::cms-analyzer.media': PluginCmsAnalyzerMedia;
+      'plugin::cms-analyzer.summary': PluginCmsAnalyzerSummary;
       'plugin::i18n.locale': PluginI18NLocale;
       'plugin::users-permissions.permission': PluginUsersPermissionsPermission;
       'plugin::users-permissions.role': PluginUsersPermissionsRole;
@@ -1127,6 +1376,7 @@ declare module '@strapi/types' {
       'api::footer.footer': ApiFooterFooter;
       'api::header.header': ApiHeaderHeader;
       'api::home-page.home-page': ApiHomePageHomePage;
+      'api::icon.icon': ApiIconIcon;
       'api::project.project': ApiProjectProject;
       'api::service.service': ApiServiceService;
     }
