@@ -38,7 +38,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
     >
       {icon && (
         <Icon
-          name={iconify(icon.data.attributes.name)}
+          name={iconify(icon)}
           className={settings[variant].text + " size-16"}
         />
       )}
