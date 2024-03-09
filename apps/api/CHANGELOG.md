@@ -1,5 +1,13 @@
 
 
+## [0.7.0](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/api-v0.6.2...@deft-dodo/api-v0.7.0) (2024-03-09)
+
+
+### Features
+
+* **api:** DDT-46 integrate testimonials into home page schema ([cd8cd3c](https://github.com/zitdevs/deft-dodo/commit/cd8cd3c904745d27864a74627be450815e91ba30))
+* **api:** enhance admin roles with specific permissions ([9a616a8](https://github.com/zitdevs/deft-dodo/commit/9a616a8694b335b3986fffd459c45e4130782932))
+
 ## [0.6.2](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/api-v0.6.1...@deft-dodo/api-v0.6.2) (2024-03-09)
 
 ## [0.6.1](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/api-v0.6.0...@deft-dodo/api-v0.6.1) (2024-03-09)
