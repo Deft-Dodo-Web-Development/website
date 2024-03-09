@@ -21,6 +21,16 @@ const HomePage = async () => {
         switch (content.__component) {
           case "home.heading":
             return <HeroSection key={index} {...content} />;
+          case "home.heading-carousel":
+            return <HeroCarousel key={index} {...content} />;
+          case "home.clients":
+            return <Clients key={index} {...content} />;
+          case "home.about-us":
+            return <AboutUs key={index} {...content} />;
+          case "home.projects":
+            return <Projects key={index} {...content} />;
+          case "home.services":
+            return <FeaturedServices key={index} {...content} />;
           case "common.separator":
             return (
               <Separator
@@ -32,10 +42,6 @@ const HomePage = async () => {
                 }}
               />
             );
-          case "home.heading-carousel":
-            return <HeroCarousel key={index} {...content} />;
-          case "home.clients":
-            return <Clients key={index} {...content} />;
           case "common.spacer":
             return (
               <div
@@ -44,20 +50,12 @@ const HomePage = async () => {
                 }}
               />
             );
-          case "home.about-us":
-            return <AboutUs key={index} {...content} />;
-          case "home.projects":
-            return <Projects key={index} {...content} />;
-          case "home.services":
-            return <FeaturedServices key={index} {...content} />;
           default:
             return null;
         }
       })}
 
       <KeyFactsSection container />
-      {/* */}
-      {/* <Services container /> */}
       <Separator className="mt-24 mb-36" container />
       <BannerMarquee />
       <Experience />
