@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_home_step_by_steps",
+  "info": {
+    "displayName": "step by step",
+    "icon": "bulletList",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "with_container": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "title": {
+      "type": "string"
+    },
+    "steps": {
+      "type": "component",
+      "repeatable": true,
+      "component": "common.step"
+    }
+  }
+}

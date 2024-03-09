@@ -1154,7 +1154,8 @@ export interface ApiHomePageHomePage extends Schema.SingleType {
         'home.heading',
         'home.services',
         'common.spacer',
-        'home.key-facts'
+        'home.key-facts',
+        'home.step-by-step'
       ]
     > &
       Attribute.SetPluginOptions<{
