@@ -27,7 +27,17 @@ const HomePage = () => {
       <HeroCarousel container />
       <Clients container className="mt-28" />
       <Separator className="my-28" />
-      <AboutUs container />
+      <AboutUs
+        id={1}
+        __component="home.about-us"
+        with_container={true}
+        heading={{
+          id: 1,
+          title: "About Us",
+          sub_title: "We are a creative agency",
+        }}
+        content="Deft Dodo is a design & develop agency of the future with 120+ successful projects in their portfolio."
+      />
       <Separator className="mt-28 mb-10" container />
       <Projects container />
       <Separator className="mt-28 mb-2" container />

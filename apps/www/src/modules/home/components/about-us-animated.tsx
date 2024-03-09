@@ -4,7 +4,21 @@ import { Heading } from "@/modules/common/components/heading";
 import { motion } from "framer-motion";
 import { useMediaQuery } from "react-responsive";
 
-const AboutUsAnimated = () => {
+export interface AboutUsProps {
+  id: number;
+  __component: "home.about-us";
+  with_container: boolean;
+  content: string;
+  heading: {
+    id: number;
+    title: string;
+    sub_title: string;
+  };
+}
+
+const AboutUsAnimated = (props: AboutUsProps) => {
+  const { heading, content } = props;
+
   const isLarge = useMediaQuery({ minWidth: 1024 });
 
   const variants = {
@@ -39,12 +53,12 @@ const AboutUsAnimated = () => {
         }}
       >
         <Heading
-          subHeading="About"
+          subHeading={heading.sub_title}
           size="md"
           variant="primary"
           className="md:text-[48px] md:leading-[48px]"
         >
-          Deft Dodo Agency
+          {heading.title}
         </Heading>
       </motion.section>
       <motion.div
@@ -58,19 +72,7 @@ const AboutUsAnimated = () => {
           ease: "easeOut",
         }}
       >
-        <p className="text-lg md:text-xl text-balance">
-          We craft immersive online shopping experiences that leave lasting
-          impressions. With a team of passionate developers, creative designers,
-          and strategic thinkers, we are committed to pushing the boundaries of
-          e-commerce excellence.
-        </p>
-        <br />
-        <p className="text-lg md:text-xl text-balance">
-          We craft immersive online shopping experiences that leave lasting
-          impressions. With a team of passionate developers, creative designers,
-          and strategic thinkers, we are committed to pushing the boundaries of
-          e-commerce excellence.
-        </p>
+        <p className="text-lg md:text-xl text-balance">{content}</p>
       </motion.div>
     </>
   );
