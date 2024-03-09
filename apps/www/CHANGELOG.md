@@ -1,5 +1,12 @@
 
 
+## [0.33.0](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/www-v0.32.0...@deft-dodo/www-v0.33.0) (2024-03-09)
+
+
+### Features
+
+* **www:** DDT-40 add homepage's testimonial section ([0b427cc](https://github.com/zitdevs/deft-dodo/commit/0b427ccf8748786519a9b921f502c59c509a6699))
+
 ## [0.32.0](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/www-v0.31.0...@deft-dodo/www-v0.32.0) (2024-03-09)
 
 
