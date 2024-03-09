@@ -1,5 +1,23 @@
 
 
+## [0.33.3](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/www-v0.33.2...@deft-dodo/www-v0.33.3) (2024-03-09)
+
+## [0.33.2](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/www-v0.33.1...@deft-dodo/www-v0.33.2) (2024-03-09)
+
+
+### Bug Fixes
+
+* **www:** ensure imageSize existence before rendering in HeroVideo ([958e70e](https://github.com/zitdevs/deft-dodo/commit/958e70eb5dcd1aab47a5fbb997f67f4ac9848117))
+
+## [0.33.1](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/www-v0.33.0...@deft-dodo/www-v0.33.1) (2024-03-09)
+
+## [0.33.0](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/www-v0.32.0...@deft-dodo/www-v0.33.0) (2024-03-09)
+
+
+### Features
+
+* **www:** DDT-40 add homepage's testimonial section ([0b427cc](https://github.com/zitdevs/deft-dodo/commit/0b427ccf8748786519a9b921f502c59c509a6699))
+
 ## [0.32.0](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/www-v0.31.0...@deft-dodo/www-v0.32.0) (2024-03-09)
 
 

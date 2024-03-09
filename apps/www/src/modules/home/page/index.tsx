@@ -19,20 +19,24 @@ import Team from "../widgets/team";
 const testimonials: TestimonialCardProps[] = [
   {
     quote: "I am looking forward to working with the Boltzshift again.",
-    paragraph: "I create efficient, adaptable, and engaging websites. No predefined patterns. No sluggish, complex code. Webflow forms the foundation of my web development approach. I employ it to provide safe, top-notch bespoke websites.",
+    paragraph:
+      "I create efficient, adaptable, and engaging websites. No predefined patterns. No sluggish, complex code. Webflow forms the foundation of my web development approach. I employ it to provide safe, top-notch bespoke websites.",
     name: "Dora Dybala",
     designation: "CEO & Founder of Company",
-    avatar: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6SGvshARHJ5GYSH_Kig8-cYNw5rO3nWn7mA&usqp=CAU",
+    avatar:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6SGvshARHJ5GYSH_Kig8-cYNw5rO3nWn7mA&usqp=CAU",
     companyImage: "https://placehold.co/140x32.png",
   },
   {
     quote: "Anticipating the next chapter of collaboration with Boltzshift",
-    paragraph: "I create efficient, adaptable, and engaging websites. No predefined patterns. No sluggish, complex code. Webflow forms the foundation of my web development approach. I employ it to provide safe, top-notch bespoke websites.",
+    paragraph:
+      "I create efficient, adaptable, and engaging websites. No predefined patterns. No sluggish, complex code. Webflow forms the foundation of my web development approach. I employ it to provide safe, top-notch bespoke websites.",
     name: "Ryan Dyson",
     designation: "CTO of Company",
-    avatar: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6SGvshARHJ5GYSH_Kig8-cYNw5rO3nWn7mA&usqp=CAU",
+    avatar:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6SGvshARHJ5GYSH_Kig8-cYNw5rO3nWn7mA&usqp=CAU",
     companyImage: "https://placehold.co/140x32.png",
-  }
+  },
 ];
 
 const teamMembers: TeamCardProps[] = [
@@ -114,7 +118,12 @@ const HomePage = async () => {
     return null;
   }
 
-  const pageContent = response.data.attributes.pageContent;
+  const pageContent = response?.data?.attributes?.pageContent;
+
+  if (!pageContent) {
+    console.log("No page content found");
+    return null;
+  }
 
   return (
     <>
