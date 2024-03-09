@@ -1,5 +1,12 @@
 
 
+## [0.29.0](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/www-v0.28.2...@deft-dodo/www-v0.29.0) (2024-03-09)
+
+
+### Features
+
+* DDT-39 add our proccess section ([f5dc4a1](https://github.com/zitdevs/deft-dodo/commit/f5dc4a1dfb408faf93d4986983efb46d36984044))
+
 ## [0.28.2](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/www-v0.28.1...@deft-dodo/www-v0.28.2) (2024-03-09)
 
 ## [0.28.1](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/www-v0.28.0...@deft-dodo/www-v0.28.1) (2024-03-09)
