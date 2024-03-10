@@ -37,6 +37,7 @@ export async function getHomePageData() {
       headers: {
         Authorization: `Bearer ${process.env.STRAPI_ACCESS_TOKEN}`,
       },
+      next: { revalidate: 60 },
     }
   );
 
