@@ -12,7 +12,7 @@ const execAsync = promisify(exec);
 async function main() {
   const exportsDir = getExportDirs();
   const latestExport = readExports(exportsDir);
-  const command = `npm run strapi import -f ${path.join(exportsDir, latestExport)} --force`;
+  const command = `pnpm strapi import -f "${path.join(exportsDir, latestExport)}" --force`;
 
   const client = await db();
   await createTable(client);
@@ -45,7 +45,7 @@ async function db() {
     `postgresql://${data.user}:${data.password}@${data.host}:${data.port}/${data.database}`;
 
   const client = new Client({ connectionString });
-  console.log("⏰ Connecting to database");
+  console.log("\n⏰ Connecting to database");
   await client.connect();
   console.log("✅ Connected to database");
 
@@ -53,6 +53,7 @@ async function db() {
 }
 
 async function createTable(client: Client) {
+  console.log("\n⏰ Creating table if not exists");
   const createTableQuery = `
   CREATE TABLE IF NOT EXISTS custom_migration (
     id SERIAL PRIMARY KEY,
@@ -62,18 +63,21 @@ async function createTable(client: Client) {
   `;
 
   await client.query(createTableQuery);
+  console.log("✅ Table created");
 }
 
 async function checkExist(client: Client, name: string) {
+  console.log("\n⏰ Checking if migration exists");
+
   const checkMigrationQuery = `
   SELECT * FROM custom_migration WHERE name = $1;
   `;
   const { rows } = await client.query(checkMigrationQuery, [name]);
-
   return rows.length > 0;
 }
 
 async function runCommand(command: string) {
+  console.log("\n⏰ Running command");
   const { stdout, stderr } = await execAsync(command);
   console.log(stdout);
 
@@ -83,9 +87,13 @@ async function runCommand(command: string) {
       return process.exit(1);
     }
   }
+
+  console.log("✅ Command executed");
 }
 
 async function insertMigration(client: Client, name: string) {
+  console.log("\n⏰ Inserting migration into database");
+
   const insertMigrationQuery = `
   INSERT INTO custom_migration (name) VALUES ($1);
   `;
@@ -93,15 +101,22 @@ async function insertMigration(client: Client, name: string) {
   await client.query("BEGIN");
   await client.query(insertMigrationQuery, [name]);
   await client.query("COMMIT");
+
+  console.log("✅ Migration inserted\n\n");
 }
 
 function getExportDirs() {
-  const currentDir = path.join(__dirname);
+  let currentDir = path.join(__dirname);
+
+  if (currentDir.includes("apps/api/")) {
+    const splicedDir = currentDir.split("apps/api/");
+    currentDir = `./${splicedDir[splicedDir.length - 1]}`;
+  }
 
   if (currentDir.includes("dist"))
-    return path.join(__dirname, "..", "..", "exports");
+    return path.join(currentDir, "..", "..", "exports");
 
-  return path.join(__dirname, "..", "exports");
+  return path.join(currentDir, "..", "exports");
 }
 
 function readExports(exportsDir: string) {
