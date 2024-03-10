@@ -14,6 +14,7 @@ import Testimonials from "../widgets/testimonials";
 import OurProcess from "../widgets/our-process";
 import { type TeamCardProps } from "../components/team-card";
 import Team from "../widgets/team";
+import Contact from "../widgets/contact";
 
 const teamMembers: TeamCardProps[] = [
   {
@@ -159,6 +160,14 @@ const HomePage = async () => {
         members={teamMembers}
       />
       <Separator className="mt-24 mb-36" container />
+      <Contact
+        with_container
+        heading={{
+          title: "Contact Us",
+          sub_title: "Get in touch",
+        }}
+        description="Whether you're starting from scratch, looking to revamp your existing store, or seeking custom e-commerce solutions, we've got you covered."
+      />
       <BannerMarquee />
       <Experience />
       <FooterSetup variant="basic" />
