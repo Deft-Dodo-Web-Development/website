@@ -13,6 +13,10 @@
       "cache": false,
       "persistent": true
     },
+    "start": {
+      "dependsOn": ["^start"],
+      "persistent": true
+    },
     "release": {
       "dependsOn": ["^release"],
       "outputMode": "new-only"
