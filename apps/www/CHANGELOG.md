@@ -1,5 +1,12 @@
 
 
+## [0.37.0](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/www-v0.36.0...@deft-dodo/www-v0.37.0) (2024-03-10)
+
+
+### Features
+
+* **www:** Add contact form section to home ([b81500f](https://github.com/zitdevs/deft-dodo/commit/b81500f1bfa72dfb25567945049d7725a88df43b))
+
 ## [0.36.0](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/www-v0.35.0...@deft-dodo/www-v0.36.0) (2024-03-10)
 
 
