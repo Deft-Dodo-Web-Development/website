@@ -1,5 +1,12 @@
 
 
+## [0.8.0](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/api-v0.7.0...@deft-dodo/api-v0.8.0) (2024-03-10)
+
+
+### Features
+
+* **api:** DDT-46 Implement database migration strategy ([a7e3804](https://github.com/zitdevs/deft-dodo/commit/a7e3804c832c4b5131660959a8fd90c8e97fbaec))
+
 ## [0.7.0](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/api-v0.6.2...@deft-dodo/api-v0.7.0) (2024-03-09)
 
 
