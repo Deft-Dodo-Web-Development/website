@@ -1,5 +1,12 @@
 
 
+## [0.8.1](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/api-v0.8.0...@deft-dodo/api-v0.8.1) (2024-03-10)
+
+
+### Bug Fixes
+
+* **api:** Adjust migrate script to use pnpm and improve logging ([a353304](https://github.com/zitdevs/deft-dodo/commit/a3533042d28af9208b18ca91a0d6a871b35fdffc))
+
 ## [0.8.0](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/api-v0.7.0...@deft-dodo/api-v0.8.0) (2024-03-10)
 
 
