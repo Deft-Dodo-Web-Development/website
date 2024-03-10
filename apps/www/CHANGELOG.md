@@ -1,5 +1,12 @@
 
 
+## [0.36.0](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/www-v0.35.0...@deft-dodo/www-v0.36.0) (2024-03-10)
+
+
+### Features
+
+* **www:** Add revalidation interval to home page data fetching ([384f6fa](https://github.com/zitdevs/deft-dodo/commit/384f6fab6523b4e02f8f29bdce085b4d1907f208))
+
 ## [0.35.0](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/www-v0.34.0...@deft-dodo/www-v0.35.0) (2024-03-09)
 
 
