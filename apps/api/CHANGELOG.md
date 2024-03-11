@@ -1,5 +1,14 @@
 
 
+## [0.9.0](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/api-v0.8.1...@deft-dodo/api-v0.9.0) (2024-03-11)
+
+
+### Features
+
+* **api:** DDT-48 add SEO component to home page schema ([debf504](https://github.com/zitdevs/deft-dodo/commit/debf5044079db12aede6687c335bdb35069035e5))
+* **api:** DDT-48 update Projects component structure ([8e51d0b](https://github.com/zitdevs/deft-dodo/commit/8e51d0bb7d0e6692e07df4a850f1fa069fd4c4b3))
+* **api:** DDT-48 update Strapi API configurations and schemas ([c00b110](https://github.com/zitdevs/deft-dodo/commit/c00b1102548a5407cbc125ca7639b2032b3ecbed))
+
 ## [0.8.1](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/api-v0.8.0...@deft-dodo/api-v0.8.1) (2024-03-10)
 
 
