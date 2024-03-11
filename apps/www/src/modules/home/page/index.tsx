@@ -18,7 +18,7 @@ import { Metadata } from "next";
 
 export const generateMetadata = async (): Promise<Metadata> => {
   const seoRes = await getSeoPageData();
-  console.log({ seoRes });
+
   if (!seoRes || !seoRes?.data?.attributes?.seo) return {};
 
   const seo = seoRes.data.attributes.seo;
