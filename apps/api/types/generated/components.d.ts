@@ -335,7 +335,7 @@ export interface HomeProjects extends Schema.Component {
       'api::project.project'
     >;
     with_container: Attribute.Boolean & Attribute.DefaultTo<true>;
-    title: Attribute.String;
+    heading: Attribute.Component<'common.section-content-with-title'>;
   };
 }
 
