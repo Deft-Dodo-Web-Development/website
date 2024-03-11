@@ -1,5 +1,12 @@
 
 
+## [0.10.0](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/api-v0.9.0...@deft-dodo/api-v0.10.0) (2024-03-11)
+
+
+### Features
+
+* **api:** customize Strapi admin login page and update favicon ([8b045b8](https://github.com/zitdevs/deft-dodo/commit/8b045b8253b0672d3cf83721008acd5044fda2ff))
+
 ## [0.9.0](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/api-v0.8.1...@deft-dodo/api-v0.9.0) (2024-03-11)
 
 
