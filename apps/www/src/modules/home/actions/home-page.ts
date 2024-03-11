@@ -28,6 +28,9 @@ export async function getHomePageData() {
       "pageContent.testimonials.identity",
       "pageContent.testimonials.identity.picture",
       "pageContent.testimonials.identity.company_logo",
+      "pageContent.members",
+      "pageContent.members.picture",
+      "pageContent.members.social",
     ],
   });
   const request = await fetch(
@@ -42,6 +45,5 @@ export async function getHomePageData() {
   );
 
   const data = await request.json();
-
   return data as HomePageServerResponse;
 }

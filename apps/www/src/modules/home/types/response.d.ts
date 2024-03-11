@@ -23,4 +23,5 @@ type PageContent =
   | Components.Spacer
   | Components.KeyFacts
   | Components.StepByStep
-  | Components.Testimonials;
+  | Components.Testimonials
+  | Components.Team;

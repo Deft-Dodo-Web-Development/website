@@ -12,84 +12,8 @@ import KeyFactsSection from "../widgets/key-facts";
 import FeaturedServices from "../widgets/featured-services";
 import Testimonials from "../widgets/testimonials";
 import OurProcess from "../widgets/our-process";
-import { type TeamCardProps } from "../components/team-card";
 import Team from "../widgets/team";
 import Contact from "../widgets/contact";
-
-const teamMembers: TeamCardProps[] = [
-  {
-    name: "John Doe",
-    avatar:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6SGvshARHJ5GYSH_Kig8-cYNw5rO3nWn7mA&usqp=CAU",
-    position: "CEO",
-    socialLinks: [
-      {
-        icon: "github",
-        link: "https://github.com",
-      },
-      {
-        icon: "linkedin",
-        link: "https://linkedin.com",
-      },
-      {
-        icon: "twitter",
-        link: "https://twitter.com",
-      },
-      {
-        icon: "facebook",
-        link: "https://facebook.com",
-      },
-    ],
-  },
-  {
-    name: "Jane Doe",
-    avatar:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6SGvshARHJ5GYSH_Kig8-cYNw5rO3nWn7mA&usqp=CAU",
-    position: "COO",
-    socialLinks: [
-      {
-        icon: "github",
-        link: "https://github.com",
-      },
-      {
-        icon: "linkedin",
-        link: "https://linkedin.com",
-      },
-      {
-        icon: "twitter",
-        link: "https://twitter.com",
-      },
-      {
-        icon: "facebook",
-        link: "https://facebook.com",
-      },
-    ],
-  },
-  {
-    name: "John Doe",
-    avatar:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6SGvshARHJ5GYSH_Kig8-cYNw5rO3nWn7mA&usqp=CAU",
-    position: "CEO",
-    socialLinks: [
-      {
-        icon: "github",
-        link: "https://github.com",
-      },
-      {
-        icon: "linkedin",
-        link: "https://linkedin.com",
-      },
-      {
-        icon: "twitter",
-        link: "https://twitter.com",
-      },
-      {
-        icon: "facebook",
-        link: "https://facebook.com",
-      },
-    ],
-  },
-];
 
 const HomePage = async () => {
   const response = await getHomePageData();
@@ -127,6 +51,8 @@ const HomePage = async () => {
             return <OurProcess key={index} {...content} />;
           case "home.testimonials":
             return <Testimonials key={index} {...content} />;
+          case "home.team":
+            return <Team key={index} {...content} />;
           case "common.separator":
             return (
               <Separator
@@ -150,16 +76,6 @@ const HomePage = async () => {
             return null;
         }
       })}
-      <Separator className="my-28" />
-      <Team
-        with_container
-        heading={{
-          title: "Meet the Team",
-          sub_title: "Our Team",
-        }}
-        members={teamMembers}
-      />
-      <Separator className="mt-24 mb-36" container />
       <Contact
         with_container
         heading={{

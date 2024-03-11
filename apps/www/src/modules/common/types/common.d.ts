@@ -129,3 +129,25 @@ export interface Step {
   title: string;
   description: string;
 }
+
+export type SocialPlatform = "github" | "linkedin" | "twitter" | "facebook";
+
+export interface Social {
+  id: number;
+  platform: SocialPlatform;
+  link: string;
+}
+
+export interface TeamMemberAttributes {
+  name: string;
+  picture: MediaResponse;
+  position: string;
+  social: Social[];
+  createdAt: string;
+  updatedAt: string;
+}
+
+export interface TeamMember {
+  id: number;
+  attributes: TeamMemberAttributes;
+}
