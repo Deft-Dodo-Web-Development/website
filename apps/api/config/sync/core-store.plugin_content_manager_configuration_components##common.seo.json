@@ -1,12 +1,12 @@
 {
-  "key": "plugin_content_manager_configuration_components::home.projects",
+  "key": "plugin_content_manager_configuration_components::common.seo",
   "value": {
     "settings": {
       "bulkable": true,
       "filterable": true,
       "searchable": true,
       "pageSize": 10,
-      "mainField": "id",
+      "mainField": "title",
       "defaultSortBy": "id",
       "defaultSortOrder": "ASC"
     },
@@ -19,79 +19,94 @@
           "sortable": false
         }
       },
-      "projects": {
+      "title": {
         "edit": {
-          "label": "projects",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true,
-          "mainField": "title"
-        },
-        "list": {
-          "label": "projects",
-          "searchable": false,
-          "sortable": false
-        }
-      },
-      "with_container": {
-        "edit": {
-          "label": "with_container",
+          "label": "title",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "with_container",
+          "label": "title",
           "searchable": true,
           "sortable": true
         }
       },
-      "heading": {
+      "decription": {
         "edit": {
-          "label": "heading",
+          "label": "decription",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "heading",
-          "searchable": false,
-          "sortable": false
+          "label": "decription",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "keywords": {
+        "edit": {
+          "label": "keywords",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "keywords",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "preventIndexing": {
+        "edit": {
+          "label": "preventIndexing",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "preventIndexing",
+          "searchable": true,
+          "sortable": true
         }
       }
     },
     "layouts": {
       "list": [
         "id",
-        "projects",
-        "with_container",
-        "heading"
+        "title",
+        "decription",
+        "keywords"
       ],
       "edit": [
         [
           {
-            "name": "with_container",
-            "size": 4
-          }
-        ],
-        [
+            "name": "title",
+            "size": 6
+          },
           {
-            "name": "projects",
+            "name": "decription",
             "size": 6
           }
         ],
         [
           {
-            "name": "heading",
-            "size": 12
+            "name": "keywords",
+            "size": 6
+          },
+          {
+            "name": "preventIndexing",
+            "size": 4
           }
         ]
       ]
     },
-    "uid": "home.projects",
+    "uid": "common.seo",
     "isComponent": true
   },
   "type": "object",
