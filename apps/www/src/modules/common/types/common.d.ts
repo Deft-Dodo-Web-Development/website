@@ -151,3 +151,11 @@ export interface TeamMember {
   id: number;
   attributes: TeamMemberAttributes;
 }
+
+export interface Seo {
+  id: number;
+  title: string;
+  description: string;
+  keywords: string;
+  preventIndexing: boolean;
+}

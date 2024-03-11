@@ -7,13 +7,29 @@ import { Projects } from "../widgets/projects";
 import BannerMarquee from "@/modules/common/components/banner-marquee";
 import Experience from "@/modules/common/components/experience";
 import FooterSetup from "@/modules/common/utilities/footer-setup";
-import { getHomePageData } from "../actions/home-page";
+import { getHomePageData, getSeoPageData } from "../actions/home-page";
 import KeyFactsSection from "../widgets/key-facts";
 import FeaturedServices from "../widgets/featured-services";
 import Testimonials from "../widgets/testimonials";
 import OurProcess from "../widgets/our-process";
 import Team from "../widgets/team";
 import Contact from "../widgets/contact";
+import { Metadata } from "next";
+
+export const generateMetadata = async (): Promise<Metadata> => {
+  const seoRes = await getSeoPageData();
+  console.log({ seoRes });
+  if (!seoRes || !seoRes?.data?.attributes?.seo) return {};
+
+  const seo = seoRes.data.attributes.seo;
+
+  return {
+    title: seo.title,
+    description: seo.description,
+    keywords: seo.keywords,
+    robots: seo.preventIndexing ? "noindex, nofollow" : "index, follow",
+  };
+};
 
 const HomePage = async () => {
   const response = await getHomePageData();
