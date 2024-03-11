@@ -33,16 +33,16 @@
           "sortable": false
         }
       },
-      "Footer": {
+      "seo": {
         "edit": {
-          "label": "Footer",
+          "label": "seo",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "Footer",
+          "label": "seo",
           "searchable": false,
           "sortable": false
         }
@@ -107,25 +107,25 @@
       }
     },
     "layouts": {
-      "list": [
-        "id",
-        "createdAt",
-        "updatedAt",
-        "createdBy"
-      ],
       "edit": [
         [
           {
-            "name": "pageContent",
+            "name": "seo",
             "size": 12
           }
         ],
         [
           {
-            "name": "Footer",
+            "name": "pageContent",
             "size": 12
           }
         ]
+      ],
+      "list": [
+        "id",
+        "createdAt",
+        "updatedAt",
+        "createdBy"
       ]
     },
     "uid": "api::home-page.home-page"

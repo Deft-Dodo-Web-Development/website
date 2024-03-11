@@ -189,7 +189,10 @@
       "properties": {
         "fields": [
           "pageContent",
-          "Footer.deftdodo_banner"
+          "seo.title",
+          "seo.decription",
+          "seo.keywords",
+          "seo.preventIndexing"
         ],
         "locales": [
           "en"
@@ -226,7 +229,10 @@
       "properties": {
         "fields": [
           "pageContent",
-          "Footer.deftdodo_banner"
+          "seo.title",
+          "seo.decription",
+          "seo.keywords",
+          "seo.preventIndexing"
         ],
         "locales": [
           "en"
@@ -241,7 +247,10 @@
       "properties": {
         "fields": [
           "pageContent",
-          "Footer.deftdodo_banner"
+          "seo.title",
+          "seo.decription",
+          "seo.keywords",
+          "seo.preventIndexing"
         ],
         "locales": [
           "en"
@@ -391,6 +400,58 @@
         ],
         "locales": [
           "en"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "actionParameters": {},
+      "subject": "api::team-member.team-member",
+      "properties": {
+        "fields": [
+          "name",
+          "position",
+          "picture",
+          "social.platform",
+          "social.link"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "actionParameters": {},
+      "subject": "api::team-member.team-member",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "actionParameters": {},
+      "subject": "api::team-member.team-member",
+      "properties": {
+        "fields": [
+          "name",
+          "position",
+          "picture",
+          "social.platform",
+          "social.link"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "actionParameters": {},
+      "subject": "api::team-member.team-member",
+      "properties": {
+        "fields": [
+          "name",
+          "position",
+          "picture",
+          "social.platform",
+          "social.link"
         ]
       },
       "conditions": []
@@ -658,20 +719,6 @@
     },
     {
       "action": "admin::webhooks.update",
-      "actionParameters": {},
-      "subject": null,
-      "properties": {},
-      "conditions": []
-    },
-    {
-      "action": "plugin::cms-analyzer.read",
-      "actionParameters": {},
-      "subject": null,
-      "properties": {},
-      "conditions": []
-    },
-    {
-      "action": "plugin::cms-analyzer.settings.read",
       "actionParameters": {},
       "subject": null,
       "properties": {},

@@ -1,4 +1,4 @@
-import { Footer } from "@/modules/common/types/common";
+import { Footer, Seo } from "@/modules/common/types/common";
 import { Components } from "@/modules/common/types/components";
 import {
   BaseServerAttributes,
@@ -6,10 +6,14 @@ import {
 } from "@/modules/common/types/server";
 
 export type HomePageServerResponse = ServerResponse<HomePageAttributes>;
-
+export type HomePageSeoServerResponse = ServerResponse<HomePageSeoAttributes>;
 interface HomePageAttributes extends BaseServerAttributes {
   pageContent: Array<PageContent>;
   Footer: Footer;
+}
+
+interface HomePageSeoAttributes extends BaseServerAttributes {
+  seo: Seo;
 }
 
 type PageContent =
@@ -23,4 +27,5 @@ type PageContent =
   | Components.Spacer
   | Components.KeyFacts
   | Components.StepByStep
-  | Components.Testimonials;
+  | Components.Testimonials
+  | Components.Team;

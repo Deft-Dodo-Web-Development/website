@@ -15,8 +15,10 @@
       "type": "boolean",
       "default": true
     },
-    "title": {
-      "type": "string"
+    "heading": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.section-content-with-title"
     }
   }
 }

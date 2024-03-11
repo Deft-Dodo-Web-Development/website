@@ -1,4 +1,4 @@
-import { FeaturedItem, Step, StrapiResponse } from "./common.d";
+import { FeaturedItem, Step, StrapiResponse, TeamMember } from "./common.d";
 import {
   Projects as BaseProjects,
   Services as BaseServices,
@@ -47,7 +47,7 @@ export namespace Components {
     id: number;
     __component: "home.projects";
     with_container: boolean;
-    title: string;
+    heading: BaseHeading;
     projects: StrapiResponse<BaseProjects[]>;
   }
 
@@ -105,5 +105,13 @@ export namespace Components {
     with_container: boolean;
     title: string;
     testimonials: StrapiResponse<BaseTestimonials[]>;
+  }
+
+  export interface Team {
+    id: number;
+    __component: "home.team";
+    with_container: boolean;
+    heading: BaseHeading;
+    members: StrapiResponse<TeamMember[]>;
   }
 }

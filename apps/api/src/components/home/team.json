@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_home_teams",
+  "info": {
+    "displayName": "Team",
+    "icon": "handHeart",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.section-content-with-title"
+    },
+    "members": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::team-member.team-member"
+    },
+    "with_container": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    }
+  }
+}

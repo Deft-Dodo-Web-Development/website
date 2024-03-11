@@ -1,5 +1,5 @@
 {
-  "key": "plugin_content_manager_configuration_components::home.projects",
+  "key": "plugin_content_manager_configuration_components::home.team",
   "value": {
     "settings": {
       "bulkable": true,
@@ -19,17 +19,31 @@
           "sortable": false
         }
       },
-      "projects": {
+      "heading": {
         "edit": {
-          "label": "projects",
+          "label": "heading",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "heading",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "members": {
+        "edit": {
+          "label": "members",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true,
-          "mainField": "title"
+          "mainField": "name"
         },
         "list": {
-          "label": "projects",
+          "label": "members",
           "searchable": false,
           "sortable": false
         }
@@ -47,51 +61,35 @@
           "searchable": true,
           "sortable": true
         }
-      },
-      "heading": {
-        "edit": {
-          "label": "heading",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "heading",
-          "searchable": false,
-          "sortable": false
-        }
       }
     },
     "layouts": {
       "list": [
         "id",
-        "projects",
-        "with_container",
-        "heading"
+        "heading",
+        "members",
+        "with_container"
       ],
       "edit": [
-        [
-          {
-            "name": "with_container",
-            "size": 4
-          }
-        ],
-        [
-          {
-            "name": "projects",
-            "size": 6
-          }
-        ],
         [
           {
             "name": "heading",
             "size": 12
           }
+        ],
+        [
+          {
+            "name": "members",
+            "size": 6
+          },
+          {
+            "name": "with_container",
+            "size": 4
+          }
         ]
       ]
     },
-    "uid": "home.projects",
+    "uid": "home.team",
     "isComponent": true
   },
   "type": "object",

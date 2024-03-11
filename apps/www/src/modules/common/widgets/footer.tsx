@@ -5,6 +5,7 @@ import { Button } from "../components/button";
 import useFooter from "../hooks/useFooter";
 import { Separator } from "../components/separator";
 import Experience from "../components/experience";
+import { Brand } from "../components/brand";
 
 const socials = [
   {
@@ -38,10 +39,7 @@ const BaseFooter = () => (
   <footer className="pt-28 pb-14 container">
     <div className="w-full flex justify-between flex-col md:flex-row gap-5 md:items-start items-center text-center md:text-left">
       <section className="space-y-2">
-        <h3 className="space-x-1 text-xl uppercase">
-          <span className="font-bold">DeftDodo</span>
-          <span className="font-thin">®</span>
-        </h3>
+        <Brand className="w-[90px] h-auto" aria-hidden />
         <div>
           <p className="text-white-56">Sheridan, Wyoming 82801, USA</p>
           <p>+000 123 456 789 </p>

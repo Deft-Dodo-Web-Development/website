@@ -55,7 +55,10 @@ const FeaturedServices: React.FC<FeaturedServicesProps> = ({
                   className="h-full lg:flex-[0_0_33.333333%] lg:snap-center"
                   key={index}
                 >
-                  <ServiceCard {...service} />
+                  <ServiceCard
+                    {...service}
+                    variant={index < 1 ? "primary" : "default"}
+                  />
                 </li>
               ))}
             </ul>

@@ -138,8 +138,7 @@
       "subject": "api::home-page.home-page",
       "properties": {
         "fields": [
-          "pageContent",
-          "Footer.deftdodo_banner"
+          "pageContent"
         ]
       },
       "conditions": [
@@ -152,8 +151,7 @@
       "subject": "api::home-page.home-page",
       "properties": {
         "fields": [
-          "pageContent",
-          "Footer.deftdodo_banner"
+          "pageContent"
         ]
       },
       "conditions": [
@@ -166,8 +164,7 @@
       "subject": "api::home-page.home-page",
       "properties": {
         "fields": [
-          "pageContent",
-          "Footer.deftdodo_banner"
+          "pageContent"
         ]
       },
       "conditions": [
@@ -226,7 +223,10 @@
       "properties": {
         "fields": [
           "title",
-          "slug"
+          "description",
+          "cta",
+          "slug",
+          "icon"
         ]
       },
       "conditions": [
@@ -240,7 +240,10 @@
       "properties": {
         "fields": [
           "title",
-          "slug"
+          "description",
+          "cta",
+          "slug",
+          "icon"
         ]
       },
       "conditions": [
@@ -254,7 +257,64 @@
       "properties": {
         "fields": [
           "title",
-          "slug"
+          "description",
+          "cta",
+          "slug",
+          "icon"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "actionParameters": {},
+      "subject": "api::testimonial.testimonial",
+      "properties": {
+        "fields": [
+          "title",
+          "message",
+          "identity.name",
+          "identity.occupation",
+          "identity.picture",
+          "identity.company_logo"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "actionParameters": {},
+      "subject": "api::testimonial.testimonial",
+      "properties": {
+        "fields": [
+          "title",
+          "message",
+          "identity.name",
+          "identity.occupation",
+          "identity.picture",
+          "identity.company_logo"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "actionParameters": {},
+      "subject": "api::testimonial.testimonial",
+      "properties": {
+        "fields": [
+          "title",
+          "message",
+          "identity.name",
+          "identity.occupation",
+          "identity.picture",
+          "identity.company_logo"
         ]
       },
       "conditions": [

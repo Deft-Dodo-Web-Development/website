@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_common_seos",
+  "info": {
+    "displayName": "SEO",
+    "icon": "book",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "decription": {
+      "type": "text"
+    },
+    "keywords": {
+      "type": "string"
+    },
+    "preventIndexing": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

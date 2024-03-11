@@ -35,10 +35,11 @@
         "common.spacer",
         "home.key-facts",
         "home.step-by-step",
-        "home.testimonials"
+        "home.testimonials",
+        "home.team"
       ]
     },
-    "Footer": {
+    "seo": {
       "type": "component",
       "repeatable": false,
       "pluginOptions": {
@@ -46,7 +47,7 @@
           "localized": true
         }
       },
-      "component": "home.footer"
+      "component": "common.seo"
     }
   }
 }
