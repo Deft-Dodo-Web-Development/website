@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_common_socials",
+  "info": {
+    "displayName": "social",
+    "icon": "heart",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "platform": {
+      "type": "enumeration",
+      "enum": [
+        " linkedin",
+        "github",
+        "twitter",
+        "facebook"
+      ]
+    },
+    "link": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

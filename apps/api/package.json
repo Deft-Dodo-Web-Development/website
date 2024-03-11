@@ -20,7 +20,6 @@
     "@types/node": "^20.11.17"
   },
   "dependencies": {
-    "@exfabrica/strapi-plugin-awesome-seo": "1.0.0-beta.1.2",
     "@strapi/plugin-cloud": "4.20.1",
     "@strapi/plugin-i18n": "4.20.1",
     "@strapi/plugin-users-permissions": "4.20.1",

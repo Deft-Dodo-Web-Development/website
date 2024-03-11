@@ -110,6 +110,21 @@ export interface CommonSeparator extends Schema.Component {
   };
 }
 
+export interface CommonSocial extends Schema.Component {
+  collectionName: 'components_common_socials';
+  info: {
+    displayName: 'social';
+    icon: 'heart';
+    description: '';
+  };
+  attributes: {
+    platform: Attribute.Enumeration<
+      [' linkedin', 'github', 'twitter', 'facebook']
+    >;
+    link: Attribute.String & Attribute.Required;
+  };
+}
+
 export interface CommonSpacer extends Schema.Component {
   collectionName: 'components_common_spacers';
   info: {
@@ -345,6 +360,26 @@ export interface HomeStepByStep extends Schema.Component {
   };
 }
 
+export interface HomeTeam extends Schema.Component {
+  collectionName: 'components_home_teams';
+  info: {
+    displayName: 'Team';
+    icon: 'handHeart';
+    description: '';
+  };
+  attributes: {
+    heading: Attribute.Component<'common.section-content-with-title'>;
+    members: Attribute.Relation<
+      'home.team',
+      'oneToMany',
+      'api::team-member.team-member'
+    >;
+    with_container: Attribute.Boolean &
+      Attribute.Required &
+      Attribute.DefaultTo<true>;
+  };
+}
+
 export interface HomeTestimonials extends Schema.Component {
   collectionName: 'components_home_testimonials';
   info: {
@@ -389,6 +424,7 @@ declare module '@strapi/types' {
       'common.link': CommonLink;
       'common.section-content-with-title': CommonSectionContentWithTitle;
       'common.separator': CommonSeparator;
+      'common.social': CommonSocial;
       'common.spacer': CommonSpacer;
       'common.step': CommonStep;
       'common.testimonial-identity': CommonTestimonialIdentity;
@@ -405,6 +441,7 @@ declare module '@strapi/types' {
       'home.projects': HomeProjects;
       'home.services': HomeServices;
       'home.step-by-step': HomeStepByStep;
+      'home.team': HomeTeam;
       'home.testimonials': HomeTestimonials;
       'shared.header': SharedHeader;
     }
