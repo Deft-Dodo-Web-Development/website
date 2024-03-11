@@ -13,12 +13,12 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 140 63% 49%;
+    --primary: 170 88% 31%;
     --primary-foreground: 210 40% 98%;
 
-    --primary-rgb: 46, 204, 99;
+    --primary-rgb: 9, 197, 163;
 
-    --secondary: 210 40% 96.1%;
+    --secondary: 169 91% 40%;
     --secondary-foreground: 222.2 47.4% 11.2%;
 
     --muted: 210 40% 96.1%;
@@ -36,7 +36,7 @@
 
     --radius: 0.5rem;
 
-    --dark: 0 0% 7%;
+    --dark: 0 0% 9%;
     --dark-foreground: 222.2 84% 4.9%;
 
     --white-8: 0, 0%, 100%, 0.08;
