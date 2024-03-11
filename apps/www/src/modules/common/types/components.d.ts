@@ -47,7 +47,7 @@ export namespace Components {
     id: number;
     __component: "home.projects";
     with_container: boolean;
-    title: string;
+    heading: BaseHeading;
     projects: StrapiResponse<BaseProjects[]>;
   }
 
