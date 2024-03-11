@@ -1,5 +1,21 @@
 
 
+## [0.38.0](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/www-v0.37.0...@deft-dodo/www-v0.38.0) (2024-03-11)
+
+
+### Features
+
+* **www:** DDT-48 enhance SEO handling and streamline page exports ([486c97e](https://github.com/zitdevs/deft-dodo/commit/486c97eb50dfe7684f2750a48d82709985cf2088))
+* **www:** DDT-48 enhance team section with dynamic data integration ([c38ec36](https://github.com/zitdevs/deft-dodo/commit/c38ec362c42aabf5d72647bde6da7ed689326a0a))
+* **www:** DDT-48 introduce Brand component in header and footer ([a1fd13a](https://github.com/zitdevs/deft-dodo/commit/a1fd13abfd0683e5a5bb3a0389ddb7cc3524a797))
+* **www:** DDT-48 introduce parallax effect for projects section ([29beaf1](https://github.com/zitdevs/deft-dodo/commit/29beaf138bf9420958815dc60a0f7fde304023a1))
+* **www:** DDT-48 update primary and secondary colors across the application ([64b0745](https://github.com/zitdevs/deft-dodo/commit/64b07456932beadbadca31f5de4207c7abe458e9))
+
+
+### Performance Improvements
+
+* update dependencies to latest stable versions ([4225d4b](https://github.com/zitdevs/deft-dodo/commit/4225d4b155b49769b4d261ffb3028b1130812da1))
+
 ## [0.37.0](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/www-v0.36.0...@deft-dodo/www-v0.37.0) (2024-03-10)
 
 
