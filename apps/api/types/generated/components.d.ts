@@ -97,6 +97,21 @@ export interface CommonSectionContentWithTitle extends Schema.Component {
   };
 }
 
+export interface CommonSeo extends Schema.Component {
+  collectionName: 'components_common_seos';
+  info: {
+    displayName: 'SEO';
+    icon: 'book';
+    description: '';
+  };
+  attributes: {
+    title: Attribute.String & Attribute.Required;
+    decription: Attribute.Text;
+    keywords: Attribute.String;
+    preventIndexing: Attribute.Boolean & Attribute.DefaultTo<false>;
+  };
+}
+
 export interface CommonSeparator extends Schema.Component {
   collectionName: 'components_common_separators';
   info: {
@@ -423,6 +438,7 @@ declare module '@strapi/types' {
       'common.heading': CommonHeading;
       'common.link': CommonLink;
       'common.section-content-with-title': CommonSectionContentWithTitle;
+      'common.seo': CommonSeo;
       'common.separator': CommonSeparator;
       'common.social': CommonSocial;
       'common.spacer': CommonSpacer;

@@ -973,7 +973,7 @@ export interface ApiHomePageHomePage extends Schema.SingleType {
           localized: true;
         };
       }>;
-    Footer: Attribute.Component<'home.footer'> &
+    seo: Attribute.Component<'common.seo'> &
       Attribute.SetPluginOptions<{
         i18n: {
           localized: true;

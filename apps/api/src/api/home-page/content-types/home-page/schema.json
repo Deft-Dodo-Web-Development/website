@@ -39,7 +39,7 @@
         "home.team"
       ]
     },
-    "Footer": {
+    "seo": {
       "type": "component",
       "repeatable": false,
       "pluginOptions": {
@@ -47,7 +47,7 @@
           "localized": true
         }
       },
-      "component": "home.footer"
+      "component": "common.seo"
     }
   }
 }
