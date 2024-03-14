@@ -1,5 +1,14 @@
 
 
+## [0.39.0](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/www-v0.38.0...@deft-dodo/www-v0.39.0) (2024-03-14)
+
+
+### Features
+
+* add button variant primary ([eb5c606](https://github.com/zitdevs/deft-dodo/commit/eb5c606450c27f0a4cb921d0b98c47fad6a0cf03))
+* change button variant ([4db6faf](https://github.com/zitdevs/deft-dodo/commit/4db6fafd648ea8d3ed1b3822eb538e3ca5aebb3b))
+* set image to cover ([b23fb82](https://github.com/zitdevs/deft-dodo/commit/b23fb820996b608b481f5f490fe01284af1f26d2))
+
 ## [0.38.0](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/www-v0.37.0...@deft-dodo/www-v0.38.0) (2024-03-11)
 
 
