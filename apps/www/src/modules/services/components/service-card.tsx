@@ -21,7 +21,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
     default: {
       background: "bg-white-8",
       text: "text-primary",
-      buttonVariant: "outline" as ButtonVariant,
+      buttonVariant: "primary" as ButtonVariant,
     },
     primary: {
       background: "bg-primary",
