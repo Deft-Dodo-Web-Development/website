@@ -25,6 +25,7 @@ const TeamCard: React.FC<TeamCardProps> = ({
           <AvatarImage
             src={`${AppConfig.strapi.url}${picture?.data?.attributes.url}`}
             alt={picture?.data?.attributes.alternativeText || name}
+            className="object-cover"
           />
         </Avatar>
       )}
