@@ -69,6 +69,8 @@ const HomePage = async () => {
             return <Testimonials key={index} {...content} />;
           case "home.team":
             return <Team key={index} {...content} />;
+          case "home.contact-us":
+            return <Contact key={index} {...content} />;
           case "common.separator":
             return (
               <Separator
@@ -92,14 +94,7 @@ const HomePage = async () => {
             return null;
         }
       })}
-      <Contact
-        with_container
-        heading={{
-          title: "Contact Us",
-          sub_title: "Get in touch",
-        }}
-        description="Whether you're starting from scratch, looking to revamp your existing store, or seeking custom e-commerce solutions, we've got you covered."
-      />
+
       <BannerMarquee />
       <Experience />
       <FooterSetup variant="basic" />

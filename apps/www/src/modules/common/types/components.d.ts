@@ -114,4 +114,12 @@ export namespace Components {
     heading: BaseHeading;
     members: StrapiResponse<TeamMember[]>;
   }
+
+  export interface ContactUs {
+    id: number;
+    __component: "home.contact-us";
+    with_container: boolean;
+    heading: BaseHeading;
+    description: string;
+  }
 }

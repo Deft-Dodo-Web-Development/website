@@ -28,4 +28,5 @@ type PageContent =
   | Components.KeyFacts
   | Components.StepByStep
   | Components.Testimonials
-  | Components.Team;
+  | Components.Team
+  | Components.ContactUs;
