@@ -1,5 +1,12 @@
 
 
+## [0.41.0](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/www-v0.40.0...@deft-dodo/www-v0.41.0) (2024-03-16)
+
+
+### Features
+
+* DDT-44 create brands marquee  ([c5672d3](https://github.com/zitdevs/deft-dodo/commit/c5672d3bb769b6440e919598100f0c849fc64060))
+
 ## [0.40.0](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/www-v0.39.0...@deft-dodo/www-v0.40.0) (2024-03-16)
 
 
