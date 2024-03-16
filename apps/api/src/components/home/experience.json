@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_home_experiences",
+  "info": {
+    "displayName": "experience",
+    "icon": "crown",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "button": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.button"
+    },
+    "with_container": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

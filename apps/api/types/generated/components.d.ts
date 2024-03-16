@@ -278,6 +278,21 @@ export interface HomeContactUs extends Schema.Component {
   };
 }
 
+export interface HomeExperience extends Schema.Component {
+  collectionName: 'components_home_experiences';
+  info: {
+    displayName: 'experience';
+    icon: 'crown';
+    description: '';
+  };
+  attributes: {
+    title: Attribute.String & Attribute.Required;
+    description: Attribute.Text;
+    button: Attribute.Component<'common.button'>;
+    with_container: Attribute.Boolean & Attribute.DefaultTo<true>;
+  };
+}
+
 export interface HomeFooter extends Schema.Component {
   collectionName: 'components_home_footers';
   info: {
@@ -464,6 +479,7 @@ declare module '@strapi/types' {
       'home.about-us': HomeAboutUs;
       'home.clients': HomeClients;
       'home.contact-us': HomeContactUs;
+      'home.experience': HomeExperience;
       'home.footer': HomeFooter;
       'home.heading-carousel': HomeHeadingCarousel;
       'home.heading': HomeHeading;
