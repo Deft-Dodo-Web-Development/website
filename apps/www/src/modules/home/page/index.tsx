@@ -13,6 +13,7 @@ import FeaturedServices from "../widgets/featured-services";
 import Testimonials from "../widgets/testimonials";
 import { type TestimonialCardProps } from "../components/testimonial-card";
 import OurProcess from "../widgets/our-process";
+// import BrandsMarquee from "../widgets/brands-marquee";
 
 const testimonials: TestimonialCardProps[] = [
   {
@@ -61,6 +62,8 @@ const HomePage = async () => {
             return <HeroCarousel key={index} {...content} />;
           case "home.clients":
             return <Clients key={index} {...content} />;
+          // case "home.brands-marquee":
+          //   return <BrandsMarquee key={index} {...content} />;
           case "home.about-us":
             return <AboutUs key={index} {...content} />;
           case "home.projects":
@@ -94,6 +97,7 @@ const HomePage = async () => {
             return null;
         }
       })}
+      <Separator className="my-28" />
       <Separator className="my-28" />
       <Testimonials
         container
