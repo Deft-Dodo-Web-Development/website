@@ -16,7 +16,22 @@ const variants = {
   },
 };
 
-const Experience = () => {
+export type ExperienceProps = {
+  with_container?: boolean;
+  title: string;
+  description: string;
+  button: {
+    text: string;
+    url: string;
+    variant: string;
+  };
+};
+
+const Experience: React.FC<ExperienceProps> = ({
+  button,
+  description,
+  title,
+}) => {
   return (
     <Container enabled={true}>
       <div className="bg-primary py-14 mt-20 rounded-3xl">
@@ -38,7 +53,7 @@ const Experience = () => {
               textTransform="uppercase"
               className="md:text-[48px] md:leading-[48px] font-bold text-dark mb-8 uppercase text-balance"
             >
-              Ready to elevate your e-commerce experience?
+              {title}
             </Heading>
           </motion.div>
           <motion.p
@@ -52,11 +67,7 @@ const Experience = () => {
               ease: "easeOut",
             }}
           >
-            Our team of expert Shopify developers is here to turn your online
-            store dreams into reality. Whether you're starting from scratch,
-            looking to revamp your existing store, or seeking custom e-commerce
-            solutions, we've got you covered. Let's collaborate and create
-            something extraordinary together.
+            {description}
           </motion.p>
           <motion.div
             variants={variants}
@@ -66,12 +77,12 @@ const Experience = () => {
             transition={{ delay: 0.5, ease: "backInOut" }}
           >
             <Button
-              href="#"
-              variant="default"
+              href={button.url}
+              variant={(button.variant as any) || "default"}
               icon="ArrowUpRight"
               className="px-14 py-7 text-xl leading-6"
             >
-              Get Started
+              {button.text}
             </Button>
           </motion.div>
         </section>

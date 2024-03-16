@@ -34,6 +34,9 @@ export async function getHomePageData() {
       "pageContent.members",
       "pageContent.members.picture",
       "pageContent.members.social",
+      "pageContent.contact-us",
+      "pageContent.experience",
+      "pageContent.button",
     ],
   });
   const request = await fetch(

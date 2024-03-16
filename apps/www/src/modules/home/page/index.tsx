@@ -4,7 +4,6 @@ import { Separator } from "@components/separator";
 import Clients from "../widgets/clients";
 import AboutUs from "../widgets/about-us";
 import { Projects } from "../widgets/projects";
-import BannerMarquee from "@/modules/common/components/banner-marquee";
 import Experience from "@/modules/common/components/experience";
 import FooterSetup from "@/modules/common/utilities/footer-setup";
 import { getHomePageData, getSeoPageData } from "../actions/home-page";
@@ -69,6 +68,10 @@ const HomePage = async () => {
             return <Testimonials key={index} {...content} />;
           case "home.team":
             return <Team key={index} {...content} />;
+          case "home.contact-us":
+            return <Contact key={index} {...content} />;
+          case "home.experience":
+            return <Experience key={index} {...content} />;
           case "common.separator":
             return (
               <Separator
@@ -92,16 +95,7 @@ const HomePage = async () => {
             return null;
         }
       })}
-      <Contact
-        with_container
-        heading={{
-          title: "Contact Us",
-          sub_title: "Get in touch",
-        }}
-        description="Whether you're starting from scratch, looking to revamp your existing store, or seeking custom e-commerce solutions, we've got you covered."
-      />
-      <BannerMarquee />
-      <Experience />
+
       <FooterSetup variant="basic" />
     </>
   );

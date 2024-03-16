@@ -114,4 +114,25 @@ export namespace Components {
     heading: BaseHeading;
     members: StrapiResponse<TeamMember[]>;
   }
+
+  export interface ContactUs {
+    id: number;
+    __component: "home.contact-us";
+    with_container: boolean;
+    heading: BaseHeading;
+    description: string;
+  }
+
+  export interface Experience {
+    id: number;
+    __component: "home.experience";
+    with_container: boolean;
+    title: string;
+    description: string;
+    button: {
+      text: string;
+      url: string;
+      variant: string;
+    };
+  }
 }
