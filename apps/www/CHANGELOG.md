@@ -1,5 +1,13 @@
 
 
+## [0.40.0](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/www-v0.39.0...@deft-dodo/www-v0.40.0) (2024-03-16)
+
+
+### Features
+
+* **www:** DCT-10 Implement dynamic Experience component in homepage ([2e30ec7](https://github.com/zitdevs/deft-dodo/commit/2e30ec7945f738839d5d1c8a61376762d58c065f))
+* **www:** DCT-10 Integrate dynamic Contact Us section in homepage ([89126e2](https://github.com/zitdevs/deft-dodo/commit/89126e2ff106412025fd854299c32619e5a95157))
+
 ## [0.39.0](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/www-v0.38.0...@deft-dodo/www-v0.39.0) (2024-03-14)
 
 
