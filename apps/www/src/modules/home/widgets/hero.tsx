@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import { type HeroBannerProps } from "../components/hero-banner";
 import HeroBanner from "../components/hero-banner";
 import ParticlesBackground from "../components/particles-background";
@@ -21,7 +22,9 @@ const HeroSection: React.FC<HeroBannerProps> = ({
         href={href}
       />
       <div className="absolute inset-0 h-full pointer-events-none">
-        <ParticlesBackground />
+        <Suspense fallback={null}>
+          <ParticlesBackground />
+        </Suspense>
       </div>
     </section>
   );

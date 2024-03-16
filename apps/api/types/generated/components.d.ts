@@ -97,6 +97,21 @@ export interface CommonSectionContentWithTitle extends Schema.Component {
   };
 }
 
+export interface CommonSeo extends Schema.Component {
+  collectionName: 'components_common_seos';
+  info: {
+    displayName: 'SEO';
+    icon: 'book';
+    description: '';
+  };
+  attributes: {
+    title: Attribute.String & Attribute.Required;
+    decription: Attribute.Text;
+    keywords: Attribute.String;
+    preventIndexing: Attribute.Boolean & Attribute.DefaultTo<false>;
+  };
+}
+
 export interface CommonSeparator extends Schema.Component {
   collectionName: 'components_common_separators';
   info: {
@@ -107,6 +122,21 @@ export interface CommonSeparator extends Schema.Component {
     with_container: Attribute.Boolean & Attribute.DefaultTo<true>;
     margin_button: Attribute.Float;
     margin_top: Attribute.Float;
+  };
+}
+
+export interface CommonSocial extends Schema.Component {
+  collectionName: 'components_common_socials';
+  info: {
+    displayName: 'social';
+    icon: 'heart';
+    description: '';
+  };
+  attributes: {
+    platform: Attribute.Enumeration<
+      [' linkedin', 'github', 'twitter', 'facebook']
+    >;
+    link: Attribute.String & Attribute.Required;
   };
 }
 
@@ -141,6 +171,20 @@ export interface CommonStep extends Schema.Component {
       Attribute.DefaultTo<1>;
     title: Attribute.String & Attribute.Required;
     description: Attribute.Text;
+  };
+}
+
+export interface CommonTestimonialIdentity extends Schema.Component {
+  collectionName: 'components_common_testimonial_identities';
+  info: {
+    displayName: 'testimonial identity';
+    icon: 'user';
+  };
+  attributes: {
+    name: Attribute.String & Attribute.Required;
+    occupation: Attribute.String;
+    picture: Attribute.Media;
+    company_logo: Attribute.Media;
   };
 }
 
@@ -221,6 +265,34 @@ export interface HomeClients extends Schema.Component {
   };
 }
 
+export interface HomeContactUs extends Schema.Component {
+  collectionName: 'components_home_contact_uses';
+  info: {
+    displayName: 'contact us';
+    icon: 'message';
+  };
+  attributes: {
+    with_container: Attribute.Boolean & Attribute.DefaultTo<true>;
+    heading: Attribute.Component<'common.section-content-with-title'>;
+    description: Attribute.Text;
+  };
+}
+
+export interface HomeExperience extends Schema.Component {
+  collectionName: 'components_home_experiences';
+  info: {
+    displayName: 'experience';
+    icon: 'crown';
+    description: '';
+  };
+  attributes: {
+    title: Attribute.String & Attribute.Required;
+    description: Attribute.Text;
+    button: Attribute.Component<'common.button'>;
+    with_container: Attribute.Boolean & Attribute.DefaultTo<true>;
+  };
+}
+
 export interface HomeFooter extends Schema.Component {
   collectionName: 'components_home_footers';
   info: {
@@ -291,7 +363,7 @@ export interface HomeProjects extends Schema.Component {
       'api::project.project'
     >;
     with_container: Attribute.Boolean & Attribute.DefaultTo<true>;
-    title: Attribute.String;
+    heading: Attribute.Component<'common.section-content-with-title'>;
   };
 }
 
@@ -331,6 +403,46 @@ export interface HomeStepByStep extends Schema.Component {
   };
 }
 
+export interface HomeTeam extends Schema.Component {
+  collectionName: 'components_home_teams';
+  info: {
+    displayName: 'Team';
+    icon: 'handHeart';
+    description: '';
+  };
+  attributes: {
+    heading: Attribute.Component<'common.section-content-with-title'>;
+    members: Attribute.Relation<
+      'home.team',
+      'oneToMany',
+      'api::team-member.team-member'
+    >;
+    with_container: Attribute.Boolean &
+      Attribute.Required &
+      Attribute.DefaultTo<true>;
+  };
+}
+
+export interface HomeTestimonials extends Schema.Component {
+  collectionName: 'components_home_testimonials';
+  info: {
+    displayName: 'Testimonials';
+    icon: 'feather';
+    description: '';
+  };
+  attributes: {
+    title: Attribute.String & Attribute.Required;
+    with_container: Attribute.Boolean &
+      Attribute.Required &
+      Attribute.DefaultTo<true>;
+    testimonials: Attribute.Relation<
+      'home.testimonials',
+      'oneToMany',
+      'api::testimonial.testimonial'
+    >;
+  };
+}
+
 export interface SharedHeader extends Schema.Component {
   collectionName: 'components_shared_headers';
   info: {
@@ -354,15 +466,20 @@ declare module '@strapi/types' {
       'common.heading': CommonHeading;
       'common.link': CommonLink;
       'common.section-content-with-title': CommonSectionContentWithTitle;
+      'common.seo': CommonSeo;
       'common.separator': CommonSeparator;
+      'common.social': CommonSocial;
       'common.spacer': CommonSpacer;
       'common.step': CommonStep;
+      'common.testimonial-identity': CommonTestimonialIdentity;
       'common.video': CommonVideo;
       'footer.copyright': FooterCopyright;
       'footer.elevate-section': FooterElevateSection;
       'footer.info': FooterInfo;
       'home.about-us': HomeAboutUs;
       'home.clients': HomeClients;
+      'home.contact-us': HomeContactUs;
+      'home.experience': HomeExperience;
       'home.footer': HomeFooter;
       'home.heading-carousel': HomeHeadingCarousel;
       'home.heading': HomeHeading;
@@ -370,6 +487,8 @@ declare module '@strapi/types' {
       'home.projects': HomeProjects;
       'home.services': HomeServices;
       'home.step-by-step': HomeStepByStep;
+      'home.team': HomeTeam;
+      'home.testimonials': HomeTestimonials;
       'shared.header': SharedHeader;
     }
   }

@@ -33,30 +33,30 @@
           "sortable": true
         }
       },
-      "start_content": {
+      "heading": {
         "edit": {
-          "label": "start_content",
+          "label": "heading",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "start_content",
+          "label": "heading",
           "searchable": false,
           "sortable": false
         }
       },
-      "end_content": {
+      "content": {
         "edit": {
-          "label": "end_content",
+          "label": "content",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "end_content",
+          "label": "content",
           "searchable": false,
           "sortable": false
         }
@@ -66,7 +66,7 @@
       "list": [
         "id",
         "with_container",
-        "start_content"
+        "heading"
       ],
       "edit": [
         [
@@ -77,13 +77,13 @@
         ],
         [
           {
-            "name": "start_content",
+            "name": "heading",
             "size": 12
           }
         ],
         [
           {
-            "name": "end_content",
+            "name": "content",
             "size": 12
           }
         ]

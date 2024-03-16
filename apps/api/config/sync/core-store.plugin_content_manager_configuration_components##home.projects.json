@@ -6,7 +6,7 @@
       "filterable": true,
       "searchable": true,
       "pageSize": 10,
-      "mainField": "Title",
+      "mainField": "id",
       "defaultSortBy": "id",
       "defaultSortOrder": "ASC"
     },
@@ -48,18 +48,18 @@
           "sortable": true
         }
       },
-      "Title": {
+      "heading": {
         "edit": {
-          "label": "Title",
+          "label": "heading",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "Title",
-          "searchable": true,
-          "sortable": true
+          "label": "heading",
+          "searchable": false,
+          "sortable": false
         }
       }
     },
@@ -68,14 +68,10 @@
         "id",
         "projects",
         "with_container",
-        "Title"
+        "heading"
       ],
       "edit": [
         [
-          {
-            "name": "Title",
-            "size": 6
-          },
           {
             "name": "with_container",
             "size": 4
@@ -85,6 +81,12 @@
           {
             "name": "projects",
             "size": 6
+          }
+        ],
+        [
+          {
+            "name": "heading",
+            "size": 12
           }
         ]
       ]

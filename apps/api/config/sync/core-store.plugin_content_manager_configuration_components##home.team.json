@@ -1,0 +1,98 @@
+{
+  "key": "plugin_content_manager_configuration_components::home.team",
+  "value": {
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "id",
+      "defaultSortBy": "id",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "heading": {
+        "edit": {
+          "label": "heading",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "heading",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "members": {
+        "edit": {
+          "label": "members",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "name"
+        },
+        "list": {
+          "label": "members",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "with_container": {
+        "edit": {
+          "label": "with_container",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "with_container",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "heading",
+        "members",
+        "with_container"
+      ],
+      "edit": [
+        [
+          {
+            "name": "heading",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "members",
+            "size": 6
+          },
+          {
+            "name": "with_container",
+            "size": 4
+          }
+        ]
+      ]
+    },
+    "uid": "home.team",
+    "isComponent": true
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

@@ -33,6 +33,20 @@
           "sortable": false
         }
       },
+      "seo": {
+        "edit": {
+          "label": "seo",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "seo",
+          "searchable": false,
+          "sortable": false
+        }
+      },
       "createdAt": {
         "edit": {
           "label": "createdAt",
@@ -93,19 +107,25 @@
       }
     },
     "layouts": {
-      "list": [
-        "id",
-        "createdAt",
-        "updatedAt",
-        "createdBy"
-      ],
       "edit": [
+        [
+          {
+            "name": "seo",
+            "size": 12
+          }
+        ],
         [
           {
             "name": "pageContent",
             "size": 12
           }
         ]
+      ],
+      "list": [
+        "id",
+        "createdAt",
+        "updatedAt",
+        "createdBy"
       ]
     },
     "uid": "api::home-page.home-page"

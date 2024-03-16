@@ -6,10 +6,193 @@
     {
       "action": "plugin::content-manager.explorer.create",
       "actionParameters": {},
+      "subject": "api::footer.footer",
+      "properties": {
+        "fields": [
+          "info.direction",
+          "info.phone",
+          "info.email",
+          "socials.text",
+          "socials.url",
+          "copyright.privacy.text",
+          "copyright.privacy.url",
+          "copyright.back_to_top",
+          "copyright.copyright",
+          "Banner.title",
+          "Banner.description",
+          "Banner.cta.text",
+          "Banner.cta.url",
+          "Banner.cta.variant"
+        ],
+        "locales": [
+          "en"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "actionParameters": {},
+      "subject": "api::footer.footer",
+      "properties": {
+        "locales": [
+          "en"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "actionParameters": {},
+      "subject": "api::footer.footer",
+      "properties": {
+        "locales": [
+          "en"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "actionParameters": {},
+      "subject": "api::footer.footer",
+      "properties": {
+        "fields": [
+          "info.direction",
+          "info.phone",
+          "info.email",
+          "socials.text",
+          "socials.url",
+          "copyright.privacy.text",
+          "copyright.privacy.url",
+          "copyright.back_to_top",
+          "copyright.copyright",
+          "Banner.title",
+          "Banner.description",
+          "Banner.cta.text",
+          "Banner.cta.url",
+          "Banner.cta.variant"
+        ],
+        "locales": [
+          "en"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "actionParameters": {},
+      "subject": "api::footer.footer",
+      "properties": {
+        "fields": [
+          "info.direction",
+          "info.phone",
+          "info.email",
+          "socials.text",
+          "socials.url",
+          "copyright.privacy.text",
+          "copyright.privacy.url",
+          "copyright.back_to_top",
+          "copyright.copyright",
+          "Banner.title",
+          "Banner.description",
+          "Banner.cta.text",
+          "Banner.cta.url",
+          "Banner.cta.variant"
+        ],
+        "locales": [
+          "en"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "actionParameters": {},
+      "subject": "api::header.header",
+      "properties": {
+        "fields": [
+          "content.nav.text",
+          "content.nav.url",
+          "content.CTA.text",
+          "content.CTA.url",
+          "content.CTA.variant"
+        ],
+        "locales": [
+          "en"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "actionParameters": {},
+      "subject": "api::header.header",
+      "properties": {
+        "locales": [
+          "en"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "actionParameters": {},
+      "subject": "api::header.header",
+      "properties": {
+        "locales": [
+          "en"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "actionParameters": {},
+      "subject": "api::header.header",
+      "properties": {
+        "fields": [
+          "content.nav.text",
+          "content.nav.url",
+          "content.CTA.text",
+          "content.CTA.url",
+          "content.CTA.variant"
+        ],
+        "locales": [
+          "en"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "actionParameters": {},
+      "subject": "api::header.header",
+      "properties": {
+        "fields": [
+          "content.nav.text",
+          "content.nav.url",
+          "content.CTA.text",
+          "content.CTA.url",
+          "content.CTA.variant"
+        ],
+        "locales": [
+          "en"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "actionParameters": {},
       "subject": "api::home-page.home-page",
       "properties": {
         "fields": [
-          "pageContent"
+          "pageContent",
+          "seo.title",
+          "seo.decription",
+          "seo.keywords",
+          "seo.preventIndexing"
         ],
         "locales": [
           "en"
@@ -45,7 +228,11 @@
       "subject": "api::home-page.home-page",
       "properties": {
         "fields": [
-          "pageContent"
+          "pageContent",
+          "seo.title",
+          "seo.decription",
+          "seo.keywords",
+          "seo.preventIndexing"
         ],
         "locales": [
           "en"
@@ -59,7 +246,11 @@
       "subject": "api::home-page.home-page",
       "properties": {
         "fields": [
-          "pageContent"
+          "pageContent",
+          "seo.title",
+          "seo.decription",
+          "seo.keywords",
+          "seo.preventIndexing"
         ],
         "locales": [
           "en"
@@ -143,7 +334,11 @@
       "subject": "api::service.service",
       "properties": {
         "fields": [
-          "title"
+          "title",
+          "description",
+          "cta",
+          "slug",
+          "icon"
         ],
         "locales": [
           "en"
@@ -179,7 +374,11 @@
       "subject": "api::service.service",
       "properties": {
         "fields": [
-          "title"
+          "title",
+          "description",
+          "cta",
+          "slug",
+          "icon"
         ],
         "locales": [
           "en"
@@ -193,7 +392,142 @@
       "subject": "api::service.service",
       "properties": {
         "fields": [
-          "title"
+          "title",
+          "description",
+          "cta",
+          "slug",
+          "icon"
+        ],
+        "locales": [
+          "en"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "actionParameters": {},
+      "subject": "api::team-member.team-member",
+      "properties": {
+        "fields": [
+          "name",
+          "position",
+          "picture",
+          "social.platform",
+          "social.link"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "actionParameters": {},
+      "subject": "api::team-member.team-member",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "actionParameters": {},
+      "subject": "api::team-member.team-member",
+      "properties": {
+        "fields": [
+          "name",
+          "position",
+          "picture",
+          "social.platform",
+          "social.link"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "actionParameters": {},
+      "subject": "api::team-member.team-member",
+      "properties": {
+        "fields": [
+          "name",
+          "position",
+          "picture",
+          "social.platform",
+          "social.link"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "actionParameters": {},
+      "subject": "api::testimonial.testimonial",
+      "properties": {
+        "fields": [
+          "title",
+          "message",
+          "identity.name",
+          "identity.occupation",
+          "identity.picture",
+          "identity.company_logo"
+        ],
+        "locales": [
+          "en"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "actionParameters": {},
+      "subject": "api::testimonial.testimonial",
+      "properties": {
+        "locales": [
+          "en"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "actionParameters": {},
+      "subject": "api::testimonial.testimonial",
+      "properties": {
+        "locales": [
+          "en"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "actionParameters": {},
+      "subject": "api::testimonial.testimonial",
+      "properties": {
+        "fields": [
+          "title",
+          "message",
+          "identity.name",
+          "identity.occupation",
+          "identity.picture",
+          "identity.company_logo"
+        ],
+        "locales": [
+          "en"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "actionParameters": {},
+      "subject": "api::testimonial.testimonial",
+      "properties": {
+        "fields": [
+          "title",
+          "message",
+          "identity.name",
+          "identity.occupation",
+          "identity.picture",
+          "identity.company_logo"
         ],
         "locales": [
           "en"
@@ -526,6 +860,20 @@
     },
     {
       "action": "plugin::i18n.locale.update",
+      "actionParameters": {},
+      "subject": null,
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::import-export-entries.export",
+      "actionParameters": {},
+      "subject": null,
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::import-export-entries.import",
       "actionParameters": {},
       "subject": null,
       "properties": {},

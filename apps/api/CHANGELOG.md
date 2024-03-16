@@ -1,5 +1,53 @@
 
 
+## [0.11.0](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/api-v0.10.0...@deft-dodo/api-v0.11.0) (2024-03-16)
+
+
+### Features
+
+* **api:** DCT-10 Add experience section to home page content type ([e0c5784](https://github.com/zitdevs/deft-dodo/commit/e0c5784635453bf4ace5a5aa33da565221745a9d))
+* **api:** DCT-10 Extend localization and update schemas for contact-us section ([aad544d](https://github.com/zitdevs/deft-dodo/commit/aad544d3602e272ecdc910a0d680114f472227ad))
+
+## [0.10.0](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/api-v0.9.0...@deft-dodo/api-v0.10.0) (2024-03-11)
+
+
+### Features
+
+* **api:** customize Strapi admin login page and update favicon ([8b045b8](https://github.com/zitdevs/deft-dodo/commit/8b045b8253b0672d3cf83721008acd5044fda2ff))
+
+## [0.9.0](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/api-v0.8.1...@deft-dodo/api-v0.9.0) (2024-03-11)
+
+
+### Features
+
+* **api:** DDT-48 add SEO component to home page schema ([debf504](https://github.com/zitdevs/deft-dodo/commit/debf5044079db12aede6687c335bdb35069035e5))
+* **api:** DDT-48 update Projects component structure ([8e51d0b](https://github.com/zitdevs/deft-dodo/commit/8e51d0bb7d0e6692e07df4a850f1fa069fd4c4b3))
+* **api:** DDT-48 update Strapi API configurations and schemas ([c00b110](https://github.com/zitdevs/deft-dodo/commit/c00b1102548a5407cbc125ca7639b2032b3ecbed))
+
+## [0.8.1](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/api-v0.8.0...@deft-dodo/api-v0.8.1) (2024-03-10)
+
+
+### Bug Fixes
+
+* **api:** Adjust migrate script to use pnpm and improve logging ([a353304](https://github.com/zitdevs/deft-dodo/commit/a3533042d28af9208b18ca91a0d6a871b35fdffc))
+
+## [0.8.0](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/api-v0.7.0...@deft-dodo/api-v0.8.0) (2024-03-10)
+
+
+### Features
+
+* **api:** DDT-46 Implement database migration strategy ([a7e3804](https://github.com/zitdevs/deft-dodo/commit/a7e3804c832c4b5131660959a8fd90c8e97fbaec))
+
+## [0.7.0](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/api-v0.6.2...@deft-dodo/api-v0.7.0) (2024-03-09)
+
+
+### Features
+
+* **api:** DDT-46 integrate testimonials into home page schema ([cd8cd3c](https://github.com/zitdevs/deft-dodo/commit/cd8cd3c904745d27864a74627be450815e91ba30))
+* **api:** enhance admin roles with specific permissions ([9a616a8](https://github.com/zitdevs/deft-dodo/commit/9a616a8694b335b3986fffd459c45e4130782932))
+
+## [0.6.2](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/api-v0.6.1...@deft-dodo/api-v0.6.2) (2024-03-09)
+
 ## [0.6.1](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/api-v0.6.0...@deft-dodo/api-v0.6.1) (2024-03-09)
 
 ## [0.6.0](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/api-v0.5.0...@deft-dodo/api-v0.6.0) (2024-03-09)

@@ -34,10 +34,14 @@
         "home.services",
         "common.spacer",
         "home.key-facts",
-        "home.step-by-step"
+        "home.step-by-step",
+        "home.testimonials",
+        "home.team",
+        "home.contact-us",
+        "home.experience"
       ]
     },
-    "Footer": {
+    "seo": {
       "type": "component",
       "repeatable": false,
       "pluginOptions": {
@@ -45,7 +49,7 @@
           "localized": true
         }
       },
-      "component": "home.footer"
+      "component": "common.seo"
     }
   }
 }

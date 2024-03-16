@@ -6,8 +6,8 @@
       "filterable": true,
       "searchable": true,
       "pageSize": 10,
-      "mainField": "youtube_video_url",
-      "defaultSortBy": "youtube_video_url",
+      "mainField": "youtube_video_hash",
+      "defaultSortBy": "youtube_video_hash",
       "defaultSortOrder": "ASC"
     },
     "metadatas": {
@@ -33,16 +33,16 @@
           "sortable": false
         }
       },
-      "youtube_video_url": {
+      "youtube_video_hash": {
         "edit": {
-          "label": "youtube_video_url",
+          "label": "youtube_video_hash",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "youtube_video_url",
+          "label": "youtube_video_hash",
           "searchable": true,
           "sortable": true
         }
@@ -52,7 +52,7 @@
       "list": [
         "id",
         "overlay",
-        "youtube_video_url"
+        "youtube_video_hash"
       ],
       "edit": [
         [
@@ -61,7 +61,7 @@
             "size": 6
           },
           {
-            "name": "youtube_video_url",
+            "name": "youtube_video_hash",
             "size": 6
           }
         ]

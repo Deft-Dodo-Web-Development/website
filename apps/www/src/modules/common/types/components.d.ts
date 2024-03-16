@@ -1,7 +1,8 @@
-import { FeaturedItem, Step, StrapiResponse } from "./common.d";
+import { FeaturedItem, Step, StrapiResponse, TeamMember } from "./common.d";
 import {
   Projects as BaseProjects,
   Services as BaseServices,
+  Testimonials as BaseTestimonials,
   ClientList,
   MediaResponse,
   Heading as BaseHeading,
@@ -46,7 +47,7 @@ export namespace Components {
     id: number;
     __component: "home.projects";
     with_container: boolean;
-    title: string;
+    heading: BaseHeading;
     projects: StrapiResponse<BaseProjects[]>;
   }
 
@@ -96,5 +97,42 @@ export namespace Components {
     title: string;
     with_container: boolean;
     steps: Step[];
+  }
+
+  export interface Testimonials {
+    id: number;
+    __component: "home.testimonials";
+    with_container: boolean;
+    title: string;
+    testimonials: StrapiResponse<BaseTestimonials[]>;
+  }
+
+  export interface Team {
+    id: number;
+    __component: "home.team";
+    with_container: boolean;
+    heading: BaseHeading;
+    members: StrapiResponse<TeamMember[]>;
+  }
+
+  export interface ContactUs {
+    id: number;
+    __component: "home.contact-us";
+    with_container: boolean;
+    heading: BaseHeading;
+    description: string;
+  }
+
+  export interface Experience {
+    id: number;
+    __component: "home.experience";
+    with_container: boolean;
+    title: string;
+    description: string;
+    button: {
+      text: string;
+      url: string;
+      variant: string;
+    };
   }
 }

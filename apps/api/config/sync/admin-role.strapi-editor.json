@@ -6,6 +6,156 @@
     {
       "action": "plugin::content-manager.explorer.create",
       "actionParameters": {},
+      "subject": "api::footer.footer",
+      "properties": {
+        "fields": [
+          "info.direction",
+          "info.phone",
+          "info.email",
+          "socials.text",
+          "socials.url",
+          "copyright.privacy.text",
+          "copyright.privacy.url",
+          "copyright.back_to_top",
+          "copyright.copyright",
+          "Banner.title",
+          "Banner.description",
+          "Banner.cta.text",
+          "Banner.cta.url",
+          "Banner.cta.variant"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "actionParameters": {},
+      "subject": "api::footer.footer",
+      "properties": {
+        "fields": [
+          "info.direction",
+          "info.phone",
+          "info.email",
+          "socials.text",
+          "socials.url",
+          "copyright.privacy.text",
+          "copyright.privacy.url",
+          "copyright.back_to_top",
+          "copyright.copyright",
+          "Banner.title",
+          "Banner.description",
+          "Banner.cta.text",
+          "Banner.cta.url",
+          "Banner.cta.variant"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "actionParameters": {},
+      "subject": "api::footer.footer",
+      "properties": {
+        "fields": [
+          "info.direction",
+          "info.phone",
+          "info.email",
+          "socials.text",
+          "socials.url",
+          "copyright.privacy.text",
+          "copyright.privacy.url",
+          "copyright.back_to_top",
+          "copyright.copyright",
+          "Banner.title",
+          "Banner.description",
+          "Banner.cta.text",
+          "Banner.cta.url",
+          "Banner.cta.variant"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "actionParameters": {},
+      "subject": "api::header.header",
+      "properties": {
+        "fields": [
+          "content.nav.text",
+          "content.nav.url",
+          "content.CTA.text",
+          "content.CTA.url",
+          "content.CTA.variant"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "actionParameters": {},
+      "subject": "api::header.header",
+      "properties": {
+        "fields": [
+          "content.nav.text",
+          "content.nav.url",
+          "content.CTA.text",
+          "content.CTA.url",
+          "content.CTA.variant"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "actionParameters": {},
+      "subject": "api::header.header",
+      "properties": {
+        "fields": [
+          "content.nav.text",
+          "content.nav.url",
+          "content.CTA.text",
+          "content.CTA.url",
+          "content.CTA.variant"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "actionParameters": {},
+      "subject": "api::home-page.home-page",
+      "properties": {
+        "fields": [
+          "pageContent"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "actionParameters": {},
+      "subject": "api::home-page.home-page",
+      "properties": {
+        "fields": [
+          "pageContent"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "actionParameters": {},
+      "subject": "api::home-page.home-page",
+      "properties": {
+        "fields": [
+          "pageContent"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "actionParameters": {},
       "subject": "api::project.project",
       "properties": {
         "fields": [
@@ -48,7 +198,11 @@
       "subject": "api::service.service",
       "properties": {
         "fields": [
-          "title"
+          "title",
+          "description",
+          "cta",
+          "slug",
+          "icon"
         ]
       },
       "conditions": []
@@ -59,7 +213,11 @@
       "subject": "api::service.service",
       "properties": {
         "fields": [
-          "title"
+          "title",
+          "description",
+          "cta",
+          "slug",
+          "icon"
         ]
       },
       "conditions": []
@@ -70,7 +228,59 @@
       "subject": "api::service.service",
       "properties": {
         "fields": [
-          "title"
+          "title",
+          "description",
+          "cta",
+          "slug",
+          "icon"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "actionParameters": {},
+      "subject": "api::testimonial.testimonial",
+      "properties": {
+        "fields": [
+          "title",
+          "message",
+          "identity.name",
+          "identity.occupation",
+          "identity.picture",
+          "identity.company_logo"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "actionParameters": {},
+      "subject": "api::testimonial.testimonial",
+      "properties": {
+        "fields": [
+          "title",
+          "message",
+          "identity.name",
+          "identity.occupation",
+          "identity.picture",
+          "identity.company_logo"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "actionParameters": {},
+      "subject": "api::testimonial.testimonial",
+      "properties": {
+        "fields": [
+          "title",
+          "message",
+          "identity.name",
+          "identity.occupation",
+          "identity.picture",
+          "identity.company_logo"
         ]
       },
       "conditions": []

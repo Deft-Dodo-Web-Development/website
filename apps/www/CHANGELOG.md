@@ -1,5 +1,66 @@
 
 
+## [0.40.0](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/www-v0.39.0...@deft-dodo/www-v0.40.0) (2024-03-16)
+
+
+### Features
+
+* **www:** DCT-10 Implement dynamic Experience component in homepage ([2e30ec7](https://github.com/zitdevs/deft-dodo/commit/2e30ec7945f738839d5d1c8a61376762d58c065f))
+* **www:** DCT-10 Integrate dynamic Contact Us section in homepage ([89126e2](https://github.com/zitdevs/deft-dodo/commit/89126e2ff106412025fd854299c32619e5a95157))
+
+## [0.39.0](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/www-v0.38.0...@deft-dodo/www-v0.39.0) (2024-03-14)
+
+
+### Features
+
+* add button variant primary ([eb5c606](https://github.com/zitdevs/deft-dodo/commit/eb5c606450c27f0a4cb921d0b98c47fad6a0cf03))
+* change button variant ([4db6faf](https://github.com/zitdevs/deft-dodo/commit/4db6fafd648ea8d3ed1b3822eb538e3ca5aebb3b))
+* set image to cover ([b23fb82](https://github.com/zitdevs/deft-dodo/commit/b23fb820996b608b481f5f490fe01284af1f26d2))
+
+## [0.38.0](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/www-v0.37.0...@deft-dodo/www-v0.38.0) (2024-03-11)
+
+
+### Features
+
+* **www:** DDT-48 enhance SEO handling and streamline page exports ([486c97e](https://github.com/zitdevs/deft-dodo/commit/486c97eb50dfe7684f2750a48d82709985cf2088))
+* **www:** DDT-48 enhance team section with dynamic data integration ([c38ec36](https://github.com/zitdevs/deft-dodo/commit/c38ec362c42aabf5d72647bde6da7ed689326a0a))
+* **www:** DDT-48 introduce Brand component in header and footer ([a1fd13a](https://github.com/zitdevs/deft-dodo/commit/a1fd13abfd0683e5a5bb3a0389ddb7cc3524a797))
+* **www:** DDT-48 introduce parallax effect for projects section ([29beaf1](https://github.com/zitdevs/deft-dodo/commit/29beaf138bf9420958815dc60a0f7fde304023a1))
+* **www:** DDT-48 update primary and secondary colors across the application ([64b0745](https://github.com/zitdevs/deft-dodo/commit/64b07456932beadbadca31f5de4207c7abe458e9))
+
+
+### Performance Improvements
+
+* update dependencies to latest stable versions ([4225d4b](https://github.com/zitdevs/deft-dodo/commit/4225d4b155b49769b4d261ffb3028b1130812da1))
+
+## [0.37.0](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/www-v0.36.0...@deft-dodo/www-v0.37.0) (2024-03-10)
+
+
+### Features
+
+* **www:** Add contact form section to home ([b81500f](https://github.com/zitdevs/deft-dodo/commit/b81500f1bfa72dfb25567945049d7725a88df43b))
+
+## [0.36.0](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/www-v0.35.0...@deft-dodo/www-v0.36.0) (2024-03-10)
+
+
+### Features
+
+* **www:** Add revalidation interval to home page data fetching ([384f6fa](https://github.com/zitdevs/deft-dodo/commit/384f6fab6523b4e02f8f29bdce085b4d1907f208))
+
+## [0.35.0](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/www-v0.34.0...@deft-dodo/www-v0.35.0) (2024-03-09)
+
+
+### Features
+
+* **www:** DDT-46 integrate and display testimonials on home page ([db3f2ad](https://github.com/zitdevs/deft-dodo/commit/db3f2adefd8bae05590337dd45fdb0769b089e2d))
+
+## [0.34.0](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/www-v0.33.3...@deft-dodo/www-v0.34.0) (2024-03-09)
+
+
+### Features
+
+* **www:** DDT-43 Add team section /widget ([a046699](https://github.com/zitdevs/deft-dodo/commit/a046699cf54ce462b767d8657e1984480d0c85c1))
+
 ## [0.33.3](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/www-v0.33.2...@deft-dodo/www-v0.33.3) (2024-03-09)
 
 ## [0.33.2](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/www-v0.33.1...@deft-dodo/www-v0.33.2) (2024-03-09)

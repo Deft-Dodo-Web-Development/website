@@ -50,8 +50,11 @@ const Marquee = ({ children, baseVelocity = 5 }: MarqueeProps) => {
   return (
     <>
       <motion.div style={{ x }} className="flex whitespace-nowrap gap-14">
-        {Array.from({ length: 4 }, () => children).map((item) => (
-          <span className="text-[140px] leading-[140px] font-bold text-dark uppercase">
+        {Array.from({ length: 4 }, () => children).map((item, index) => (
+          <span
+            className="text-[140px] leading-[140px] font-bold text-dark uppercase"
+            key={index}
+          >
             {item}
           </span>
         ))}

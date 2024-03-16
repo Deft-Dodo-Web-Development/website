@@ -1,0 +1,57 @@
+{
+  "key": "plugin_content_manager_configuration_components::home.footer",
+  "value": {
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "id",
+      "defaultSortBy": "id",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "deftdodo_banner": {
+        "edit": {
+          "label": "deftdodo_banner",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "deftdodo_banner",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "deftdodo_banner"
+      ],
+      "edit": [
+        [
+          {
+            "name": "deftdodo_banner",
+            "size": 4
+          }
+        ]
+      ]
+    },
+    "uid": "home.footer",
+    "isComponent": true
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

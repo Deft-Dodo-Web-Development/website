@@ -1,6 +1,6 @@
 {
   "name": "@deft-dodo/config-release-it",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "license": "MIT",
   "main": ".release-it.js",
   "scripts": {
@@ -8,6 +8,6 @@
   },
   "devDependencies": {
     "@release-it/conventional-changelog": "8.0.1",
-    "release-it": "17.0.3"
+    "release-it": "17.1.1"
   }
 }

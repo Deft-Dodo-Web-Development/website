@@ -4,39 +4,32 @@ import { Separator } from "@components/separator";
 import Clients from "../widgets/clients";
 import AboutUs from "../widgets/about-us";
 import { Projects } from "../widgets/projects";
-import BannerMarquee from "@/modules/common/components/banner-marquee";
 import Experience from "@/modules/common/components/experience";
 import FooterSetup from "@/modules/common/utilities/footer-setup";
-import { getHomePageData } from "../actions/home-page";
+import { getHomePageData, getSeoPageData } from "../actions/home-page";
 import KeyFactsSection from "../widgets/key-facts";
 import FeaturedServices from "../widgets/featured-services";
 import Testimonials from "../widgets/testimonials";
-import { type TestimonialCardProps } from "../components/testimonial-card";
 import OurProcess from "../widgets/our-process";
 // import BrandsMarquee from "../widgets/brands-marquee";
+import Team from "../widgets/team";
+import Contact from "../widgets/contact";
+import { Metadata } from "next";
 
-const testimonials: TestimonialCardProps[] = [
-  {
-    quote: "I am looking forward to working with the Boltzshift again.",
-    paragraph:
-      "I create efficient, adaptable, and engaging websites. No predefined patterns. No sluggish, complex code. Webflow forms the foundation of my web development approach. I employ it to provide safe, top-notch bespoke websites.",
-    name: "Dora Dybala",
-    designation: "CEO & Founder of Company",
-    avatar:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6SGvshARHJ5GYSH_Kig8-cYNw5rO3nWn7mA&usqp=CAU",
-    companyImage: "https://placehold.co/140x32.png",
-  },
-  {
-    quote: "Anticipating the next chapter of collaboration with Boltzshift",
-    paragraph:
-      "I create efficient, adaptable, and engaging websites. No predefined patterns. No sluggish, complex code. Webflow forms the foundation of my web development approach. I employ it to provide safe, top-notch bespoke websites.",
-    name: "Ryan Dyson",
-    designation: "CTO of Company",
-    avatar:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6SGvshARHJ5GYSH_Kig8-cYNw5rO3nWn7mA&usqp=CAU",
-    companyImage: "https://placehold.co/140x32.png",
-  },
-];
+export const generateMetadata = async (): Promise<Metadata> => {
+  const seoRes = await getSeoPageData();
+
+  if (!seoRes || !seoRes?.data?.attributes?.seo) return {};
+
+  const seo = seoRes.data.attributes.seo;
+
+  return {
+    title: seo.title,
+    description: seo.description,
+    keywords: seo.keywords,
+    robots: seo.preventIndexing ? "noindex, nofollow" : "index, follow",
+  };
+};
 
 const HomePage = async () => {
   const response = await getHomePageData();
@@ -74,6 +67,14 @@ const HomePage = async () => {
             return <KeyFactsSection key={index} {...content} />;
           case "home.step-by-step":
             return <OurProcess key={index} {...content} />;
+          case "home.testimonials":
+            return <Testimonials key={index} {...content} />;
+          case "home.team":
+            return <Team key={index} {...content} />;
+          case "home.contact-us":
+            return <Contact key={index} {...content} />;
+          case "home.experience":
+            return <Experience key={index} {...content} />;
           case "common.separator":
             return (
               <Separator
@@ -97,16 +98,6 @@ const HomePage = async () => {
             return null;
         }
       })}
-      <Separator className="my-28" />
-      <Separator className="my-28" />
-      <Testimonials
-        container
-        heading="Testimonials"
-        testimonials={testimonials}
-      />
-      <Separator className="mt-24 mb-36" container />
-      <BannerMarquee />
-      <Experience />
       <FooterSetup variant="basic" />
     </>
   );

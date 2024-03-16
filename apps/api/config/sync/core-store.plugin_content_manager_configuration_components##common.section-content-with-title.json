@@ -33,37 +33,36 @@
           "sortable": true
         }
       },
-      "content": {
+      "sub_title": {
         "edit": {
-          "label": "content",
+          "label": "sub_title",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "content",
-          "searchable": false,
-          "sortable": false
+          "label": "sub_title",
+          "searchable": true,
+          "sortable": true
         }
       }
     },
     "layouts": {
       "list": [
         "id",
-        "title"
+        "title",
+        "sub_title"
       ],
       "edit": [
         [
           {
             "name": "title",
             "size": 6
-          }
-        ],
-        [
+          },
           {
-            "name": "content",
-            "size": 12
+            "name": "sub_title",
+            "size": 6
           }
         ]
       ]

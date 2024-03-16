@@ -1,17 +1,18 @@
 {
   "name": "@deft-dodo/api",
   "private": true,
-  "version": "0.6.1",
+  "version": "0.11.0",
   "description": "A Strapi application",
   "scripts": {
     "dev": "strapi develop",
-    "start": "strapi start",
+    "start": "npm run migrate; strapi start",
     "build": "strapi build",
     "strapi": "strapi",
     "create:db": "docker-compose --env-file .env up -d main_db",
     "remove:db": "docker-compose --env-file .env down main_db",
     "reset:db": "npm run remove:db && npm run create:db",
-    "release": "release-it"
+    "release": "release-it",
+    "migrate": "node ./dist/utils/migrate.js"
   },
   "devDependencies": {
     "@deft-dodo/config-release-it": "workspace:*",
@@ -19,12 +20,12 @@
     "@types/node": "^20.11.17"
   },
   "dependencies": {
-    "@exfabrica/strapi-plugin-awesome-seo": "1.0.0-beta.1.2",
     "@strapi/plugin-cloud": "4.20.1",
     "@strapi/plugin-i18n": "4.20.1",
     "@strapi/plugin-users-permissions": "4.20.1",
     "@strapi/strapi": "4.20.1",
     "better-sqlite3": "8.6.0",
+    "dotenv": "^16.4.5",
     "pg": "^8.11.3",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",

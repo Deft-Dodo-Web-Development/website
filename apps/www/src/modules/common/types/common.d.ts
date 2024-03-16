@@ -44,6 +44,29 @@ export interface Icon {
   attributes: IconAttributes;
 }
 
+export interface Identity {
+  id: number;
+  name: string;
+  occupation: string;
+  company_logo: MediaResponse;
+  picture: MediaResponse;
+}
+
+export interface TestimonialAttributes {
+  title: string;
+  message: string;
+  createdAt: string;
+  updatedAt: string;
+  publishedAt: string;
+  locale: string;
+  identity: Identity;
+}
+
+export interface Testimonials {
+  id: number;
+  attributes: TestimonialAttributes;
+}
+
 interface MediaSize {
   name: string;
   hash: string;
@@ -105,4 +128,34 @@ export interface Step {
   number: number;
   title: string;
   description: string;
+}
+
+export type SocialPlatform = "github" | "linkedin" | "twitter" | "facebook";
+
+export interface Social {
+  id: number;
+  platform: SocialPlatform;
+  link: string;
+}
+
+export interface TeamMemberAttributes {
+  name: string;
+  picture: MediaResponse;
+  position: string;
+  social: Social[];
+  createdAt: string;
+  updatedAt: string;
+}
+
+export interface TeamMember {
+  id: number;
+  attributes: TeamMemberAttributes;
+}
+
+export interface Seo {
+  id: number;
+  title: string;
+  description: string;
+  keywords: string;
+  preventIndexing: boolean;
 }
