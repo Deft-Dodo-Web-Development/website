@@ -122,4 +122,17 @@ export namespace Components {
     heading: BaseHeading;
     description: string;
   }
+
+  export interface Experience {
+    id: number;
+    __component: "home.experience";
+    with_container: boolean;
+    title: string;
+    description: string;
+    button: {
+      text: string;
+      url: string;
+      variant: string;
+    };
+  }
 }

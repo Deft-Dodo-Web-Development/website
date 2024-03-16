@@ -4,7 +4,6 @@ import { Separator } from "@components/separator";
 import Clients from "../widgets/clients";
 import AboutUs from "../widgets/about-us";
 import { Projects } from "../widgets/projects";
-import BannerMarquee from "@/modules/common/components/banner-marquee";
 import Experience from "@/modules/common/components/experience";
 import FooterSetup from "@/modules/common/utilities/footer-setup";
 import { getHomePageData, getSeoPageData } from "../actions/home-page";
@@ -71,6 +70,8 @@ const HomePage = async () => {
             return <Team key={index} {...content} />;
           case "home.contact-us":
             return <Contact key={index} {...content} />;
+          case "home.experience":
+            return <Experience key={index} {...content} />;
           case "common.separator":
             return (
               <Separator
@@ -95,8 +96,6 @@ const HomePage = async () => {
         }
       })}
 
-      <BannerMarquee />
-      <Experience />
       <FooterSetup variant="basic" />
     </>
   );
