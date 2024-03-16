@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_home_contact_uses",
+  "info": {
+    "displayName": "contact us",
+    "icon": "message"
+  },
+  "options": {},
+  "attributes": {
+    "with_container": {
+      "type": "boolean",
+      "default": true
+    },
+    "heading": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.section-content-with-title"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}
