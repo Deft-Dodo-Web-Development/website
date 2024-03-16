@@ -1,5 +1,13 @@
 
 
+## [0.11.0](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/api-v0.10.0...@deft-dodo/api-v0.11.0) (2024-03-16)
+
+
+### Features
+
+* **api:** DCT-10 Add experience section to home page content type ([e0c5784](https://github.com/zitdevs/deft-dodo/commit/e0c5784635453bf4ace5a5aa33da565221745a9d))
+* **api:** DCT-10 Extend localization and update schemas for contact-us section ([aad544d](https://github.com/zitdevs/deft-dodo/commit/aad544d3602e272ecdc910a0d680114f472227ad))
+
 ## [0.10.0](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/api-v0.9.0...@deft-dodo/api-v0.10.0) (2024-03-11)
 
 
