@@ -14,7 +14,7 @@ const services: ServiceCardProps[] = [
       title: "Service 1",
       cta: "Learn More",
       icon: "theme",
-      description: "Service 1 description",
+      summary: "This is a summary for Service 1",
       slug: "service-1",
     },
   },
