@@ -1,3 +1,5 @@
+import { ComponentsOptions } from "./components";
+
 export interface Footer {
   id: number;
   deftdodo_banner: boolean;
@@ -10,6 +12,7 @@ export interface ProjectsAttributes {
   updatedAt: string;
   publishedAt: string;
   locale: string;
+  description?: Array<ComponentsOptions>;
   image: MediaResponse;
 }
 
@@ -20,7 +23,8 @@ export interface Projects {
 
 export interface ServiceAttributes {
   title: string;
-  description: string;
+  summary: string;
+  description?: Array<ComponentsOptions>;
   cta: string;
   slug: string;
   icon: string;

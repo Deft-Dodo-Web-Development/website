@@ -13,7 +13,7 @@ export type ServiceCardProps = Services & {
 type ButtonVariant = "default" | "outline";
 
 const ServiceCard: React.FC<ServiceCardProps> = ({
-  attributes: { title, cta, icon, description, slug },
+  attributes: { title, cta, icon, summary, slug },
   variant = "default",
 }) => {
   const { locale } = useAppData();
@@ -42,15 +42,15 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
           className={settings[variant].text + " size-16"}
         />
       )}
-      {(title || description) && (
+      {(title || summary) && (
         <div className="space-y-3">
           {title && (
             <h3 className="font-bold text-xl xl:text-2xl text-white sm:min-h-14 lg:min-h-16">
               {title}
             </h3>
           )}
-          {description && (
-            <p className="sm:min-h-44 md:min-h-48 xl:min-h-36">{description}</p>
+          {summary && (
+            <p className="sm:min-h-44 md:min-h-48 xl:min-h-36">{summary}</p>
           )}
         </div>
       )}

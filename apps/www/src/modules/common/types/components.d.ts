@@ -147,5 +147,57 @@ export namespace Components {
     __component: "home.brands-marquee";
     speed: number;
     list: StrapiResponse<Media[]>;
+    heading: BaseHeading;
+  }
+
+  export interface Badge {
+    id: number;
+    __component: "common.badge";
+    title: string;
+  }
+
+  export interface RichEditor {
+    id: number;
+    __component: "common.rich-editor";
+    body: string;
+  }
+
+  export interface Image {
+    id: number;
+    __component: "common.image";
+    image: MediaResponse;
+    width?: number;
+    height?: number;
+  }
+
+  export interface ImageWithText {
+    id: number;
+    __component: "common.image-with-text";
+    image_alignment: "left" | "right";
+    description: string;
+    heading?: BaseHeading;
+    image?: Image;
+    badges?: Badge[];
   }
 }
+
+export type ComponentsOptions =
+  | Components.AboutUs
+  | Components.HeadingCarousel
+  | Components.Heading
+  | Components.Projects
+  | Components.Services
+  | Components.Separator
+  | Components.Clients
+  | Components.Spacer
+  | Components.KeyFacts
+  | Components.StepByStep
+  | Components.Testimonials
+  | Components.Team
+  | Components.ContactUs
+  | Components.Experience
+  | Components.BrandsMarquee
+  | Components.Badge
+  | Components.RichEditor
+  | Components.Image
+  | Components.ImageWithText;
