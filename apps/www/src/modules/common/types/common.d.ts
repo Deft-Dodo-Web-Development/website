@@ -37,6 +37,20 @@ export interface Services {
   attributes: ServiceAttributes;
 }
 
+export interface BlogAttributes extends BaseServerAttributes {
+  title: string;
+  summary: string;
+  body?: Array<ComponentsOptions>;
+  image: MediaResponse;
+  seo: Seo;
+  locale: string;
+}
+
+export interface Blogs {
+  id: number;
+  attributes: BlogAttributes;
+}
+
 export interface IconAttributes {
   name: string;
   createdAt: string;
