@@ -1,5 +1,19 @@
 
 
+## [0.43.1](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/www-v0.43.0...@deft-dodo/www-v0.43.1) (2024-03-17)
+
+
+### Bug Fixes
+
+* DDT-54 move not found page inside [en] directory ([5bfcd20](https://github.com/zitdevs/deft-dodo/commit/5bfcd20145eaf368758ddd9e75a47fa1636a26fb))
+
+## [0.43.0](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/www-v0.42.0...@deft-dodo/www-v0.43.0) (2024-03-17)
+
+
+### Features
+
+* DDT-8 create 404 page ([f1d8198](https://github.com/zitdevs/deft-dodo/commit/f1d81986c6e0a18bae2ac30025b9f0a5a775d90a))
+
 ## [0.42.0](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/www-v0.41.0...@deft-dodo/www-v0.42.0) (2024-03-17)
 
 
