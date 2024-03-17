@@ -1,3 +1,8 @@
+export interface ServerCollectionResponse<TServerAttributes> {
+  data: TServerAttributes;
+  meta: object;
+}
+
 export interface ServerResponse<TServerAttributes> {
   data: ServerData<TServerAttributes>;
   meta: object;

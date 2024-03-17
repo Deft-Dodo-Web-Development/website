@@ -1,5 +1,16 @@
 import type { Schema, Attribute } from '@strapi/strapi';
 
+export interface CommonBadge extends Schema.Component {
+  collectionName: 'components_common_badges';
+  info: {
+    displayName: 'badge';
+    icon: 'check';
+  };
+  attributes: {
+    title: Attribute.String & Attribute.Required;
+  };
+}
+
 export interface CommonButton extends Schema.Component {
   collectionName: 'components_common_buttons';
   info: {
@@ -71,6 +82,38 @@ export interface CommonHeading extends Schema.Component {
   };
 }
 
+export interface CommonImageWithText extends Schema.Component {
+  collectionName: 'components_common_image_with_texts';
+  info: {
+    displayName: 'Image With Text';
+    icon: 'briefcase';
+    description: '';
+  };
+  attributes: {
+    image_alignment: Attribute.Enumeration<['right', 'left']> &
+      Attribute.DefaultTo<'left'>;
+    image: Attribute.Component<'common.image'>;
+    badges: Attribute.Component<'common.badge', true>;
+    heading: Attribute.Component<'common.section-content-with-title'>;
+    description: Attribute.Text;
+    overview: Attribute.Component<'project.overview', true>;
+  };
+}
+
+export interface CommonImage extends Schema.Component {
+  collectionName: 'components_common_images';
+  info: {
+    displayName: 'image';
+    icon: 'landscape';
+    description: '';
+  };
+  attributes: {
+    image: Attribute.Media & Attribute.Required;
+    widht: Attribute.Decimal;
+    height: Attribute.Decimal;
+  };
+}
+
 export interface CommonLink extends Schema.Component {
   collectionName: 'components_common_links';
   info: {
@@ -84,6 +127,17 @@ export interface CommonLink extends Schema.Component {
   };
 }
 
+export interface CommonRichEditor extends Schema.Component {
+  collectionName: 'components_common_rich_editors';
+  info: {
+    displayName: 'Rich Editor';
+    icon: 'medium';
+  };
+  attributes: {
+    body: Attribute.RichText;
+  };
+}
+
 export interface CommonSectionContentWithTitle extends Schema.Component {
   collectionName: 'components_common_section_content_with_title_s';
   info: {
@@ -92,7 +146,7 @@ export interface CommonSectionContentWithTitle extends Schema.Component {
     description: '';
   };
   attributes: {
-    title: Attribute.String;
+    title: Attribute.String & Attribute.Required;
     sub_title: Attribute.String;
   };
 }
@@ -257,11 +311,13 @@ export interface HomeBrandsMarquee extends Schema.Component {
   info: {
     displayName: 'Brands Marquee';
     icon: 'cube';
+    description: '';
   };
   attributes: {
     with_container: Attribute.Boolean & Attribute.DefaultTo<true>;
     speed: Attribute.Decimal;
     list: Attribute.Media;
+    heading: Attribute.Component<'common.section-content-with-title'>;
   };
 }
 
@@ -456,6 +512,18 @@ export interface HomeTestimonials extends Schema.Component {
   };
 }
 
+export interface ProjectOverview extends Schema.Component {
+  collectionName: 'components_project_overviews';
+  info: {
+    displayName: 'Overview';
+    icon: 'bulletList';
+  };
+  attributes: {
+    title: Attribute.String;
+    description: Attribute.Text;
+  };
+}
+
 export interface SharedHeader extends Schema.Component {
   collectionName: 'components_shared_headers';
   info: {
@@ -472,12 +540,16 @@ export interface SharedHeader extends Schema.Component {
 declare module '@strapi/types' {
   export module Shared {
     export interface Components {
+      'common.badge': CommonBadge;
       'common.button': CommonButton;
       'common.clients': CommonClients;
       'common.featured-item': CommonFeaturedItem;
       'common.heading-carousel': CommonHeadingCarousel;
       'common.heading': CommonHeading;
+      'common.image-with-text': CommonImageWithText;
+      'common.image': CommonImage;
       'common.link': CommonLink;
+      'common.rich-editor': CommonRichEditor;
       'common.section-content-with-title': CommonSectionContentWithTitle;
       'common.seo': CommonSeo;
       'common.separator': CommonSeparator;
@@ -503,6 +575,7 @@ declare module '@strapi/types' {
       'home.step-by-step': HomeStepByStep;
       'home.team': HomeTeam;
       'home.testimonials': HomeTestimonials;
+      'project.overview': ProjectOverview;
       'shared.header': SharedHeader;
     }
   }

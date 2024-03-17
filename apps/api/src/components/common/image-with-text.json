@@ -1,0 +1,42 @@
+{
+  "collectionName": "components_common_image_with_texts",
+  "info": {
+    "displayName": "Image With Text",
+    "icon": "briefcase",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "image_alignment": {
+      "type": "enumeration",
+      "enum": [
+        "right",
+        "left"
+      ],
+      "default": "left"
+    },
+    "image": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.image"
+    },
+    "badges": {
+      "type": "component",
+      "repeatable": true,
+      "component": "common.badge"
+    },
+    "heading": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.section-content-with-title"
+    },
+    "description": {
+      "type": "text"
+    },
+    "overview": {
+      "type": "component",
+      "repeatable": true,
+      "component": "project.overview"
+    }
+  }
+}

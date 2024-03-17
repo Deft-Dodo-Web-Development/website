@@ -60,6 +60,20 @@
           "searchable": false,
           "sortable": false
         }
+      },
+      "heading": {
+        "edit": {
+          "label": "heading",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "heading",
+          "searchable": false,
+          "sortable": false
+        }
       }
     },
     "layouts": {
@@ -84,6 +98,12 @@
           {
             "name": "list",
             "size": 6
+          }
+        ],
+        [
+          {
+            "name": "heading",
+            "size": 12
           }
         ]
       ]

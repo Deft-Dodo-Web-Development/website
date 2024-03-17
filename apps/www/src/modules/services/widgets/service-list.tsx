@@ -1,26 +1,13 @@
 import { Container } from "@/modules/common/components/container";
-import ServiceCard, { ServiceCardProps } from "../components/service-card";
+import ServiceCard from "../components/service-card";
+import { Services } from "@/modules/common/types/common";
 
 export type ServiceListProps = {
   container?: boolean;
+  services: Services[];
 };
 
-const services: ServiceCardProps[] = [
-  {
-    id: 1,
-    attributes: {
-      createdAt: "2021-10-14T14:00:00.000Z",
-      updatedAt: "2021-10-14T14:00:00.000Z",
-      title: "Service 1",
-      cta: "Learn More",
-      icon: "theme",
-      description: "Service 1 description",
-      slug: "service-1",
-    },
-  },
-];
-
-const ServiceList: React.FC<ServiceListProps> = ({ container }) => {
+const ServiceList: React.FC<ServiceListProps> = ({ container, services }) => {
   return (
     <Container enabled={container}>
       <ul className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">

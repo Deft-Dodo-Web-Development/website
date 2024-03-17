@@ -6,6 +6,143 @@
     {
       "action": "plugin::content-manager.explorer.create",
       "actionParameters": {},
+      "subject": "api::blog.blog",
+      "properties": {
+        "fields": [
+          "title",
+          "image",
+          "body",
+          "summary",
+          "seo.title",
+          "seo.decription",
+          "seo.keywords",
+          "seo.preventIndexing",
+          "author",
+          "categories",
+          "slug"
+        ],
+        "locales": [
+          "en"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "actionParameters": {},
+      "subject": "api::blog.blog",
+      "properties": {
+        "locales": [
+          "en"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "actionParameters": {},
+      "subject": "api::blog.blog",
+      "properties": {
+        "locales": [
+          "en"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "actionParameters": {},
+      "subject": "api::blog.blog",
+      "properties": {
+        "fields": [
+          "title",
+          "image",
+          "body",
+          "summary",
+          "seo.title",
+          "seo.decription",
+          "seo.keywords",
+          "seo.preventIndexing",
+          "author",
+          "categories",
+          "slug"
+        ],
+        "locales": [
+          "en"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "actionParameters": {},
+      "subject": "api::blog.blog",
+      "properties": {
+        "fields": [
+          "title",
+          "image",
+          "body",
+          "summary",
+          "seo.title",
+          "seo.decription",
+          "seo.keywords",
+          "seo.preventIndexing",
+          "author",
+          "categories",
+          "slug"
+        ],
+        "locales": [
+          "en"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "actionParameters": {},
+      "subject": "api::category.category",
+      "properties": {
+        "fields": [
+          "name",
+          "blogs"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "actionParameters": {},
+      "subject": "api::category.category",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "actionParameters": {},
+      "subject": "api::category.category",
+      "properties": {
+        "fields": [
+          "name",
+          "blogs"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "actionParameters": {},
+      "subject": "api::category.category",
+      "properties": {
+        "fields": [
+          "name",
+          "blogs"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "actionParameters": {},
       "subject": "api::footer.footer",
       "properties": {
         "fields": [
@@ -266,7 +403,12 @@
         "fields": [
           "title",
           "summary",
-          "image"
+          "image",
+          "description",
+          "seo.title",
+          "seo.decription",
+          "seo.keywords",
+          "seo.preventIndexing"
         ],
         "locales": [
           "en"
@@ -304,7 +446,12 @@
         "fields": [
           "title",
           "summary",
-          "image"
+          "image",
+          "description",
+          "seo.title",
+          "seo.decription",
+          "seo.keywords",
+          "seo.preventIndexing"
         ],
         "locales": [
           "en"
@@ -320,7 +467,12 @@
         "fields": [
           "title",
           "summary",
-          "image"
+          "image",
+          "description",
+          "seo.title",
+          "seo.decription",
+          "seo.keywords",
+          "seo.preventIndexing"
         ],
         "locales": [
           "en"
@@ -335,10 +487,15 @@
       "properties": {
         "fields": [
           "title",
-          "description",
           "cta",
           "slug",
-          "icon"
+          "icon",
+          "summary",
+          "description",
+          "seo.title",
+          "seo.decription",
+          "seo.keywords",
+          "seo.preventIndexing"
         ],
         "locales": [
           "en"
@@ -375,10 +532,15 @@
       "properties": {
         "fields": [
           "title",
-          "description",
           "cta",
           "slug",
-          "icon"
+          "icon",
+          "summary",
+          "description",
+          "seo.title",
+          "seo.decription",
+          "seo.keywords",
+          "seo.preventIndexing"
         ],
         "locales": [
           "en"
@@ -393,10 +555,15 @@
       "properties": {
         "fields": [
           "title",
-          "description",
           "cta",
           "slug",
-          "icon"
+          "icon",
+          "summary",
+          "description",
+          "seo.title",
+          "seo.decription",
+          "seo.keywords",
+          "seo.preventIndexing"
         ],
         "locales": [
           "en"
@@ -414,7 +581,8 @@
           "position",
           "picture",
           "social.platform",
-          "social.link"
+          "social.link",
+          "blogs"
         ]
       },
       "conditions": []
@@ -436,7 +604,8 @@
           "position",
           "picture",
           "social.platform",
-          "social.link"
+          "social.link",
+          "blogs"
         ]
       },
       "conditions": []
@@ -451,7 +620,8 @@
           "position",
           "picture",
           "social.platform",
-          "social.link"
+          "social.link",
+          "blogs"
         ]
       },
       "conditions": []
@@ -467,7 +637,8 @@
           "identity.name",
           "identity.occupation",
           "identity.picture",
-          "identity.company_logo"
+          "identity.company_logo",
+          "stars"
         ],
         "locales": [
           "en"
@@ -508,7 +679,8 @@
           "identity.name",
           "identity.occupation",
           "identity.picture",
-          "identity.company_logo"
+          "identity.company_logo",
+          "stars"
         ],
         "locales": [
           "en"
@@ -527,7 +699,8 @@
           "identity.name",
           "identity.occupation",
           "identity.picture",
-          "identity.company_logo"
+          "identity.company_logo",
+          "stars"
         ],
         "locales": [
           "en"
@@ -766,7 +939,8 @@
           "confirmationToken",
           "confirmed",
           "blocked",
-          "role"
+          "role",
+          "blogs"
         ]
       },
       "conditions": []
@@ -792,7 +966,8 @@
           "confirmationToken",
           "confirmed",
           "blocked",
-          "role"
+          "role",
+          "blogs"
         ]
       },
       "conditions": []
@@ -811,7 +986,8 @@
           "confirmationToken",
           "confirmed",
           "blocked",
-          "role"
+          "role",
+          "blogs"
         ]
       },
       "conditions": []

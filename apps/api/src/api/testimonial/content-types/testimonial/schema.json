@@ -43,6 +43,18 @@
         }
       },
       "component": "common.testimonial-identity"
+    },
+    "stars": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "decimal",
+      "max": 5,
+      "default": 5,
+      "min": 0,
+      "required": true
     }
   }
 }
