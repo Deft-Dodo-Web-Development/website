@@ -1,5 +1,12 @@
 
 
+## [0.42.0](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/www-v0.41.0...@deft-dodo/www-v0.42.0) (2024-03-17)
+
+
+### Features
+
+* **www:** DDT-51 Implement Brands Marquee widget in home page ([a44a03b](https://github.com/zitdevs/deft-dodo/commit/a44a03b28ff37a95f5aefa5b48de93312b670386))
+
 ## [0.41.0](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/www-v0.40.0...@deft-dodo/www-v0.41.0) (2024-03-16)
 
 
