@@ -7,7 +7,6 @@ import { getAllWorkAction } from "../actions/work.action";
 
 const WorkPage: React.FC = async () => {
   const works = await getAllWorkAction();
-
   if (!works) return null;
 
   // now you can use the works data
