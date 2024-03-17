@@ -61,6 +61,20 @@
           "sortable": false
         }
       },
+      "stars": {
+        "edit": {
+          "label": "stars",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "stars",
+          "searchable": true,
+          "sortable": true
+        }
+      },
       "createdAt": {
         "edit": {
           "label": "createdAt",
@@ -142,6 +156,12 @@
           {
             "name": "identity",
             "size": 12
+          }
+        ],
+        [
+          {
+            "name": "stars",
+            "size": 4
           }
         ]
       ]

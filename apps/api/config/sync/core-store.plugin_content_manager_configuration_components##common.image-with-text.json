@@ -1,5 +1,5 @@
 {
-  "key": "plugin_content_manager_configuration_components::home.brands-marquee",
+  "key": "plugin_content_manager_configuration_components::common.image-with-text",
   "value": {
     "settings": {
       "bulkable": true,
@@ -19,44 +19,44 @@
           "sortable": false
         }
       },
-      "with_container": {
+      "image_alignment": {
         "edit": {
-          "label": "with_container",
+          "label": "image_alignment",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "with_container",
+          "label": "image_alignment",
           "searchable": true,
           "sortable": true
         }
       },
-      "speed": {
+      "image": {
         "edit": {
-          "label": "speed",
+          "label": "image",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "speed",
-          "searchable": true,
-          "sortable": true
+          "label": "image",
+          "searchable": false,
+          "sortable": false
         }
       },
-      "list": {
+      "badges": {
         "edit": {
-          "label": "list",
+          "label": "badges",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "list",
+          "label": "badges",
           "searchable": false,
           "sortable": false
         }
@@ -74,30 +74,60 @@
           "searchable": false,
           "sortable": false
         }
+      },
+      "description": {
+        "edit": {
+          "label": "description",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "description",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "overview": {
+        "edit": {
+          "label": "overview",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "overview",
+          "searchable": false,
+          "sortable": false
+        }
       }
     },
     "layouts": {
       "list": [
         "id",
-        "with_container",
-        "speed",
-        "list"
+        "image",
+        "image_alignment",
+        "badges"
       ],
       "edit": [
         [
           {
-            "name": "with_container",
-            "size": 4
-          },
-          {
-            "name": "speed",
-            "size": 4
+            "name": "image",
+            "size": 12
           }
         ],
         [
           {
-            "name": "list",
+            "name": "image_alignment",
             "size": 6
+          }
+        ],
+        [
+          {
+            "name": "badges",
+            "size": 12
           }
         ],
         [
@@ -105,10 +135,22 @@
             "name": "heading",
             "size": 12
           }
+        ],
+        [
+          {
+            "name": "description",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "overview",
+            "size": 12
+          }
         ]
       ]
     },
-    "uid": "home.brands-marquee",
+    "uid": "common.image-with-text",
     "isComponent": true
   },
   "type": "object",

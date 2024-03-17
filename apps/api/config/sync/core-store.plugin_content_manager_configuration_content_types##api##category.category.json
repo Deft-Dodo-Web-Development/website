@@ -1,5 +1,5 @@
 {
-  "key": "plugin_content_manager_configuration_content_types::api::team-member.team-member",
+  "key": "plugin_content_manager_configuration_content_types::api::category.category",
   "value": {
     "settings": {
       "bulkable": true,
@@ -31,48 +31,6 @@
           "label": "name",
           "searchable": true,
           "sortable": true
-        }
-      },
-      "position": {
-        "edit": {
-          "label": "position",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "position",
-          "searchable": true,
-          "sortable": true
-        }
-      },
-      "picture": {
-        "edit": {
-          "label": "picture",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "picture",
-          "searchable": false,
-          "sortable": false
-        }
-      },
-      "social": {
-        "edit": {
-          "label": "social",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "social",
-          "searchable": false,
-          "sortable": false
         }
       },
       "blogs": {
@@ -153,8 +111,8 @@
       "list": [
         "id",
         "name",
-        "position",
-        "picture"
+        "blogs",
+        "createdAt"
       ],
       "edit": [
         [
@@ -163,31 +121,13 @@
             "size": 6
           },
           {
-            "name": "position",
-            "size": 6
-          }
-        ],
-        [
-          {
-            "name": "picture",
-            "size": 6
-          }
-        ],
-        [
-          {
-            "name": "social",
-            "size": 12
-          }
-        ],
-        [
-          {
             "name": "blogs",
             "size": 6
           }
         ]
       ]
     },
-    "uid": "api::team-member.team-member"
+    "uid": "api::category.category"
   },
   "type": "object",
   "environment": null,

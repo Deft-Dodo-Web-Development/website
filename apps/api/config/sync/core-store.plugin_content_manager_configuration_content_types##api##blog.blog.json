@@ -1,13 +1,13 @@
 {
-  "key": "plugin_content_manager_configuration_content_types::api::team-member.team-member",
+  "key": "plugin_content_manager_configuration_content_types::api::blog.blog",
   "value": {
     "settings": {
       "bulkable": true,
       "filterable": true,
       "searchable": true,
       "pageSize": 10,
-      "mainField": "name",
-      "defaultSortBy": "name",
+      "mainField": "title",
+      "defaultSortBy": "title",
       "defaultSortOrder": "ASC"
     },
     "metadatas": {
@@ -19,75 +19,118 @@
           "sortable": true
         }
       },
-      "name": {
+      "title": {
         "edit": {
-          "label": "name",
+          "label": "title",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "name",
+          "label": "title",
           "searchable": true,
           "sortable": true
         }
       },
-      "position": {
+      "image": {
         "edit": {
-          "label": "position",
+          "label": "image",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "position",
+          "label": "image",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "body": {
+        "edit": {
+          "label": "body",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "body",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "summary": {
+        "edit": {
+          "label": "summary",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "summary",
           "searchable": true,
           "sortable": true
         }
       },
-      "picture": {
+      "seo": {
         "edit": {
-          "label": "picture",
+          "label": "seo",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "picture",
+          "label": "seo",
           "searchable": false,
           "sortable": false
         }
       },
-      "social": {
+      "author": {
         "edit": {
-          "label": "social",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "social",
-          "searchable": false,
-          "sortable": false
-        }
-      },
-      "blogs": {
-        "edit": {
-          "label": "blogs",
+          "label": "author",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true,
-          "mainField": "title"
+          "mainField": "name"
         },
         "list": {
-          "label": "blogs",
+          "label": "author",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "categories": {
+        "edit": {
+          "label": "categories",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "name"
+        },
+        "list": {
+          "label": "categories",
           "searchable": false,
           "sortable": false
+        }
+      },
+      "slug": {
+        "edit": {
+          "label": "slug",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "slug",
+          "searchable": true,
+          "sortable": true
         }
       },
       "createdAt": {
@@ -152,42 +195,58 @@
     "layouts": {
       "list": [
         "id",
-        "name",
-        "position",
-        "picture"
+        "title",
+        "image",
+        "createdAt"
       ],
       "edit": [
         [
           {
-            "name": "name",
+            "name": "title",
             "size": 6
           },
           {
-            "name": "position",
+            "name": "image",
             "size": 6
           }
         ],
         [
           {
-            "name": "picture",
+            "name": "slug",
             "size": 6
           }
         ],
         [
           {
-            "name": "social",
+            "name": "summary",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "body",
             "size": 12
           }
         ],
         [
           {
-            "name": "blogs",
+            "name": "author",
             "size": 6
+          },
+          {
+            "name": "categories",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "seo",
+            "size": 12
           }
         ]
       ]
     },
-    "uid": "api::team-member.team-member"
+    "uid": "api::blog.blog"
   },
   "type": "object",
   "environment": null,

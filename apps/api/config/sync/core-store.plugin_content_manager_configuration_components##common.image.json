@@ -1,5 +1,5 @@
 {
-  "key": "plugin_content_manager_configuration_components::home.brands-marquee",
+  "key": "plugin_content_manager_configuration_components::common.image",
   "value": {
     "settings": {
       "bulkable": true,
@@ -19,96 +19,76 @@
           "sortable": false
         }
       },
-      "with_container": {
+      "image": {
         "edit": {
-          "label": "with_container",
+          "label": "image",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "with_container",
-          "searchable": true,
-          "sortable": true
-        }
-      },
-      "speed": {
-        "edit": {
-          "label": "speed",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "speed",
-          "searchable": true,
-          "sortable": true
-        }
-      },
-      "list": {
-        "edit": {
-          "label": "list",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "list",
+          "label": "image",
           "searchable": false,
           "sortable": false
         }
       },
-      "heading": {
+      "widht": {
         "edit": {
-          "label": "heading",
+          "label": "widht",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "heading",
-          "searchable": false,
-          "sortable": false
+          "label": "widht",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "height": {
+        "edit": {
+          "label": "height",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "height",
+          "searchable": true,
+          "sortable": true
         }
       }
     },
     "layouts": {
       "list": [
         "id",
-        "with_container",
-        "speed",
-        "list"
+        "image",
+        "widht",
+        "height"
       ],
       "edit": [
         [
           {
-            "name": "with_container",
-            "size": 4
+            "name": "image",
+            "size": 6
           },
           {
-            "name": "speed",
+            "name": "widht",
             "size": 4
           }
         ],
         [
           {
-            "name": "list",
-            "size": 6
-          }
-        ],
-        [
-          {
-            "name": "heading",
-            "size": 12
+            "name": "height",
+            "size": 4
           }
         ]
       ]
     },
-    "uid": "home.brands-marquee",
+    "uid": "common.image",
     "isComponent": true
   },
   "type": "object",
