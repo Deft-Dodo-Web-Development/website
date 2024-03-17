@@ -1,19 +1,19 @@
 import { ComponentsOptions } from "./components";
+import { BaseServerAttributes } from "./server";
 
 export interface Footer {
   id: number;
   deftdodo_banner: boolean;
 }
 
-export interface ProjectsAttributes {
+export interface ProjectsAttributes extends BaseServerAttributes {
   title: string;
   summary: string;
-  createdAt: string;
-  updatedAt: string;
-  publishedAt: string;
   locale: string;
   description?: Array<ComponentsOptions>;
   image: MediaResponse;
+  seo: Seo;
+  locale: string;
 }
 
 export interface Projects {
@@ -21,15 +21,15 @@ export interface Projects {
   attributes: ProjectsAttributes;
 }
 
-export interface ServiceAttributes {
+export interface ServiceAttributes extends BaseServerAttributes {
   title: string;
   summary: string;
   description?: Array<ComponentsOptions>;
   cta: string;
   slug: string;
   icon: string;
-  createdAt: string;
-  updatedAt: string;
+  seo: Seo;
+  locale: string;
 }
 
 export interface Services {
