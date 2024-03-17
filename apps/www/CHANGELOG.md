@@ -1,5 +1,18 @@
 
 
+## [0.46.0](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/www-v0.45.0...@deft-dodo/www-v0.46.0) (2024-03-17)
+
+
+### Features
+
+* **www:** DDT-55 Add baseFetch utility function ([e791c07](https://github.com/zitdevs/deft-dodo/commit/e791c071b79666c4ac5a4490438e030b0044f890))
+
+
+### Bug Fixes
+
+* **www:** DDT-55 Correct entity name in blog actions and add getBlogBySlugAction ([7f39599](https://github.com/zitdevs/deft-dodo/commit/7f395996ef4cfb7424637dc785cda4db1a917522))
+* **www:** DDT-55 Correct filter parameter in baseFetch function ([dbb7e18](https://github.com/zitdevs/deft-dodo/commit/dbb7e18d1cac2db49223b684716221c726a759e6))
+
 ## [0.45.0](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/www-v0.44.0...@deft-dodo/www-v0.45.0) (2024-03-17)
 
 
