@@ -11,7 +11,7 @@ import KeyFactsSection from "../widgets/key-facts";
 import FeaturedServices from "../widgets/featured-services";
 import Testimonials from "../widgets/testimonials";
 import OurProcess from "../widgets/our-process";
-// import BrandsMarquee from "../widgets/brands-marquee";
+import BrandsMarquee from "../widgets/brands-marquee";
 import Team from "../widgets/team";
 import Contact from "../widgets/contact";
 import { Metadata } from "next";
@@ -55,8 +55,8 @@ const HomePage = async () => {
             return <HeroCarousel key={index} {...content} />;
           case "home.clients":
             return <Clients key={index} {...content} />;
-          // case "home.brands-marquee":
-          //   return <BrandsMarquee key={index} {...content} />;
+          case "home.brands-marquee":
+            return <BrandsMarquee key={index} {...content} />;
           case "home.about-us":
             return <AboutUs key={index} {...content} />;
           case "home.projects":

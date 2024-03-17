@@ -107,25 +107,25 @@
       }
     },
     "layouts": {
-      "edit": [
-        [
-          {
-            "name": "seo",
-            "size": 12
-          }
-        ],
-        [
-          {
-            "name": "pageContent",
-            "size": 12
-          }
-        ]
-      ],
       "list": [
         "id",
         "createdAt",
         "updatedAt",
         "createdBy"
+      ],
+      "edit": [
+        [
+          {
+            "name": "pageContent",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "seo",
+            "size": 12
+          }
+        ]
       ]
     },
     "uid": "api::home-page.home-page"

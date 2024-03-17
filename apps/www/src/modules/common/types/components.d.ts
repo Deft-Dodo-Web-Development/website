@@ -1,4 +1,10 @@
-import { FeaturedItem, Step, StrapiResponse, TeamMember } from "./common.d";
+import {
+  FeaturedItem,
+  Media,
+  Step,
+  StrapiResponse,
+  TeamMember,
+} from "./common.d";
 import {
   Projects as BaseProjects,
   Services as BaseServices,
@@ -134,5 +140,12 @@ export namespace Components {
       url: string;
       variant: string;
     };
+  }
+
+  export interface BrandsMarquee {
+    with_container?: boolean;
+    __component: "home.brands-marquee";
+    speed: number;
+    list: StrapiResponse<Media[]>;
   }
 }

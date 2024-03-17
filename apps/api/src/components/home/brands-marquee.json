@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_home_brands_marquees",
+  "info": {
+    "displayName": "Brands Marquee",
+    "icon": "cube"
+  },
+  "options": {},
+  "attributes": {
+    "with_container": {
+      "type": "boolean",
+      "default": true
+    },
+    "speed": {
+      "type": "decimal"
+    },
+    "list": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}

@@ -30,4 +30,5 @@ type PageContent =
   | Components.Testimonials
   | Components.Team
   | Components.ContactUs
-  | Components.Experience;
+  | Components.Experience
+  | Components.BrandsMarquee;
