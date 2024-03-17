@@ -1,5 +1,12 @@
 
 
+## [0.45.0](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/www-v0.44.0...@deft-dodo/www-v0.45.0) (2024-03-17)
+
+
+### Features
+
+* **www:** add rich text component ([5f32a8b](https://github.com/zitdevs/deft-dodo/commit/5f32a8b22bdd465086352f0030fd7f5fde453a6d))
+
 ## [0.44.0](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/www-v0.43.1...@deft-dodo/www-v0.44.0) (2024-03-17)
 
 
