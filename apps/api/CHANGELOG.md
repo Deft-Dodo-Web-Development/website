@@ -1,5 +1,12 @@
 
 
+## [0.14.0](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/api-v0.13.0...@deft-dodo/api-v0.14.0) (2024-03-17)
+
+
+### Features
+
+* **api:** Add slug field to project content type schema ([a539b4d](https://github.com/zitdevs/deft-dodo/commit/a539b4da30fe9d8aaf7509634976c05ec0ca430d))
+
 ## [0.13.0](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/api-v0.12.0...@deft-dodo/api-v0.13.0) (2024-03-17)
 
 
