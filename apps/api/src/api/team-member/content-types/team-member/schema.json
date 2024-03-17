@@ -30,6 +30,12 @@
       "type": "component",
       "repeatable": true,
       "component": "common.social"
+    },
+    "blogs": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::blog.blog",
+      "mappedBy": "author"
     }
   }
 }

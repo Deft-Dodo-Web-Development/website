@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_common_rich_editors",
+  "info": {
+    "displayName": "Rich Editor",
+    "icon": "medium"
+  },
+  "options": {},
+  "attributes": {
+    "body": {
+      "type": "richtext"
+    }
+  }
+}

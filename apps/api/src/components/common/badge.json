@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_common_badges",
+  "info": {
+    "displayName": "badge",
+    "icon": "check"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
