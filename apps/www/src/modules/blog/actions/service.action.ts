@@ -14,7 +14,7 @@ const fetchData = function <T>(filter?: { [key: string]: string | number }) {
   ];
 
   return baseFetch<T>({
-    entity: "projects",
+    entity: "blogs",
     populate,
     by: filter,
   });
@@ -27,5 +27,10 @@ export async function getAllBlogAction() {
 
 export async function getBlogAction(id: string | number) {
   const data = fetchData<BlogServerResponse>({ id });
+  return data;
+}
+
+export async function getBlogBySlugAction(slug: string) {
+  const data = fetchData<BlogServerResponse>({ slug });
   return data;
 }
