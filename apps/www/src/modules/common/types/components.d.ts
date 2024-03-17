@@ -170,14 +170,21 @@ export namespace Components {
     height?: number;
   }
 
+  export interface Overview {
+    id: number;
+    __component: "common.overview";
+    title: string;
+    description: string;
+  }
   export interface ImageWithText {
     id: number;
     __component: "common.image-with-text";
-    image_alignment: "left" | "right";
+    image_alignment?: "left" | "right";
     description: string;
     heading?: BaseHeading;
     image?: Image;
     badges?: Badge[];
+    overviews?: Overview[];
   }
 }
 
