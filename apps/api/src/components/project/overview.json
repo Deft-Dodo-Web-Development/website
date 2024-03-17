@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_project_overviews",
+  "info": {
+    "displayName": "Overview",
+    "icon": "bulletList"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

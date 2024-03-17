@@ -33,20 +33,6 @@
           "sortable": true
         }
       },
-      "description": {
-        "edit": {
-          "label": "description",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "description",
-          "searchable": true,
-          "sortable": true
-        }
-      },
       "cta": {
         "edit": {
           "label": "cta",
@@ -87,6 +73,48 @@
           "label": "icon",
           "searchable": true,
           "sortable": true
+        }
+      },
+      "summary": {
+        "edit": {
+          "label": "summary",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "summary",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "description": {
+        "edit": {
+          "label": "description",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "description",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "seo": {
+        "edit": {
+          "label": "seo",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "seo",
+          "searchable": false,
+          "sortable": false
         }
       },
       "createdAt": {
@@ -160,10 +188,6 @@
           {
             "name": "title",
             "size": 6
-          },
-          {
-            "name": "description",
-            "size": 6
           }
         ],
         [
@@ -180,6 +204,24 @@
           {
             "name": "icon",
             "size": 6
+          }
+        ],
+        [
+          {
+            "name": "summary",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "description",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "seo",
+            "size": 12
           }
         ]
       ]

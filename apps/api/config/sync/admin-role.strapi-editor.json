@@ -126,7 +126,11 @@
       "subject": "api::home-page.home-page",
       "properties": {
         "fields": [
-          "pageContent"
+          "pageContent",
+          "seo.title",
+          "seo.decription",
+          "seo.keywords",
+          "seo.preventIndexing"
         ]
       },
       "conditions": []
@@ -137,7 +141,11 @@
       "subject": "api::home-page.home-page",
       "properties": {
         "fields": [
-          "pageContent"
+          "pageContent",
+          "seo.title",
+          "seo.decription",
+          "seo.keywords",
+          "seo.preventIndexing"
         ]
       },
       "conditions": []
@@ -148,7 +156,11 @@
       "subject": "api::home-page.home-page",
       "properties": {
         "fields": [
-          "pageContent"
+          "pageContent",
+          "seo.title",
+          "seo.decription",
+          "seo.keywords",
+          "seo.preventIndexing"
         ]
       },
       "conditions": []
@@ -240,6 +252,58 @@
     {
       "action": "plugin::content-manager.explorer.create",
       "actionParameters": {},
+      "subject": "api::team-member.team-member",
+      "properties": {
+        "fields": [
+          "name",
+          "position",
+          "picture",
+          "social.platform",
+          "social.link"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "actionParameters": {},
+      "subject": "api::team-member.team-member",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "actionParameters": {},
+      "subject": "api::team-member.team-member",
+      "properties": {
+        "fields": [
+          "name",
+          "position",
+          "picture",
+          "social.platform",
+          "social.link"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "actionParameters": {},
+      "subject": "api::team-member.team-member",
+      "properties": {
+        "fields": [
+          "name",
+          "position",
+          "picture",
+          "social.platform",
+          "social.link"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "actionParameters": {},
       "subject": "api::testimonial.testimonial",
       "properties": {
         "fields": [
@@ -248,7 +312,8 @@
           "identity.name",
           "identity.occupation",
           "identity.picture",
-          "identity.company_logo"
+          "identity.company_logo",
+          "stars"
         ]
       },
       "conditions": []
@@ -264,7 +329,8 @@
           "identity.name",
           "identity.occupation",
           "identity.picture",
-          "identity.company_logo"
+          "identity.company_logo",
+          "stars"
         ]
       },
       "conditions": []
@@ -280,7 +346,8 @@
           "identity.name",
           "identity.occupation",
           "identity.picture",
-          "identity.company_logo"
+          "identity.company_logo",
+          "stars"
         ]
       },
       "conditions": []

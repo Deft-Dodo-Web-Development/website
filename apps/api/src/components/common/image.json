@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_common_images",
+  "info": {
+    "displayName": "image",
+    "icon": "landscape",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "widht": {
+      "type": "decimal"
+    },
+    "height": {
+      "type": "decimal"
+    }
+  }
+}
