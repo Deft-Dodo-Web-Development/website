@@ -23,6 +23,14 @@ const WorkPage: React.FC = async () => {
    * })
    */
 
+  // example of how to get a single work
+  /**
+   * @example
+   * import { getWorkAction } from "../actions/work.action";
+   * const work = await getWorkAction(1);
+   * console.log(work);
+   */
+
   return (
     <>
       <WorkHeading container />
