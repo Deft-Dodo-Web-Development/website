@@ -1,5 +1,12 @@
 
 
+## [0.12.0](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/api-v0.11.0...@deft-dodo/api-v0.12.0) (2024-03-17)
+
+
+### Features
+
+* **api:** DDT-51 Introduce Brands Marquee component for home page ([9c3fc2c](https://github.com/zitdevs/deft-dodo/commit/9c3fc2c4a409896831403b9bacfaaf9a3d9db23e))
+
 ## [0.11.0](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/api-v0.10.0...@deft-dodo/api-v0.11.0) (2024-03-16)
 
 
