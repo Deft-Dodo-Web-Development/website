@@ -869,7 +869,7 @@ export interface ApiBlogBlog extends Schema.CollectionType {
           localized: true;
         };
       }>;
-    SEO: Attribute.Component<'common.seo'> &
+    seo: Attribute.Component<'common.seo'> &
       Attribute.SetPluginOptions<{
         i18n: {
           localized: true;

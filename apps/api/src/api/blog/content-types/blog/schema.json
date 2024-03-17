@@ -58,7 +58,7 @@
         }
       }
     },
-    "SEO": {
+    "seo": {
       "type": "component",
       "repeatable": false,
       "component": "common.seo",
