@@ -17,7 +17,7 @@ export async function baseFetch<TData>({
   by,
 }: BaseFetchParams): Promise<TData> {
   const id = by?.id;
-  const filter = id ? { filter: by } : {};
+  const filter = !id ? { filters: by } : {};
   const query = qs.stringify({
     populate,
     ...filter,
