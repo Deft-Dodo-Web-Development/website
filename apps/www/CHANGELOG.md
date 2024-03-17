@@ -1,5 +1,12 @@
 
 
+## [0.43.1](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/www-v0.43.0...@deft-dodo/www-v0.43.1) (2024-03-17)
+
+
+### Bug Fixes
+
+* DDT-54 move not found page inside [en] directory ([5bfcd20](https://github.com/zitdevs/deft-dodo/commit/5bfcd20145eaf368758ddd9e75a47fa1636a26fb))
+
 ## [0.43.0](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/www-v0.42.0...@deft-dodo/www-v0.43.0) (2024-03-17)
 
 
