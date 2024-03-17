@@ -967,7 +967,8 @@ export interface ApiHomePageHomePage extends Schema.SingleType {
         'home.testimonials',
         'home.team',
         'home.contact-us',
-        'home.experience'
+        'home.experience',
+        'home.brands-marquee'
       ]
     > &
       Attribute.SetPluginOptions<{

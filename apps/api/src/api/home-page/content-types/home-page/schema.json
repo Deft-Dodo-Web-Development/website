@@ -38,7 +38,8 @@
         "home.testimonials",
         "home.team",
         "home.contact-us",
-        "home.experience"
+        "home.experience",
+        "home.brands-marquee"
       ]
     },
     "seo": {
