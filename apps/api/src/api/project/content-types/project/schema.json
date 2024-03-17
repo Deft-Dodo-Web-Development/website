@@ -57,7 +57,7 @@
         "common.image-with-text"
       ]
     },
-    "SEO": {
+    "seo": {
       "type": "component",
       "repeatable": false,
       "pluginOptions": {

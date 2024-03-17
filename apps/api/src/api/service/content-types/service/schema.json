@@ -72,7 +72,7 @@
         "home.step-by-step"
       ]
     },
-    "SEO": {
+    "seo": {
       "type": "component",
       "repeatable": false,
       "pluginOptions": {
