@@ -1,47 +1,31 @@
-/* eslint-disable turbo/no-undeclared-env-vars */
 "use server";
 
-import { config } from "dotenv";
-
-import qs from "qs";
-import { AppConfig } from "@/config/app.config";
 import { BlogsServerResponse, BlogServerResponse } from "../types/response";
+import { baseFetch } from "@/modules/common/utilities/fetch";
 
-config();
+const fetchData = function <T>(filter?: { [key: string]: string | number }) {
+  const populate = [
+    "body",
+    "body.badges",
+    "body.image",
+    "body.image.image",
+    "body.heading",
+    "seo",
+  ];
 
-async function baseFetch<TData>(id?: string | number) {
-  const query = qs.stringify({
-    populate: [
-      "body",
-      "body.badges",
-      "body.image",
-      "body.image.image",
-      "body.heading",
-      "seo",
-    ],
+  return baseFetch<T>({
+    entity: "projects",
+    populate,
+    by: filter,
   });
-  const baseUrl = `${AppConfig.strapi.url}/api/blogs`;
-  const url = id ? `${baseUrl}/${id}?${query}` : `${baseUrl}?${query}`;
-
-  const request = await fetch(url, {
-    method: "GET",
-    headers: {
-      Authorization: `Bearer ${process.env.STRAPI_ACCESS_TOKEN}`,
-    },
-    next: { revalidate: 120 },
-  });
-
-  const data = await request.json();
-
-  return data as TData;
-}
+};
 
 export async function getAllBlogAction() {
-  const data = baseFetch<BlogsServerResponse>();
+  const data = fetchData<BlogsServerResponse>();
   return data;
 }
 
 export async function getBlogAction(id: string | number) {
-  const data = baseFetch<BlogServerResponse>(id);
+  const data = fetchData<BlogServerResponse>({ id });
   return data;
 }
