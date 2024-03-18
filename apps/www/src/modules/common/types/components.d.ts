@@ -184,7 +184,7 @@ export namespace Components {
     heading?: BaseHeading;
     image?: Image;
     badges?: Badge[];
-    overviews?: Overview[];
+    overview?: Overview[];
   }
 }
 
