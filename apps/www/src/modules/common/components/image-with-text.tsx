@@ -5,6 +5,7 @@ import { Container } from "@components/container";
 import { AspectRatio } from "@components/aspect-ratio";
 import { Badge } from "@components/badge";
 import Image from "next/image";
+import { AppConfig } from "@/config/app.config";
 
 export type ImageWithTextProps = Components.ImageWithText;
 
@@ -26,7 +27,7 @@ const ImageWithText: React.FC<ImageWithTextProps> = ({
                 <div className="w-full">
                     <AspectRatio ratio={4 / 3}>
                         <Image
-                            src={image.image.data.attributes.url}
+                            src={`${AppConfig.strapi.url}${image.image.data.attributes.url}`}
                             alt={image.image.data.attributes.alternativeText || "Project Image"}
                             width={image.width || image.image.data.attributes.width}
                             height={image.height || image.image.data.attributes.height}
@@ -44,18 +45,18 @@ const ImageWithText: React.FC<ImageWithTextProps> = ({
     return (
         <Container enabled={true}>
             <Layout className="lg:gap-10 lg:gap-y-4 pt-4">
-                {badges.length > 0 ? (
-                    <div className="flex items-center gap-2 col-start-2">
-                        {badges.map((badge, index) => (
-                            <Badge variant="default" size="base" key={index}>{badge.title}</Badge>
-                        ))}
-                    </div>
-                ) : null}
-
                 {image_alignment === "left" ? (<ImageMarkup />) : null}
 
                 {heading || description ? (
                     <div className="w-full">
+                        {badges.length > 0 ? (
+                            <div className="flex items-center gap-2 mb-4">
+                                {badges.map((badge, index) => (
+                                    <Badge variant="default" size="base" key={index}>{badge.title}</Badge>
+                                ))}
+                            </div>
+                        ) : null}
+
                         {heading ? (
                             <Heading
                                 variant="primary"
