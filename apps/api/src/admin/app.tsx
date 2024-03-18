@@ -21,7 +21,7 @@ export default {
         "Auth.form.confirmPassword.label": "Confirm Password",
         "Auth.form.currentPassword.label": "Current Password",
         "Auth.form.email.label": "Email",
-        "Auth.form.email.placeholder": "e.g. kai@doe.com",
+        "Auth.form.email.placeholder": "e.g. name@deftdodo.dev",
         "Auth.form.error.blocked":
           "Your account has been blocked by the administrator.",
         "Auth.form.error.code.provide": "Incorrect code provided.",

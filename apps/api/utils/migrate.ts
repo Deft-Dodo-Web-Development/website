@@ -53,24 +53,30 @@ async function db() {
 }
 
 async function createTable(client: Client) {
-  console.log("\n⏰ Creating table if not exists");
-  const createTableQuery = `
-  CREATE TABLE IF NOT EXISTS custom_migration (
-    id SERIAL PRIMARY KEY,
-    name VARCHAR(255) NOT NULL,
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-  );
+  console.log("\n⏰ Checking and creating schema if not exists");
+  const createSchemaQuery = `
+    CREATE SCHEMA IF NOT EXISTS custom;
   `;
+  await client.query(createSchemaQuery);
+  console.log("✅ Schema checked/created");
 
+  console.log("\n⏰ Creating table if not exists within custom schema");
+  const createTableQuery = `
+    CREATE TABLE IF NOT EXISTS custom.migration (
+      id SERIAL PRIMARY KEY,
+      name VARCHAR(255) NOT NULL,
+      created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    );
+  `;
   await client.query(createTableQuery);
-  console.log("✅ Table created");
+  console.log("✅ Table created within custom schema");
 }
 
 async function checkExist(client: Client, name: string) {
   console.log("\n⏰ Checking if migration exists");
 
   const checkMigrationQuery = `
-  SELECT * FROM custom_migration WHERE name = $1;
+  SELECT * FROM custom.migration WHERE name = $1;
   `;
   const { rows } = await client.query(checkMigrationQuery, [name]);
   return rows.length > 0;
@@ -95,7 +101,7 @@ async function insertMigration(client: Client, name: string) {
   console.log("\n⏰ Inserting migration into database");
 
   const insertMigrationQuery = `
-  INSERT INTO custom_migration (name) VALUES ($1);
+  INSERT INTO custom.migration (name) VALUES ($1);
   `;
 
   await client.query("BEGIN");
