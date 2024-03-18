@@ -7,6 +7,7 @@ export interface Footer {
 }
 
 export interface ProjectsAttributes extends BaseServerAttributes {
+  slug: any;
   title: string;
   summary: string;
   locale: string;

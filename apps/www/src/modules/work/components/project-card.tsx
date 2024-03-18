@@ -1,16 +1,20 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
+import { StrapiResponse, Media } from "@/modules/common/types/common";
+import Link from "next/link";
 
 export type ProjectCardProps = {
-  url: StaticImageData | string;
+  image: StrapiResponse<Media>;
   title: string;
-  subtitle: string;
-  id: number;
+  summary: string;
+  slug: string;
 };
 
 const ProjectCard: React.FC<ProjectCardProps> = (card) => {
+  const link = card.slug ? `/work/${card.slug}` : "#";
+
   return (
     <motion.div
       className="w-full max-w-[750px]"
@@ -19,17 +23,19 @@ const ProjectCard: React.FC<ProjectCardProps> = (card) => {
       viewport={{ once: true, margin: "-30%" }}
       transition={{ ease: "backInOut" }}
     >
-      <Image
-        src={card.url}
-        alt={card.title}
-        width={750}
-        height={440}
-        className="rounded-xl"
-      />
-      <div className="flex flex-col mt-6">
-        <h3 className="text-2xl">{card.title}</h3>
-        <p className="text-[16px] text-white-56">{card.subtitle}</p>
-      </div>
+      <Link href={link}>
+        <Image
+          src={card.image.data.attributes.url}
+          alt={card.image.data.attributes.alternativeText || card.title}
+          width={750}
+          height={440}
+          className="rounded-xl"
+        />
+        <div className="flex flex-col mt-6">
+          <h3 className="text-2xl">{card.title}</h3>
+          <p className="text-[16px] text-white-56">{card.summary}</p>
+        </div>
+      </Link>
     </motion.div>
   );
 };

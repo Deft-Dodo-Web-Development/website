@@ -84,3 +84,32 @@
     @apply bg-background text-foreground;
   }
 }
+
+.content h2 {
+  @apply text-4xl font-bold;
+  @apply mt-8 mb-4;
+}
+
+.content h3 {
+  @apply text-2xl font-bold;
+  @apply mt-6 mb-3;
+}
+
+.content h4 {
+  @apply text-xl font-bold;
+  @apply mt-4 mb-2;
+}
+
+.content h5 {
+  @apply text-lg font-bold;
+  @apply mt-3 mb-1;
+}
+
+.content h6 {
+  @apply text-base font-bold;
+  @apply mt-2 mb-1;
+}
+
+.content p {
+  @apply mt-4 mb-4;
+}

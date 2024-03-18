@@ -9,11 +9,13 @@ import {
 
 const fetchData = function <T>(filter?: { [key: string]: string | number }) {
   const populate = [
+    "image",
     "description",
     "description.badges",
     "description.image",
     "description.image.image",
     "description.heading",
+    "description.overview",
     "seo",
   ];
 
