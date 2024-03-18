@@ -1,5 +1,16 @@
 
 
+## [0.47.0](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/www-v0.46.0...@deft-dodo/www-v0.47.0) (2024-03-18)
+
+
+### Features
+
+* **www, projects:** change to project details template ([463294a](https://github.com/zitdevs/deft-dodo/commit/463294a94e7a744d69ec1e3b541a19a77aa552b2))
+* **www:** add dynamic source to projects page ([2d275de](https://github.com/zitdevs/deft-dodo/commit/2d275defc94c6e58f3908de57155ae28d3833c41))
+* **www:** add rich editor component styles ([7f39455](https://github.com/zitdevs/deft-dodo/commit/7f39455d8b6b9823a3443c46cde6f31f38159aa3))
+* **www:** change badge default variant ([0f0bab5](https://github.com/zitdevs/deft-dodo/commit/0f0bab5be23b1c628f0f829997eca01c7978f623))
+* **www:** wip adding project detail page ([3cecb39](https://github.com/zitdevs/deft-dodo/commit/3cecb39eb35926ac46193175dcdf5ad594959fb4))
+
 ## [0.46.0](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/www-v0.45.0...@deft-dodo/www-v0.46.0) (2024-03-17)
 
 
