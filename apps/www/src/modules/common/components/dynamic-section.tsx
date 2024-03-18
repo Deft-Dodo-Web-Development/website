@@ -14,6 +14,8 @@ import Testimonials from "@/modules/home/widgets/testimonials";
 import Experience from "./experience";
 import { Separator } from "./separator";
 import Contact from "@/modules/home/widgets/contact";
+import ImageWithText from "./image-with-text";
+import RichEditor from "./rich-editor";
 
 export type DynamicSectionProps = {
   content: ComponentsOptions;
@@ -65,6 +67,14 @@ const DynamicSection: React.FC<DynamicSectionProps> = ({ content }) => {
           }}
         />
       );
+    case "common.image-with-text":
+      return (
+        <ImageWithText {...content} />
+      )
+    case "common.rich-editor":
+      return (
+        <RichEditor {...content} />
+      )
     default:
       return <div>Component not found</div>;
   }
