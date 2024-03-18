@@ -1,5 +1,7 @@
 
 
+## [0.14.2](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/api-v0.14.1...@deft-dodo/api-v0.14.2) (2024-03-18)
+
 ## [0.14.1](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/api-v0.14.0...@deft-dodo/api-v0.14.1) (2024-03-18)
 
 ## [0.14.0](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/api-v0.13.0...@deft-dodo/api-v0.14.0) (2024-03-17)
