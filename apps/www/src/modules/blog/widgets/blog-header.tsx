@@ -3,17 +3,13 @@ import { Container } from "@components/container";
 import { StrapiResponse, Media } from "@/modules/common/types/common";
 import { Separator } from "@/modules/common/components/separator";
 import { Image } from "@/modules/blog/components/Image";
+import { formatDate } from "../utilities";
 
 export type BlogHeaderProps = {
     title: string;
     createdAt: string;
     image: StrapiResponse<Media>;
 };
-
-const formatDate = (dateString: string) => {
-    const options: Intl.DateTimeFormatOptions = { year: "numeric", month: "long", day: "numeric" }
-    return new Date(dateString).toLocaleDateString(undefined, options)
-}
 
 const BlogHeader: React.FC<BlogHeaderProps> = ({ title, createdAt, image }) => {
     return (
