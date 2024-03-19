@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { StrapiResponse, Media } from "@/modules/common/types/common";
 import Link from "next/link";
+import { AppConfig } from "@/config/app.config";
 
 export type ProjectCardProps = {
   image: StrapiResponse<Media>;
@@ -25,7 +26,7 @@ const ProjectCard: React.FC<ProjectCardProps> = (card) => {
     >
       <Link href={link}>
         <Image
-          src={card.image.data.attributes.url}
+          src={`${AppConfig.strapi.url}${card.image.data.attributes.url}`}
           alt={card.image.data.attributes.alternativeText || card.title}
           width={750}
           height={440}

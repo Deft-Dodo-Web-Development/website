@@ -4,9 +4,9 @@ import { RichText } from "./rich-text";
 
 export type RichEditorProps = Components.RichEditor;
 
-const RichEditor: React.FC<RichEditorProps> = ({ body }) => {
+const RichEditor: React.FC<RichEditorProps> = ({ body, with_container }) => {
     return (
-        <Container enabled={true}>
+        <Container enabled={with_container}>
             <section className="w-full my-4 md:my-6 lg:my-8 content">
                 <RichText content={body} />
             </section>

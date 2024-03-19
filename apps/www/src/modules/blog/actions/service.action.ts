@@ -5,11 +5,16 @@ import { baseFetch } from "@/modules/common/utilities/fetch";
 
 const fetchData = function <T>(filter?: { [key: string]: string | number }) {
   const populate = [
+    "author",
+    "author.picture",
+    "author.social",
     "body",
     "body.badges",
     "body.image",
     "body.image.image",
     "body.heading",
+    "categories",
+    "image",
     "seo",
   ];
 

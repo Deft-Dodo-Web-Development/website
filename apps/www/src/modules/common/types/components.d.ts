@@ -159,6 +159,7 @@ export namespace Components {
   export interface RichEditor {
     id: number;
     __component: "common.rich-editor";
+    with_container: boolean;
     body: string;
   }
 

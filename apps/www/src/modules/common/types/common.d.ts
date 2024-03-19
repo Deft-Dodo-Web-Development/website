@@ -39,12 +39,17 @@ export interface Services {
 }
 
 export interface BlogAttributes extends BaseServerAttributes {
+  author: StrapiResponse<TeamMember>;
   title: string;
   summary: string;
   body?: Array<ComponentsOptions>;
+  categories: StrapiResponse<Array<CategoryAttributes>>;
   image: MediaResponse;
+  slug: string;
   seo: Seo;
   locale: string;
+  createdAt: string;
+  updatedAt: string;
 }
 
 export interface Blogs {
@@ -177,4 +182,15 @@ export interface Seo {
   description: string;
   keywords: string;
   preventIndexing: boolean;
+}
+
+export interface Category {
+  name: string;
+  createdAt: string;
+  updatedAt: string;
+}
+
+export interface CategoryAttributes {
+  id: number;
+  attributes: Category;
 }
