@@ -1,5 +1,12 @@
 
 
+## [0.49.0](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/www-v0.48.0...@deft-dodo/www-v0.49.0) (2024-03-19)
+
+
+### Features
+
+* **www:** DDT-57 Enhance testimonial features and add stars component ([c1aa71f](https://github.com/zitdevs/deft-dodo/commit/c1aa71f814f2827b199140aa357b432576fc565e))
+
 ## [0.48.0](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/www-v0.47.0...@deft-dodo/www-v0.48.0) (2024-03-19)
 
 
