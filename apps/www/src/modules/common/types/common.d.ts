@@ -84,6 +84,7 @@ export interface TestimonialAttributes {
   publishedAt: string;
   locale: string;
   identity: Identity;
+  stars: number;
 }
 
 export interface Testimonials {
