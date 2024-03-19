@@ -45,6 +45,7 @@ export interface BlogAttributes extends BaseServerAttributes {
   body?: Array<ComponentsOptions>;
   categories: StrapiResponse<Array<CategoryAttributes>>;
   image: MediaResponse;
+  slug: string;
   seo: Seo;
   locale: string;
   createdAt: string;
