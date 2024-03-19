@@ -10,32 +10,23 @@ const WorkPage: React.FC = async () => {
 
   if (!works) return null;
 
-  // now you can use the works data
-  /**
-   * @example
-   * works.data.map((work) => {
-   *  return (
-   *    <div key={work.id}>
-   *      <h1>{work.attributes.title}</h1>
-   *      <p>{work.attributes.description}</p>
-   *    </div>
-   *  )
-   * })
-   */
-
-  // example of how to get a single work
-  /**
-   * @example
-   * import { getWorkAction } from "../actions/work.action";
-   * const work = await getWorkAction(1);
-   * console.log(work);
-   */
+  const formattedWorks = works.data.map((work) => {
+    return {
+      title: work.attributes.title,
+      summary: work.attributes.summary,
+      image: work.attributes.image,
+      slug: work.attributes.slug,
+    }
+  });
 
   return (
     <>
       <WorkHeading container />
       <Separator className="mb-28 mt-14" container />
-      <ProjectList container />
+      <ProjectList
+        container
+        projects={formattedWorks}
+      />
       <FooterSetup variant="complex" />
     </>
   );

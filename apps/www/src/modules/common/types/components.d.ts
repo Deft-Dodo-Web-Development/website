@@ -159,6 +159,7 @@ export namespace Components {
   export interface RichEditor {
     id: number;
     __component: "common.rich-editor";
+    with_container: boolean;
     body: string;
   }
 
@@ -170,14 +171,21 @@ export namespace Components {
     height?: number;
   }
 
+  export interface Overview {
+    id: number;
+    __component: "common.overview";
+    title: string;
+    description: string;
+  }
   export interface ImageWithText {
     id: number;
     __component: "common.image-with-text";
-    image_alignment: "left" | "right";
+    image_alignment?: "left" | "right";
     description: string;
     heading?: BaseHeading;
     image?: Image;
     badges?: Badge[];
+    overview?: Overview[];
   }
 }
 

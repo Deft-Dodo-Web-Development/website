@@ -1,5 +1,46 @@
 
 
+## [0.48.0](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/www-v0.47.0...@deft-dodo/www-v0.48.0) (2024-03-19)
+
+
+### Features
+
+* changes to badge on hover ([8774cf5](https://github.com/zitdevs/deft-dodo/commit/8774cf545da1e18122d48dc7819e7265e88b2d12))
+* **www, article:** add article/blog-post template ([fd754cc](https://github.com/zitdevs/deft-dodo/commit/fd754cca9133f6ca0f95b3735c7b21f71101c809))
+* **www:** add blog list page ([19e3dbd](https://github.com/zitdevs/deft-dodo/commit/19e3dbd8a0e9aec961f3eda48cfc312c07f4ad6d))
+* **www:** add common image component ([6e74837](https://github.com/zitdevs/deft-dodo/commit/6e748378e8e599ad0d33587822b6f25f66893067))
+* **www:** add container prop to rich editor component ([7d542c6](https://github.com/zitdevs/deft-dodo/commit/7d542c6ccc6167e2d61233364970b942045a2d0b))
+
+
+### Bug Fixes
+
+* **www:** add app config img url ([48a1189](https://github.com/zitdevs/deft-dodo/commit/48a1189acfb8cdc11ef054d37dc9749dacf5e163))
+* **www:** add app config url ([abb3f63](https://github.com/zitdevs/deft-dodo/commit/abb3f6371094fedc3965b2f39559ea2384900340))
+
+## [0.47.0](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/www-v0.46.0...@deft-dodo/www-v0.47.0) (2024-03-18)
+
+
+### Features
+
+* **www, projects:** change to project details template ([463294a](https://github.com/zitdevs/deft-dodo/commit/463294a94e7a744d69ec1e3b541a19a77aa552b2))
+* **www:** add dynamic source to projects page ([2d275de](https://github.com/zitdevs/deft-dodo/commit/2d275defc94c6e58f3908de57155ae28d3833c41))
+* **www:** add rich editor component styles ([7f39455](https://github.com/zitdevs/deft-dodo/commit/7f39455d8b6b9823a3443c46cde6f31f38159aa3))
+* **www:** change badge default variant ([0f0bab5](https://github.com/zitdevs/deft-dodo/commit/0f0bab5be23b1c628f0f829997eca01c7978f623))
+* **www:** wip adding project detail page ([3cecb39](https://github.com/zitdevs/deft-dodo/commit/3cecb39eb35926ac46193175dcdf5ad594959fb4))
+
+## [0.46.0](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/www-v0.45.0...@deft-dodo/www-v0.46.0) (2024-03-17)
+
+
+### Features
+
+* **www:** DDT-55 Add baseFetch utility function ([e791c07](https://github.com/zitdevs/deft-dodo/commit/e791c071b79666c4ac5a4490438e030b0044f890))
+
+
+### Bug Fixes
+
+* **www:** DDT-55 Correct entity name in blog actions and add getBlogBySlugAction ([7f39599](https://github.com/zitdevs/deft-dodo/commit/7f395996ef4cfb7424637dc785cda4db1a917522))
+* **www:** DDT-55 Correct filter parameter in baseFetch function ([dbb7e18](https://github.com/zitdevs/deft-dodo/commit/dbb7e18d1cac2db49223b684716221c726a759e6))
+
 ## [0.45.0](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/www-v0.44.0...@deft-dodo/www-v0.45.0) (2024-03-17)
 
 
