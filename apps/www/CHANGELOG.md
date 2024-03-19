@@ -1,5 +1,22 @@
 
 
+## [0.48.0](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/www-v0.47.0...@deft-dodo/www-v0.48.0) (2024-03-19)
+
+
+### Features
+
+* changes to badge on hover ([8774cf5](https://github.com/zitdevs/deft-dodo/commit/8774cf545da1e18122d48dc7819e7265e88b2d12))
+* **www, article:** add article/blog-post template ([fd754cc](https://github.com/zitdevs/deft-dodo/commit/fd754cca9133f6ca0f95b3735c7b21f71101c809))
+* **www:** add blog list page ([19e3dbd](https://github.com/zitdevs/deft-dodo/commit/19e3dbd8a0e9aec961f3eda48cfc312c07f4ad6d))
+* **www:** add common image component ([6e74837](https://github.com/zitdevs/deft-dodo/commit/6e748378e8e599ad0d33587822b6f25f66893067))
+* **www:** add container prop to rich editor component ([7d542c6](https://github.com/zitdevs/deft-dodo/commit/7d542c6ccc6167e2d61233364970b942045a2d0b))
+
+
+### Bug Fixes
+
+* **www:** add app config img url ([48a1189](https://github.com/zitdevs/deft-dodo/commit/48a1189acfb8cdc11ef054d37dc9749dacf5e163))
+* **www:** add app config url ([abb3f63](https://github.com/zitdevs/deft-dodo/commit/abb3f6371094fedc3965b2f39559ea2384900340))
+
 ## [0.47.0](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/www-v0.46.0...@deft-dodo/www-v0.47.0) (2024-03-18)
 
 
