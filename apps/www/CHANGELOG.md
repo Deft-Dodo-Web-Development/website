@@ -1,5 +1,22 @@
 
 
+## [0.45.0](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/www-v0.44.0...@deft-dodo/www-v0.45.0) (2024-03-17)
+
+
+### Features
+
+* **www:** add rich text component ([5f32a8b](https://github.com/zitdevs/deft-dodo/commit/5f32a8b22bdd465086352f0030fd7f5fde453a6d))
+
+## [0.44.0](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/www-v0.43.1...@deft-dodo/www-v0.44.0) (2024-03-17)
+
+
+### Features
+
+* **www:** DDT-53 Add blog module with fetching actions and page setup ([1469cca](https://github.com/zitdevs/deft-dodo/commit/1469ccae8e55d9c1968b686802d68165e7cdac71))
+* **www:** DDT-53 Add service fetching actions and update services page ([aa09f19](https://github.com/zitdevs/deft-dodo/commit/aa09f19a7afce533ad4c05a4594e4db55dcc4ecc))
+* **www:** DDT-53 Implement dynamic section component and update service card ([2b5592c](https://github.com/zitdevs/deft-dodo/commit/2b5592ce4efb2d8ee87f5d841845b1797a7a210f))
+* **www:** DDT-53 Update common types and add work actions ([26e8fee](https://github.com/zitdevs/deft-dodo/commit/26e8fee21c7d2699b60e27df2d5fee8804d41201))
+
 ## [0.43.1](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/www-v0.43.0...@deft-dodo/www-v0.43.1) (2024-03-17)
 
 

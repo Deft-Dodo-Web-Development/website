@@ -1,5 +1,12 @@
 
 
+## [0.13.0](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/api-v0.12.0...@deft-dodo/api-v0.13.0) (2024-03-17)
+
+
+### Features
+
+* **api:** DDT-53 Add blog and category content types, update project and service schemas ([b787080](https://github.com/zitdevs/deft-dodo/commit/b787080694fe0b07550f78eb5be5af0e34c83c2a))
+
 ## [0.12.0](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/api-v0.11.0...@deft-dodo/api-v0.12.0) (2024-03-17)
 
 
