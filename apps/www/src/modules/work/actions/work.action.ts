@@ -20,6 +20,7 @@ const fetchData = function <T>(filter?: { [key: string]: string | number }) {
     "description.mobile",
     "description.tablet",
     "description.video",
+    "description.video.overlay",
     "seo",
   ];
 

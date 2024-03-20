@@ -17,6 +17,7 @@ import Contact from "@/modules/home/widgets/contact";
 import ImageWithText from "./image-with-text";
 import RichEditor from "./rich-editor";
 import { Image } from "./image";
+import DisplayVideo from "./display-video";
 
 export type DynamicSectionProps = {
   content: ComponentsOptions;
@@ -79,6 +80,10 @@ const DynamicSection: React.FC<DynamicSectionProps> = ({ content }) => {
     case "common.image":
       return (
         <Image {...content} />
+      )
+    case "common.display-video":
+      return (
+        <DisplayVideo {...content} />
       )
     default:
       return <div>Component not found</div>;
