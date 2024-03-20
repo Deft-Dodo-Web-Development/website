@@ -1,5 +1,12 @@
 
 
+## [0.51.0](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/www-v0.50.0...@deft-dodo/www-v0.51.0) (2024-03-20)
+
+
+### Features
+
+* **www:** DDT-58 Update service actions to include new fields ([d5ba4f6](https://github.com/zitdevs/deft-dodo/commit/d5ba4f634ed7baad60669c6dd9b567c3c16af6a6))
+
 ## [0.50.0](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/www-v0.49.0...@deft-dodo/www-v0.50.0) (2024-03-20)
 
 
