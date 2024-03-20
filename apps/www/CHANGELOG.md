@@ -1,5 +1,26 @@
 
 
+## [0.51.0](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/www-v0.50.0...@deft-dodo/www-v0.51.0) (2024-03-20)
+
+
+### Features
+
+* **www:** DDT-58 Update service actions to include new fields ([d5ba4f6](https://github.com/zitdevs/deft-dodo/commit/d5ba4f634ed7baad60669c6dd9b567c3c16af6a6))
+
+## [0.50.0](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/www-v0.49.0...@deft-dodo/www-v0.50.0) (2024-03-20)
+
+
+### Features
+
+* add devices images layout ([9c8c5d8](https://github.com/zitdevs/deft-dodo/commit/9c8c5d8ec2b7ece77330ac702900d9bd8f95b348))
+
+## [0.49.0](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/www-v0.48.0...@deft-dodo/www-v0.49.0) (2024-03-19)
+
+
+### Features
+
+* **www:** DDT-57 Enhance testimonial features and add stars component ([c1aa71f](https://github.com/zitdevs/deft-dodo/commit/c1aa71f814f2827b199140aa357b432576fc565e))
+
 ## [0.48.0](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/www-v0.47.0...@deft-dodo/www-v0.48.0) (2024-03-19)
 
 

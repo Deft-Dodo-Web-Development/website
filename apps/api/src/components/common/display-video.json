@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_common_display_videos",
+  "info": {
+    "displayName": "Display Video",
+    "icon": "slideshow",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "video": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.video"
+    },
+    "with_container": {
+      "type": "boolean",
+      "required": true,
+      "default": true
+    }
+  }
+}

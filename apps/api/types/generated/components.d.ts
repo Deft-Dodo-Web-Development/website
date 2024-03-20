@@ -42,6 +42,21 @@ export interface CommonClients extends Schema.Component {
   };
 }
 
+export interface CommonDisplayVideo extends Schema.Component {
+  collectionName: 'components_common_display_videos';
+  info: {
+    displayName: 'Display Video';
+    icon: 'slideshow';
+    description: '';
+  };
+  attributes: {
+    video: Attribute.Component<'common.video'>;
+    with_container: Attribute.Boolean &
+      Attribute.Required &
+      Attribute.DefaultTo<true>;
+  };
+}
+
 export interface CommonFeaturedItem extends Schema.Component {
   collectionName: 'components_common_featured_items';
   info: {
@@ -127,14 +142,30 @@ export interface CommonLink extends Schema.Component {
   };
 }
 
+export interface CommonPicByDevice extends Schema.Component {
+  collectionName: 'components_common_pic_by_devices';
+  info: {
+    displayName: 'picture by device';
+    icon: 'command';
+    description: '';
+  };
+  attributes: {
+    desktop: Attribute.Media;
+    tablet: Attribute.Media;
+    mobile: Attribute.Media;
+  };
+}
+
 export interface CommonRichEditor extends Schema.Component {
   collectionName: 'components_common_rich_editors';
   info: {
     displayName: 'Rich Editor';
     icon: 'medium';
+    description: '';
   };
   attributes: {
     body: Attribute.RichText;
+    with_container: Attribute.Boolean;
   };
 }
 
@@ -148,6 +179,8 @@ export interface CommonSectionContentWithTitle extends Schema.Component {
   attributes: {
     title: Attribute.String & Attribute.Required;
     sub_title: Attribute.String;
+    hierarchy: Attribute.Enumeration<['h1', 'h2', 'h3', 'h4', 'h5', 'h6']> &
+      Attribute.DefaultTo<'h2'>;
   };
 }
 
@@ -543,12 +576,14 @@ declare module '@strapi/types' {
       'common.badge': CommonBadge;
       'common.button': CommonButton;
       'common.clients': CommonClients;
+      'common.display-video': CommonDisplayVideo;
       'common.featured-item': CommonFeaturedItem;
       'common.heading-carousel': CommonHeadingCarousel;
       'common.heading': CommonHeading;
       'common.image-with-text': CommonImageWithText;
       'common.image': CommonImage;
       'common.link': CommonLink;
+      'common.pic-by-device': CommonPicByDevice;
       'common.rich-editor': CommonRichEditor;
       'common.section-content-with-title': CommonSectionContentWithTitle;
       'common.seo': CommonSeo;

@@ -69,7 +69,9 @@
       "type": "dynamiczone",
       "components": [
         "common.image-with-text",
-        "home.step-by-step"
+        "home.step-by-step",
+        "common.pic-by-device",
+        "common.display-video"
       ]
     },
     "seo": {

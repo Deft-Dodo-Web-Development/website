@@ -1,5 +1,13 @@
 
 
+## [0.15.0](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/api-v0.14.2...@deft-dodo/api-v0.15.0) (2024-03-20)
+
+
+### Features
+
+* **api:** DDT-58 Add strapi-plugin-notes dependency ([658305d](https://github.com/zitdevs/deft-dodo/commit/658305d27ca3d7c17bf89d6f63d11a34f3918a7c))
+* **api:** DDT-58 Update schema and add new components ([b614df0](https://github.com/zitdevs/deft-dodo/commit/b614df099f61afd3037b1972e04c87636cd5face))
+
 ## [0.14.2](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/api-v0.14.1...@deft-dodo/api-v0.14.2) (2024-03-18)
 
 ## [0.14.1](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/api-v0.14.0...@deft-dodo/api-v0.14.1) (2024-03-18)

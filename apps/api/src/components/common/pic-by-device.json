@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_common_pic_by_devices",
+  "info": {
+    "displayName": "picture by device",
+    "icon": "command",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "desktop": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "tablet": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "mobile": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}

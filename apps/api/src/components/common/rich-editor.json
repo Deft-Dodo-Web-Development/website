@@ -2,12 +2,16 @@
   "collectionName": "components_common_rich_editors",
   "info": {
     "displayName": "Rich Editor",
-    "icon": "medium"
+    "icon": "medium",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "body": {
       "type": "richtext"
+    },
+    "with_container": {
+      "type": "boolean"
     }
   }
 }

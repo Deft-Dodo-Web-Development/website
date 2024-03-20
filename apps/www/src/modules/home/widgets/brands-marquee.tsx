@@ -17,9 +17,10 @@ const BrandsMarquee: React.FC<BrandsProps> = (props) => {
   const velocity = props.speed || 40;
 
   const images = list;
-  const imagesLength = images.data.length;
+  const imagesLength = images?.data?.length || 0;
   const duplicate = imagesLength < 20 ? Math.ceil(20 / imagesLength) : 1;
 
+  if (imagesLength === 0) return null;
   return (
     <Container enabled={with_container} asChild>
       <div className={`overflow-hidden`}>
