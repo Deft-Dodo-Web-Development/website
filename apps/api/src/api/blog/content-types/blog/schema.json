@@ -42,7 +42,9 @@
       "type": "dynamiczone",
       "components": [
         "common.rich-editor",
-        "common.image"
+        "common.image",
+        "common.display-video",
+        "common.image-with-text"
       ],
       "pluginOptions": {
         "i18n": {

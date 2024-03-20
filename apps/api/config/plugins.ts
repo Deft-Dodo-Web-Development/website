@@ -10,4 +10,7 @@ export default () => ({
       },
     },
   },
+  "entity-notes": {
+    enabled: true,
+  },
 });

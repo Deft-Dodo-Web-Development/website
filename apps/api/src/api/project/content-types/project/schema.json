@@ -54,7 +54,9 @@
       "type": "dynamiczone",
       "components": [
         "common.rich-editor",
-        "common.image-with-text"
+        "common.image-with-text",
+        "common.pic-by-device",
+        "common.display-video"
       ]
     },
     "seo": {

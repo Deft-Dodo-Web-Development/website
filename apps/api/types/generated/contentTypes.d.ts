@@ -624,6 +624,47 @@ export interface PluginSlugifySlug extends Schema.CollectionType {
   };
 }
 
+export interface PluginEntityNotesNote extends Schema.CollectionType {
+  collectionName: 'notes';
+  info: {
+    singularName: 'note';
+    pluralName: 'notes';
+    displayName: 'notes';
+  };
+  options: {
+    draftAndPublish: false;
+    comment: '';
+  };
+  pluginOptions: {
+    'content-manager': {
+      visible: false;
+    };
+    'content-type-builder': {
+      visible: false;
+    };
+  };
+  attributes: {
+    title: Attribute.String;
+    content: Attribute.Text;
+    entityId: Attribute.Integer;
+    entitySlug: Attribute.String;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'plugin::entity-notes.note',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'plugin::entity-notes.note',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 export interface PluginI18NLocale extends Schema.CollectionType {
   collectionName: 'i18n_locale';
   info: {
@@ -857,7 +898,14 @@ export interface ApiBlogBlog extends Schema.CollectionType {
           localized: false;
         };
       }>;
-    body: Attribute.DynamicZone<['common.rich-editor', 'common.image']> &
+    body: Attribute.DynamicZone<
+      [
+        'common.rich-editor',
+        'common.image',
+        'common.display-video',
+        'common.image-with-text'
+      ]
+    > &
       Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
@@ -1164,7 +1212,12 @@ export interface ApiProjectProject extends Schema.CollectionType {
         };
       }>;
     description: Attribute.DynamicZone<
-      ['common.rich-editor', 'common.image-with-text']
+      [
+        'common.rich-editor',
+        'common.image-with-text',
+        'common.pic-by-device',
+        'common.display-video'
+      ]
     > &
       Attribute.SetPluginOptions<{
         i18n: {
@@ -1260,7 +1313,12 @@ export interface ApiServiceService extends Schema.CollectionType {
         };
       }>;
     description: Attribute.DynamicZone<
-      ['common.image-with-text', 'home.step-by-step']
+      [
+        'common.image-with-text',
+        'home.step-by-step',
+        'common.pic-by-device',
+        'common.display-video'
+      ]
     > &
       Attribute.SetPluginOptions<{
         i18n: {
@@ -1426,6 +1484,7 @@ declare module '@strapi/types' {
       'plugin::content-releases.release': PluginContentReleasesRelease;
       'plugin::content-releases.release-action': PluginContentReleasesReleaseAction;
       'plugin::slugify.slug': PluginSlugifySlug;
+      'plugin::entity-notes.note': PluginEntityNotesNote;
       'plugin::i18n.locale': PluginI18NLocale;
       'plugin::users-permissions.permission': PluginUsersPermissionsPermission;
       'plugin::users-permissions.role': PluginUsersPermissionsRole;
