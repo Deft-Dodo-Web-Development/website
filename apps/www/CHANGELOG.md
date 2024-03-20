@@ -1,5 +1,12 @@
 
 
+## [0.50.0](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/www-v0.49.0...@deft-dodo/www-v0.50.0) (2024-03-20)
+
+
+### Features
+
+* add devices images layout ([9c8c5d8](https://github.com/zitdevs/deft-dodo/commit/9c8c5d8ec2b7ece77330ac702900d9bd8f95b348))
+
 ## [0.49.0](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/www-v0.48.0...@deft-dodo/www-v0.49.0) (2024-03-19)
 
 
