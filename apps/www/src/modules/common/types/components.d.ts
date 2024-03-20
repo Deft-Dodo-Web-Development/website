@@ -196,6 +196,14 @@ export namespace Components {
     with_container: boolean;
     video: Video;
   }
+
+  export interface PicByDevice {
+    id: number;
+    __component: "common.pic-by-device";
+    mobile: MediaResponse;
+    tablet: MediaResponse;
+    desktop: MediaResponse;
+  };
 }
 
 export type ComponentsOptions =
@@ -218,4 +226,5 @@ export type ComponentsOptions =
   | Components.RichEditor
   | Components.Image
   | Components.ImageWithText
-  | Components.DisplayVideo;
+  | Components.DisplayVideo
+  | Components.PicByDevice;
