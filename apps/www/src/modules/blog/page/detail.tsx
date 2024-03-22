@@ -12,84 +12,84 @@ import { Badge } from "@components/badge";
 import NotFoundPage from "@/modules/not-found/page";
 
 type Context = {
-    params: {
-        slug: string;
-    };
+  params: {
+    slug: string;
+  };
 };
 
 export const generateMetadata = async (context: Context): Promise<Metadata> => {
-    const { slug } = context.params;
-    const blog = await getBlogBySlugAction(slug);
+  const { slug } = context.params;
+  const blog = await getBlogBySlugAction(slug);
 
-    if (!blog || !blog?.data?.attributes?.seo) return {};
+  if (!blog || !blog?.data?.attributes?.seo) return {};
 
-    const seo = blog.data.attributes.seo;
+  const seo = blog.data.attributes.seo;
 
-    return {
-        title: seo.title,
-        description: seo.description,
-        keywords: seo.keywords,
-        robots: seo.preventIndexing ? "noindex, nofollow" : "index, follow",
-    };
+  return {
+    title: seo.title,
+    description: seo.description,
+    keywords: seo.keywords,
+    robots: seo.preventIndexing ? "noindex, nofollow" : "index, follow",
+  };
 };
 
 const BlogDetailPage: React.FC<Context> = async (context) => {
-    const { slug } = context.params;
+  const { slug } = context.params;
 
-    const blog = await getBlogBySlugAction(slug);
+  const blog = await getBlogBySlugAction(slug);
 
-    if (!blog.data) return (
-        <NotFoundPage />
-    );
+  if (!blog || !blog.data) return <NotFoundPage />;
 
-    const pageContent = blog?.data?.attributes?.body;
-    const author = blog?.data?.attributes?.author;
-    const categories = blog?.data?.attributes?.categories;
+  const pageContent = blog?.data?.attributes?.body;
+  const author = blog?.data?.attributes?.author;
+  const categories = blog?.data?.attributes?.categories;
 
-    return (
-        <>
-            <BlogHeader
-                title={blog.data.attributes.title}
-                createdAt={blog.data.attributes.createdAt}
-                image={blog.data.attributes.image}
-            />
-            <Container enabled={true}>
-                <Layout className="lg:grid-cols-8">
-                    <div className="w-full lg:col-span-2 mt-8 mb-4 order-last lg:order-first">
-                        {author && (
-                            <>
-                                <Author {...author} />
-                                <Separator
-                                    container={false}
-                                    className="mb-4 mt-2 lg:mb-6 lg:mt-4"
-                                />
-                            </>
-                        )}
+  return (
+    <>
+      <BlogHeader
+        title={blog.data.attributes.title}
+        createdAt={blog.data.attributes.createdAt}
+        image={blog.data.attributes.image}
+      />
+      <Container enabled={true}>
+        <Layout className="lg:grid-cols-8">
+          <div className="w-full lg:col-span-2 mt-8 mb-4 order-last lg:order-first">
+            {author && (
+              <>
+                <Author {...author} />
+                <Separator
+                  container={false}
+                  className="mb-4 mt-2 lg:mb-6 lg:mt-4"
+                />
+              </>
+            )}
 
-                        {categories.data?.length > 0 ? (
-                            <div className="flex items-center gap-2">
-                                {categories.data?.map((category, index) => (
-                                    <Badge variant="default" size="base" key={index}>{category.attributes.name}</Badge>
-                                ))}
-                            </div>
-                        ) : null}
-                    </div>
+            {categories.data?.length > 0 ? (
+              <div className="flex items-center gap-2">
+                {categories.data?.map((category, index) => (
+                  <Badge variant="default" size="base" key={index}>
+                    {category.attributes.name}
+                  </Badge>
+                ))}
+              </div>
+            ) : null}
+          </div>
 
-                    <div className="w-full lg:col-span-6 lg:pl-8">
-                        <div className="w-full">
-                            {pageContent?.map((content, index) => (
-                                <DynamicSection
-                                    key={`${index}-${content.__component}`}
-                                    content={content}
-                                />
-                            ))}
-                        </div>
-                    </div>
-                </Layout>
-            </Container>
-            <FooterSetup variant="complex" />
-        </>
-    );
+          <div className="w-full lg:col-span-6 lg:pl-8">
+            <div className="w-full">
+              {pageContent?.map((content, index) => (
+                <DynamicSection
+                  key={`${index}-${content.__component}`}
+                  content={content}
+                />
+              ))}
+            </div>
+          </div>
+        </Layout>
+      </Container>
+      <FooterSetup variant="complex" />
+    </>
+  );
 };
 
 export default BlogDetailPage;

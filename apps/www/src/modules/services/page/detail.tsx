@@ -32,9 +32,7 @@ const ServiceDetailPage: React.FC<Context> = async (context) => {
 
   const service = await getServiceBySlugAction(slug);
 
-  if (!service.data) return (
-    <NotFoundPage />
-  );
+  if (!service || !service.data) return <NotFoundPage />;
 
   const pageContent = service?.data?.attributes?.description;
 
