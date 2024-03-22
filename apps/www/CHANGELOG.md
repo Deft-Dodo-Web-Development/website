@@ -1,5 +1,12 @@
 
 
+## [0.55.1](https://github.com/Deft-Dodo-Web-Development/website/compare/@deft-dodo/www-v0.55.0...@deft-dodo/www-v0.55.1) (2024-03-22)
+
+
+### Bug Fixes
+
+* **www:** change margin to layout wrapper ([b1d4c3d](https://github.com/Deft-Dodo-Web-Development/website/commit/b1d4c3d3de6da5d4d29ba5e61c63ba970c668469))
+
 ## [0.55.0](https://github.com/Deft-Dodo-Web-Development/website/compare/@deft-dodo/www-v0.54.0...@deft-dodo/www-v0.55.0) (2024-03-22)
 
 
