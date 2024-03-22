@@ -1317,7 +1317,8 @@ export interface ApiServiceService extends Schema.CollectionType {
         'common.image-with-text',
         'home.step-by-step',
         'common.pic-by-device',
-        'common.display-video'
+        'common.display-video',
+        'common.spacer'
       ]
     > &
       Attribute.SetPluginOptions<{
