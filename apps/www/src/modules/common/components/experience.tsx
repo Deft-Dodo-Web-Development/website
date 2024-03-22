@@ -35,7 +35,7 @@ const Experience: React.FC<ExperienceProps> = ({
   return (
     <Container enabled={true}>
       <div className="bg-primary py-14 mt-20 rounded-3xl">
-        <section className="text-center mx-auto px-8">
+        <section className="text-center mx-auto px-4 md:px-8">
           <motion.div
             variants={variants}
             initial="offscreen"
@@ -80,7 +80,7 @@ const Experience: React.FC<ExperienceProps> = ({
               href={button.url}
               variant={(button.variant as any) || "default"}
               icon="ArrowUpRight"
-              className="px-14 py-7 text-xl leading-6"
+              className="px-14 py-7 text-xl leading-6 hover:bg-white-8 hover:text-white"
             >
               {button.text}
             </Button>
