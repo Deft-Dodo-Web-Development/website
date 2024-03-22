@@ -1,5 +1,12 @@
 
 
+## [0.54.0](https://github.com/Deft-Dodo-Web-Development/website/compare/@deft-dodo/www-v0.53.0...@deft-dodo/www-v0.54.0) (2024-03-22)
+
+
+### Features
+
+* DD-24 create detail service ([4bb7096](https://github.com/Deft-Dodo-Web-Development/website/commit/4bb7096483173df6b0c799c8f51cc277591fd70f))
+
 ## [0.53.0](https://github.com/Deft-Dodo-Web-Development/website/compare/@deft-dodo/www-v0.52.0...@deft-dodo/www-v0.53.0) (2024-03-22)
 
 
