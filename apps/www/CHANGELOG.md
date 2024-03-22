@@ -1,5 +1,29 @@
 
 
+## [0.55.3](https://github.com/Deft-Dodo-Web-Development/website/compare/@deft-dodo/www-v0.55.2...@deft-dodo/www-v0.55.3) (2024-03-22)
+
+
+### Bug Fixes
+
+* **www:** force release ([0d6fe79](https://github.com/Deft-Dodo-Web-Development/website/commit/0d6fe79fb828e4eb5c953c4d6098ccc7115acfa8))
+
+## [0.55.2](https://github.com/Deft-Dodo-Web-Development/website/compare/@deft-dodo/www-v0.55.1...@deft-dodo/www-v0.55.2) (2024-03-22)
+
+## [0.55.1](https://github.com/Deft-Dodo-Web-Development/website/compare/@deft-dodo/www-v0.55.0...@deft-dodo/www-v0.55.1) (2024-03-22)
+
+
+### Bug Fixes
+
+* **www:** change margin to layout wrapper ([b1d4c3d](https://github.com/Deft-Dodo-Web-Development/website/commit/b1d4c3d3de6da5d4d29ba5e61c63ba970c668469))
+
+## [0.55.0](https://github.com/Deft-Dodo-Web-Development/website/compare/@deft-dodo/www-v0.54.0...@deft-dodo/www-v0.55.0) (2024-03-22)
+
+
+### Features
+
+* **www:** add custom font for headings ([e2aaa7d](https://github.com/Deft-Dodo-Web-Development/website/commit/e2aaa7dd3331d4282914d59516f5a50700c68378))
+* **www:** add not found page component to details view ([527318d](https://github.com/Deft-Dodo-Web-Development/website/commit/527318d5dc56f854b2e221db358ef7299d07e6eb))
+
 ## [0.54.0](https://github.com/Deft-Dodo-Web-Development/website/compare/@deft-dodo/www-v0.53.0...@deft-dodo/www-v0.54.0) (2024-03-22)
 
 

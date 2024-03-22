@@ -37,7 +37,7 @@ const ArticleCard: React.FC<ArticleCardProps> = (card) => {
                     className="rounded-xl"
                 />
                 <div className="flex flex-col mt-6">
-                    <span className="block mb-0 text-primary mb-2">
+                    <span className="block text-primary">
                         {formatDate(card.createdAt)}
                     </span>
                     <h3 className="text-2xl">{card.title}</h3>

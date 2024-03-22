@@ -5,6 +5,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { useEffect, useMemo, useState } from "react";
 import { usePathname } from "next/navigation";
+import { bisonFont } from "@/modules/common/assets/fonts";
 
 const navItems = [
   {
@@ -12,23 +13,27 @@ const navItems = [
     link: "",
   },
   {
-    title: "Work",
+    title: "Portfolio",
     link: "/work",
   },
   {
-    title: "Services",
+    title: "What We Do",
     link: "/services",
   },
   {
-    title: "About",
+    title: "Who We Are",
     link: "/about",
   },
+  {
+    title: "Resources",
+    link: "/blog"
+  }
 ];
 
 const HeaderNav: React.FC<{ className?: string }> = ({ className }) => {
   return (
     <nav>
-      <ul className={cn("flex items-center gap-8", className)}>
+      <ul className={cn("flex items-center gap-8 text-2xl tracking-wide", bisonFont.className, className)}>
         {navItems.map((item, index) => (
           <NavItem key={index} title={item.title} link={item.link} />
         ))}

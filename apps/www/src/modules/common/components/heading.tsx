@@ -2,9 +2,10 @@ import { cn } from "@/lib/utils";
 import { Slot } from "@radix-ui/react-slot";
 import { type VariantProps, cva } from "class-variance-authority";
 import * as React from "react";
+import { bisonFont } from "../assets/fonts";
 
 const headingVariants = cva(
-  "font-normal text-primary uppercase text-left text-white text-[80px] leading-[80px]",
+  "text-primary uppercase text-left text-white text-[80px] leading-[80px]",
   {
     variants: {
       variant: {
@@ -17,7 +18,7 @@ const headingVariants = cva(
         subtitle: "text-[24px] leading-[24px]",
         md: "text-[32px] leading-[32px]",
         lg: "text-[48px] leading-[48px]",
-        sm: "text-[16px] leading-6 font-medium",
+        sm: "text-[32px] leading-7 font-medium",
       },
       alignment: {
         start: "text-left",
@@ -40,7 +41,7 @@ const headingVariants = cva(
 
 export interface HeadingProps
   extends React.HTMLAttributes<HTMLDivElement>,
-    VariantProps<typeof headingVariants> {
+  VariantProps<typeof headingVariants> {
   subHeading?: string;
 }
 
@@ -69,7 +70,8 @@ const Heading = React.forwardRef<HTMLHeadingElement, HeadingProps>(
             alignment,
             textTransform: textTrasform,
           }),
-          "block"
+          "block",
+          bisonFont.className
         )}
       >
         {subHeading}
