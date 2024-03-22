@@ -1,5 +1,12 @@
 
 
+## [0.52.0](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/www-v0.51.0...@deft-dodo/www-v0.52.0) (2024-03-20)
+
+
+### Features
+
+* **www:** add heading to brands marquee ([6722744](https://github.com/zitdevs/deft-dodo/commit/67227442499a61e8dd50503ec7cac02cf388a70b))
+
 ## [0.51.0](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/www-v0.50.0...@deft-dodo/www-v0.51.0) (2024-03-20)
 
 
