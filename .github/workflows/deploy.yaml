@@ -1,18 +1,31 @@
-name: deploy
+name: Deploy
+
 on:
   release:
     types: [published]
+
 jobs:
-  publish-api:
+  publish:
     runs-on: ubuntu-latest
-    if: contains(github.event.release.tag_name, '@deft-dodo/api')
+    strategy:
+      matrix:
+        include:
+          - name: API
+            if: "contains(github.event.release.tag_name, '@deft-dodo/api')"
+            component: "strapi"
+            image_name: "ghcr.io/deft-dodo-web-development/strapi:latest"
+          - name: Website
+            if: "contains(github.event.release.tag_name, '@deft-dodo/www')"
+            component: "website"
+            image_name: "ghcr.io/deft-dodo-web-development/website:latest"
+    if: ${{ matrix.if }}
     environment:
       name: Production
     steps:
       - uses: actions/checkout@v3
 
       - name: Echo
-        run: echo "Building API"
+        run: echo "Building ${{ matrix.name }}"
 
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v1
@@ -26,5 +39,5 @@ jobs:
 
       - name: Build and push
         run: |
-          docker-compose -f docker-compose.yml build --no-cache strapi
-          docker push ghcr.io/deft-dodo-web-development/strapi:latest
+          docker-compose -f docker-compose.yml build --no-cache ${{ matrix.component }}
+          docker push ${{ matrix.image_name }}

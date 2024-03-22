@@ -47,5 +47,22 @@ services:
         TRANSFER_TOKEN_SALT: ${TRANSFER_TOKEN_SALT}
         URL: ${URL}
 
+  website:
+    image: ghcr.io/deft-dodo-web-development/website:latest
+    depends_on:
+      - strapi
+    build:
+      context: .
+      dockerfile: ./apps/www/Dockerfile
+    ports:
+      - "3000:3000"
+    container_name: deftdodo_website
+    volumes:
+      - ./apps/website:/var/www/html
+    restart: always
+    environment:
+      STRAPI_ACCESS_TOKEN: ${STRAPI_ACCESS_TOKEN}
+      NEXT_PUBLIC_STRAPI_URL: ${NEXT_PUBLIC_STRAPI_URL:-http://strapi:1337}
+
 volumes:
   deft_dodo_data:
