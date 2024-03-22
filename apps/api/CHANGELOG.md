@@ -1,5 +1,12 @@
 
 
+## [0.17.2](https://github.com/Deft-Dodo-Web-Development/website/compare/@deft-dodo/api-v0.17.1...@deft-dodo/api-v0.17.2) (2024-03-22)
+
+
+### Bug Fixes
+
+* **api:** DDT-64 Update plugins configuration to trigger redeployment ([b20dc23](https://github.com/Deft-Dodo-Web-Development/website/commit/b20dc2367ee7667207818a7100c2c2e1b2cab3ee))
+
 ## [0.17.1](https://github.com/Deft-Dodo-Web-Development/website/compare/@deft-dodo/api-v0.17.0...@deft-dodo/api-v0.17.1) (2024-03-22)
 
 
