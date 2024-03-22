@@ -10,7 +10,7 @@ const WorkPage: React.FC = async () => {
 
   if (!works) return null;
 
-  const formattedWorks = works.data.map((work) => {
+  const formattedWorks = works.data?.map((work) => {
     return {
       title: work.attributes.title,
       summary: work.attributes.summary,

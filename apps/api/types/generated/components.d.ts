@@ -97,6 +97,19 @@ export interface CommonHeading extends Schema.Component {
   };
 }
 
+export interface CommonImageGallery extends Schema.Component {
+  collectionName: 'components_common_image_galleries';
+  info: {
+    displayName: 'Image Gallery';
+    icon: 'apps';
+    description: '';
+  };
+  attributes: {
+    heading: Attribute.Component<'common.heading'>;
+    images: Attribute.Component<'common.image', true>;
+  };
+}
+
 export interface CommonImageWithText extends Schema.Component {
   collectionName: 'components_common_image_with_texts';
   info: {
@@ -580,6 +593,7 @@ declare module '@strapi/types' {
       'common.featured-item': CommonFeaturedItem;
       'common.heading-carousel': CommonHeadingCarousel;
       'common.heading': CommonHeading;
+      'common.image-gallery': CommonImageGallery;
       'common.image-with-text': CommonImageWithText;
       'common.image': CommonImage;
       'common.link': CommonLink;

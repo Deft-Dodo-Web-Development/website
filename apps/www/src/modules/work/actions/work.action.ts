@@ -13,6 +13,8 @@ const fetchData = function <T>(filter?: { [key: string]: string | number }) {
     "description",
     "description.badges",
     "description.image",
+    "description.images",
+    "description.images.image",
     "description.image.image",
     "description.heading",
     "description.overview",
@@ -20,6 +22,9 @@ const fetchData = function <T>(filter?: { [key: string]: string | number }) {
     "description.mobile",
     "description.tablet",
     "description.video",
+    "description.video.overlay",
+    "description.image-gallery",
+    "image-gallery.image",
     "seo",
   ];
 

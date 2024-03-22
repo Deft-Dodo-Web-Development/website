@@ -3,7 +3,6 @@ import { Metadata } from "next";
 import FooterSetup from "@utilities/footer-setup";
 import { getWorkBySlugAction } from "../actions/work.action";
 import DynamicSection from "@/modules/common/components/dynamic-section";
-import ImagesFrameLayout from "@/modules/work/widgets/images-frame-layout";
 
 type Context = {
     params: {
@@ -32,6 +31,7 @@ const WorkDetailPage: React.FC<Context> = async (context) => {
 
     const work = await getWorkBySlugAction(slug);
 
+
     if (!work) return null;
 
     const pageContent = work?.data?.attributes?.description;
@@ -44,7 +44,6 @@ const WorkDetailPage: React.FC<Context> = async (context) => {
                     content={content}
                 />
             ))}
-            <ImagesFrameLayout />
             <FooterSetup variant="complex" />
         </>
     );

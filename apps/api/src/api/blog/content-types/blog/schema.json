@@ -44,7 +44,8 @@
         "common.rich-editor",
         "common.image",
         "common.display-video",
-        "common.image-with-text"
+        "common.image-with-text",
+        "common.image-gallery"
       ],
       "pluginOptions": {
         "i18n": {

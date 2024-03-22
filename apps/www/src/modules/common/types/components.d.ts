@@ -28,17 +28,19 @@ export namespace Components {
     };
   }
 
+  export interface Video {
+    id: number;
+    youtube_video_hash: string;
+    overlay: MediaResponse;
+  }
+
   export interface HeadingCarousel {
     id: number;
     __component: "home.heading-carousel";
     with_container: boolean;
     first_text: string;
     second_text: string;
-    video: {
-      id: number;
-      youtube_video_hash: string;
-      overlay: MediaResponse;
-    };
+    video: Video;
   }
 
   export interface AboutUs {
@@ -187,6 +189,28 @@ export namespace Components {
     badges?: Badge[];
     overview?: Overview[];
   }
+
+  export interface DisplayVideo {
+    id: number;
+    __component: "common.display-video";
+    with_container: boolean;
+    video: Video;
+  }
+
+  export interface PicByDevice {
+    id: number;
+    __component: "common.pic-by-device";
+    mobile: MediaResponse;
+    tablet: MediaResponse;
+    desktop: MediaResponse;
+  };
+
+  export interface ImageGallery {
+    id: number;
+    __component: "common.image-gallery";
+    heading: BaseHeading;
+    images: Image[];
+  }
 }
 
 export type ComponentsOptions =
@@ -208,4 +232,7 @@ export type ComponentsOptions =
   | Components.Badge
   | Components.RichEditor
   | Components.Image
-  | Components.ImageWithText;
+  | Components.ImageWithText
+  | Components.DisplayVideo
+  | Components.PicByDevice
+  | Components.ImageGallery;

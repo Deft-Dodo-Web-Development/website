@@ -903,7 +903,8 @@ export interface ApiBlogBlog extends Schema.CollectionType {
         'common.rich-editor',
         'common.image',
         'common.display-video',
-        'common.image-with-text'
+        'common.image-with-text',
+        'common.image-gallery'
       ]
     > &
       Attribute.SetPluginOptions<{
@@ -1216,7 +1217,8 @@ export interface ApiProjectProject extends Schema.CollectionType {
         'common.rich-editor',
         'common.image-with-text',
         'common.pic-by-device',
-        'common.display-video'
+        'common.display-video',
+        'common.image-gallery'
       ]
     > &
       Attribute.SetPluginOptions<{
