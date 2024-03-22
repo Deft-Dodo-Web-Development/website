@@ -1,5 +1,12 @@
 
 
+## [0.17.0](https://github.com/Deft-Dodo-Web-Development/website/compare/@deft-dodo/api-v0.16.0...@deft-dodo/api-v0.17.0) (2024-03-22)
+
+
+### Features
+
+* **api:** add image gallery common component ([c01e18b](https://github.com/Deft-Dodo-Web-Development/website/commit/c01e18b0d29e0068a42712f42d73dbd3c4a1736f))
+
 ## [0.16.0](https://github.com/Deft-Dodo-Web-Development/website/compare/@deft-dodo/api-v0.15.0...@deft-dodo/api-v0.16.0) (2024-03-22)
 
 
