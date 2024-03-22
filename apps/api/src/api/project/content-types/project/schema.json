@@ -56,7 +56,8 @@
         "common.rich-editor",
         "common.image-with-text",
         "common.pic-by-device",
-        "common.display-video"
+        "common.display-video",
+        "common.image-gallery"
       ]
     },
     "seo": {

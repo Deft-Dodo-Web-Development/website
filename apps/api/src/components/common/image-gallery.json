@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_common_image_galleries",
+  "info": {
+    "displayName": "Image Gallery",
+    "icon": "apps",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.heading"
+    },
+    "images": {
+      "type": "component",
+      "repeatable": true,
+      "component": "common.image"
+    }
+  }
+}
