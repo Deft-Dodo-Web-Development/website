@@ -9,7 +9,7 @@ import { Container } from "@components/container";
 import Author from "../components/author";
 import { Separator } from "@/modules/common/components/separator";
 import { Badge } from "@components/badge";
-import NotFoundPage from "@/modules/not-found/page";
+import { notFound } from "next/navigation";
 
 type Context = {
   params: {
@@ -38,7 +38,7 @@ const BlogDetailPage: React.FC<Context> = async (context) => {
 
   const blog = await getBlogBySlugAction(slug);
 
-  if (!blog || !blog.data) return <NotFoundPage />;
+  if (!blog || !blog?.data?.attributes) return notFound();
 
   const pageContent = blog?.data?.attributes?.body;
   const author = blog?.data?.attributes?.author;

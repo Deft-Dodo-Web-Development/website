@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import FooterSetup from "@utilities/footer-setup";
 import { getWorkBySlugAction } from "../actions/work.action";
 import DynamicSection from "@/modules/common/components/dynamic-section";
-import NotFoundPage from "@/modules/not-found/page";
+import { notFound } from "next/navigation";
 
 type Context = {
   params: {
@@ -32,7 +32,7 @@ const WorkDetailPage: React.FC<Context> = async (context) => {
 
   const work = await getWorkBySlugAction(slug);
 
-  if (!work || !work.data) return <NotFoundPage />;
+  if (!work || !work?.data?.attributes) return notFound();
 
   const pageContent = work?.data?.attributes?.description;
 
