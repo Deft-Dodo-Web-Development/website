@@ -1,5 +1,20 @@
 
 
+## [0.53.0](https://github.com/Deft-Dodo-Web-Development/website/compare/@deft-dodo/www-v0.52.0...@deft-dodo/www-v0.53.0) (2024-03-22)
+
+
+### Features
+
+* add undefined/null validation ([f6904f4](https://github.com/Deft-Dodo-Web-Development/website/commit/f6904f4d844e8a0003fc361713986b48108cc060))
+* **www:** add display video common component ([c65b254](https://github.com/Deft-Dodo-Web-Development/website/commit/c65b254c181b7549787825679936aebbf2f576d2))
+* **www:** add image gallary component ([a51ac45](https://github.com/Deft-Dodo-Web-Development/website/commit/a51ac45435846b0e1dae75d0c0e65a3ad9fb317a))
+* **www:** add pic by device dynamic section ([33e37f9](https://github.com/Deft-Dodo-Web-Development/website/commit/33e37f96889f4a54f5b037e00d1e9d451fa10993))
+
+
+### Bug Fixes
+
+* **www:** change cta on hover effect ([9e2fb12](https://github.com/Deft-Dodo-Web-Development/website/commit/9e2fb12c268b5265178802c40a2a058b94e72fdb))
+
 ## [0.52.0](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/www-v0.51.0...@deft-dodo/www-v0.52.0) (2024-03-20)
 
 
