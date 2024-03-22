@@ -1,0 +1,51 @@
+version: '3.8'
+
+services:
+  main_db:
+    image: postgres:16.2
+    environment:
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+      POSTGRES_DB: ${DB_DATABASE:-strapi}
+      POSTGRES_USER: ${DB_USERNAME}
+    ports:
+      - "${DB_PORT:-5432}:5432"
+    restart: always
+    container_name: deftdodo_db
+    volumes:
+      - deft_dodo_data:/var/lib/postgresql
+
+  strapi:
+    image: ghcr.io/Deft-Dodo-Web-Development/website:latest
+    depends_on:
+      - main_db
+    build:
+      context: .
+      dockerfile: ./apps/api/Dockerfile
+    ports:
+      - "1337:1337"
+    container_name: deftdodo_strapi
+    volumes:
+      - ./apps/api:/var/www/html
+    restart: always
+    environment:
+        ADMIN_JWT_SECRET: ${ADMIN_JWT_SECRET}
+        API_TOKEN_SALT: ${API_TOKEN_SALT}
+        APP_KEYS: ${APP_KEYS}
+        DATABASE_CLIENT: ${DB_CLIENT:-postgres}
+
+        # -- START DATABASE CONFIGURATION --
+        DATABASE_HOST: ${DB_HOST:-main_db}
+        DATABASE_PORT: 5432
+        DATABASE_NAME: ${DB_DATABASE:-strapi}
+        DATABASE_USERNAME: ${DB_USERNAME}
+        DATABASE_PASSWORD: ${DB_PASSWORD}
+        # -- END DATABASE CONFIGURATION --
+
+        JWT_SECRET: ${JWT_SECRET}
+        STRAPI_DISABLE_UPDATE_NOTIFICATION: true
+        STRAPI_TELEMETRY_DISABLED: true
+        TRANSFER_TOKEN_SALT: ${TRANSFER_TOKEN_SALT}
+        URL: ${URL}
+
+volumes:
+  deft_dodo_data:

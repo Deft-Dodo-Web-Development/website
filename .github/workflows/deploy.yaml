@@ -9,8 +9,6 @@ jobs:
     environment:
       name: Production
     steps:
-      - uses: actions/checkout@v2
-      - uses: bervProject/railway-deploy@main
+      - uses: ./.github/workflows/build-container.yaml
         with:
-          railway_token: ${{ secrets.RAILWAY_TOKEN }}
-          service: "deft-dodo"
+          target: "api"
