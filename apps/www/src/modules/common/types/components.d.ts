@@ -204,6 +204,13 @@ export namespace Components {
     tablet: MediaResponse;
     desktop: MediaResponse;
   };
+
+  export interface ImageGallery {
+    id: number;
+    __component: "common.image-gallery";
+    heading: BaseHeading;
+    images: Image[];
+  }
 }
 
 export type ComponentsOptions =
@@ -227,4 +234,5 @@ export type ComponentsOptions =
   | Components.Image
   | Components.ImageWithText
   | Components.DisplayVideo
-  | Components.PicByDevice;
+  | Components.PicByDevice
+  | Components.ImageGallery;
