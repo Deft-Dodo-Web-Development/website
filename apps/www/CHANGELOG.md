@@ -1,5 +1,13 @@
 
 
+## [0.55.0](https://github.com/Deft-Dodo-Web-Development/website/compare/@deft-dodo/www-v0.54.0...@deft-dodo/www-v0.55.0) (2024-03-22)
+
+
+### Features
+
+* **www:** add custom font for headings ([e2aaa7d](https://github.com/Deft-Dodo-Web-Development/website/commit/e2aaa7dd3331d4282914d59516f5a50700c68378))
+* **www:** add not found page component to details view ([527318d](https://github.com/Deft-Dodo-Web-Development/website/commit/527318d5dc56f854b2e221db358ef7299d07e6eb))
+
 ## [0.54.0](https://github.com/Deft-Dodo-Web-Development/website/compare/@deft-dodo/www-v0.53.0...@deft-dodo/www-v0.54.0) (2024-03-22)
 
 
