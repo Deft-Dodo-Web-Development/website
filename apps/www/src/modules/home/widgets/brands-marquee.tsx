@@ -25,20 +25,20 @@ const BrandsMarquee: React.FC<BrandsProps> = (props) => {
   if (imagesLength === 0) return null;
   return (
     <Container enabled={with_container} asChild>
-      <Layout className="lg:grid-cols-1">
+      <Layout className="lg:grid-cols-1 my-8 lg:my-16">
         {heading ? (
           <Heading
             size="md"
             subHeading={heading.sub_title || ""}
             variant="primary"
-            className="md:text-[48px] md:leading-[48px]"
+            className="md:text-[48px] md:leading-[48px] mb-4"
             alignment="middle"
           >
             <h2>{heading.title}</h2>
           </Heading>
         ) : null}
         <div className={`overflow-hidden`}>
-          <div className="mt-20 2xl:mt-36 flex flex-nowrap min-w-[100vw] whitespace-nowrap">
+          <div className="flex flex-nowrap min-w-[100vw] whitespace-nowrap">
             {Array.from({ length: 2 }).map((_, i) => (
               <div
                 key={i}
