@@ -9,6 +9,7 @@ jobs:
     environment:
       name: Production
     steps:
+      - uses: actions/checkout@v2
       - uses: ./.github/workflows/build-container.yaml
         with:
           target: "api"
