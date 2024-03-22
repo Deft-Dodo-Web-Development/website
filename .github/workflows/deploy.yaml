@@ -27,4 +27,4 @@ jobs:
       - name: Build and push
         run: |
           docker-compose -f docker-compose.yml build --no-cache strapi
-          docker push ghcr.io/Deft-Dodo-Web-Development/strapi:latest
+          docker push ghcr.io/deft-dodo-web-development/strapi:latest

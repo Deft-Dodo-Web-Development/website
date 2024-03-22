@@ -15,7 +15,7 @@ services:
       - deft_dodo_data:/var/lib/postgresql
 
   strapi:
-    image: ghcr.io/Deft-Dodo-Web-Development/strapi:latest
+    image: ghcr.io/deft-dodo-web-development/strapi:latest
     depends_on:
       - main_db
     build:
