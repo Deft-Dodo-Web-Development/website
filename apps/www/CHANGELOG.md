@@ -1,5 +1,12 @@
 
 
+## [0.56.0](https://github.com/Deft-Dodo-Web-Development/website/compare/@deft-dodo/www-v0.55.3...@deft-dodo/www-v0.56.0) (2024-03-22)
+
+
+### Features
+
+* return 404 when page not found ([#62](https://github.com/Deft-Dodo-Web-Development/website/issues/62)) ([51417b4](https://github.com/Deft-Dodo-Web-Development/website/commit/51417b40ad7525d1334d57462f7c28ffaa16f621))
+
 ## [0.55.3](https://github.com/Deft-Dodo-Web-Development/website/compare/@deft-dodo/www-v0.55.2...@deft-dodo/www-v0.55.3) (2024-03-22)
 
 
