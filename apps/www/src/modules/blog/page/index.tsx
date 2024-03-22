@@ -4,10 +4,10 @@ import { getAllBlogAction } from "../actions/service.action";
 import { ArticleList } from "../widgets/article-list";
 import { Container } from "@components/container";
 import { Heading } from "@components/heading";
+import { notFound } from "next/navigation";
 
 const BlogPage = async () => {
   const blogs = await getAllBlogAction();
-  if (!blogs) return null;
 
   // example of how to get a single service
   /**
@@ -17,6 +17,8 @@ const BlogPage = async () => {
    * console.log(service);
    */
 
+  if (!blogs) return notFound();
+
   const formattedBlogs = blogs.data.map((blog) => {
     return {
       title: blog.attributes.title,
@@ -25,7 +27,7 @@ const BlogPage = async () => {
       image: blog.attributes.image,
       slug: blog.attributes.slug,
       createdAt: blog.attributes.createdAt,
-    }
+    };
   });
 
   return (

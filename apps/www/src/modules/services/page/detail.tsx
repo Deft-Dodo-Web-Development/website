@@ -3,6 +3,7 @@ import { Metadata } from "next";
 import FooterSetup from "@utilities/footer-setup";
 import { getServiceBySlugAction } from "../actions/service.action";
 import DynamicSection from "@/modules/common/components/dynamic-section";
+import { notFound } from "next/navigation";
 
 type Context = {
   params: {
@@ -31,7 +32,7 @@ const ServiceDetailPage: React.FC<Context> = async (context) => {
 
   const service = await getServiceBySlugAction(slug);
 
-  if (!service) return null;
+  if (!service || !service?.data?.attributes) return notFound();
 
   const pageContent = service?.data?.attributes?.description;
 
