@@ -30,7 +30,7 @@ const WorkDetailPage: React.FC<Context> = async (context) => {
     const { slug } = context.params;
 
     const work = await getWorkBySlugAction(slug);
-    console.log("work: ", work.data.attributes.description);
+
 
     if (!work) return null;
 
