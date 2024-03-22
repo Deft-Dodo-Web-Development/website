@@ -1,5 +1,12 @@
 
 
+## [0.16.0](https://github.com/Deft-Dodo-Web-Development/website/compare/@deft-dodo/api-v0.15.0...@deft-dodo/api-v0.16.0) (2024-03-22)
+
+
+### Features
+
+* **api:** DDT-63 Add Docker support for API application ([b6ba925](https://github.com/Deft-Dodo-Web-Development/website/commit/b6ba92502265a691b622fd9d3727befe2ef6b80a))
+
 ## [0.15.0](https://github.com/zitdevs/deft-dodo/compare/@deft-dodo/api-v0.14.2...@deft-dodo/api-v0.15.0) (2024-03-20)
 
 
