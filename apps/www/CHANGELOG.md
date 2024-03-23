@@ -1,5 +1,12 @@
 
 
+## [0.56.5](https://github.com/Deft-Dodo-Web-Development/website/compare/@deft-dodo/www-v0.56.4...@deft-dodo/www-v0.56.5) (2024-03-23)
+
+
+### Bug Fixes
+
+* **www:** Simplify fetching home page data using baseFetch utility ([4e62ddf](https://github.com/Deft-Dodo-Web-Development/website/commit/4e62ddf1fbb0c4e3e9cb5fad183c92417ae17cfc))
+
 ## [0.56.4](https://github.com/Deft-Dodo-Web-Development/website/compare/@deft-dodo/www-v0.56.3...@deft-dodo/www-v0.56.4) (2024-03-23)
 
 
