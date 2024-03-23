@@ -1,5 +1,12 @@
 
 
+## [0.58.2](https://github.com/Deft-Dodo-Web-Development/website/compare/@deft-dodo/www-v0.58.1...@deft-dodo/www-v0.58.2) (2024-03-23)
+
+
+### Bug Fixes
+
+* **www:** Clean up Strapi URL handling in app.config ([7153ea5](https://github.com/Deft-Dodo-Web-Development/website/commit/7153ea57507ae7cf70eaef08eb390c39419f6e3e))
+
 ## [0.58.1](https://github.com/Deft-Dodo-Web-Development/website/compare/@deft-dodo/www-v0.58.0...@deft-dodo/www-v0.58.1) (2024-03-23)
 
 
