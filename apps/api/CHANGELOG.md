@@ -1,5 +1,13 @@
 
 
+## [0.19.0](https://github.com/Deft-Dodo-Web-Development/website/compare/@deft-dodo/api-v0.18.0...@deft-dodo/api-v0.19.0) (2024-03-23)
+
+
+### Features
+
+* add home blogs service ([ccd6e61](https://github.com/Deft-Dodo-Web-Development/website/commit/ccd6e619495612e697839691ec709dd32c99b21d))
+* add home blogs service ([fcd295b](https://github.com/Deft-Dodo-Web-Development/website/commit/fcd295b4ac542542358c3ad6d3ea88f307848204))
+
 ## [0.18.0](https://github.com/Deft-Dodo-Web-Development/website/compare/@deft-dodo/api-v0.17.4...@deft-dodo/api-v0.18.0) (2024-03-22)
 
 
