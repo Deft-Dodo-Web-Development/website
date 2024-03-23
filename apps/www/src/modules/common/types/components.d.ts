@@ -8,6 +8,7 @@ import {
 import {
   Projects as BaseProjects,
   Services as BaseServices,
+  Blogs as BaseBlogs,
   Testimonials as BaseTestimonials,
   ClientList,
   MediaResponse,
@@ -211,6 +212,17 @@ export namespace Components {
     heading: BaseHeading;
     images: Image[];
   }
+
+  export interface Articles {
+    id: number;
+    __component: "home.articles";
+    with_container: boolean;
+    title: string;
+    description: string;
+    cta_url: string;
+    blogs: StrapiResponse<BaseBlogs[]>;
+    heading: BaseHeading;
+  }
 }
 
 export type ComponentsOptions =
@@ -235,4 +247,5 @@ export type ComponentsOptions =
   | Components.ImageWithText
   | Components.DisplayVideo
   | Components.PicByDevice
-  | Components.ImageGallery;
+  | Components.ImageGallery
+  | Components.Articles;

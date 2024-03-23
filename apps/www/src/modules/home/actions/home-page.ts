@@ -37,6 +37,10 @@ export async function getHomePageData() {
       "pageContent.contact-us",
       "pageContent.experience",
       "pageContent.button",
+      "pageContent.articles",
+      "pageContent.blogs",
+      "pageContent.blogs.image",
+      "pageContent.blogs.categories"
     ],
   });
   const request = await fetch(

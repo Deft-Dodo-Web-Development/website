@@ -352,6 +352,21 @@ export interface HomeAboutUs extends Schema.Component {
   };
 }
 
+export interface HomeArticles extends Schema.Component {
+  collectionName: 'components_home_articles';
+  info: {
+    displayName: 'Articles';
+    description: '';
+  };
+  attributes: {
+    with_container: Attribute.Boolean;
+    heading: Attribute.Component<'common.heading'>;
+    blogs: Attribute.Relation<'home.articles', 'oneToMany', 'api::blog.blog'>;
+    description: Attribute.Text;
+    cta_url: Attribute.String;
+  };
+}
+
 export interface HomeBrandsMarquee extends Schema.Component {
   collectionName: 'components_home_brands_marquees';
   info: {
@@ -611,6 +626,7 @@ declare module '@strapi/types' {
       'footer.elevate-section': FooterElevateSection;
       'footer.info': FooterInfo;
       'home.about-us': HomeAboutUs;
+      'home.articles': HomeArticles;
       'home.brands-marquee': HomeBrandsMarquee;
       'home.clients': HomeClients;
       'home.contact-us': HomeContactUs;

@@ -17,17 +17,6 @@ const BlogPage = async () => {
    * console.log(service);
    */
 
-  const formattedBlogs = blogs.data.map((blog) => {
-    return {
-      title: blog.attributes.title,
-      categories: blog.attributes.categories,
-      summary: blog.attributes.summary,
-      image: blog.attributes.image,
-      slug: blog.attributes.slug,
-      createdAt: blog.attributes.createdAt,
-    }
-  });
-
   return (
     <>
       <Container enabled={true} asChild>
@@ -45,7 +34,7 @@ const BlogPage = async () => {
         </div>
       </Container>
       <Separator className="mb-28 mt-14" container />
-      <ArticleList articles={formattedBlogs} container />
+      <ArticleList articles={blogs.data} container />
       <Separator className="mb-28 mt-14" container />
       <FooterSetup variant="complex" />
     </>
