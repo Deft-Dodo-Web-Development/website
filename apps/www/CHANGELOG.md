@@ -1,5 +1,12 @@
 
 
+## [0.61.0](https://github.com/Deft-Dodo-Web-Development/website/compare/@deft-dodo/www-v0.60.0...@deft-dodo/www-v0.61.0) (2024-03-23)
+
+
+### Features
+
+* **www:** Set default Strapi URL in app.config ([80f63af](https://github.com/Deft-Dodo-Web-Development/website/commit/80f63af36a40f6aab3defd6027e33658f955e45c))
+
 ## [0.60.0](https://github.com/Deft-Dodo-Web-Development/website/compare/@deft-dodo/www-v0.59.0...@deft-dodo/www-v0.60.0) (2024-03-23)
 
 
