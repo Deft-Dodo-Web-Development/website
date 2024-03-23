@@ -1,5 +1,12 @@
 
 
+## [0.60.0](https://github.com/Deft-Dodo-Web-Development/website/compare/@deft-dodo/www-v0.59.0...@deft-dodo/www-v0.60.0) (2024-03-23)
+
+
+### Features
+
+* **www:** Update Next.js config and entrypoint for production environment ([4e01c25](https://github.com/Deft-Dodo-Web-Development/website/commit/4e01c25d8bc896327424e9bc9e7176f94f460703))
+
 ## [0.59.0](https://github.com/Deft-Dodo-Web-Development/website/compare/@deft-dodo/www-v0.58.4...@deft-dodo/www-v0.59.0) (2024-03-23)
 
 
