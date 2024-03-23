@@ -5,19 +5,23 @@ on:
 jobs:
   publish-api:
     runs-on: ubuntu-latest
-    if: contains(github.event.release.tag_name, '@deft-dodo/api')
     environment:
       name: Production
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout
+        if: contains(github.event.release.tag_name, '@deft-dodo/api')
+        uses: actions/checkout@v3
 
       - name: Echo
+        if: contains(github.event.release.tag_name, '@deft-dodo/api')
         run: echo "Building API"
 
       - name: Set up Docker Buildx
+        if: contains(github.event.release.tag_name, '@deft-dodo/api')
         uses: docker/setup-buildx-action@v1
 
       - name: Log in to GitHub Container Registry
+        if: contains(github.event.release.tag_name, '@deft-dodo/api')
         uses: docker/login-action@v1
         with:
           registry: ghcr.io
@@ -25,25 +29,30 @@ jobs:
           password: ${{ secrets.GHCR_PASSWORD }}
 
       - name: Build and push
+        if: contains(github.event.release.tag_name, '@deft-dodo/api')
         run: |
           docker-compose -f docker-compose.yml build --no-cache strapi
           docker push ghcr.io/deft-dodo-web-development/strapi:latest
 
   publish-website:
     runs-on: ubuntu-latest
-    if: contains(github.event.release.tag_name, '@deft-dodo/www')
     environment:
       name: Production
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout
+        if: contains(github.event.release.tag_name, '@deft-dodo/www')
+        uses: actions/checkout@v3
 
       - name: Echo
+        if: contains(github.event.release.tag_name, '@deft-dodo/www')
         run: echo "Building API"
 
       - name: Set up Docker Buildx
+        if: contains(github.event.release.tag_name, '@deft-dodo/www')
         uses: docker/setup-buildx-action@v1
 
       - name: Log in to GitHub Container Registry
+        if: contains(github.event.release.tag_name, '@deft-dodo/www')
         uses: docker/login-action@v1
         with:
           registry: ghcr.io
@@ -51,6 +60,7 @@ jobs:
           password: ${{ secrets.GHCR_PASSWORD }}
 
       - name: Build and push
+        if: contains(github.event.release.tag_name, '@deft-dodo/www')
         run: |
           export NEXT_PUBLIC_STRAPI_URL=http://127.0.0.1:1337
           docker-compose -f docker-compose.yml build --no-cache website
