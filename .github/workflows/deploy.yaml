@@ -52,5 +52,6 @@ jobs:
 
       - name: Build and push
         run: |
+          export NEXT_PUBLIC_STRAPI_URL=http://127.0.0.1:1337
           docker-compose -f docker-compose.yml build --no-cache website
           docker push ghcr.io/deft-dodo-web-development/website:latest
