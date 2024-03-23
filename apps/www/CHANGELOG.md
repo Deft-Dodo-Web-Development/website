@@ -1,5 +1,12 @@
 
 
+## [0.59.0](https://github.com/Deft-Dodo-Web-Development/website/compare/@deft-dodo/www-v0.58.4...@deft-dodo/www-v0.59.0) (2024-03-23)
+
+
+### Features
+
+* **www:** Implement entrypoint script for environment variables ([2810ecb](https://github.com/Deft-Dodo-Web-Development/website/commit/2810ecb7f0b3e5ba56b145d9364650ce33829a36))
+
 ## [0.58.4](https://github.com/Deft-Dodo-Web-Development/website/compare/@deft-dodo/www-v0.58.3...@deft-dodo/www-v0.58.4) (2024-03-23)
 
 
