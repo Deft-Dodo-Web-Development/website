@@ -1,5 +1,12 @@
 
 
+## [0.58.3](https://github.com/Deft-Dodo-Web-Development/website/compare/@deft-dodo/www-v0.58.2...@deft-dodo/www-v0.58.3) (2024-03-23)
+
+
+### Bug Fixes
+
+* **www:** force release ([4807109](https://github.com/Deft-Dodo-Web-Development/website/commit/4807109f6cc3140eaa09221784f8c8eaf3cea407))
+
 ## [0.58.2](https://github.com/Deft-Dodo-Web-Development/website/compare/@deft-dodo/www-v0.58.1...@deft-dodo/www-v0.58.2) (2024-03-23)
 
 
