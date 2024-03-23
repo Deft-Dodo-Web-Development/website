@@ -2,7 +2,7 @@ const dotenv = require('dotenv');
 dotenv.config();
 
 const _port = process.env.PORT;
-const strapi_url = process.env.NEXT_PUBLIC_STRAPI_URL || "";
+const strapi_url = process.env.NEXT_PUBLIC_STRAPI_URL || "http://127.0.0.1:1337";
 const contain_port = /:\d+/.test(strapi_url);
 
 // Yes I know, this is a bad way to do it, but I'm lazy :)
