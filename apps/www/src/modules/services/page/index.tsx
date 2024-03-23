@@ -21,7 +21,7 @@ const ServicesPage = async () => {
     <>
       <ServicesHeading container />
       <Separator className="mb-28 mt-14" container />
-      <ServiceList container services={services.data} />
+      <ServiceList container services={services.data || []} />
       <FooterSetup variant="complex" />
     </>
   );
