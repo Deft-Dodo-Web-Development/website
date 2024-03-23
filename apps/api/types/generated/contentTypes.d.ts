@@ -1139,7 +1139,8 @@ export interface ApiHomePageHomePage extends Schema.SingleType {
         'home.team',
         'home.contact-us',
         'home.experience',
-        'home.brands-marquee'
+        'home.brands-marquee',
+        'home.articles'
       ]
     > &
       Attribute.SetPluginOptions<{

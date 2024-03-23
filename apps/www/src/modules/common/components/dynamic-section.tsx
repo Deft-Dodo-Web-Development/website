@@ -20,6 +20,7 @@ import { Image } from "./image";
 import DisplayVideo from "./display-video";
 import PictureByDevice from "@/modules/work/widgets/picture-by-device";
 import ImageGallery from "@/modules/common/components/image-gallery";
+import FeaturedArticles from "@/modules/home/widgets/featured-articles";
 
 export type DynamicSectionProps = {
   content: ComponentsOptions;
@@ -94,6 +95,10 @@ const DynamicSection: React.FC<DynamicSectionProps> = ({ content }) => {
     case "common.image-gallery":
       return (
         <ImageGallery {...content} />
+      )
+    case "home.articles":
+      return (
+        <FeaturedArticles {...content} />
       )
     default:
       return <div>Component not found</div>;

@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_home_articles",
+  "info": {
+    "displayName": "Articles",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "with_container": {
+      "type": "boolean"
+    },
+    "heading": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.heading"
+    },
+    "blogs": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::blog.blog"
+    },
+    "description": {
+      "type": "text"
+    },
+    "cta_url": {
+      "type": "string"
+    }
+  }
+}

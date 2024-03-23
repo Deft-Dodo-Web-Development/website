@@ -37,6 +37,10 @@ const fetchData = function <T>(filter?: { [key: string]: string | number }) {
     "pageContent.contact-us",
     "pageContent.experience",
     "pageContent.button",
+    "pageContent.articles",
+    "pageContent.blogs",
+    "pageContent.blogs.image",
+    "pageContent.blogs.categories"
   ];
 
   return baseFetch<T>({
