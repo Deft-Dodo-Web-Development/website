@@ -3,53 +3,50 @@ import { Metadata } from "next";
 import FooterSetup from "@utilities/footer-setup";
 import { getWorkBySlugAction } from "../actions/work.action";
 import DynamicSection from "@/modules/common/components/dynamic-section";
-import NotFoundPage from "@/modules/not-found/page";
+import { notFound } from "next/navigation";
 
 type Context = {
-    params: {
-        slug: string;
-    };
+  params: {
+    slug: string;
+  };
 };
 
 export const generateMetadata = async (context: Context): Promise<Metadata> => {
-    const { slug } = context.params;
-    const work = await getWorkBySlugAction(slug);
+  const { slug } = context.params;
+  const work = await getWorkBySlugAction(slug);
 
-    if (!work || !work?.data?.attributes?.seo) return {};
+  if (!work || !work?.data?.attributes?.seo) return {};
 
-    const seo = work.data.attributes.seo;
+  const seo = work.data.attributes.seo;
 
-    return {
-        title: seo.title,
-        description: seo.description,
-        keywords: seo.keywords,
-        robots: seo.preventIndexing ? "noindex, nofollow" : "index, follow",
-    };
+  return {
+    title: seo.title,
+    description: seo.description,
+    keywords: seo.keywords,
+    robots: seo.preventIndexing ? "noindex, nofollow" : "index, follow",
+  };
 };
 
 const WorkDetailPage: React.FC<Context> = async (context) => {
-    const { slug } = context.params;
+  const { slug } = context.params;
 
-    const work = await getWorkBySlugAction(slug);
+  const work = await getWorkBySlugAction(slug);
 
+  if (!work || !work?.data?.attributes) return notFound();
 
-    if (!work.data) return (
-        <NotFoundPage />
-    );
+  const pageContent = work?.data?.attributes?.description;
 
-    const pageContent = work?.data?.attributes?.description;
-
-    return (
-        <>
-            {pageContent?.map((content, index) => (
-                <DynamicSection
-                    key={`${index}-${content.__component}`}
-                    content={content}
-                />
-            ))}
-            <FooterSetup variant="complex" />
-        </>
-    );
+  return (
+    <>
+      {pageContent?.map((content, index) => (
+        <DynamicSection
+          key={`${index}-${content.__component}`}
+          content={content}
+        />
+      ))}
+      <FooterSetup variant="complex" />
+    </>
+  );
 };
 
 export default WorkDetailPage;

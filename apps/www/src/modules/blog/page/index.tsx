@@ -4,10 +4,10 @@ import { getAllBlogAction } from "../actions/service.action";
 import { ArticleList } from "../widgets/article-list";
 import { Container } from "@components/container";
 import { Heading } from "@components/heading";
+import { notFound } from "next/navigation";
 
 const BlogPage = async () => {
   const blogs = await getAllBlogAction();
-  if (!blogs) return null;
 
   // example of how to get a single service
   /**
@@ -16,6 +16,8 @@ const BlogPage = async () => {
    * const service = await getBlogAction(1);
    * console.log(service);
    */
+
+  if (!blogs) return notFound();
 
   return (
     <>

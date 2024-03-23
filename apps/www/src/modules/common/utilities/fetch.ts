@@ -15,7 +15,7 @@ export async function baseFetch<TData>({
   entity,
   populate,
   by,
-}: BaseFetchParams): Promise<TData> {
+}: BaseFetchParams): Promise<TData | null> {
   const id = by?.id;
   const filter = !id ? { filters: by } : {};
   const query = qs.stringify({
@@ -25,29 +25,34 @@ export async function baseFetch<TData>({
   const baseUrl = `${AppConfig.strapi.url}/api/${entity}`;
   const url = id ? `${baseUrl}/${id}?${query}` : `${baseUrl}?${query}`;
 
-  const request = await fetch(url, {
-    method: "GET",
-    headers: {
-      // eslint-disable-next-line turbo/no-undeclared-env-vars
-      Authorization: `Bearer ${process.env.STRAPI_ACCESS_TOKEN}`,
-    },
-    next: { revalidate: 120 },
-  });
+  try {
+    const request = await fetch(url, {
+      method: "GET",
+      headers: {
+        // eslint-disable-next-line turbo/no-undeclared-env-vars
+        Authorization: `Bearer ${process.env.STRAPI_ACCESS_TOKEN}`,
+      },
+      next: { revalidate: 120 },
+    });
 
-  const data = await request.json();
+    const data = await request.json();
 
-  if (by && data?.data) {
-    return {
-      ...data,
-      data: (() => {
-        if (data.data instanceof Array) {
-          return data.data[0];
-        }
+    if (by && data?.data) {
+      return {
+        ...data,
+        data: (() => {
+          if (data.data instanceof Array) {
+            return data.data[0];
+          }
 
-        return data.data;
-      })(),
-    };
+          return data.data;
+        })(),
+      };
+    }
+
+    return data as TData;
+  } catch (error) {
+    console.error("Error fetching data", error);
+    return null;
   }
-
-  return data as TData;
 }

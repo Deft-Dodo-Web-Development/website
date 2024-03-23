@@ -1,5 +1,50 @@
 
 
+## [0.56.4](https://github.com/Deft-Dodo-Web-Development/website/compare/@deft-dodo/www-v0.56.3...@deft-dodo/www-v0.56.4) (2024-03-23)
+
+
+### Bug Fixes
+
+* **www:** add alternative array ([d7771f3](https://github.com/Deft-Dodo-Web-Development/website/commit/d7771f3494e7016279ef3e85b005c61a1fb9bc61))
+* **www:** Add default URL to prevent issues ([9ac4847](https://github.com/Deft-Dodo-Web-Development/website/commit/9ac4847b7c7196a0ac44cc11182b89358e02ad62))
+
+## [0.56.3](https://github.com/Deft-Dodo-Web-Development/website/compare/@deft-dodo/www-v0.56.2...@deft-dodo/www-v0.56.3) (2024-03-23)
+
+
+### Bug Fixes
+
+* **www:** DDT-70 URL defaut config loading ([505e497](https://github.com/Deft-Dodo-Web-Development/website/commit/505e49742c9956d3bfd3ef7aa60c61c120227204))
+
+## [0.56.2](https://github.com/Deft-Dodo-Web-Development/website/compare/@deft-dodo/www-v0.56.1...@deft-dodo/www-v0.56.2) (2024-03-23)
+
+
+### Bug Fixes
+
+* **www:** DDT-70 Adjust Next.js config for dynamic Strapi URL ([634b057](https://github.com/Deft-Dodo-Web-Development/website/commit/634b0578fe4ce9d98e1bc3287fb7900145badac6))
+
+## [0.56.1](https://github.com/Deft-Dodo-Web-Development/website/compare/@deft-dodo/www-v0.56.0...@deft-dodo/www-v0.56.1) (2024-03-23)
+
+
+### Bug Fixes
+
+* **www:** DDT-70 Adjust Next.js config for dynamic Strapi URL ([d2c948e](https://github.com/Deft-Dodo-Web-Development/website/commit/d2c948e6084e9c4c5e5557a77667a2304611e3b2))
+
+## [0.56.0](https://github.com/Deft-Dodo-Web-Development/website/compare/@deft-dodo/www-v0.55.3...@deft-dodo/www-v0.56.0) (2024-03-22)
+
+
+### Features
+
+* return 404 when page not found ([#62](https://github.com/Deft-Dodo-Web-Development/website/issues/62)) ([51417b4](https://github.com/Deft-Dodo-Web-Development/website/commit/51417b40ad7525d1334d57462f7c28ffaa16f621))
+
+## [0.55.3](https://github.com/Deft-Dodo-Web-Development/website/compare/@deft-dodo/www-v0.55.2...@deft-dodo/www-v0.55.3) (2024-03-22)
+
+
+### Bug Fixes
+
+* **www:** force release ([0d6fe79](https://github.com/Deft-Dodo-Web-Development/website/commit/0d6fe79fb828e4eb5c953c4d6098ccc7115acfa8))
+
+## [0.55.2](https://github.com/Deft-Dodo-Web-Development/website/compare/@deft-dodo/www-v0.55.1...@deft-dodo/www-v0.55.2) (2024-03-22)
+
 ## [0.55.1](https://github.com/Deft-Dodo-Web-Development/website/compare/@deft-dodo/www-v0.55.0...@deft-dodo/www-v0.55.1) (2024-03-22)
 
 

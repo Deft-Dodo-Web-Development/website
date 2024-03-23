@@ -28,3 +28,30 @@ jobs:
         run: |
           docker-compose -f docker-compose.yml build --no-cache strapi
           docker push ghcr.io/deft-dodo-web-development/strapi:latest
+
+  publish-website:
+    runs-on: ubuntu-latest
+    if: contains(github.event.release.tag_name, '@deft-dodo/www')
+    environment:
+      name: Production
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Echo
+        run: echo "Building API"
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v1
+
+      - name: Log in to GitHub Container Registry
+        uses: docker/login-action@v1
+        with:
+          registry: ghcr.io
+          username: ${{ secrets.GHCR_USERNAME }}
+          password: ${{ secrets.GHCR_PASSWORD }}
+
+      - name: Build and push
+        run: |
+          export NEXT_PUBLIC_STRAPI_URL=http://127.0.0.1:1337
+          docker-compose -f docker-compose.yml build --no-cache website
+          docker push ghcr.io/deft-dodo-web-development/website:latest

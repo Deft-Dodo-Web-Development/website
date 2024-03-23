@@ -63,17 +63,22 @@ export async function getSeoPageData() {
     populate: ["seo"],
   });
 
-  const request = await fetch(
-    `${AppConfig.strapi.url}/api/home-page?${query}`,
-    {
-      method: "GET",
-      headers: {
-        Authorization: `Bearer ${process.env.STRAPI_ACCESS_TOKEN}`,
-      },
-      next: { revalidate: 60 },
-    }
-  );
+  try {
+    const request = await fetch(
+      `${AppConfig.strapi.url}/api/home-page?${query}`,
+      {
+        method: "GET",
+        headers: {
+          Authorization: `Bearer ${process.env.STRAPI_ACCESS_TOKEN}`,
+        },
+        next: { revalidate: 60 },
+      }
+    );
 
-  const data = await request.json();
-  return data as HomePageSeoServerResponse;
+    const data = await request.json();
+    return data as HomePageSeoServerResponse;
+  } catch (error) {
+    console.error("Error fetching SEO data", error);
+    return null;
+  }
 }
