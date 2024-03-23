@@ -1,5 +1,12 @@
 
 
+## [0.56.2](https://github.com/Deft-Dodo-Web-Development/website/compare/@deft-dodo/www-v0.56.1...@deft-dodo/www-v0.56.2) (2024-03-23)
+
+
+### Bug Fixes
+
+* **www:** DDT-70 Adjust Next.js config for dynamic Strapi URL ([634b057](https://github.com/Deft-Dodo-Web-Development/website/commit/634b0578fe4ce9d98e1bc3287fb7900145badac6))
+
 ## [0.56.1](https://github.com/Deft-Dodo-Web-Development/website/compare/@deft-dodo/www-v0.56.0...@deft-dodo/www-v0.56.1) (2024-03-23)
 
 
