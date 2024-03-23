@@ -31,7 +31,7 @@ jobs:
       - name: Build and push
         if: contains(github.event.release.tag_name, '@deft-dodo/api')
         run: |
-          docker-compose -f docker-compose.yml build --no-cache strapi
+          docker-compose -f docker-compose.yml build strapi
           docker push ghcr.io/deft-dodo-web-development/strapi:latest
 
   publish-website:
@@ -63,7 +63,7 @@ jobs:
         if: contains(github.event.release.tag_name, '@deft-dodo/www')
         run: |
           export NEXT_PUBLIC_STRAPI_URL=http://127.0.0.1:1337
-          docker-compose -f docker-compose.yml build --no-cache website
+          docker-compose -f docker-compose.yml build website
           docker push ghcr.io/deft-dodo-web-development/website:latest
 
   pull-changes:
@@ -76,7 +76,7 @@ jobs:
       - name: Setup SSH
         run: |
           mkdir -p ~/.ssh
-          echo "${{ secrets.SSH_PRIVATE_KEY }}" | base64 -d > ~/.ssh/id_rsa
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
           ssh-keyscan -H ${{ secrets.AWS_IP }} >> ~/.ssh/known_hosts
         env:
