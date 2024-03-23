@@ -1,5 +1,12 @@
 
 
+## [0.57.0](https://github.com/Deft-Dodo-Web-Development/website/compare/@deft-dodo/www-v0.56.5...@deft-dodo/www-v0.57.0) (2024-03-23)
+
+
+### Features
+
+* **www:** Update Dockerfile and Next.js config for sharp and domain handling ([86f52f2](https://github.com/Deft-Dodo-Web-Development/website/commit/86f52f27b357753e17fd80d2686434cfc3abc83e))
+
 ## [0.56.5](https://github.com/Deft-Dodo-Web-Development/website/compare/@deft-dodo/www-v0.56.4...@deft-dodo/www-v0.56.5) (2024-03-23)
 
 
