@@ -49,6 +49,9 @@ WORKDIR /app
 RUN addgroup --system --gid 1001 web && \
   adduser --system --uid 1001 web
 
+COPY entrypoint.sh /entrypoint.sh
+RUN chmod +x /entrypoint.sh
+
 COPY --from=installer /app .
 RUN chown -R web:web /app
 
@@ -60,4 +63,5 @@ ENV NODE_ENV=production
 
 EXPOSE 3000
 
+ENTRYPOINT ["/entrypoint.sh"]
 CMD ["pnpm", "start", "--scope", "www"]
