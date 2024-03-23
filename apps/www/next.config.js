@@ -23,6 +23,10 @@ module.exports = {
       },
       {
         protocol: 'https',
+        hostname: 'dash.deftdodo.dev',
+      },
+      {
+        protocol: 'https',
         hostname: 'placehold.co',
       }
     ]
