@@ -4,7 +4,8 @@ import { config } from "dotenv";
 config();
 
 const port = process.env.PORT;
-const strapi_url = process.env.NEXT_PUBLIC_STRAPI_URL || "";
+const strapi_url =
+  process.env.NEXT_PUBLIC_STRAPI_URL || "http://127.0.0.1:1337";
 const contain_port = /:\d+/.test(strapi_url);
 
 const url = port ? `${strapi_url}:${port}` : strapi_url;
