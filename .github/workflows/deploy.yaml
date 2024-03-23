@@ -57,6 +57,7 @@ jobs:
           docker push ghcr.io/deft-dodo-web-development/website:latest
 
   pull-changes:
+    needs: [publish-api, publish-website]
     if: contains(github.event.release.tag_name, '@deft-dodo/www') || contains(github.event.release.tag_name, '@deft-dodo/api')
     runs-on: ubuntu-latest
     steps:
