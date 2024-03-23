@@ -1,5 +1,12 @@
 
 
+## [0.58.1](https://github.com/Deft-Dodo-Web-Development/website/compare/@deft-dodo/www-v0.58.0...@deft-dodo/www-v0.58.1) (2024-03-23)
+
+
+### Bug Fixes
+
+* **www:** Update Strapi port configuration in app.config ([4c84ab2](https://github.com/Deft-Dodo-Web-Development/website/commit/4c84ab26eeac556baafbbefbfe7960a3c40703cf))
+
 ## [0.58.0](https://github.com/Deft-Dodo-Web-Development/website/compare/@deft-dodo/www-v0.57.0...@deft-dodo/www-v0.58.0) (2024-03-23)
 
 
