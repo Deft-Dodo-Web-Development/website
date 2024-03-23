@@ -55,3 +55,21 @@ jobs:
           export NEXT_PUBLIC_STRAPI_URL=http://127.0.0.1:1337
           docker-compose -f docker-compose.yml build --no-cache website
           docker push ghcr.io/deft-dodo-web-development/website:latest
+
+  pull-changes:
+    if: contains(github.event.release.tag_name, '@deft-dodo/www') || contains(github.event.release.tag_name, '@deft-dodo/api')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup SSH
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" | base64 -d > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan -H ${{ secrets.AWS_IP }} >> ~/.ssh/known_hosts
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+
+      - name: Pull changes
+        run: ssh -i ~/.ssh/id_rsa ubuntu@${{ secrets.AWS_IP }} "cd /home/ubuntu/deft-dodo/website && sudo docker compose pull && sudo docker compose up -d"
