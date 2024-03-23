@@ -1,5 +1,12 @@
 
 
+## [0.56.3](https://github.com/Deft-Dodo-Web-Development/website/compare/@deft-dodo/www-v0.56.2...@deft-dodo/www-v0.56.3) (2024-03-23)
+
+
+### Bug Fixes
+
+* **www:** DDT-70 URL defaut config loading ([505e497](https://github.com/Deft-Dodo-Web-Development/website/commit/505e49742c9956d3bfd3ef7aa60c61c120227204))
+
 ## [0.56.2](https://github.com/Deft-Dodo-Web-Development/website/compare/@deft-dodo/www-v0.56.1...@deft-dodo/www-v0.56.2) (2024-03-23)
 
 
