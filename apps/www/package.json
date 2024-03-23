@@ -1,6 +1,6 @@
 {
   "name": "@deft-dodo/www",
-  "version": "0.56.3",
+  "version": "0.56.4",
   "private": true,
   "scripts": {
     "dev": "next dev",

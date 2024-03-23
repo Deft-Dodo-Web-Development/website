@@ -1,5 +1,13 @@
 
 
+## [0.56.4](https://github.com/Deft-Dodo-Web-Development/website/compare/@deft-dodo/www-v0.56.3...@deft-dodo/www-v0.56.4) (2024-03-23)
+
+
+### Bug Fixes
+
+* **www:** add alternative array ([d7771f3](https://github.com/Deft-Dodo-Web-Development/website/commit/d7771f3494e7016279ef3e85b005c61a1fb9bc61))
+* **www:** Add default URL to prevent issues ([9ac4847](https://github.com/Deft-Dodo-Web-Development/website/commit/9ac4847b7c7196a0ac44cc11182b89358e02ad62))
+
 ## [0.56.3](https://github.com/Deft-Dodo-Web-Development/website/compare/@deft-dodo/www-v0.56.2...@deft-dodo/www-v0.56.3) (2024-03-23)
 
 
