@@ -1,40 +1,37 @@
 import { Container } from "@components/container";
-import Profile, { ProfileProps } from "../components/profile";
-import Dan from "../assets/dan.webp";
+import Profile from "../components/profile";
+import { Components } from "@/modules/common/types/components";
+import { Heading } from "@components/heading";
 
-const Profiles: ProfileProps[] = [
-  {
-    name: "Dan Duehren",
-    position: "Shopify Developer",
-    description: `<p>
-    We craft immersive online shopping experiences that leave lasting
-    impressions. With a team of passionate developers, creative designers,
-    and strategic thinkers, we are committed to pushing the boundaries of
-    e-commerce excellence.
-  </p>
+export type TeamProps = Components.Team;
 
-  <p>
-    We are committed to empowering businesses, small and large, to thrive in
-    the digital age. Whether you're a startup with big dreams or an
-    established brand seeking to refresh your online presence, [Agency Name]
-    is here to make your e-commerce journey seamless, exciting, and
-    profitable.
-  </p>`,
-    picture: Dan,
-  },
-];
+const Team: React.FC<TeamProps> = ({
+  with_container,
+  members,
+  heading
+}) => {
 
-export type TeamProps = {
-  container?: boolean;
-};
+  const HeadingTag = heading.hierarchy || "h2";
 
-const Team: React.FC<TeamProps> = ({ container }) => {
   return (
-    <Container enabled={container}>
+    <Container enabled={with_container}>
+      {heading && (
+        <div className="mb-12 lg:mb-20">
+          <Heading
+            subHeading={heading.sub_title || ""}
+            alignment="middle"
+            size="lg"
+            variant="primary"
+            textTransform="uppercase"
+          >
+            <HeadingTag>{heading.title}</HeadingTag>
+          </Heading>
+        </div>
+      )}
       <ul className="space-y-14 lg:space-y-8">
-        {[...Profiles, ...Profiles, ...Profiles].map((profile, index) => (
+        {members?.data.map((member, index) => (
           <li key={index}>
-            <Profile {...profile} reverse={(index + 1) % 2 === 0} />
+            <Profile {...member} reverse={(index + 1) % 2 === 0} />
           </li>
         ))}
       </ul>

@@ -10,7 +10,7 @@ const AboutUs: React.FC<AboutUsProps> = (props) => {
   const { with_container: container } = props;
   return (
     <Container enabled={container}>
-      <Layout>
+      <Layout className="my-8">
         <AboutUsAnimated {...props} />
       </Layout>
     </Container>

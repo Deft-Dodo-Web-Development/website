@@ -135,7 +135,7 @@ export interface ClientList {
   image: MediaResponse;
 }
 
-type hierarchy =  "h1" | "h2" | "h3" | "h4" | "h5" | "h6";
+type hierarchy = "h1" | "h2" | "h3" | "h4" | "h5" | "h6";
 
 export interface Heading {
   id: number;
@@ -171,6 +171,7 @@ export interface TeamMemberAttributes {
   picture: MediaResponse;
   position: string;
   social: Social[];
+  bio: string;
   createdAt: string;
   updatedAt: string;
 }

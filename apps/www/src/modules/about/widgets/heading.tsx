@@ -19,7 +19,6 @@ const AboutUsHeading: React.FC<AboutUsHeadingProps> = ({ container }) => {
         >
           <h2>
             <span className="font-bold">Deft Dodo</span>
-            <span className="font-thin">®</span>
           </h2>
         </Heading>
       </div>
