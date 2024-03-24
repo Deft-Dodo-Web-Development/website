@@ -8,6 +8,7 @@ import { Heading } from "@/modules/common/components/heading";
 export type AboutUsAnimatedProps = Components.AboutUs;
 const AboutUsAnimated = (props: AboutUsAnimatedProps) => {
   const { heading, content } = props;
+  const contentClasses = heading.sub_title ? "text-lg md:text-xl text-balance lg:mt-7" : "text-lg md:text-xl text-balance";
 
   const isLarge = useMediaQuery({ minWidth: 1024 });
   const variants = {
@@ -61,7 +62,7 @@ const AboutUsAnimated = (props: AboutUsAnimatedProps) => {
           ease: "easeOut",
         }}
       >
-        <p className="text-lg md:text-xl text-balance">{content}</p>
+        <p className={contentClasses}>{content}</p>
       </motion.div>
     </>
   );
