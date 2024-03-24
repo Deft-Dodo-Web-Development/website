@@ -33,7 +33,7 @@ const navItems = [
 const HeaderNav: React.FC<{ className?: string }> = ({ className }) => {
   return (
     <nav>
-      <ul className={cn("flex items-center gap-8 text-2xl tracking-wide", bisonFont.className, className)}>
+      <ul className={cn("flex items-center gap-8 text-2xl md:text-xl lg:text-2xl tracking-wide", bisonFont.className, className)}>
         {navItems.map((item, index) => (
           <NavItem key={index} title={item.title} link={item.link} />
         ))}
