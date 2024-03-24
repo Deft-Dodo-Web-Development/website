@@ -1,5 +1,5 @@
 {
-  "key": "plugin_content_manager_configuration_components::common.rich-editor",
+  "key": "plugin_content_manager_configuration_components::common.pic-by-device",
   "value": {
     "settings": {
       "bulkable": true,
@@ -19,56 +19,76 @@
           "sortable": false
         }
       },
-      "body": {
+      "desktop": {
         "edit": {
-          "label": "body",
+          "label": "desktop",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "body",
+          "label": "desktop",
           "searchable": false,
           "sortable": false
         }
       },
-      "with_container": {
+      "tablet": {
         "edit": {
-          "label": "with_container",
+          "label": "tablet",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "with_container",
-          "searchable": true,
-          "sortable": true
+          "label": "tablet",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "mobile": {
+        "edit": {
+          "label": "mobile",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "mobile",
+          "searchable": false,
+          "sortable": false
         }
       }
     },
     "layouts": {
       "list": [
         "id",
-        "with_container"
+        "desktop",
+        "tablet",
+        "mobile"
       ],
       "edit": [
         [
           {
-            "name": "body",
-            "size": 12
+            "name": "desktop",
+            "size": 6
+          },
+          {
+            "name": "tablet",
+            "size": 6
           }
         ],
         [
           {
-            "name": "with_container",
-            "size": 4
+            "name": "mobile",
+            "size": 6
           }
         ]
       ]
     },
-    "uid": "common.rich-editor",
+    "uid": "common.pic-by-device",
     "isComponent": true
   },
   "type": "object",

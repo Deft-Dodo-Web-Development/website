@@ -6,6 +6,126 @@
     {
       "action": "plugin::content-manager.explorer.create",
       "actionParameters": {},
+      "subject": "api::blog.blog",
+      "properties": {
+        "fields": [
+          "title",
+          "image",
+          "body",
+          "summary",
+          "seo.title",
+          "seo.decription",
+          "seo.keywords",
+          "seo.preventIndexing",
+          "author",
+          "categories",
+          "slug"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "actionParameters": {},
+      "subject": "api::blog.blog",
+      "properties": {
+        "fields": [
+          "title",
+          "image",
+          "body",
+          "summary",
+          "seo.title",
+          "seo.decription",
+          "seo.keywords",
+          "seo.preventIndexing",
+          "author",
+          "categories",
+          "slug"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "actionParameters": {},
+      "subject": "api::blog.blog",
+      "properties": {
+        "fields": [
+          "title",
+          "image",
+          "body",
+          "summary",
+          "seo.title",
+          "seo.decription",
+          "seo.keywords",
+          "seo.preventIndexing",
+          "author",
+          "categories",
+          "slug"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "actionParameters": {},
+      "subject": "api::category.category",
+      "properties": {
+        "fields": [
+          "name",
+          "blogs"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "actionParameters": {},
+      "subject": "api::category.category",
+      "properties": {},
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "actionParameters": {},
+      "subject": "api::category.category",
+      "properties": {
+        "fields": [
+          "name",
+          "blogs"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "actionParameters": {},
+      "subject": "api::category.category",
+      "properties": {
+        "fields": [
+          "name",
+          "blogs"
+        ]
+      },
+      "conditions": [
+        "admin::is-creator"
+      ]
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "actionParameters": {},
       "subject": "api::footer.footer",
       "properties": {
         "fields": [
@@ -191,7 +311,13 @@
         "fields": [
           "title",
           "summary",
-          "image"
+          "image",
+          "description",
+          "seo.title",
+          "seo.decription",
+          "seo.keywords",
+          "seo.preventIndexing",
+          "slug"
         ]
       },
       "conditions": [
@@ -206,7 +332,13 @@
         "fields": [
           "title",
           "summary",
-          "image"
+          "image",
+          "description",
+          "seo.title",
+          "seo.decription",
+          "seo.keywords",
+          "seo.preventIndexing",
+          "slug"
         ]
       },
       "conditions": [
@@ -221,7 +353,13 @@
         "fields": [
           "title",
           "summary",
-          "image"
+          "image",
+          "description",
+          "seo.title",
+          "seo.decription",
+          "seo.keywords",
+          "seo.preventIndexing",
+          "slug"
         ]
       },
       "conditions": [
@@ -235,10 +373,15 @@
       "properties": {
         "fields": [
           "title",
-          "description",
           "cta",
           "slug",
-          "icon"
+          "icon",
+          "summary",
+          "description",
+          "seo.title",
+          "seo.decription",
+          "seo.keywords",
+          "seo.preventIndexing"
         ]
       },
       "conditions": [
@@ -252,10 +395,15 @@
       "properties": {
         "fields": [
           "title",
-          "description",
           "cta",
           "slug",
-          "icon"
+          "icon",
+          "summary",
+          "description",
+          "seo.title",
+          "seo.decription",
+          "seo.keywords",
+          "seo.preventIndexing"
         ]
       },
       "conditions": [
@@ -269,10 +417,15 @@
       "properties": {
         "fields": [
           "title",
-          "description",
           "cta",
           "slug",
-          "icon"
+          "icon",
+          "summary",
+          "description",
+          "seo.title",
+          "seo.decription",
+          "seo.keywords",
+          "seo.preventIndexing"
         ]
       },
       "conditions": [
@@ -289,7 +442,8 @@
           "position",
           "picture",
           "social.platform",
-          "social.link"
+          "social.link",
+          "blogs"
         ]
       },
       "conditions": [
@@ -315,7 +469,8 @@
           "position",
           "picture",
           "social.platform",
-          "social.link"
+          "social.link",
+          "blogs"
         ]
       },
       "conditions": [
@@ -332,7 +487,8 @@
           "position",
           "picture",
           "social.platform",
-          "social.link"
+          "social.link",
+          "blogs"
         ]
       },
       "conditions": [
