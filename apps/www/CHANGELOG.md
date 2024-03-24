@@ -1,5 +1,20 @@
 
 
+## [0.62.0](https://github.com/Deft-Dodo-Web-Development/website/compare/@deft-dodo/www-v0.61.0...@deft-dodo/www-v0.62.0) (2024-03-24)
+
+
+### Features
+
+* **www:** add margin to content to match heading line ([92e105f](https://github.com/Deft-Dodo-Web-Development/website/commit/92e105fa22fdea2d432653399c561a26cc0f7f5f))
+* **www:** change blog's post index layout ([1fe3dc9](https://github.com/Deft-Dodo-Web-Development/website/commit/1fe3dc9da2e786b10d5b9d5109babf19ed833d9b))
+* **www:** change nav font size on md screens ([b3a0b9b](https://github.com/Deft-Dodo-Web-Development/website/commit/b3a0b9b67394d6a3b26f27080d50466f5c2899e3))
+* **www:** changes to about us page ([f84c940](https://github.com/Deft-Dodo-Web-Development/website/commit/f84c9400e0e7de4ca3d70744a7d21b79497183d3))
+
+
+### Bug Fixes
+
+* **www:** add bison font to hero to prevent cls ([10c3842](https://github.com/Deft-Dodo-Web-Development/website/commit/10c384294b43f489f6534558393ae2b80c60c95c))
+
 ## [0.61.0](https://github.com/Deft-Dodo-Web-Development/website/compare/@deft-dodo/www-v0.60.0...@deft-dodo/www-v0.61.0) (2024-03-23)
 
 
