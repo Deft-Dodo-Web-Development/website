@@ -10,7 +10,7 @@
     "platform": {
       "type": "enumeration",
       "enum": [
-        " linkedin",
+        "linkedin",
         "github",
         "twitter",
         "facebook"
