@@ -6,6 +6,65 @@
     {
       "action": "plugin::content-manager.explorer.create",
       "actionParameters": {},
+      "subject": "api::about-us-page.about-us-page",
+      "properties": {
+        "fields": [
+          "seo.title",
+          "seo.decription",
+          "seo.keywords",
+          "seo.preventIndexing",
+          "pageContent"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "actionParameters": {},
+      "subject": "api::about-us-page.about-us-page",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "actionParameters": {},
+      "subject": "api::about-us-page.about-us-page",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "actionParameters": {},
+      "subject": "api::about-us-page.about-us-page",
+      "properties": {
+        "fields": [
+          "seo.title",
+          "seo.decription",
+          "seo.keywords",
+          "seo.preventIndexing",
+          "pageContent"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "actionParameters": {},
+      "subject": "api::about-us-page.about-us-page",
+      "properties": {
+        "fields": [
+          "seo.title",
+          "seo.decription",
+          "seo.keywords",
+          "seo.preventIndexing",
+          "pageContent"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "actionParameters": {},
       "subject": "api::blog.blog",
       "properties": {
         "fields": [
@@ -408,7 +467,8 @@
           "seo.title",
           "seo.decription",
           "seo.keywords",
-          "seo.preventIndexing"
+          "seo.preventIndexing",
+          "slug"
         ],
         "locales": [
           "en"
@@ -451,7 +511,8 @@
           "seo.title",
           "seo.decription",
           "seo.keywords",
-          "seo.preventIndexing"
+          "seo.preventIndexing",
+          "slug"
         ],
         "locales": [
           "en"
@@ -472,7 +533,8 @@
           "seo.title",
           "seo.decription",
           "seo.keywords",
-          "seo.preventIndexing"
+          "seo.preventIndexing",
+          "slug"
         ],
         "locales": [
           "en"
@@ -582,7 +644,8 @@
           "picture",
           "social.platform",
           "social.link",
-          "blogs"
+          "blogs",
+          "bio"
         ]
       },
       "conditions": []
@@ -605,7 +668,8 @@
           "picture",
           "social.platform",
           "social.link",
-          "blogs"
+          "blogs",
+          "bio"
         ]
       },
       "conditions": []
@@ -621,7 +685,8 @@
           "picture",
           "social.platform",
           "social.link",
-          "blogs"
+          "blogs",
+          "bio"
         ]
       },
       "conditions": []

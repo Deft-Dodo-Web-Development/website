@@ -1,13 +1,13 @@
 {
-  "key": "plugin_content_manager_configuration_content_types::plugin::content-releases.release",
+  "key": "plugin_content_manager_configuration_content_types::plugin::entity-notes.note",
   "value": {
     "settings": {
       "bulkable": true,
       "filterable": true,
       "searchable": true,
       "pageSize": 10,
-      "mainField": "name",
-      "defaultSortBy": "name",
+      "mainField": "title",
+      "defaultSortBy": "title",
       "defaultSortOrder": "ASC"
     },
     "metadatas": {
@@ -19,89 +19,60 @@
           "sortable": true
         }
       },
-      "name": {
+      "title": {
         "edit": {
-          "label": "name",
+          "label": "title",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "name",
+          "label": "title",
           "searchable": true,
           "sortable": true
         }
       },
-      "releasedAt": {
+      "content": {
         "edit": {
-          "label": "releasedAt",
+          "label": "content",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "releasedAt",
+          "label": "content",
           "searchable": true,
           "sortable": true
         }
       },
-      "scheduledAt": {
+      "entityId": {
         "edit": {
-          "label": "scheduledAt",
+          "label": "entityId",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "scheduledAt",
+          "label": "entityId",
           "searchable": true,
           "sortable": true
         }
       },
-      "timezone": {
+      "entitySlug": {
         "edit": {
-          "label": "timezone",
+          "label": "entitySlug",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "timezone",
+          "label": "entitySlug",
           "searchable": true,
           "sortable": true
-        }
-      },
-      "status": {
-        "edit": {
-          "label": "status",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "status",
-          "searchable": true,
-          "sortable": true
-        }
-      },
-      "actions": {
-        "edit": {
-          "label": "actions",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true,
-          "mainField": "contentType"
-        },
-        "list": {
-          "label": "actions",
-          "searchable": false,
-          "sortable": false
         }
       },
       "createdAt": {
@@ -166,44 +137,34 @@
     "layouts": {
       "list": [
         "id",
-        "name",
-        "releasedAt",
-        "actions"
+        "title",
+        "content",
+        "entityId"
       ],
       "edit": [
         [
           {
-            "name": "name",
+            "name": "title",
             "size": 6
           },
           {
-            "name": "releasedAt",
+            "name": "content",
             "size": 6
           }
         ],
         [
           {
-            "name": "actions",
-            "size": 6
+            "name": "entityId",
+            "size": 4
           },
           {
-            "name": "scheduledAt",
-            "size": 6
-          }
-        ],
-        [
-          {
-            "name": "timezone",
-            "size": 6
-          },
-          {
-            "name": "status",
+            "name": "entitySlug",
             "size": 6
           }
         ]
       ]
     },
-    "uid": "plugin::content-releases.release"
+    "uid": "plugin::entity-notes.note"
   },
   "type": "object",
   "environment": null,

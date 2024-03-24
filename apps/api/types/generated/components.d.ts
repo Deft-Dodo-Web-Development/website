@@ -419,7 +419,9 @@ export interface HomeExperience extends Schema.Component {
     title: Attribute.String & Attribute.Required;
     description: Attribute.Text;
     button: Attribute.Component<'common.button'>;
-    with_container: Attribute.Boolean & Attribute.DefaultTo<true>;
+    with_container: Attribute.Boolean &
+      Attribute.Required &
+      Attribute.DefaultTo<true>;
   };
 }
 

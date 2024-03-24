@@ -1,13 +1,13 @@
 {
-  "key": "plugin_content_manager_configuration_content_types::plugin::content-releases.release",
+  "key": "plugin_content_manager_configuration_content_types::api::about-us-page.about-us-page",
   "value": {
     "settings": {
       "bulkable": true,
       "filterable": true,
       "searchable": true,
       "pageSize": 10,
-      "mainField": "name",
-      "defaultSortBy": "name",
+      "mainField": "id",
+      "defaultSortBy": "id",
       "defaultSortOrder": "ASC"
     },
     "metadatas": {
@@ -19,87 +19,30 @@
           "sortable": true
         }
       },
-      "name": {
+      "seo": {
         "edit": {
-          "label": "name",
+          "label": "seo",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "name",
-          "searchable": true,
-          "sortable": true
+          "label": "seo",
+          "searchable": false,
+          "sortable": false
         }
       },
-      "releasedAt": {
+      "pageContent": {
         "edit": {
-          "label": "releasedAt",
+          "label": "pageContent",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "releasedAt",
-          "searchable": true,
-          "sortable": true
-        }
-      },
-      "scheduledAt": {
-        "edit": {
-          "label": "scheduledAt",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "scheduledAt",
-          "searchable": true,
-          "sortable": true
-        }
-      },
-      "timezone": {
-        "edit": {
-          "label": "timezone",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "timezone",
-          "searchable": true,
-          "sortable": true
-        }
-      },
-      "status": {
-        "edit": {
-          "label": "status",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "status",
-          "searchable": true,
-          "sortable": true
-        }
-      },
-      "actions": {
-        "edit": {
-          "label": "actions",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true,
-          "mainField": "contentType"
-        },
-        "list": {
-          "label": "actions",
+          "label": "pageContent",
           "searchable": false,
           "sortable": false
         }
@@ -166,44 +109,26 @@
     "layouts": {
       "list": [
         "id",
-        "name",
-        "releasedAt",
-        "actions"
+        "seo",
+        "createdAt",
+        "updatedAt"
       ],
       "edit": [
         [
           {
-            "name": "name",
-            "size": 6
-          },
-          {
-            "name": "releasedAt",
-            "size": 6
+            "name": "seo",
+            "size": 12
           }
         ],
         [
           {
-            "name": "actions",
-            "size": 6
-          },
-          {
-            "name": "scheduledAt",
-            "size": 6
-          }
-        ],
-        [
-          {
-            "name": "timezone",
-            "size": 6
-          },
-          {
-            "name": "status",
-            "size": 6
+            "name": "pageContent",
+            "size": 12
           }
         ]
       ]
     },
-    "uid": "plugin::content-releases.release"
+    "uid": "api::about-us-page.about-us-page"
   },
   "type": "object",
   "environment": null,

@@ -46,13 +46,28 @@
           "searchable": true,
           "sortable": true
         }
+      },
+      "hierarchy": {
+        "edit": {
+          "label": "hierarchy",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "hierarchy",
+          "searchable": true,
+          "sortable": true
+        }
       }
     },
     "layouts": {
       "list": [
         "id",
         "title",
-        "sub_title"
+        "sub_title",
+        "hierarchy"
       ],
       "edit": [
         [
@@ -62,6 +77,12 @@
           },
           {
             "name": "sub_title",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "hierarchy",
             "size": 6
           }
         ]

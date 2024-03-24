@@ -32,7 +32,7 @@ export async function baseFetch<TData>({
         // eslint-disable-next-line turbo/no-undeclared-env-vars
         Authorization: `Bearer ${process.env.STRAPI_ACCESS_TOKEN}`,
       },
-      next: { revalidate: 120 },
+      next: { tags: ["strapi"] },
     });
 
     const data = await request.json();

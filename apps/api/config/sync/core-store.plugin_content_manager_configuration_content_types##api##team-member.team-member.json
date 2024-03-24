@@ -90,6 +90,20 @@
           "sortable": false
         }
       },
+      "bio": {
+        "edit": {
+          "label": "bio",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "bio",
+          "searchable": false,
+          "sortable": false
+        }
+      },
       "createdAt": {
         "edit": {
           "label": "createdAt",
@@ -183,6 +197,12 @@
           {
             "name": "blogs",
             "size": 6
+          }
+        ],
+        [
+          {
+            "name": "bio",
+            "size": 12
           }
         ]
       ]
