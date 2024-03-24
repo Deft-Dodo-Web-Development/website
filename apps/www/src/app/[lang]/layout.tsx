@@ -6,6 +6,7 @@ import { Locale, i18n } from "@/i18n-config";
 import { getDictionary } from "@/get-dictionary";
 import Footer from "@widgets/footer";
 import { bisonFont } from "@/modules/common/assets/fonts";
+import Styles from "@/modules/common/components/styles";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -30,17 +31,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default function RootLayout({ children, params: { lang } }: Props) {
   return (
     <html lang={lang}>
-      <body className={`bg-dark text-white`}>
-        <style>{`
-          html {
-            font-family: ${inter.style.fontFamily};
-          }
-
-          h1, h2, h3, h4, h5, h6 {
-            font-family: ${bisonFont.style.fontFamily};
-            font-weight: 700;
-          }
-        `}</style>
+      <body className={`${inter.className} bg-dark text-white`}>
+        <Styles bisonFont={bisonFont} />
         <Header lang={lang} />
         <main className="mt-28">{children}</main>
         <Footer />

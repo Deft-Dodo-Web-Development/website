@@ -40,7 +40,7 @@ const fetchData = function <T>(filter?: { [key: string]: string | number }) {
     "pageContent.articles",
     "pageContent.blogs",
     "pageContent.blogs.image",
-    "pageContent.blogs.categories"
+    "pageContent.blogs.categories",
   ];
 
   return baseFetch<T>({
@@ -68,7 +68,7 @@ export async function getSeoPageData() {
         headers: {
           Authorization: `Bearer ${process.env.STRAPI_ACCESS_TOKEN}`,
         },
-        next: { revalidate: 60 },
+        next: { tags: ["strapi"] },
       }
     );
 
