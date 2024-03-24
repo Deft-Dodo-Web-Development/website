@@ -1,5 +1,12 @@
 
 
+## [0.19.2](https://github.com/Deft-Dodo-Web-Development/website/compare/@deft-dodo/api-v0.19.1...@deft-dodo/api-v0.19.2) (2024-03-24)
+
+
+### Bug Fixes
+
+* **api:** adjust start script and update Strapi dependencies ([561b6a9](https://github.com/Deft-Dodo-Web-Development/website/commit/561b6a99cce2801c644c3e42ff37f6d435da0bdd))
+
 ## [0.19.1](https://github.com/Deft-Dodo-Web-Development/website/compare/@deft-dodo/api-v0.19.0...@deft-dodo/api-v0.19.1) (2024-03-24)
 
 
