@@ -1,5 +1,12 @@
 
 
+## [0.20.1](https://github.com/Deft-Dodo-Web-Development/website/compare/@deft-dodo/api-v0.20.0...@deft-dodo/api-v0.20.1) (2024-03-24)
+
+
+### Bug Fixes
+
+* **api:** force re-deploy 5 ([ef06fec](https://github.com/Deft-Dodo-Web-Development/website/commit/ef06fecafe44cc4261eb58207c29d3cea5ea82e9))
+
 ## [0.20.0](https://github.com/Deft-Dodo-Web-Development/website/compare/@deft-dodo/api-v0.19.2...@deft-dodo/api-v0.20.0) (2024-03-24)
 
 
