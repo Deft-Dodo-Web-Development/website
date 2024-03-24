@@ -5,7 +5,7 @@
   "description": "A Strapi application",
   "scripts": {
     "dev": "strapi develop",
-    "start": "npm run migrate; strapi start",
+    "start": "strapi start",
     "build": "strapi build",
     "strapi": "strapi",
     "create:db": "docker-compose --env-file .env up -d main_db",
@@ -20,10 +20,10 @@
     "@types/node": "^20.11.17"
   },
   "dependencies": {
-    "@strapi/plugin-cloud": "4.20.1",
-    "@strapi/plugin-i18n": "4.20.1",
-    "@strapi/plugin-users-permissions": "4.20.1",
-    "@strapi/strapi": "4.20.1",
+    "@strapi/plugin-cloud": "4.21.0",
+    "@strapi/plugin-i18n": "4.21.0",
+    "@strapi/plugin-users-permissions": "4.21.0",
+    "@strapi/strapi": "4.21.0",
     "better-sqlite3": "8.6.0",
     "dotenv": "^16.4.5",
     "pg": "^8.11.3",
