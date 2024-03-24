@@ -1,5 +1,12 @@
 
 
+## [1.0.0](https://github.com/Deft-Dodo-Web-Development/website/compare/@deft-dodo/api-v0.22.0...@deft-dodo/api-v1.0.0) (2024-03-24)
+
+
+### Features
+
+* **api:** final changes ([ece5725](https://github.com/Deft-Dodo-Web-Development/website/commit/ece5725c54730031ff26fb1822a08d28487233e2))
+
 ## [0.22.0](https://github.com/Deft-Dodo-Web-Development/website/compare/@deft-dodo/api-v0.21.0...@deft-dodo/api-v0.22.0) (2024-03-24)
 
 
