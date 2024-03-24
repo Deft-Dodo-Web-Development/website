@@ -1,5 +1,12 @@
 
 
+## [0.20.0](https://github.com/Deft-Dodo-Web-Development/website/compare/@deft-dodo/api-v0.19.2...@deft-dodo/api-v0.20.0) (2024-03-24)
+
+
+### Features
+
+* **api:** add about us page service ([690c5bd](https://github.com/Deft-Dodo-Web-Development/website/commit/690c5bd02df6195619c980285b230da39608ed45))
+
 ## [0.19.2](https://github.com/Deft-Dodo-Web-Development/website/compare/@deft-dodo/api-v0.19.1...@deft-dodo/api-v0.19.2) (2024-03-24)
 
 
