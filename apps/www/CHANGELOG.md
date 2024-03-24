@@ -1,5 +1,12 @@
 
 
+## [1.0.0](https://github.com/Deft-Dodo-Web-Development/website/compare/@deft-dodo/www-v0.64.0...@deft-dodo/www-v1.0.0) (2024-03-24)
+
+
+### Features
+
+* **www:** final changes ([0618258](https://github.com/Deft-Dodo-Web-Development/website/commit/0618258c76e180cee4181495b95d58ac95a38175))
+
 ## [0.64.0](https://github.com/Deft-Dodo-Web-Development/website/compare/@deft-dodo/www-v0.63.0...@deft-dodo/www-v0.64.0) (2024-03-24)
 
 
