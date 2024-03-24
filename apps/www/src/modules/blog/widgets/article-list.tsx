@@ -9,7 +9,7 @@ export type ArticleListProps = {
 const ArticleList: React.FC<ArticleListProps> = ({ container, articles }) => {
     return (
         <Container enabled={container}>
-            <ul className="grid grid-cols-1 gap-x-8 gap-y-24 sm:grid-cols-2">
+            <ul className="grid grid-cols-1 gap-x-8 gap-y-24 sm:grid-cols-2 lg:grid-cols-3">
                 {articles?.map((article, index) => {
                     return (
                         <li key={index}>

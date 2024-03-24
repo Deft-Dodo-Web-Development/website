@@ -36,6 +36,9 @@
       "relation": "oneToMany",
       "target": "api::blog.blog",
       "mappedBy": "author"
+    },
+    "bio": {
+      "type": "richtext"
     }
   }
 }

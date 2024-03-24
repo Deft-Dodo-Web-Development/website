@@ -1,0 +1,31 @@
+{
+  "kind": "singleType",
+  "collectionName": "about_us_pages",
+  "info": {
+    "singularName": "about-us-page",
+    "pluralName": "about-us-pages",
+    "displayName": "About Us Page",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "common.seo"
+    },
+    "pageContent": {
+      "type": "dynamiczone",
+      "components": [
+        "common.separator",
+        "home.about-us",
+        "home.testimonials",
+        "common.rich-editor",
+        "home.team"
+      ]
+    }
+  }
+}
