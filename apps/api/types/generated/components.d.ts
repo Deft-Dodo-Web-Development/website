@@ -234,7 +234,7 @@ export interface CommonSocial extends Schema.Component {
   };
   attributes: {
     platform: Attribute.Enumeration<
-      [' linkedin', 'github', 'twitter', 'facebook']
+      ['linkedin', 'github', 'twitter', 'facebook']
     >;
     link: Attribute.String & Attribute.Required;
   };
