@@ -1,5 +1,12 @@
 
 
+## [0.63.0](https://github.com/Deft-Dodo-Web-Development/website/compare/@deft-dodo/www-v0.62.0...@deft-dodo/www-v0.63.0) (2024-03-24)
+
+
+### Features
+
+* **www:** DDT-73 Improve styling and API update handling ([3e978be](https://github.com/Deft-Dodo-Web-Development/website/commit/3e978be525f7fa9a3ff6eb5bf02d24962005420d))
+
 ## [0.62.0](https://github.com/Deft-Dodo-Web-Development/website/compare/@deft-dodo/www-v0.61.0...@deft-dodo/www-v0.62.0) (2024-03-24)
 
 
