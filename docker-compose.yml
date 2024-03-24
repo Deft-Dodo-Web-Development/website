@@ -25,7 +25,7 @@ services:
       - "1337:1337"
     container_name: deftdodo_strapi
     volumes:
-      - ./apps/api:/var/www/html
+      - strapi-data:/app/apps/api
     restart: always
     environment:
         ADMIN_JWT_SECRET: ${ADMIN_JWT_SECRET}
@@ -67,3 +67,4 @@ services:
 
 volumes:
   deft_dodo_data:
+  strapi-data:
