@@ -1,5 +1,12 @@
 
 
+## [0.21.0](https://github.com/Deft-Dodo-Web-Development/website/compare/@deft-dodo/api-v0.20.2...@deft-dodo/api-v0.21.0) (2024-03-24)
+
+
+### Features
+
+* **api:** DDT-73 Update configuration and component definitions ([931d1ec](https://github.com/Deft-Dodo-Web-Development/website/commit/931d1ec7fd0acfeeb1331722e6e514c85446e676))
+
 ## [0.20.2](https://github.com/Deft-Dodo-Web-Development/website/compare/@deft-dodo/api-v0.20.1...@deft-dodo/api-v0.20.2) (2024-03-24)
 
 
