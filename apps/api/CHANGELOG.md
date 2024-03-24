@@ -1,5 +1,12 @@
 
 
+## [0.19.1](https://github.com/Deft-Dodo-Web-Development/website/compare/@deft-dodo/api-v0.19.0...@deft-dodo/api-v0.19.1) (2024-03-24)
+
+
+### Bug Fixes
+
+* **api:** Correct spacing issue in social platform enumeration ([dafed64](https://github.com/Deft-Dodo-Web-Development/website/commit/dafed64abf2d7035ec49888793f5a389c9040f29))
+
 ## [0.19.0](https://github.com/Deft-Dodo-Web-Development/website/compare/@deft-dodo/api-v0.18.0...@deft-dodo/api-v0.19.0) (2024-03-23)
 
 
