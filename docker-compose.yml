@@ -31,7 +31,6 @@ services:
         ADMIN_JWT_SECRET: ${ADMIN_JWT_SECRET}
         API_TOKEN_SALT: ${API_TOKEN_SALT}
         APP_KEYS: ${APP_KEYS}
-        DATABASE_CLIENT: ${DB_CLIENT:-postgres}
 
         # -- START DATABASE CONFIGURATION --
         DATABASE_HOST: ${DB_HOST:-main_db}
@@ -39,6 +38,8 @@ services:
         DATABASE_NAME: ${DB_DATABASE:-strapi}
         DATABASE_USERNAME: ${DB_USERNAME}
         DATABASE_PASSWORD: ${DB_PASSWORD}
+        DATABASE_FILENAME: ${DB_FILENAME}
+        DATABASE_CLIENT: ${DB_CLIENT:-postgres}
         # -- END DATABASE CONFIGURATION --
 
         JWT_SECRET: ${JWT_SECRET}
