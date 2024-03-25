@@ -19,7 +19,7 @@ interface DeftDodoConfirmationProps {
   name?: string;
 }
 
-const baseUrl = process.env.SITE_URL ? `https://${process.env.SITE_URL}` : "";
+const baseUrl = process.env.SITE_URL ? process.env.SITE_URL : "";
 
 export const DeftDodoConfirmation = ({
   name: username,
@@ -37,7 +37,7 @@ export const DeftDodoConfirmation = ({
               <Img
                 src={`${baseUrl}/static/deft-dodo.png`}
                 width="130"
-                alt="Vercel"
+                alt="Deft Dodo Logo"
                 className="my-0 mx-auto"
               />
             </Section>
