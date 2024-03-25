@@ -50,4 +50,4 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
           NODE_ENV: "production"
           HUSKY: "0"
-        run: pnpm release --cache-dir=.turbo -- major --ci
+        run: pnpm release --cache-dir=.turbo -- --ci

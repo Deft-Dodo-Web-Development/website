@@ -33,9 +33,7 @@ export const generateMetadata = async (context: Context): Promise<Metadata> => {
   };
 };
 
-const BlogDetailPage: React.FC<Context> = async (context) => {
-  const { slug } = context.params;
-
+export default async function BlogDetailPage({ params: { slug } }: Context) {
   const blog = await getBlogBySlugAction(slug);
 
   if (!blog || !blog?.data?.attributes) return notFound();
@@ -90,6 +88,4 @@ const BlogDetailPage: React.FC<Context> = async (context) => {
       <FooterSetup variant="complex" />
     </>
   );
-};
-
-export default BlogDetailPage;
+}

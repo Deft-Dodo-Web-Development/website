@@ -7,6 +7,7 @@ import { getDictionary } from "@/get-dictionary";
 import Footer from "@widgets/footer";
 import { bisonFont } from "@/modules/common/assets/fonts";
 import Styles from "@/modules/common/components/styles";
+import { Toaster } from "@/modules/common/components/sonner";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -36,6 +37,7 @@ export default function RootLayout({ children, params: { lang } }: Props) {
         <Header lang={lang} />
         <main className="mt-28">{children}</main>
         <Footer />
+        <Toaster />
       </body>
     </html>
   );

@@ -14,6 +14,9 @@ import {
   FormItem,
   FormMessage,
 } from "@components/form";
+import { useState } from "react";
+import { ContactAction } from "../actions/contact.action";
+import { toast } from "sonner";
 
 const formSchema = z.object({
   name: z.string().min(3).max(100),
@@ -22,6 +25,7 @@ const formSchema = z.object({
 });
 
 const ContactForm = () => {
+  const [loading, setLoading] = useState(false);
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -31,9 +35,24 @@ const ContactForm = () => {
     },
   });
 
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    console.log(values);
+  async function onSubmit(values: z.infer<typeof formSchema>) {
+    setLoading(true);
+
+    const res = await ContactAction(values);
+    if (res.status === 200) {
+      form.reset();
+      setLoading(false);
+      return toast.success("Message sent successfully");
+    }
+
+    toast.error(
+      "An error occurred while sending your message. Please try again later, but you can still reach out to us at dan@deftdodo.dev"
+    );
+
+    form.reset();
+    setLoading(false);
   }
+
   return (
     <>
       <Form {...form}>
@@ -97,8 +116,9 @@ const ContactForm = () => {
             variant="outline"
             className="text-[16px] py-6"
             type="submit"
+            disabled={loading}
           >
-            Send Message
+            {loading ? "Sending..." : "Send"}
           </Button>
         </form>
       </Form>
