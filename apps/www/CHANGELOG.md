@@ -1,5 +1,12 @@
 
 
+## [1.1.1](https://github.com/Deft-Dodo-Web-Development/website/compare/@deft-dodo/www-v1.1.0...@deft-dodo/www-v1.1.1) (2024-03-25)
+
+
+### Bug Fixes
+
+* **www:** DDT-74 Move deft-dodo.png to static folder and update middleware config ([5329b87](https://github.com/Deft-Dodo-Web-Development/website/commit/5329b87bba7334457c40e6a548fa901ae9c9ca2a))
+
 ## [1.1.0](https://github.com/Deft-Dodo-Web-Development/website/compare/@deft-dodo/www-v1.0.0...@deft-dodo/www-v1.1.0) (2024-03-25)
 
 
