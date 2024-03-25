@@ -40,19 +40,19 @@ jobs:
       name: Production
     steps:
       - name: Checkout
-        if: contains(github.event.release.tag_name, '@deft-dodo/www')
+        if: contains(github.event.release.tag_name, '@deft-dodo/www') || contains(github.event.release.tag_name, '@deft-dodo/emails')
         uses: actions/checkout@v3
 
       - name: Echo
-        if: contains(github.event.release.tag_name, '@deft-dodo/www')
+        if: contains(github.event.release.tag_name, '@deft-dodo/www') || contains(github.event.release.tag_name, '@deft-dodo/emails')
         run: echo "Building API"
 
       - name: Set up Docker Buildx
-        if: contains(github.event.release.tag_name, '@deft-dodo/www')
+        if: contains(github.event.release.tag_name, '@deft-dodo/www') || contains(github.event.release.tag_name, '@deft-dodo/emails')
         uses: docker/setup-buildx-action@v1
 
       - name: Log in to GitHub Container Registry
-        if: contains(github.event.release.tag_name, '@deft-dodo/www')
+        if: contains(github.event.release.tag_name, '@deft-dodo/www') || contains(github.event.release.tag_name, '@deft-dodo/emails')
         uses: docker/login-action@v1
         with:
           registry: ghcr.io
@@ -60,7 +60,7 @@ jobs:
           password: ${{ secrets.GHCR_PASSWORD }}
 
       - name: Build and push
-        if: contains(github.event.release.tag_name, '@deft-dodo/www')
+        if: contains(github.event.release.tag_name, '@deft-dodo/www') || contains(github.event.release.tag_name, '@deft-dodo/emails')
         run: |
           export NEXT_PUBLIC_STRAPI_URL=http://127.0.0.1:1337
           docker-compose -f docker-compose.yml build website
@@ -68,7 +68,7 @@ jobs:
 
   pull-changes:
     needs: [publish-api, publish-website]
-    if: contains(github.event.release.tag_name, '@deft-dodo/www') || contains(github.event.release.tag_name, '@deft-dodo/api')
+    if: contains(github.event.release.tag_name, '@deft-dodo/www') || contains(github.event.release.tag_name, '@deft-dodo/api') ||  contains(github.event.release.tag_name, '@deft-dodo/emails')
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -87,7 +87,7 @@ jobs:
 
   execute-update:
     needs: pull-changes
-    if: contains(github.event.release.tag_name, '@deft-dodo/www') || contains(github.event.release.tag_name, '@deft-dodo/api')
+    if: contains(github.event.release.tag_name, '@deft-dodo/www') || contains(github.event.release.tag_name, '@deft-dodo/api') ||  contains(github.event.release.tag_name, '@deft-dodo/emails')
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -101,6 +101,6 @@ jobs:
         env:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
 
-      - name: Pull changes
+      - name: Execute update
         run: |
-          ssh -i ~/.ssh/id_rsa ubuntu@${{ secrets.AWS_IP }} "(sleep 60; curl -X POST https://deftdodo.dev/api/update -H 'Content-Type: application/json') &"
+          ssh -i ~/.ssh/id_rsa ubuntu@${{ secrets.AWS_IP }} "curl -X POST https://deftdodo.dev/api/update -H 'Content-Type: application/json'"
