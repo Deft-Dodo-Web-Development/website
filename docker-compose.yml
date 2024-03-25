@@ -64,6 +64,8 @@ services:
     environment:
       STRAPI_ACCESS_TOKEN: ${STRAPI_ACCESS_TOKEN}
       NEXT_PUBLIC_STRAPI_URL: ${NEXT_PUBLIC_STRAPI_URL:-http://strapi:1337}
+      SITE_URL: ${WEBSITE_URL}
+      RESEND_API_KEY: ${RESEND_API_KEY}
 
 volumes:
   deft_dodo_data:
