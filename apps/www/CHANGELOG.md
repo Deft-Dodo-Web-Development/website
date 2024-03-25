@@ -1,5 +1,13 @@
 
 
+## [1.1.0](https://github.com/Deft-Dodo-Web-Development/website/compare/@deft-dodo/www-v1.0.0...@deft-dodo/www-v1.1.0) (2024-03-25)
+
+
+### Features
+
+* **www:** DDT-74 Enhance contact action with sender email configuration and notification ([12745f3](https://github.com/Deft-Dodo-Web-Development/website/commit/12745f3b47e3ad7d5eccc85b6a313b219ecbc752))
+* **www:** DDT-74 Integrate emails service and enhance contact form ([2e5ece9](https://github.com/Deft-Dodo-Web-Development/website/commit/2e5ece90d79196e6ec7adfc79fb9cb0599028b17))
+
 ## [1.0.0](https://github.com/Deft-Dodo-Web-Development/website/compare/@deft-dodo/www-v0.64.0...@deft-dodo/www-v1.0.0) (2024-03-24)
 
 
