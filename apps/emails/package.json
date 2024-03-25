@@ -1,0 +1,25 @@
+{
+  "name": "@deft-dodo/emails",
+  "version": "1.0.0-beta.0",
+  "private": true,
+  "scripts": {
+    "build": "email build",
+    "dev": "email dev --port 3001",
+    "export": "email export",
+    "release": "release-it"
+  },
+  "dependencies": {
+    "@react-email/components": "0.0.15",
+    "@react-email/tailwind": "^0.0.14",
+    "react": "18.2.0",
+    "react-email": "2.1.0"
+  },
+  "devDependencies": {
+    "@deft-dodo/config-release-it": "workspace:*",
+    "@deft-dodo/eslint-config": "workspace:*",
+    "@deft-dodo/typescript-config": "workspace:*",
+    "@types/node": "^20.11.30",
+    "@types/react": "18.2.33",
+    "@types/react-dom": "18.2.14"
+  }
+}
