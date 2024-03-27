@@ -80,7 +80,7 @@ const Experience: React.FC<ExperienceProps> = ({
               href={button.url}
               variant={(button.variant as any) || "default"}
               icon="ArrowUpRight"
-              className="px-14 py-7 text-xl leading-6 hover:bg-white-8 hover:text-white"
+              className="px-14 py-7 text-xl leading-6 hover:bg-[#2e2e2e] hover:text-white"
             >
               {button.text}
             </Button>
