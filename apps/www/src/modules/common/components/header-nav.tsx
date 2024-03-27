@@ -65,7 +65,7 @@ const NavItem: React.FC<{ title: string; link: string }> = ({
           className="relative"
           initial={isActive || isOnPage ? "hover" : "default"}
           animate={isActive || isOnPage ? "hover" : "default"}
-          transition={{ ease: "easeInOut", duration: 0.3, delay: 0.1 }}
+          transition={{ ease: "linear", duration: 0.2, delay: 0.1 }}
           variants={{
             hover: {
               opacity: 0,
@@ -81,13 +81,12 @@ const NavItem: React.FC<{ title: string; link: string }> = ({
           className="!absolute bottom-0 left-0"
           initial={isActive || isOnPage ? "hover" : "default"}
           animate={isActive || isOnPage ? "hover" : "default"}
-          transition={{ duration: 0.3, ease: "easeInOut" }}
+          transition={{ duration: 0.2, ease: "linear" }}
           variants={{
             hover: {
               bottom: 0,
               opacity: 1,
               color: "#09C5A3",
-              pointerEvents: "auto",
             },
             default: {
               bottom: "-100%",
