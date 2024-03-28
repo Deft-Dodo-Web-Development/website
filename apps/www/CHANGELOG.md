@@ -1,5 +1,13 @@
 
 
+## [1.3.0](https://github.com/Deft-Dodo-Web-Development/website/compare/@deft-dodo/www-v1.2.0...@deft-dodo/www-v1.3.0) (2024-03-28)
+
+
+### Features
+
+* **www:** add validation for portfolio page ([ae9eaed](https://github.com/Deft-Dodo-Web-Development/website/commit/ae9eaed0681c339490c72362c6a5181a7250227e))
+* **www:** changes to home page's project section ([ea16a81](https://github.com/Deft-Dodo-Web-Development/website/commit/ea16a8158f257ae80f1be85559e7a44b15823f9e))
+
 ## [1.2.0](https://github.com/Deft-Dodo-Web-Development/website/compare/@deft-dodo/www-v1.1.1...@deft-dodo/www-v1.2.0) (2024-03-28)
 
 
