@@ -1,5 +1,13 @@
 
 
+## [1.2.0](https://github.com/Deft-Dodo-Web-Development/website/compare/@deft-dodo/www-v1.1.1...@deft-dodo/www-v1.2.0) (2024-03-28)
+
+
+### Features
+
+* **www:** change nav items hover animation ([589bb73](https://github.com/Deft-Dodo-Web-Development/website/commit/589bb7360b94bb2a62b12fc5c9586fea37b92e2c))
+* **www:** change on hover button background ([235560e](https://github.com/Deft-Dodo-Web-Development/website/commit/235560eba1b950240a3eb44fcc3853f5e2acd852))
+
 ## [1.1.1](https://github.com/Deft-Dodo-Web-Development/website/compare/@deft-dodo/www-v1.1.0...@deft-dodo/www-v1.1.1) (2024-03-25)
 
 
