@@ -10,7 +10,7 @@ export type ServiceCardProps = Services & {
   variant?: "default" | "primary";
 };
 
-type ButtonVariant = "default" | "outline";
+type ButtonVariant = "default" | "outline" | "primary";
 
 const ServiceCard: React.FC<ServiceCardProps> = ({
   attributes: { title, cta, icon, summary, slug },
@@ -58,7 +58,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
         <Button
           icon="ArrowUpRight"
           variant={settings[variant].buttonVariant}
-          className="text-sm"
+          className={`text-sm ${settings[variant].buttonVariant == "default" ? "hover:bg-[#2e2e2e] hover:text-white" : ""}`}
           href={`/${locale}/services/${slug}`}
         >
           {cta}
