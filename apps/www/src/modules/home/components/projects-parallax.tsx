@@ -41,7 +41,7 @@ export const HeroParallax = ({
     offset: ["start start", "end start"],
   });
 
-  const springConfig = { stiffness: 300, damping: 30, bounce: 100 };
+  const springConfig = { stiffness: 300, damping: 80, bounce: 100 };
   const space = 50 * productLength;
 
   const translateX = useSpring(
@@ -65,7 +65,7 @@ export const HeroParallax = ({
     springConfig
   );
   const translateY = useSpring(
-    useTransform(scrollYProgress, [0, 0.2], [-700, 500]),
+    useTransform(scrollYProgress, [0, 0.2], [-700, 700]),
     springConfig
   );
   return (
@@ -184,7 +184,7 @@ export const ProductCard = ({
         )}
       >
         <h2 className="text-secondary text-xl">{product.title}</h2>
-        <p className="left-4 text-white-56">{product.summary}</p>
+        <p className="left-4 text-white">{product.summary}</p>
       </div>
     </motion.div>
   );
