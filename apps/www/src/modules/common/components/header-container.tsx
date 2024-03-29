@@ -40,7 +40,7 @@ const HeaderContainer: React.FC<HeaderContainerProps> = ({
         isScrolled ? "py-4 headerWithBlur border-b-2" : "py-9"
       )}
     >
-      <div className="container flex items-center justify-between min-h-10">
+      <div className="container flex items-center justify-between min-h-10 relative">
         {children}
       </div>
 

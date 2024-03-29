@@ -13,9 +13,9 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
   attributes: { identity, message, title, stars },
 }) => {
   return (
-    <article className="relative pt-12">
+    <article className="relative pt-12 h-full">
       <Quote className="absolute w-24 h-24 top-0 right-0 fill-secondary stroke-primary pr-6" />
-      <div className="flex flex-col flex-wrap items-center py-12 px-6 md:px-8 bg-white-8">
+      <div className="flex flex-col flex-wrap justify-between h-full py-12 px-6 md:px-8 bg-white-8">
         {title || message ? (
           <p className="font-medium text-sm md:text-base">
             {title ? (

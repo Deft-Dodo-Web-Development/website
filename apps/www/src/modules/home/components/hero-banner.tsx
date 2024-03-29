@@ -60,7 +60,7 @@ const HeroBanner: React.FC<HeroBannerProps> = ({
               )}
 
               {description && (
-                <p className="mt-12 text-1xl font-sans">{description}</p>
+                <p className="mt-12 text-1xl font-sans max-w-3xl mx-auto">{description}</p>
               )}
 
               {cta && (
