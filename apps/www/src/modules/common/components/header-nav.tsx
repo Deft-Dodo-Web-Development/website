@@ -40,7 +40,7 @@ const navItems = [
       },
       {
         title: "Linkedin",
-        link: "https://www.linkedin.com/in/dan-duehren-61743149/",
+        link: "https://www.linkedin.com/in/deft-dodo-web-development-1a6a592bb/",
         target: "_blank",
       }
     ]
