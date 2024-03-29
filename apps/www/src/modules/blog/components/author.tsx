@@ -18,23 +18,7 @@ const icons: {
 const Author: React.FC<AuthorProps> = (author) => {
     return (
         <div>
-            {!!author.data?.attributes.social?.length && (
-                <div className="flex mb-4 -mx-2">
-                    {author.data?.attributes.social.map((item, index) => (
-                        <a
-                            key={index}
-                            href={item.link}
-                            className="mx-2 text-primary dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 group-hover:text-white"
-                            aria-label="Reddit"
-                            target="_blank"
-                            rel="noreferrer"
-                        >
-                            {icons[item.platform]}
-                        </a>
-                    ))}
-                </div>
-            )}
-            <div className="flex items-center justify-start gap-4">
+            <div className="flex items-center justify-start gap-4 mb-4">
                 {author.data?.attributes.picture?.data?.attributes ? (
                     <Avatar className="w-14 h-14">
                         <AvatarImage
@@ -43,6 +27,7 @@ const Author: React.FC<AuthorProps> = (author) => {
                                 author.data?.attributes.picture.data.attributes.alternativeText ||
                                 author.data?.attributes.name
                             }
+                            className="object-cover"
                         />
                     </Avatar>
                 ) : null}
@@ -58,6 +43,22 @@ const Author: React.FC<AuthorProps> = (author) => {
                     </div>
                 ) : null}
             </div>
+            {!!author.data?.attributes.social?.length && (
+                <div className="flex -mx-2">
+                    {author.data?.attributes.social.map((item, index) => (
+                        <a
+                            key={index}
+                            href={item.link}
+                            className="mx-2 text-primary dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 group-hover:text-white"
+                            aria-label="Reddit"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            {icons[item.platform]}
+                        </a>
+                    ))}
+                </div>
+            )}
         </div>
     )
 };
