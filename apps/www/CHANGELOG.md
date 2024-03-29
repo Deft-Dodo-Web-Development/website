@@ -1,5 +1,17 @@
 
 
+## [1.4.0](https://github.com/Deft-Dodo-Web-Development/website/compare/@deft-dodo/www-v1.3.0...@deft-dodo/www-v1.4.0) (2024-03-29)
+
+
+### Features
+
+* change linkedin link ([844031a](https://github.com/Deft-Dodo-Web-Development/website/commit/844031aafd3c6dcc9c4189ea4f18a68aa6bdadcd))
+* **www:** add children items for resources ([bd79f39](https://github.com/Deft-Dodo-Web-Development/website/commit/bd79f3956a59fb7f4383f9aee807c68c8917423a))
+* **www:** change hero banner description width ([2793880](https://github.com/Deft-Dodo-Web-Development/website/commit/2793880a066235bd0eab109cc1e7449c941e1373))
+* **www:** change page content headings to color primary ([36afb7a](https://github.com/Deft-Dodo-Web-Development/website/commit/36afb7ac520268926d1c010f6508fe4a29c500e6))
+* **www:** change testimonial card height to adapt ([0407167](https://github.com/Deft-Dodo-Web-Development/website/commit/04071672749dcd5b72debddf441289fd97b353ee))
+* **www:** switch social list position ([52758aa](https://github.com/Deft-Dodo-Web-Development/website/commit/52758aafaf123253ef6f68fd871f0c5da9387196))
+
 ## [1.3.0](https://github.com/Deft-Dodo-Web-Development/website/compare/@deft-dodo/www-v1.2.0...@deft-dodo/www-v1.3.0) (2024-03-28)
 
 
