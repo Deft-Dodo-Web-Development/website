@@ -4,6 +4,7 @@ import { Heading } from "@components/heading";
 import ServiceCard from "@/modules/services/components/service-card";
 import { Button } from "@/modules/common/components/button";
 import { Components } from "@/modules/common/types/components";
+import { SkeletonIcon } from "@/modules/common/components/skeleton-icon";
 
 export type FeaturedServicesProps = Components.Services;
 
@@ -21,7 +22,7 @@ const FeaturedServices: React.FC<FeaturedServicesProps> = ({
     <Container enabled={with_container}>
       <Layout className="lg:grid-cols-1 xl:grid-cols-7 my-10 md:my-14 lg:my-16">
         {heading || description ? (
-          <div className="w-full md:col-span-1 xl:col-span-3">
+          <div className="w-full md:col-span-1 xl:col-span-3 xl:sticky xl:top-20 xl:h-fit">
             {heading ? (
               <Heading
                 variant="primary"
@@ -38,6 +39,7 @@ const FeaturedServices: React.FC<FeaturedServicesProps> = ({
             {description ? (
               <p className="text-lg text-white mt-3">{description}</p>
             ) : null}
+            <SkeletonIcon className="mt-4 hidden xl:block" />
           </div>
         ) : null}
 
