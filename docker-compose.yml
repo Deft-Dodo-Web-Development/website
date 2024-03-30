@@ -23,8 +23,8 @@ services:
         DATABASE_NAME: ${DB_DATABASE:-strapi}
         DATABASE_USERNAME: ${DB_USERNAME}
         DATABASE_PASSWORD: ${DB_PASSWORD}
-        DATABASE_FILENAME: ${DB_FILENAME}
-        DATABASE_CLIENT: ${DB_CLIENT:-postgres}
+        DATABASE_FILENAME: ${DB_FILENAME:-/public-data/db/data.db}
+        DATABASE_CLIENT: ${DB_CLIENT:-sqlite}
         # -- END DATABASE CONFIGURATION --
 
         JWT_SECRET: ${JWT_SECRET}
@@ -33,24 +33,24 @@ services:
         TRANSFER_TOKEN_SALT: ${TRANSFER_TOKEN_SALT}
         URL: ${URL}
 
-  website:
-    image: ghcr.io/deft-dodo-web-development/website:latest
-    depends_on:
-      - strapi
-    build:
-      context: .
-      dockerfile: ./apps/www/Dockerfile
-    ports:
-      - "3000:3000"
-    container_name: deftdodo_website
-    volumes:
-      - ./apps/website:/var/www/html
-    restart: always
-    environment:
-      STRAPI_ACCESS_TOKEN: ${STRAPI_ACCESS_TOKEN}
-      NEXT_PUBLIC_STRAPI_URL: ${NEXT_PUBLIC_STRAPI_URL:-http://strapi:1337}
-      SITE_URL: ${WEBSITE_URL}
-      RESEND_API_KEY: ${RESEND_API_KEY}
+  # website:
+  #   image: ghcr.io/deft-dodo-web-development/website:latest
+  #   depends_on:
+  #     - strapi
+  #   build:
+  #     context: .
+  #     dockerfile: ./apps/www/Dockerfile
+  #   ports:
+  #     - "3000:3000"
+  #   container_name: deftdodo_website
+  #   volumes:
+  #     - ./apps/website:/var/www/html
+  #   restart: always
+  #   environment:
+  #     STRAPI_ACCESS_TOKEN: ${STRAPI_ACCESS_TOKEN}
+  #     NEXT_PUBLIC_STRAPI_URL: ${NEXT_PUBLIC_STRAPI_URL:-http://strapi:1337}
+  #     SITE_URL: ${WEBSITE_URL}
+  #     RESEND_API_KEY: ${RESEND_API_KEY}
 
 volumes:
   deft_dodo_data:
