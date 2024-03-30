@@ -51,7 +51,7 @@ const FeaturedServices: React.FC<FeaturedServicesProps> = ({
                 : "w-full md:col-span-1 xl:col-span-4"
             }
           >
-            <ul className="grid grid-cols-1 gap-8 sm:grid-cols-2 overflow-auto scroll-smooth lg:pb-4 lg:flex lg:snap-mandatory lg:snap-x xl:grid xl:grid-cols-2">
+            <ul className="h-full grid grid-cols-1 gap-8 sm:grid-cols-2 overflow-auto scroll-smooth lg:pb-4 lg:flex lg:snap-mandatory lg:snap-x xl:grid xl:grid-cols-2">
               {services.data?.map((service, index) => (
                 <li
                   className="h-full lg:flex-[0_0_33.333333%] lg:snap-center"
