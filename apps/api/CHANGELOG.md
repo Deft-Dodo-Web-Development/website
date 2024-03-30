@@ -1,5 +1,12 @@
 
 
+## [1.2.4](https://github.com/Deft-Dodo-Web-Development/website/compare/@deft-dodo/api-v1.2.3...@deft-dodo/api-v1.2.4) (2024-03-30)
+
+
+### Bug Fixes
+
+* **api:** make description field required in image-with-text component ([fef35e9](https://github.com/Deft-Dodo-Web-Development/website/commit/fef35e9abab1e25e8589ebc32f2818911e15438d))
+
 ## [1.2.3](https://github.com/Deft-Dodo-Web-Development/website/compare/@deft-dodo/api-v1.2.0...@deft-dodo/api-v1.2.3) (2024-03-30)
 
 
