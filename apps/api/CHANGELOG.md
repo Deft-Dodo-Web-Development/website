@@ -1,5 +1,12 @@
 
 
+## [1.2.1](https://github.com/Deft-Dodo-Web-Development/website/compare/@deft-dodo/api-v1.2.0...@deft-dodo/api-v1.2.1) (2024-03-30)
+
+
+### Bug Fixes
+
+* **api:** revert image component changes ([63c2732](https://github.com/Deft-Dodo-Web-Development/website/commit/63c27329101419e826f56bc8de210a89a3ea5ec0))
+
 ## [1.2.0](https://github.com/Deft-Dodo-Web-Development/website/compare/@deft-dodo/api-v1.1.0...@deft-dodo/api-v1.2.0) (2024-03-30)
 
 
