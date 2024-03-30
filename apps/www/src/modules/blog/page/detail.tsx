@@ -51,7 +51,7 @@ export default async function BlogDetailPage({ params: { slug } }: Context) {
       />
       <Container enabled={true}>
         <Layout className="lg:grid-cols-8">
-          <div className="w-full lg:col-span-2 mt-8 mb-4 order-last lg:order-first">
+          <div className="w-full lg:col-span-2 mt-8 mb-4 order-last lg:order-first lg:sticky lg:h-fit lg:top-20">
             {author && (
               <>
                 <Author {...author} />
