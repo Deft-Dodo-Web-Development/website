@@ -1,5 +1,19 @@
 
 
+## [1.2.2](https://github.com/Deft-Dodo-Web-Development/website/compare/@deft-dodo/api-v1.2.1...@deft-dodo/api-v1.2.2) (2024-03-30)
+
+
+### Bug Fixes
+
+* **api:** revert image with text component changes ([64bf4e2](https://github.com/Deft-Dodo-Web-Development/website/commit/64bf4e2e64e7581e968ae5d3f00bc7cca722cf42))
+
+## [1.2.1](https://github.com/Deft-Dodo-Web-Development/website/compare/@deft-dodo/api-v1.2.0...@deft-dodo/api-v1.2.1) (2024-03-30)
+
+
+### Bug Fixes
+
+* **api:** revert image component changes ([63c2732](https://github.com/Deft-Dodo-Web-Development/website/commit/63c27329101419e826f56bc8de210a89a3ea5ec0))
+
 ## [1.2.0](https://github.com/Deft-Dodo-Web-Development/website/compare/@deft-dodo/api-v1.1.0...@deft-dodo/api-v1.2.0) (2024-03-30)
 
 
