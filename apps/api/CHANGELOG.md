@@ -1,5 +1,12 @@
 
 
+## [1.3.1](https://github.com/Deft-Dodo-Web-Development/website/compare/@deft-dodo/api-v1.3.0...@deft-dodo/api-v1.3.1) (2024-03-30)
+
+
+### Bug Fixes
+
+* **api:** enhance database configuration and connection pooling ([4646c50](https://github.com/Deft-Dodo-Web-Development/website/commit/4646c50e0488999419bf1b985aa63f256d6f1f06))
+
 ## [1.3.0](https://github.com/Deft-Dodo-Web-Development/website/compare/@deft-dodo/api-v1.2.5...@deft-dodo/api-v1.3.0) (2024-03-30)
 
 
