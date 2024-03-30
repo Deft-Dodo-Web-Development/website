@@ -1,5 +1,12 @@
 
 
+## [1.1.0](https://github.com/Deft-Dodo-Web-Development/website/compare/@deft-dodo/api-v1.0.0...@deft-dodo/api-v1.1.0) (2024-03-30)
+
+
+### Features
+
+* **api:** change description field type to richtext ([52d721f](https://github.com/Deft-Dodo-Web-Development/website/commit/52d721f02513dcf665d6af9cce8293780bb2d0d0))
+
 ## [1.0.0](https://github.com/Deft-Dodo-Web-Development/website/compare/@deft-dodo/api-v0.22.0...@deft-dodo/api-v1.0.0) (2024-03-24)
 
 
