@@ -24,7 +24,7 @@ const Content = () => {
           </Heading>
 
           <h1 className="text-4xl font-semibold sm:text-5xl"></h1>
-          <p className="text-white-56 mt-3">
+          <p className="text-white mt-3">
             Sorry, the page you are looking for could not be found or has been
             removed.
           </p>
