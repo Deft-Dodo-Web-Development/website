@@ -75,20 +75,6 @@
           "sortable": false
         }
       },
-      "description": {
-        "edit": {
-          "label": "description",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "description",
-          "searchable": true,
-          "sortable": true
-        }
-      },
       "overview": {
         "edit": {
           "label": "overview",
@@ -102,26 +88,40 @@
           "searchable": false,
           "sortable": false
         }
+      },
+      "description": {
+        "edit": {
+          "label": "description",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "description",
+          "searchable": false,
+          "sortable": false
+        }
       }
     },
     "layouts": {
       "list": [
         "id",
-        "image",
         "image_alignment",
+        "image",
         "badges"
       ],
       "edit": [
         [
           {
-            "name": "image",
-            "size": 12
+            "name": "image_alignment",
+            "size": 6
           }
         ],
         [
           {
-            "name": "image_alignment",
-            "size": 6
+            "name": "image",
+            "size": 12
           }
         ],
         [
@@ -138,13 +138,13 @@
         ],
         [
           {
-            "name": "description",
-            "size": 6
+            "name": "overview",
+            "size": 12
           }
         ],
         [
           {
-            "name": "overview",
+            "name": "description",
             "size": 12
           }
         ]

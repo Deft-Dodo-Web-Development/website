@@ -32,58 +32,18 @@
           "searchable": false,
           "sortable": false
         }
-      },
-      "widht": {
-        "edit": {
-          "label": "widht",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "widht",
-          "searchable": true,
-          "sortable": true
-        }
-      },
-      "height": {
-        "edit": {
-          "label": "height",
-          "description": "",
-          "placeholder": "",
-          "visible": true,
-          "editable": true
-        },
-        "list": {
-          "label": "height",
-          "searchable": true,
-          "sortable": true
-        }
       }
     },
     "layouts": {
       "list": [
         "id",
-        "image",
-        "widht",
-        "height"
+        "image"
       ],
       "edit": [
         [
           {
             "name": "image",
             "size": 6
-          },
-          {
-            "name": "widht",
-            "size": 4
-          }
-        ],
-        [
-          {
-            "name": "height",
-            "size": 4
           }
         ]
       ]

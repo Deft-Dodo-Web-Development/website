@@ -180,17 +180,15 @@
       "list": [
         "id",
         "title",
-        "createdAt",
-        "updatedAt"
+        "cta",
+        "slug"
       ],
       "edit": [
         [
           {
             "name": "title",
             "size": 6
-          }
-        ],
-        [
+          },
           {
             "name": "cta",
             "size": 6

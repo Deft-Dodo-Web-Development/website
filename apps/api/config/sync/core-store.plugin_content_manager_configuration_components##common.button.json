@@ -7,7 +7,7 @@
       "searchable": true,
       "pageSize": 10,
       "mainField": "text",
-      "defaultSortBy": "id",
+      "defaultSortBy": "text",
       "defaultSortOrder": "ASC"
     },
     "metadatas": {
@@ -65,9 +65,9 @@
     "layouts": {
       "list": [
         "id",
+        "text",
         "url",
-        "variant",
-        "text"
+        "variant"
       ],
       "edit": [
         [

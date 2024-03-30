@@ -73,14 +73,12 @@
       "edit": [
         [
           {
-            "name": "with_container",
-            "size": 4
-          }
-        ],
-        [
-          {
             "name": "projects",
             "size": 6
+          },
+          {
+            "name": "with_container",
+            "size": 4
           }
         ],
         [

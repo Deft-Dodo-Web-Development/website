@@ -109,9 +109,9 @@
     "layouts": {
       "list": [
         "id",
+        "seo",
         "createdAt",
-        "updatedAt",
-        "createdBy"
+        "updatedAt"
       ],
       "edit": [
         [

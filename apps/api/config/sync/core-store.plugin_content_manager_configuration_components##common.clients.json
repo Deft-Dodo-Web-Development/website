@@ -66,20 +66,21 @@
       "list": [
         "id",
         "image",
-        "width"
+        "width",
+        "height"
       ],
       "edit": [
         [
           {
             "name": "image",
             "size": 6
-          }
-        ],
-        [
+          },
           {
             "name": "width",
             "size": 4
-          },
+          }
+        ],
+        [
           {
             "name": "height",
             "size": 4

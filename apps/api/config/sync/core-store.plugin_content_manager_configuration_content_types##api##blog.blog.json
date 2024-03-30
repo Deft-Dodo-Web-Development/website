@@ -197,7 +197,7 @@
         "id",
         "title",
         "image",
-        "createdAt"
+        "summary"
       ],
       "edit": [
         [
@@ -212,8 +212,8 @@
         ],
         [
           {
-            "name": "slug",
-            "size": 6
+            "name": "body",
+            "size": 12
           }
         ],
         [
@@ -224,7 +224,7 @@
         ],
         [
           {
-            "name": "body",
+            "name": "seo",
             "size": 12
           }
         ],
@@ -240,8 +240,8 @@
         ],
         [
           {
-            "name": "seo",
-            "size": 12
+            "name": "slug",
+            "size": 6
           }
         ]
       ]
