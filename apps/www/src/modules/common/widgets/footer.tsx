@@ -40,7 +40,7 @@ const BaseFooter = ({
           {info?.email ? (<Link className="block" href={`mailto:${info.email}`} >{info.email}</Link>) : null}
         </div>
       </section>
-      {socials?.length > 0 ? (
+      {socials && socials.length > 0 ? (
         <ul className="flex gap-4 mt-3 flex-wrap md:flex-nowrap justify-center sm:justify-normal">
           {socials?.map((social, i) => (
             <li key={`${social.text}-${i}`}>
