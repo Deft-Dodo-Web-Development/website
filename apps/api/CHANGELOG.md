@@ -1,5 +1,12 @@
 
 
+## [1.3.2](https://github.com/Deft-Dodo-Web-Development/website/compare/@deft-dodo/api-v1.3.1...@deft-dodo/api-v1.3.2) (2024-03-30)
+
+
+### Bug Fixes
+
+* **api:** remove extended pool configurations for SQLite database ([d29e81d](https://github.com/Deft-Dodo-Web-Development/website/commit/d29e81d8759c0c4f163db84945530f8c65ed0775))
+
 ## [1.3.1](https://github.com/Deft-Dodo-Web-Development/website/compare/@deft-dodo/api-v1.3.0...@deft-dodo/api-v1.3.1) (2024-03-30)
 
 
