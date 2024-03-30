@@ -1,5 +1,12 @@
 
 
+## [1.2.3](https://github.com/Deft-Dodo-Web-Development/website/compare/@deft-dodo/api-v1.2.0...@deft-dodo/api-v1.2.3) (2024-03-30)
+
+
+### Bug Fixes
+
+* **api:** revert changes ([1fbbafc](https://github.com/Deft-Dodo-Web-Development/website/commit/1fbbafc5ac3aae91a6f6253dd38a4a6b9098c8a1))
+
 ## [1.2.2](https://github.com/Deft-Dodo-Web-Development/website/compare/@deft-dodo/api-v1.2.1...@deft-dodo/api-v1.2.2) (2024-03-30)
 
 
