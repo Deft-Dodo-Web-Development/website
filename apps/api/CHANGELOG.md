@@ -1,5 +1,12 @@
 
 
+## [1.3.0](https://github.com/Deft-Dodo-Web-Development/website/compare/@deft-dodo/api-v1.2.5...@deft-dodo/api-v1.3.0) (2024-03-30)
+
+
+### Features
+
+* **api:** configure database connection pooling ([d82fa54](https://github.com/Deft-Dodo-Web-Development/website/commit/d82fa5422ba0dfa36af9087269973a9762e99e17))
+
 ## [1.2.5](https://github.com/Deft-Dodo-Web-Development/website/compare/@deft-dodo/api-v1.2.4...@deft-dodo/api-v1.2.5) (2024-03-30)
 
 
