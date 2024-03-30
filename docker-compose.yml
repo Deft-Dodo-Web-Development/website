@@ -1,23 +1,8 @@
 version: '3.8'
 
 services:
-  main_db:
-    image: postgres:16.2
-    environment:
-      POSTGRES_PASSWORD: ${DB_PASSWORD}
-      POSTGRES_DB: ${DB_DATABASE:-strapi}
-      POSTGRES_USER: ${DB_USERNAME}
-    ports:
-      - "${DB_PORT:-5432}:5432"
-    restart: always
-    container_name: deftdodo_db
-    volumes:
-      - deft_dodo_data:/var/lib/postgresql
-
   strapi:
     image: ghcr.io/deft-dodo-web-development/strapi:latest
-    depends_on:
-      - main_db
     build:
       context: .
       dockerfile: ./apps/api/Dockerfile

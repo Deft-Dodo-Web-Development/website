@@ -1,0 +1,8 @@
+node_modules
+.tmp
+.strapi
+dist
+.turbo
+.env
+.env.*
+.next
