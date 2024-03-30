@@ -6,6 +6,7 @@ import { AspectRatio } from "@components/aspect-ratio";
 import { Badge } from "@components/badge";
 import Image from "next/image";
 import { AppConfig } from "@/config/app.config";
+import { RichText } from "./rich-text";
 
 export type ImageWithTextProps = Components.ImageWithText;
 
@@ -85,7 +86,9 @@ const ImageWithText: React.FC<ImageWithTextProps> = ({
             ) : null}
 
             {description ? (
-              <p className="text-lg text-white mt-3">{description}</p>
+              <div className="content">
+                <RichText content={description} />
+              </div>
             ) : null}
 
             {overview.length > 0 ? (

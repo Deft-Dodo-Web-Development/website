@@ -154,7 +154,7 @@ const NavItem: React.FC<linkItem> = ({
       </Link>
       {children.length > 0 ? (
         <motion.div
-          className="sub-menu text-center md:text-start md:absolute md:border-white-16 md:backdrop-blur md:bg-dark/40 md:p-4 md:border-2 top-10 z-60 md:min-w-48"
+          className="sub-menu hidden text-center md:text-start md:absolute md:border-white-16 md:backdrop-blur md:bg-dark/40 md:p-4 md:border-2 top-10 z-60 md:min-w-48"
           initial="exit"
           animate={isHover ? "enter" : "exit"}
           variants={subMenuAnimate}
