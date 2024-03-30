@@ -139,12 +139,12 @@ const NavItem: React.FC<linkItem> = ({
             hover: {
               bottom: 0,
               opacity: 1,
-              color: "#09C5A3",
+              color: "#47CDAB",
             },
             default: {
               bottom: "-100%",
               opacity: 0,
-              color: "#09C5A3",
+              color: "#47CDAB",
               pointerEvents: "none",
             },
           }}
