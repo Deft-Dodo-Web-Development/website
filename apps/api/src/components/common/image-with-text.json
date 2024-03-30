@@ -36,7 +36,8 @@
       "component": "project.overview"
     },
     "description": {
-      "type": "richtext"
+      "type": "richtext",
+      "required": true
     }
   }
 }
