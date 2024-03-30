@@ -124,7 +124,7 @@ export interface CommonImageWithText extends Schema.Component {
     badges: Attribute.Component<'common.badge', true>;
     heading: Attribute.Component<'common.section-content-with-title'>;
     overview: Attribute.Component<'project.overview', true>;
-    description: Attribute.RichText;
+    description: Attribute.Text;
   };
 }
 

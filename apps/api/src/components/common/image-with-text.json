@@ -9,10 +9,7 @@
   "attributes": {
     "image_alignment": {
       "type": "enumeration",
-      "enum": [
-        "right",
-        "left"
-      ],
+      "enum": ["right", "left"],
       "default": "left"
     },
     "image": {
@@ -36,7 +33,7 @@
       "component": "project.overview"
     },
     "description": {
-      "type": "richtext"
+      "type": "text"
     }
   }
 }
