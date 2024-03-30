@@ -1,5 +1,25 @@
 
 
+## [1.5.0](https://github.com/Deft-Dodo-Web-Development/website/compare/@deft-dodo/www-v1.4.0...@deft-dodo/www-v1.5.0) (2024-03-30)
+
+
+### Features
+
+* **www:** add aspect ration to images ([6fa448f](https://github.com/Deft-Dodo-Web-Development/website/commit/6fa448fa43f6dc524fec9f2a5cf2239f9d907b1f))
+* **www:** add data from service to footer ([bf57c7d](https://github.com/Deft-Dodo-Web-Development/website/commit/bf57c7d8fb8c6b575394a1009c88bfa2d06377b6))
+* **www:** add rich text to handle description content ([73883d4](https://github.com/Deft-Dodo-Web-Development/website/commit/73883d413ed0bc9c5bc5f44505640a11c4da45eb))
+* **www:** add skeleton icon to service section ([b215a6a](https://github.com/Deft-Dodo-Web-Development/website/commit/b215a6ad698a28ade330d375f0d5fab0b6acecdd))
+* **www:** change author column to be sticky on lg ([0ee7b33](https://github.com/Deft-Dodo-Web-Development/website/commit/0ee7b3352a98233c34825a24f92b3878a290a82e))
+* **www:** change card's height to adjust dynamically ([5edbd0f](https://github.com/Deft-Dodo-Web-Development/website/commit/5edbd0f4c88de349893338e598a0f61c38cdcec8))
+* **www:** change muted text color to white ([13963f2](https://github.com/Deft-Dodo-Web-Development/website/commit/13963f264409c1ef128b61308020aa31573e3610))
+* **www:** change primary color and adjust componets ([a59d1ac](https://github.com/Deft-Dodo-Web-Development/website/commit/a59d1ac42e47f5f2dde12845a156ca5d2191361a))
+
+
+### Bug Fixes
+
+* **www:** add validation ([6d87b9f](https://github.com/Deft-Dodo-Web-Development/website/commit/6d87b9f150a8aef67ced63ac61967ca1a873acd8))
+* **www:** change text ([e6a75e2](https://github.com/Deft-Dodo-Web-Development/website/commit/e6a75e23a797ff755f40635cd18dcd407943bc89))
+
 ## [1.4.0](https://github.com/Deft-Dodo-Web-Development/website/compare/@deft-dodo/www-v1.3.0...@deft-dodo/www-v1.4.0) (2024-03-29)
 
 
