@@ -1,5 +1,12 @@
 
 
+## [1.2.0](https://github.com/Deft-Dodo-Web-Development/website/compare/@deft-dodo/api-v1.1.0...@deft-dodo/api-v1.2.0) (2024-03-30)
+
+
+### Features
+
+* **api:** update dockerignore to force update ([85df6a2](https://github.com/Deft-Dodo-Web-Development/website/commit/85df6a2989ec3f7c884161559266f85e227f3969))
+
 ## [1.1.0](https://github.com/Deft-Dodo-Web-Development/website/compare/@deft-dodo/api-v1.0.0...@deft-dodo/api-v1.1.0) (2024-03-30)
 
 
