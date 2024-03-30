@@ -4,6 +4,7 @@ import { Heading } from "@components/heading";
 import ServiceCard from "@/modules/services/components/service-card";
 import { Button } from "@/modules/common/components/button";
 import { Components } from "@/modules/common/types/components";
+import { SkeletonIcon } from "@/modules/common/components/skeleton-icon";
 
 export type FeaturedServicesProps = Components.Services;
 
@@ -21,7 +22,7 @@ const FeaturedServices: React.FC<FeaturedServicesProps> = ({
     <Container enabled={with_container}>
       <Layout className="lg:grid-cols-1 xl:grid-cols-7 my-10 md:my-14 lg:my-16">
         {heading || description ? (
-          <div className="w-full md:col-span-1 xl:col-span-3">
+          <div className="w-full md:col-span-1 xl:col-span-3 xl:sticky xl:top-20 xl:h-fit">
             {heading ? (
               <Heading
                 variant="primary"
@@ -38,6 +39,7 @@ const FeaturedServices: React.FC<FeaturedServicesProps> = ({
             {description ? (
               <p className="text-lg text-white mt-3">{description}</p>
             ) : null}
+            <SkeletonIcon className="mt-4 hidden xl:block" />
           </div>
         ) : null}
 
@@ -49,7 +51,7 @@ const FeaturedServices: React.FC<FeaturedServicesProps> = ({
                 : "w-full md:col-span-1 xl:col-span-4"
             }
           >
-            <ul className="grid grid-cols-1 gap-8 sm:grid-cols-2 overflow-auto scroll-smooth lg:pb-4 lg:flex lg:snap-mandatory lg:snap-x xl:grid xl:grid-cols-2">
+            <ul className="h-full grid grid-cols-1 gap-8 sm:grid-cols-2 overflow-auto scroll-smooth lg:pb-4 lg:flex lg:snap-mandatory lg:snap-x xl:grid xl:grid-cols-2">
               {services.data?.map((service, index) => (
                 <li
                   className="h-full lg:flex-[0_0_33.333333%] lg:snap-center"

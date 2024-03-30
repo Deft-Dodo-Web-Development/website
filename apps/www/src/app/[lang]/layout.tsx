@@ -8,6 +8,7 @@ import Footer from "@widgets/footer";
 import { bisonFont } from "@/modules/common/assets/fonts";
 import Styles from "@/modules/common/components/styles";
 import { Toaster } from "@/modules/common/components/sonner";
+import { getFooterData } from "@/modules/common/actions/footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -29,14 +30,17 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-export default function RootLayout({ children, params: { lang } }: Props) {
+export default async function RootLayout({ children, params: { lang } }: Props) {
+  const footerData = await getFooterData();
+  const footer = footerData?.data.attributes;
+
   return (
     <html lang={lang}>
       <body className={`${inter.className} bg-dark text-white`}>
         <Styles bisonFont={bisonFont} />
         <Header lang={lang} />
         <main className="mt-28">{children}</main>
-        <Footer />
+        <Footer {...footer} />
         <Toaster />
       </body>
     </html>

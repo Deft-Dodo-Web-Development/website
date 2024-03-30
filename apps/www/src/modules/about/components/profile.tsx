@@ -1,9 +1,12 @@
+"use client";
+
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import { AppConfig } from "@/config/app.config";
 import { SocialPlatform, TeamMember } from "@/modules/common/types/common";
 import { FiFacebook, FiGithub, FiLinkedin, FiTwitter } from "react-icons/fi";
 import { RichText } from "@/modules/common/components/rich-text";
+import { AspectRatio } from "@radix-ui/react-aspect-ratio";
 
 export type ProfileProps = {
   reverse?: boolean;
@@ -38,7 +41,7 @@ const Profile: React.FC<ProfileProps> = ({
           )}
 
           {!!social?.length && (
-            <div className="flex mt-3 -mx-2">
+            <div className="flex mt-3">
               {social.map((item, index) => (
                 <a
                   key={index}
@@ -64,13 +67,15 @@ const Profile: React.FC<ProfileProps> = ({
 
       <div className={cn("order-1", reverse ? "lg:order-1" : "lg:order-2")}>
         {picture?.data?.attributes && (
-          <Image
-            src={`${AppConfig.strapi.url}${picture?.data?.attributes.url}`}
-            alt={picture?.data?.attributes.alternativeText || name}
-            width={640}
-            height={500}
-            className="w-[640px] h-[500px] object-cover rounded-lg max-lg:mx-auto"
-          />
+          <AspectRatio ratio={picture?.data?.attributes.width / picture?.data?.attributes.height} className="w-full h-full">
+            <Image
+              src={`${AppConfig.strapi.url}${picture?.data?.attributes.url}`}
+              alt={picture?.data?.attributes.alternativeText || name}
+              width={picture?.data?.attributes.width}
+              height={picture?.data?.attributes.height}
+              className="object-cover rounded-lg max-lg:mx-auto"
+            />
+          </AspectRatio>
         )}
       </div>
     </section>

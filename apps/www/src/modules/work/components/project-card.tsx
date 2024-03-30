@@ -40,7 +40,7 @@ const ProjectCard: React.FC<ProjectCardProps> = (card) => {
         {card.title || card.summary ? (
           <div className="flex flex-col mt-6">
             {card.title ? (<h3 className="text-2xl">{card.title}</h3>) : null}
-            {card.summary ? (<p className="text-[16px] text-white-56">{card.summary}</p>) : null}
+            {card.summary ? (<p className="text-[16px] text-white">{card.summary}</p>) : null}
           </div>
         ) : null}
       </Link>

@@ -30,13 +30,13 @@
       "repeatable": false,
       "component": "common.section-content-with-title"
     },
-    "description": {
-      "type": "text"
-    },
     "overview": {
       "type": "component",
       "repeatable": true,
       "component": "project.overview"
+    },
+    "description": {
+      "type": "richtext"
     }
   }
 }

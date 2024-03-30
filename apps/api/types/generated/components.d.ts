@@ -123,8 +123,8 @@ export interface CommonImageWithText extends Schema.Component {
     image: Attribute.Component<'common.image'>;
     badges: Attribute.Component<'common.badge', true>;
     heading: Attribute.Component<'common.section-content-with-title'>;
-    description: Attribute.Text;
     overview: Attribute.Component<'project.overview', true>;
+    description: Attribute.RichText;
   };
 }
 
@@ -137,8 +137,6 @@ export interface CommonImage extends Schema.Component {
   };
   attributes: {
     image: Attribute.Media & Attribute.Required;
-    widht: Attribute.Decimal;
-    height: Attribute.Decimal;
   };
 }
 

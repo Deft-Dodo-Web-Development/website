@@ -6,6 +6,7 @@ import { AspectRatio } from "@components/aspect-ratio";
 import { Badge } from "@components/badge";
 import Image from "next/image";
 import { AppConfig } from "@/config/app.config";
+import { RichText } from "./rich-text";
 
 export type ImageWithTextProps = Components.ImageWithText;
 
@@ -30,9 +31,12 @@ const ImageWithText: React.FC<ImageWithTextProps> = ({
 
   const ImageMarkup = () => {
     if (image) {
+      const width = image.image.data.attributes.width;
+      const height = image.image.data.attributes.height;
+
       return (
         <div className="w-full">
-          <AspectRatio ratio={4 / 3}>
+          <AspectRatio ratio={width / height}>
             <Image
               src={`${AppConfig.strapi.url}${image.image.data.attributes.url}`}
               alt={
@@ -82,7 +86,9 @@ const ImageWithText: React.FC<ImageWithTextProps> = ({
             ) : null}
 
             {description ? (
-              <p className="text-lg text-white mt-3">{description}</p>
+              <div className="content">
+                <RichText content={description} />
+              </div>
             ) : null}
 
             {overview.length > 0 ? (

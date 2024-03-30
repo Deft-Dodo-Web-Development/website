@@ -14,12 +14,6 @@
       "allowedTypes": [
         "images"
       ]
-    },
-    "widht": {
-      "type": "decimal"
-    },
-    "height": {
-      "type": "decimal"
     }
   }
 }
