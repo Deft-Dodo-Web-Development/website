@@ -1,5 +1,12 @@
 
 
+## [1.2.5](https://github.com/Deft-Dodo-Web-Development/website/compare/@deft-dodo/api-v1.2.4...@deft-dodo/api-v1.2.5) (2024-03-30)
+
+
+### Bug Fixes
+
+* **api:** streamline roles and permissions configuration ([274f8ad](https://github.com/Deft-Dodo-Web-Development/website/commit/274f8ad0f8d2aa1379d66ea0018b7a272e3f9a2c))
+
 ## [1.2.4](https://github.com/Deft-Dodo-Web-Development/website/compare/@deft-dodo/api-v1.2.3...@deft-dodo/api-v1.2.4) (2024-03-30)
 
 

@@ -1,7 +1,7 @@
 {
   "name": "@deft-dodo/api",
   "private": true,
-  "version": "1.2.4",
+  "version": "1.2.5",
   "description": "A Strapi application",
   "scripts": {
     "dev": "strapi develop",
