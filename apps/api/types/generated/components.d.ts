@@ -137,6 +137,8 @@ export interface CommonImage extends Schema.Component {
   };
   attributes: {
     image: Attribute.Media & Attribute.Required;
+    widht: Attribute.Decimal;
+    height: Attribute.Decimal;
   };
 }
 

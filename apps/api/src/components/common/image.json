@@ -11,9 +11,13 @@
       "type": "media",
       "multiple": false,
       "required": true,
-      "allowedTypes": [
-        "images"
-      ]
+      "allowedTypes": ["images"]
+    },
+    "widht": {
+      "type": "decimal"
+    },
+    "height": {
+      "type": "decimal"
     }
   }
 }
