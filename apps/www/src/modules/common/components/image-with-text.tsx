@@ -30,9 +30,12 @@ const ImageWithText: React.FC<ImageWithTextProps> = ({
 
   const ImageMarkup = () => {
     if (image) {
+      const width = image.image.data.attributes.width;
+      const height = image.image.data.attributes.height;
+
       return (
         <div className="w-full">
-          <AspectRatio ratio={4 / 3}>
+          <AspectRatio ratio={width / height}>
             <Image
               src={`${AppConfig.strapi.url}${image.image.data.attributes.url}`}
               alt={
