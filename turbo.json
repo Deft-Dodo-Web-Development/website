@@ -1,7 +1,7 @@
 {
   "$schema": "https://turbo.build/schema.json",
   "globalDependencies": ["**/.env.*local"],
-  "pipeline": {
+  "tasks": {
     "build": {
       "dependsOn": ["^build"],
       "outputs": [".next/**", "!.next/cache/**"]
@@ -18,8 +18,7 @@
       "persistent": true
     },
     "release": {
-      "dependsOn": ["^release"],
-      "outputMode": "new-only"
+      "dependsOn": ["^release"]
     }
   }
 }

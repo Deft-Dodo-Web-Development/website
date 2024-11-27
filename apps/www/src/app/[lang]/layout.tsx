@@ -9,6 +9,8 @@ import { bisonFont } from "@/modules/common/assets/fonts";
 import Styles from "@/modules/common/components/styles";
 import { Toaster } from "@/modules/common/components/sonner";
 import { getFooterData } from "@/modules/common/actions/footer";
+import { FacebookPixelEvents } from "@/modules/common/components/pixel-events";
+import { Suspense } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -32,7 +34,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function RootLayout({ children, params: { lang } }: Props) {
   const footerData = await getFooterData();
-  const footer = footerData?.data.attributes;
+  const footer = footerData?.data?.attributes;
 
   return (
     <html lang={lang}>
@@ -42,6 +44,9 @@ export default async function RootLayout({ children, params: { lang } }: Props) 
         <main className="mt-28">{children}</main>
         <Footer {...footer} />
         <Toaster />
+        <Suspense fallback={null}>
+          <FacebookPixelEvents />
+        </Suspense>
       </body>
     </html>
   );
