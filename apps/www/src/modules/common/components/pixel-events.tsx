@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect } from "react";
 import { usePathname, useSearchParams } from "next/navigation";
-import { useRouter } from 'next/router';
+import { useRouter } from 'next/compat/router';
 
 export const FacebookPixelEvents: React.FC = () => {
   const pathname = usePathname();
@@ -15,11 +15,13 @@ export const FacebookPixelEvents: React.FC = () => {
         ReactPixel.init("524958800367603");
         ReactPixel.pageView();
 
-        router.events.on('routeChangeComplete', () => {
-          ReactPixel.pageView();
-        });
+        if (router) {
+          router.events.on('routeChangeComplete', () => {
+            ReactPixel.pageView();
+          });
+        }
       });
-  }, [pathname, searchParams]);
+  }, [pathname, searchParams, router]);
 
   return null;
 };
