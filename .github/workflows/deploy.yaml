@@ -28,6 +28,12 @@ jobs:
           username: ${{ secrets.GHCR_USERNAME }}
           password: ${{ secrets.GHCR_PASSWORD }}
 
+      - name: Install Docker Compose
+        if: contains(github.event.release.tag_name, '@deft-dodo/api')
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y docker-compose
+
       - name: Build and push
         if: contains(github.event.release.tag_name, '@deft-dodo/api')
         run: |
@@ -45,7 +51,7 @@ jobs:
 
       - name: Echo
         if: contains(github.event.release.tag_name, '@deft-dodo/www')
-        run: echo "Building API"
+        run: echo "Building Website"
 
       - name: Set up Docker Buildx
         if: contains(github.event.release.tag_name, '@deft-dodo/www')
@@ -58,6 +64,12 @@ jobs:
           registry: ghcr.io
           username: ${{ secrets.GHCR_USERNAME }}
           password: ${{ secrets.GHCR_PASSWORD }}
+
+      - name: Install Docker Compose
+        if: contains(github.event.release.tag_name, '@deft-dodo/www')
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y docker-compose
 
       - name: Build and push
         if: contains(github.event.release.tag_name, '@deft-dodo/www')
