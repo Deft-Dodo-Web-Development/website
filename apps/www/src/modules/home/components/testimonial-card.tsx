@@ -32,7 +32,7 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
               {identity.picture?.data?.attributes ? (
                 <Avatar className="w-14 h-14">
                   <AvatarImage
-                    src={`${AppConfig.strapi.url}${identity.picture.data.attributes.url}`}
+                    src={`${AppConfig.strapi.url}${identity.picture.data?.attributes?.url}`}
                     alt={
                       identity.picture.data.attributes.alternativeText ||
                       identity.name
@@ -61,7 +61,7 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
                   <Image
                     width={350}
                     height={45}
-                    src={`${AppConfig.strapi.url}${identity.company_logo.data.attributes.url}`}
+                    src={`${AppConfig.strapi.url}${identity.company_logo.data?.attributes?.url}`}
                     alt={
                       identity.company_logo.data.attributes.alternativeText ||
                       identity.name

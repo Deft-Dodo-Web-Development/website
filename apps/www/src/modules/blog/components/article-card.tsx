@@ -25,8 +25,8 @@ const ArticleCard: React.FC<ArticleCardProps> = ({
         >
             <Link href={link}>
                 <Image
-                    src={`${AppConfig.strapi.url}${image.data.attributes.url}`}
-                    alt={image.data.attributes.alternativeText || title}
+                    src={`${AppConfig.strapi.url}${image.data?.attributes?.url || ''}`}
+                    alt={image.data?.attributes?.alternativeText || title}
                     width={750}
                     height={440}
                     className="rounded-xl"

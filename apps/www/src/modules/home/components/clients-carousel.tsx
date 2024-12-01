@@ -49,7 +49,7 @@ const ClientsCarousel: React.FC<ClientsCarouselProps> = ({ images }) => {
             >
               {item.image.data && (
                 <Image
-                  src={`${AppConfig.strapi.url}${item.image.data.attributes.url}`}
+                  src={`${AppConfig.strapi.url}${item.image.data?.attributes?.url}`}
                   width={item.width}
                   height={item.height}
                   alt={

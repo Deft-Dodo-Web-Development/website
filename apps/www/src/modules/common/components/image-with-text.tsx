@@ -38,7 +38,7 @@ const ImageWithText: React.FC<ImageWithTextProps> = ({
         <div className="w-full">
           <AspectRatio ratio={width / height}>
             <Image
-              src={`${AppConfig.strapi.url}${image.image.data.attributes.url}`}
+              src={`${AppConfig.strapi.url}${image.image.data?.attributes?.url}`}
               alt={
                 image.image.data.attributes.alternativeText || "Project Image"
               }

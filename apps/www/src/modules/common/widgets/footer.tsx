@@ -19,7 +19,7 @@ const Footer = (props: FooterProps) => {
 
   return (
     <>
-      <Separator className="my-32" container />
+      <Separator className="mt-16" container />
       <BaseFooter {...props} />
     </>
   );
@@ -30,7 +30,7 @@ const BaseFooter = ({
   socials,
   copyright
 }: FooterProps) => (
-  <footer className="pt-28 pb-14 container">
+  <footer className="pt-14 pb-14 container">
     <div className="w-full flex justify-between flex-wrap flex-col md:flex-row gap-5 md:items-start items-center text-center md:text-left">
       <section className="space-y-2">
         <Brand className="w-[90px] h-auto mx-auto md:ml-0" aria-hidden />

@@ -9,10 +9,10 @@
     "release": "release-it"
   },
   "dependencies": {
-    "@react-email/components": "0.0.15",
-    "@react-email/tailwind": "^0.0.14",
+    "@react-email/components": "0.0.28",
+    "@react-email/tailwind": "^1.0.2",
     "react": "18.2.0",
-    "react-email": "2.1.0"
+    "react-email": "3.0.2"
   },
   "devDependencies": {
     "@deft-dodo/config-release-it": "workspace:*",

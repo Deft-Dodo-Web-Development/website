@@ -28,7 +28,7 @@ const ProjectCard: React.FC<ProjectCardProps> = (card) => {
       <Link href={link}>
         {card.image.data ? (
           <Image
-            src={`${AppConfig.strapi.url}${card.image.data.attributes.url}`}
+            src={`${AppConfig.strapi.url}${card.image.data?.attributes?.url}`}
             alt={card.image.data.attributes.alternativeText || card.title}
             width={750}
             height={440}
