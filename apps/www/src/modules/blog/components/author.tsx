@@ -22,7 +22,7 @@ const Author: React.FC<AuthorProps> = (author) => {
                 {author.data?.attributes.picture?.data?.attributes ? (
                     <Avatar className="w-14 h-14">
                         <AvatarImage
-                            src={`${AppConfig.strapi.url}${author.data?.attributes.picture.data.attributes.url}`}
+                            src={`${AppConfig.strapi.url}${author.data?.attributes.picture.data?.attributes?.url}`}
                             alt={
                                 author.data?.attributes.picture.data.attributes.alternativeText ||
                                 author.data?.attributes.name

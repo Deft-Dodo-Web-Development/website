@@ -23,7 +23,7 @@ export const generateMetadata = async (context: Context): Promise<Metadata> => {
 
   if (!blog || !blog?.data?.attributes?.seo) return {};
 
-  const seo = blog.data.attributes.seo;
+  const seo = blog?.data?.attributes?.seo;
 
   return {
     title: seo.title,
@@ -45,9 +45,9 @@ export default async function BlogDetailPage({ params: { slug } }: Context) {
   return (
     <>
       <BlogHeader
-        title={blog.data.attributes.title}
-        createdAt={blog.data.attributes.createdAt}
-        image={blog.data.attributes.image}
+        title={blog?.data?.attributes?.title}
+        createdAt={blog?.data?.attributes?.createdAt}
+        image={blog?.data?.attributes?.image}
       />
       <Container enabled={true}>
         <Layout className="lg:grid-cols-8">
@@ -66,7 +66,7 @@ export default async function BlogDetailPage({ params: { slug } }: Context) {
               <div className="flex items-center gap-2">
                 {categories.data?.map((category, index) => (
                   <Badge variant="default" size="base" key={index}>
-                    {category.attributes.name}
+                    {category?.attributes?.name}
                   </Badge>
                 ))}
               </div>

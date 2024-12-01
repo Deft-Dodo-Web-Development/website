@@ -12,7 +12,7 @@ const ImageComponent: React.FC<ImageProps> = ({ image, width, height }) => {
     return (
         <AspectRatio ratio={localWidth / localHeight}>
             <Image
-                src={`${AppConfig.strapi.url}${image.data.attributes.url}`}
+                src={`${AppConfig.strapi.url}${image.data?.attributes?.url}`}
                 alt={image.data.attributes.alternativeText || "Image"}
                 width={localWidth}
                 height={localHeight}

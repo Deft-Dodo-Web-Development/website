@@ -34,7 +34,7 @@ const ImageComponent: React.FC<ImageProps> = ({ image, aspectRatio }) => {
     return (
         <AspectRatio ratio={ratio}>
             <Image
-                src={`${AppConfig.strapi.url}${image.data.attributes.url}`}
+                src={`${AppConfig.strapi.url}${image.data?.attributes?.url}`}
                 alt={image.data.attributes.alternativeText || "Image"}
                 width={image.data.attributes.width}
                 height={image.data.attributes.height}

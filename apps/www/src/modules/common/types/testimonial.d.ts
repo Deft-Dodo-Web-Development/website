@@ -1,5 +1,4 @@
 import {
-    BaseServerAttributes,
     ServerCollectionResponse,
 } from "@/modules/common/types/server";
 import { Testimonials } from "@/modules/common/types/common";

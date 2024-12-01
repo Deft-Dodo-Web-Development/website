@@ -45,7 +45,7 @@ const PictureByDevice: React.FC<PictureByDeviceProps> = ({ mobile, tablet, deskt
                     >
                         <AspectRatio ratio={16 / 9}>
                             <Image
-                                src={`${baseURL}${desktop.data.attributes.url}`}
+                                src={`${baseURL}${desktop.data?.attributes?.url}`}
                                 alt={desktop.data.attributes.alternativeText || "Desktop"}
                                 width={desktop.data.attributes.width}
                                 height={desktop.data.attributes.height}
@@ -68,7 +68,7 @@ const PictureByDevice: React.FC<PictureByDeviceProps> = ({ mobile, tablet, deskt
                     >
                         <AspectRatio ratio={3 / 4}>
                             <Image
-                                src={`${baseURL}${tablet.data.attributes.url}`}
+                                src={`${baseURL}${tablet.data?.attributes?.url}`}
                                 alt={tablet.data.attributes.alternativeText || "Tablet"}
                                 width={tablet.data.attributes.width}
                                 height={tablet.data.attributes.height}
@@ -91,7 +91,7 @@ const PictureByDevice: React.FC<PictureByDeviceProps> = ({ mobile, tablet, deskt
                     >
                         <AspectRatio ratio={9 / 16}>
                             <Image
-                                src={`${baseURL}${mobile.data.attributes.url}`}
+                                src={`${baseURL}${mobile.data?.attributes?.url}`}
                                 alt={mobile.data.attributes.alternativeText || "Mobile"}
                                 width={mobile.data.attributes.width}
                                 height={mobile.data.attributes.height}
