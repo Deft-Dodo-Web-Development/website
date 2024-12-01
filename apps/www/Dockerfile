@@ -13,7 +13,7 @@ FROM base AS builder
 WORKDIR /app
 ENV PNPM_HOME=/usr/local/share/pnpm
 ENV PATH="$PNPM_HOME:$PATH"
-RUN pnpm add -g turbo
+RUN pnpm add -g turbo@1.12.5
 
 COPY . .
 RUN turbo prune @deft-dodo/www --docker
