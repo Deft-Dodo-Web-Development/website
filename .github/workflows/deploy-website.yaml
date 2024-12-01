@@ -36,7 +36,7 @@ jobs:
           docker push ghcr.io/deft-dodo-web-development/website:latest
 
   pull-changes:
-    needs: [publish-api, publish-website]
+    needs: [publish-website]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
