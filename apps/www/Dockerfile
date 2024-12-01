@@ -1,6 +1,6 @@
 FROM --platform=linux/amd64 node:18-alpine AS base
 RUN apk add --no-cache libc6-compat && \
-  npm install -g pnpm && \
+  npm install -g pnpm@8.9.0 && \
   mkdir -p /usr/local/share/pnpm && \
   echo 'export PNPM_HOME=/usr/local/share/pnpm' >> /etc/profile.d/pnpm.sh && \
   echo 'export PATH="$PNPM_HOME:$PATH"' >> /etc/profile.d/pnpm.sh
