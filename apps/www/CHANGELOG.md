@@ -1,5 +1,7 @@
 
 
+## [1.6.1](https://github.com/Deft-Dodo-Web-Development/website/compare/@deft-dodo/www-v1.6.0...@deft-dodo/www-v1.6.1) (2024-12-01)
+
 ## [1.6.0](https://github.com/Deft-Dodo-Web-Development/website/compare/@deft-dodo/www-v1.5.0...@deft-dodo/www-v1.6.0) (2024-12-01)
 
 
