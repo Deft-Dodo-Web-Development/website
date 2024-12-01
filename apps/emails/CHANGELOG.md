@@ -1,5 +1,12 @@
 
 
+## [1.0.2](https://github.com/Deft-Dodo-Web-Development/website/compare/@deft-dodo/emails-v1.0.1...@deft-dodo/emails-v1.0.2) (2024-12-01)
+
+
+### Bug Fixes
+
+* change pkgs versions ([15c30bc](https://github.com/Deft-Dodo-Web-Development/website/commit/15c30bc72454010527f2231402064a8d1c3e48c5))
+
 ## [1.0.1](https://github.com/Deft-Dodo-Web-Development/website/compare/@deft-dodo/emails-v1.0.0...@deft-dodo/emails-v1.0.1) (2024-03-25)
 
 
