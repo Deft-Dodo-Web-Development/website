@@ -2,6 +2,8 @@ name: deploy
 on:
   release:
     types: [published]
+  workflow_dispatch:
+
 jobs:
   publish-api:
     runs-on: ubuntu-latest
