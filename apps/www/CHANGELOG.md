@@ -1,5 +1,16 @@
 
 
+## [1.6.0](https://github.com/Deft-Dodo-Web-Development/website/compare/@deft-dodo/www-v1.5.0...@deft-dodo/www-v1.6.0) (2024-12-01)
+
+
+### Features
+
+* add meta pixel script ([083ede6](https://github.com/Deft-Dodo-Web-Development/website/commit/083ede6ae6abc7e9306822bc3ce8aaf1dedcd6b6))
+* add route change event to track page view ([de068e0](https://github.com/Deft-Dodo-Web-Development/website/commit/de068e07584d7766872ab09afadde78cc5806ab5))
+* add testimonials and experience sections to overall site ([39de4eb](https://github.com/Deft-Dodo-Web-Development/website/commit/39de4eba512d7d77cc6fcb9acec104d4e50f340f))
+* add validation to prevent accessing attrs from nulls ([1793ed4](https://github.com/Deft-Dodo-Web-Development/website/commit/1793ed433c11bfe28a528dcf7ccf345f2bf27aef))
+* change footer spacing ([54a96ce](https://github.com/Deft-Dodo-Web-Development/website/commit/54a96ced663c0907fc7d692c1f65b6bb8850449e))
+
 ## [1.5.0](https://github.com/Deft-Dodo-Web-Development/website/compare/@deft-dodo/www-v1.4.0...@deft-dodo/www-v1.5.0) (2024-03-30)
 
 
