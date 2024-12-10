@@ -22,7 +22,7 @@ const BlogPage = async () => {
   return (
     <>
       <Container enabled={true} asChild>
-        <div className="pt-14">
+        <div className="pt-6">
           <Heading
             subHeading="Resources"
             alignment="middle"
@@ -35,7 +35,7 @@ const BlogPage = async () => {
           </Heading>
         </div>
       </Container>
-      <Separator className="mb-28 mt-14" container />
+      <Separator className="mb-12 mt-6" container />
       <ArticleList articles={blogs.data} container />
       <Separator className="mb-28 mt-14" container />
       <FooterSetup variant="complex" />

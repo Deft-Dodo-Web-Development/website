@@ -8,16 +8,16 @@ export type WorkHeadingProps = {
 const WorkHeading: React.FC<WorkHeadingProps> = ({ container }) => {
   return (
     <Container enabled={container} asChild>
-      <div className="pt-14">
+      <div className="pt-6">
         <Heading
-          subHeading="Our"
+          subHeading="Portfolio"
           alignment="middle"
           size="lg"
           variant="primary"
           textTransform="uppercase"
           className="mt-3"
         >
-          Work
+          Our Projects
         </Heading>
       </div>
     </Container>
