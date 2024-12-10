@@ -9,9 +9,12 @@ config();
 
 const fetchData = function <T>(filter?: { [key: string]: string | number }) {
     const populate = [
-        "info",
-        "socials",
-        "copyright"
+        "title",
+        "message",
+        "identity",
+        "identity.*",
+        "identity.picture",
+        "identity.company_logo",
     ];
 
     return baseFetch<T>({
