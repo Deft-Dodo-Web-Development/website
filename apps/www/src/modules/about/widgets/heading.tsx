@@ -8,7 +8,7 @@ export type AboutUsHeadingProps = {
 const AboutUsHeading: React.FC<AboutUsHeadingProps> = ({ container }) => {
   return (
     <Container enabled={container}>
-      <div className="pt-14">
+      <div className="pt-6">
         <Heading
           subHeading="About Us"
           alignment="middle"

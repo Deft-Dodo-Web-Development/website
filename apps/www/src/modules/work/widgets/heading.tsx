@@ -8,7 +8,7 @@ export type WorkHeadingProps = {
 const WorkHeading: React.FC<WorkHeadingProps> = ({ container }) => {
   return (
     <Container enabled={container} asChild>
-      <div className="pt-14">
+      <div className="pt-6">
         <Heading
           subHeading="Portfolio"
           alignment="middle"

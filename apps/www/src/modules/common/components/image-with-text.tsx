@@ -65,7 +65,11 @@ const ImageWithText: React.FC<ImageWithTextProps> = ({
             {badges.length > 0 ? (
               <div className="flex items-center gap-2 mb-4">
                 {badges.map((badge, index) => (
-                  <Badge variant="default" size="base" key={index}>
+                  <Badge 
+                    variant="default" 
+                    size="base"
+                    className="hover:bg-white hover:text-dark"
+                    key={index}>
                     {badge.title}
                   </Badge>
                 ))}

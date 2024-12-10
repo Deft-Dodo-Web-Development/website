@@ -31,7 +31,7 @@ const AboutPage = async () => {
   return (
     <>
       <AboutUsHeading container />
-      <Separator className="mb-14 mt-14" container />
+      <Separator className="mb-12 mt-6" container />
       {pageContent.map((content, index) => (
         <DynamicSection
           key={`${index}-${content.__component}`}

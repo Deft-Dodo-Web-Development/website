@@ -23,7 +23,7 @@ const WorkPage: React.FC = async () => {
   return (
     <>
       <WorkHeading container />
-      <Separator className="mb-28 mt-14" container />
+      <Separator className="mb-12 mt-6" container />
       <ProjectList container projects={formattedWorks} />
       <FooterSetup variant="complex" />
     </>
