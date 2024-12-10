@@ -10,14 +10,14 @@ const WorkHeading: React.FC<WorkHeadingProps> = ({ container }) => {
     <Container enabled={container} asChild>
       <div className="pt-14">
         <Heading
-          subHeading="Our"
+          subHeading="Portfolio"
           alignment="middle"
           size="lg"
           variant="primary"
           textTransform="uppercase"
           className="mt-3"
         >
-          Work
+          Our Projects
         </Heading>
       </div>
     </Container>
