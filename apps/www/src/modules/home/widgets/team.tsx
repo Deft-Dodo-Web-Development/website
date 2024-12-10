@@ -23,7 +23,7 @@ const Team: React.FC<TeamProps> = ({ with_container, heading, members }) => {
           </Heading>
         ) : null}
 
-        <Layout className="md:grid-cols-3 lg:grid-cols-3">
+        <Layout className="md:grid-cols-2 lg:grid-cols-4">
           {members.data.map((member, index) => (
             <TeamCard key={index} {...member} />
           ))}

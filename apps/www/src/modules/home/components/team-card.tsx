@@ -19,7 +19,7 @@ const TeamCard: React.FC<TeamCardProps> = ({
   attributes: { name, picture, position, social },
 }) => {
   return (
-    <div className="flex flex-col items-center bg-white-8 p-6 lg:p-8 transition-colors duration-300 transform border border-white-8 rounded-xl hover:border-transparent group hover:bg-primary/5 dark:border-gray-700 dark:hover:border-transparent">
+    <div className="flex flex-col text-center items-center bg-white-8 p-6 lg:p-8 transition-colors duration-300 transform border border-white-8 rounded-xl hover:border-transparent group hover:bg-primary/5 dark:border-gray-700 dark:hover:border-transparent">
       {picture?.data?.attributes && (
         <Avatar className="w-32 h-32">
           <AvatarImage
