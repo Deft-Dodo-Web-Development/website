@@ -26,8 +26,10 @@ const Profile: React.FC<ProfileProps> = ({
   reverse,
   attributes: { name, picture, position, social, bio },
 }) => {
+  const teamMemberId = name?.toLowerCase().replace(' ', '-');
+
   return (
-    <section className={cn("grid grid-cols-1 gap-10 lg:grid-cols-2")}>
+    <section id={teamMemberId} className={cn("grid grid-cols-1 gap-10 lg:grid-cols-2 scroll-mt-20 md:scroll-mt-24 lg:scroll-mt-28")}>
       <div className={cn("space-y-8 order-2", reverse ? "lg:order-2" : "lg:order-1")}>
         <div className="space-y-2">
           {name && (
