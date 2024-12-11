@@ -20,14 +20,14 @@ const ServicesHeading: React.FC<ServicesHeadingProps> = ({
     <Container enabled={container} asChild>
       <div className={!title ? "pt-6" : ""}>
         <Heading
-          subHeading={title ? "Service" : "Our"}
+          subHeading={title ? "Service" : "What we do"}
           alignment={title ? "start" : "middle"}
           size="lg"
           variant="primary"
           textTransform="uppercase"
           className={`mt-3 ${title ? serviceHeadingClass : ""}`}
         >
-          {title || "Services"}
+          {title || "Our Services"}
         </Heading>
       </div>
     </Container>
