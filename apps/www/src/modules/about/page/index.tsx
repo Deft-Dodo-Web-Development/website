@@ -1,6 +1,4 @@
 import { getAboutUsPageData, getSeoPageData } from "../actions/about.action";
-import { Separator } from "@components/separator";
-import AboutUsHeading from "../widgets/heading";
 import DynamicSection from "../components/dynamic-section";
 import FooterSetup from "@utilities/footer-setup";
 import { Metadata } from "next";
@@ -30,8 +28,6 @@ const AboutPage = async () => {
 
   return (
     <>
-      <AboutUsHeading container />
-      <Separator className="mb-12 mt-6" container />
       {pageContent.map((content, index) => (
         <DynamicSection
           key={`${index}-${content.__component}`}
