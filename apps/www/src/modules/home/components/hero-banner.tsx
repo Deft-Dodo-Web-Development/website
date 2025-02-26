@@ -45,7 +45,7 @@ const HeroBanner: React.FC<HeroBannerProps> = ({
           <div className="text-white-56">
             <div className="w-full text-center text-white">
               {(headingBold || headingThin) && (
-                <h2 className={`uppercase ${bisonFont.className}`}>
+                <h1 className={`uppercase ${bisonFont.className}`}>
                   {headingBold && (
                     <span className="block text-4xl md:text-8xl font-bold">
                       {headingBold}
@@ -56,7 +56,7 @@ const HeroBanner: React.FC<HeroBannerProps> = ({
                       {headingThin}
                     </span>
                   )}
-                </h2>
+                </h1>
               )}
 
               {description && (
